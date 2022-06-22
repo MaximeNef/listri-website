@@ -1,0 +1,150 @@
+{
+  "slices": {
+    "Blog1": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
+    },
+    "Blog2": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Test1": {},
+    "Test2": {
+      "default": {
+        "primary": {
+          "test2": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "BienVendre": {},
+    "BienLouer": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Textlistri": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Bloglistri": {
+      "default": {
+        "primary": {
+          "titleBlog": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {
+          "bodyContent": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "BlogPost": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "TitleBlog": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "BodyBlog": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "SubtitleBlog": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "ImageBlog": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "DateBlog": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "BlogSlices": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Blog": {},
+    "BlogsTest": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "BlogTitle": {
+      "default": {
+        "primary": {},
+        "items": {
+          "BlogTitle": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "_cts": {
+    "blogs": {},
+    "blogCard": {},
+    "Bien-Vendre": {
+      "superficie": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    },
+    "bloglistri": {},
+    "projectlistri": {},
+    "testlistri": {},
+    "BlogPost": {}
+  }
+}

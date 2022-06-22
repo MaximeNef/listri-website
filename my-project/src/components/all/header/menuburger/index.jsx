@@ -6,16 +6,18 @@ import burgerMenu from "./../../../../../public/orangeb.json";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Popup from "../popup";
+import Flex from "../../../shared/composers/flex";
 
 const Menuburger = () => {
   const [pause, setPause] = useState(true);
   const [play, setPlay] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [link, setLink] = useState([
-    { page: "popup_acceuil", href: "/", selected: false },
-    { page: "popup_biens", href: "/", selected: false },
-    { page: "popup_about", href: "/", selected: false },
-    { page: "popup_contact", href: "/", selected: false },
+    { page: "Accueil", href: "/", selected: false },
+    { page: "Nos services", href: "/services", selected: false },
+    { page: "Nos réalisation", href: "/realisations", selected: false },
+    { page: "Blog / Actualité", href: "/blogs", selected: false },
+    { page: "Contact", href: "/contact", selected: false },
   ]);
   const defaultOptions = {
     name: "menuBurger",
@@ -46,9 +48,10 @@ const Menuburger = () => {
     } else {
     }
   }
+
   return (
-    <Container className=' mb-14 w-full '>
-      <Container className='fixed z-20 bg-white w-full top-0  py-2   '>
+    <Container className=' w-full '>
+      <Container className='fixed z-20 bg-[#FFFAF5] w-full top-0  py-2   '>
         <Container className=' m-auto  max-h-12  '>
           <Link href='/'>
             <Image
@@ -72,23 +75,27 @@ const Menuburger = () => {
           />
         </Container>
 
-        <Container className=' right-3 z-20 fixed  mt-2 rounded-[25px]  bg-gradient-to-r from-[#FEA249] to-[#FDBB7E]  py-[10px] px-4 text-white text-sm shadow-lg'>
-          <Image
-            src='/assets/logo/phone.svg'
-            alt='Picture of the author'
-            width={20}
-            height={20}
-            className='m-auto'
-          />
+        <Container className=' right-3 z-20 fixed  mt-2 rounded-[25px]  bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  py-[10px] px-4 text-white text-sm shadow-lg '>
+          <a className='my-auto items-center' href='tel: +32470684551'>
+            <Container className='m-auto'>
+              <Image
+                src='/assets/logo/phone.svg'
+                alt='Picture of the author'
+                width={20}
+                height={20}
+                className='m-auto'
+              />
+            </Container>
+          </a>
         </Container>
         {/* pop-Up menu burger  */}
         <motion.div
           initial={false}
           variants={menuVariants}
           animate={isOpen ? "opened" : "closed"}
-          className='bg-white h-full w-full fixed z-10 flex '
+          className='bg-[#FFFAF5] h-full w-full fixed z-10 flex '
           transition={{
-            duration: 1,
+            duration: 0.8,
             times: [0, 0.1, 0.9, 1],
             ease: [0.17, 0.17, 0.73, 0.99],
           }}
@@ -97,7 +104,9 @@ const Menuburger = () => {
             link={link}
             isOpen={isOpen}
             setIsOpen={setIsOpen}
-            burgerClick={handelClick}
+            pause={pause}
+            setPause={setPause}
+            handelClick={handelClick}
           />
         </motion.div>
       </Container>{" "}

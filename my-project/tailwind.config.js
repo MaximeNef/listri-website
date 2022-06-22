@@ -5,7 +5,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        default: "#37474F",
+      },
+      boxShadow: {
+        ServiceCard: "2px 4px 10px 2px rgba(55, 71, 79, 0.3)",
+        realisationCard:
+          "0.970276px 1.94055px 4.85138px rgba(55, 71, 79, 0.3);",
+      },
+      backgroundImage: {
+        "hero-service": "url('/assets/background/vector.svg')",
+      },
+    },
   },
   plugins: [],
 };

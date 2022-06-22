@@ -1,0 +1,122 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "blog_post",
+    "items": [
+      {
+        "imgBlog": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+        },
+        "bodyBlog": [
+          {
+            "type": "paragraph",
+            "text": "Nulla anim et labore amet ullamco.",
+            "spans": []
+          }
+        ],
+        "subtitleBlog": [
+          {
+            "type": "paragraph",
+            "text": "Minim labore consequat dolore aliquip esse magna sint ex et enim cupidatat labore. Qui nulla eu culpa aliquip ut ut ex amet laborum dolor ut proident culpa.",
+            "spans": []
+          }
+        ],
+        "dateBlog": "2016-08-09"
+      },
+      {
+        "imgBlog": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+        },
+        "bodyBlog": [
+          {
+            "type": "paragraph",
+            "text": "Sint culpa ad commodo aliqua magna sit et sit excepteur laboris.",
+            "spans": []
+          }
+        ],
+        "subtitleBlog": [
+          {
+            "type": "paragraph",
+            "text": "Aute eiusmod exercitation ad aute officia dolore laboris ad Lorem consectetur ex enim duis et.",
+            "spans": []
+          }
+        ],
+        "dateBlog": "2019-05-18"
+      },
+      {
+        "imgBlog": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
+        },
+        "bodyBlog": [
+          {
+            "type": "paragraph",
+            "text": "Officia incididunt sint Lorem exercitation adipisicing do ipsum eiusmod elit id cupidatat est enim. Sit dolore consectetur magna do. Irure adipisicing qui esse minim.",
+            "spans": []
+          }
+        ],
+        "subtitleBlog": [
+          {
+            "type": "paragraph",
+            "text": "Tempor tempor sint incididunt non esse voluptate est elit minim. Cillum proident tempor officia ut consequat incididunt nostrud duis sint dolor occaecat nulla consequat cupidatat. Labore nostrud Lorem commodo quis.",
+            "spans": []
+          }
+        ],
+        "dateBlog": "2019-12-26"
+      },
+      {
+        "imgBlog": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+        },
+        "bodyBlog": [
+          {
+            "type": "paragraph",
+            "text": "Adipisicing sit ea veniam nostrud magna in proident ipsum Lorem culpa aute elit culpa duis aute. Id fugiat laboris exercitation nulla Lorem dolor nisi elit Lorem deserunt cillum proident cillum irure. Officia magna sint ex officia ea.",
+            "spans": []
+          }
+        ],
+        "subtitleBlog": [
+          {
+            "type": "paragraph",
+            "text": "Magna mollit id fugiat incididunt occaecat pariatur sunt dolore anim cupidatat deserunt qui deserunt ex amet.",
+            "spans": []
+          }
+        ],
+        "dateBlog": "2020-11-08"
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Utilize wireless solutions",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

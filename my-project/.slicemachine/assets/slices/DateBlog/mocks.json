@@ -1,0 +1,11 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "date_blog",
+    "items": [],
+    "primary": {
+      "dateBlog": "2019-10-09"
+    }
+  }
+]
