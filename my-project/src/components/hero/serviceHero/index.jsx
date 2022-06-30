@@ -4,12 +4,15 @@ import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
 import BtnServiceHero from "./btnServiceHero";
 import ServiceHeroCard from "./ServiceHeroCard";
+import { motion } from "framer-motion";
+import MotionLeft from "../../shared/composers/motion-CardLeft";
+import MotionBottom from "../../shared/composers/motion-textBottom";
 
 const ServiceHero = () => {
   return (
     <Container className='relative my-8 '>
       {" "}
-      <Container className='absolute mt-64   lg:containe lg:w-full lg:mt-1'>
+      {/* <Container className='absolute mt-64   lg:containe lg:w-full lg:mt-1'>
         <Image
           src='/assets/background/vector.svg'
           alt='Picture of the author'
@@ -17,23 +20,42 @@ const ServiceHero = () => {
           height={800}
           className='absolute'
         />
-      </Container>
+      </Container> */}
       <Flex
         type='col'
         align='center'
         className=' space-y-4 mb-8 mx-10 lg:hidden'
       >
-        <h2 className=' font-medium text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-          {"Nos services "}
-        </h2>
-        <Container className='font-semibold text-[#37474F] '>
-          {" "}
-          {"  Nous réalisons vos projets ensemble"}
-        </Container>
-        <Container className='text-center font-light text-[#37474F]'>
-          Nous réalisons vos projets ensemble partout ou nous alons. Nous
-          réalisons vos projets ensemble partout ou nous alons. Nous réalisons
-        </Container>
+        <MotionBottom
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.2 }}
+        >
+          <h2 className=' font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+            {"Nos services "}
+          </h2>
+        </MotionBottom>
+        <MotionBottom
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.5 }}
+        >
+          <Container className='font-semibold text-[#37474F]  text-[19px] text-center'>
+            {" "}
+            {"  Nous réalisons vos projets ensemble"}
+          </Container>
+        </MotionBottom>
+        <MotionBottom
+          initial='hidden'
+          animate='visible'
+          transition={{ duration: 0.5 }}
+        >
+          <Container className='text-center font-light text-[#37474F] text-[17px]'>
+            {
+              " Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons"
+            }
+          </Container>
+        </MotionBottom>
       </Flex>
       <Flex
         type='col'
@@ -46,52 +68,75 @@ const ServiceHero = () => {
         >
           <Container className='  space-y-8 lg:pt-20 lg:space-y-5'>
             <Container className='lg:w-1/2 lg:pb-[45px] '>
-              <Link href='/services/creation-de-contenu'>
-                <a>
-                  <ServiceHeroCard
-                    serviceName={"Création de contenu"}
-                    ServiceDescription={
-                      "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
-                    }
-                  />
-                </a>
-              </Link>
+              <MotionLeft
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 1 }}
+              >
+                <Link href='/services/creation-de-contenu' passHref>
+                  <a>
+                    <ServiceHeroCard
+                      serviceName={"Création de contenu"}
+                      ServiceDescription={
+                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                      }
+                      src={"/assets/logo/Blog.svg"}
+                    />
+                  </a>
+                </Link>
+              </MotionLeft>
             </Container>
             <Container className='   lg:w-1/2  lg:pb-[45px]'>
-              <Link href='/services/website'>
-                <a>
-                  <ServiceHeroCard
-                    serviceName={"Web Design"}
-                    ServiceDescription={
-                      "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
-                    }
-                  />
-                </a>
-              </Link>
+              <MotionLeft
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 1 }}
+              >
+                {" "}
+                <Link href='/services/website' passHref>
+                  <a>
+                    <ServiceHeroCard
+                      serviceName={"Site web"}
+                      ServiceDescription={
+                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                      }
+                      src={"/assets/logo/Computer.svg"}
+                    />
+                  </a>
+                </Link>
+              </MotionLeft>
             </Container>
           </Container>
 
           <Container className=' space-y-8 lg:space-y-5'>
             <Container className='lg:w-1/2 lg:pb-[45px] lg:pl-[65px]'>
-              <Link href='/services/socialMedia'>
-                <a>
-                  <ServiceHeroCard
-                    serviceName={"Social Media"}
-                    ServiceDescription={
-                      "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
-                    }
-                  />
-                </a>
-              </Link>
+              <MotionLeft
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 1 }}
+              >
+                <Link href='/services/referencement' passHref>
+                  <a>
+                    <ServiceHeroCard
+                      serviceName={"Référencement web"}
+                      ServiceDescription={
+                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                      }
+                      src={"/assets/logo/Affiliate.svg"}
+                    />
+                  </a>
+                </Link>
+              </MotionLeft>
             </Container>
             <Container className='lg:w-1/2 lg:pl-[65px] hidden lg:inline-flex '>
-              <Link href='/services/socialMedia'>
+              <Link href='/services/socialMedia' passHref>
                 <a>
                   <ServiceHeroCard
                     serviceName={"Social Media"}
                     ServiceDescription={
                       "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
                     }
+                    src={"/assets/logo/Blog.svg"}
                   />
                 </a>
               </Link>

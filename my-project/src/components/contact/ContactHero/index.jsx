@@ -2,31 +2,45 @@ import Link from "next/link";
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
 
-const ContactHero = ({ handleClick, handleClick2, web, marketing }) => {
+const ContactHero = ({ handleClick, handleClick2, handleClick3 }) => {
   return (
-    <Container className='my-10 w-full'>
+    <Container className='my-10 w-full '>
       <Container className='m-auto font-medium text-lg'>
         {"je suis à la recherche d'un service"}
       </Container>
 
-      <Container className='m-auto mt-10 space-y-8 text-center '>
+      <Container className='m-auto mt-6 space-y-8 text-center w-full  px-5'>
         <Container
-          className='  bg-gradient-to-r from-[#FF7E00]  to-[#FF7E00]/50  px-8 py-2 rounded-[20px] text-[#FFFAF5] font-medium '
+          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard '
           onClick={handleClick}
         >
-          {"  web "}
+          <Container className=' bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
+            <Container className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+              {" web"}
+            </Container>
+          </Container>
         </Container>
+
         <Container
-          className='  bg-gradient-to-r from-[#FF7E00]  to-[#FF7E00]/50  px-8 py-2 rounded-[20px] text-[#FFFAF5] font-medium'
+          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard '
           onClick={handleClick2}
         >
-          {" marketing "}
+          <Container className=' bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
+            <Container className=' font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+              {" Marketing"}
+            </Container>
+          </Container>
         </Container>
+
         <Container
-          className='  bg-gradient-to-r from-[#FF7E00]  to-[#FF7E00]/50  px-8 py-2 rounded-[20px] text-[#FFFAF5] font-medium'
-          onClick={handleClick2}
+          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard '
+          onClick={handleClick3}
         >
-          {" Autres "}
+          <Container className=' bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
+            <Container className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+              {" Autres"}
+            </Container>
+          </Container>
         </Container>
       </Container>
     </Container>

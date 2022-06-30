@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const ProcessContent = () => {
   return (
@@ -17,11 +18,11 @@ const ProcessContent = () => {
               {"1"}
             </Container>
             <Container className=' font-semibold text-[21px] px-7'>
-              {" Première étape de votre projet"}
+              {"Prise de contact & brainstorming."}
             </Container>
-            <Container className='px-7 text-[17px]'>
+            <Container className='px-7 text-[17px] '>
               {
-                "Briefing avec vous pour comprendre tous vos besoins dans les moindre détails. Cette étape est la plus importante car elle nous permet de s’imprégner de l’identité de votre entreprise."
+                "Vous nous partagez vos idées et la façon dont vous imaginez votre projet. Nous vous guidons dans cette phase en apportant notre expertise pour que votre projet soit au goût du jour."
               }
             </Container>
             <Image
@@ -46,11 +47,11 @@ const ProcessContent = () => {
               {"2"}
             </Container>
             <Container className=' font-semibold text-[21px] px-7'>
-              {" Deuxieme étape de votre projet"}
+              {"Réalisation de l’ébauche "}
             </Container>
             <Container className='px-7 text-[17px]'>
               {
-                "Nous réalisons vos projets ensemble partout ou nous alons.Nous réalisons vos projets ensemble partout ou nous alons.Nous réalisons vos projets ensemble partout ou nous alons"
+                " Réalisation de l’ébauche Suite du premier rendez-vous nous vous réalisons une ébauche de votre projet pour que vous puissiez avoir un premier rendu visuel de vos idées."
               }
             </Container>
             <Image
@@ -75,11 +76,11 @@ const ProcessContent = () => {
               {"3"}
             </Container>
             <Container className=' font-semibold text-[21px] px-7'>
-              {" Troisième étape de votre projet"}
+              {" Modifications & validation"}
             </Container>
             <Container className='px-7 text-[17px]'>
               {
-                "Nous réalisons vos projets ensemble partout ou nous alons.Nous réalisons vos projets ensemble partout ou nous alons.Nous réalisons vos projets ensemble partout ou nous alons."
+                "Modifications & validation Sur base de l’ébauche nous prenons en compte vos retours et adaptons votre projet pour le préparer à la validation finale. "
               }
             </Container>
             <Image
@@ -104,12 +105,13 @@ const ProcessContent = () => {
               {"4"}
             </Container>
             <Container className=' font-semibold text-[21px] px-7'>
-              {" Quatrième étape de votre projet"}
+              {"Développement de votre projet"}
             </Container>
-            <Container className='px-7'>
-              {
-                "Briefing avec vous pour comprendre tous vos besoins dans les moindre détails. Cette étape est la plus importante car elle nous permet de s’imprégner de l’identité de votre entreprise."
-              }
+            <Container className='px-7 text-center'>
+              {"Votre projet entre en phase de développement."}
+            </Container>
+            <Container className='mb-6 font-medium'>
+              {" Mise en ligne de votre projet !"}
             </Container>
             <Image
               src='/assets/logo/rocketProcess4.svg'

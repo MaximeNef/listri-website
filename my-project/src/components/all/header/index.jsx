@@ -7,7 +7,7 @@ const Header = ({ current }) => {
   const [link, setLink] = useState([
     { page: "Accueil", href: "/", selected: false },
     { page: "Nos services", href: "/services", selected: false },
-    { page: "Nos realisations", href: "/realisations", selected: false },
+    { page: "Nos réalisations", href: "/realisations", selected: false },
     { page: "Blog", href: "/blogs", selected: false },
   ]);
 
@@ -17,7 +17,7 @@ const Header = ({ current }) => {
         <MenuDesktop current={current} link={link} />
       </Container>
       <Container className='  lg:hidden'>
-        <Menuburger />
+        <Menuburger current={current} link={link} />
       </Container>
     </Container>
   );

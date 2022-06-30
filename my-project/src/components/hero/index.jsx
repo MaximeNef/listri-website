@@ -2,17 +2,21 @@ import Container from "../shared/composers/container";
 import Image from "next/image";
 import Typed from "react-typed";
 import Flex from "../shared/composers/flex";
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
     <Container className='lg:min-h-full'>
       <Flex type='col' className='lg:hidden'>
-        <Image
-          src='/assets/logo/hero.svg'
-          alt='Picture of the author'
-          width={500}
-          height={500}
-          className=''
-        />
+        <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
+          <Image
+            src='/assets/logo/hero.svg'
+            alt='Picture of the author'
+            width={500}
+            height={500}
+            className=''
+          />
+        </motion.div>
 
         <Flex className='mx-auto my-16'>
           <Container

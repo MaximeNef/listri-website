@@ -15,7 +15,7 @@ const MenuDesktop = ({ link, current }) => {
       >
         {" "}
         <Flex className=' m-auto   max-h-12  ml-[-80px]'>
-          <Link href='/'>
+          <Link href='/' passHref>
             <a>
               <Container className='max-h-12'>
                 <Image
@@ -32,7 +32,7 @@ const MenuDesktop = ({ link, current }) => {
         <Flex type='row' justify='between' align='start' className='md: '>
           {link.map((p) => {
             return (
-              <Link href={p.href} key={p.href}>
+              <Link href={p.href} key={p.href} passHref>
                 {p.page == current ? (
                   <Container
                     type='col'
@@ -62,11 +62,14 @@ const MenuDesktop = ({ link, current }) => {
               </Link>
             );
           })}
-          <Container className=' text-center rounded-[50px]  bg-gradient-to-r from-[#FF7E00] to-[#FDBB7E] text-white font-normal my-auto p-2 px-6'>
-            <Link href='/blogs'>
-              <a>Contact</a>
-            </Link>
-          </Container>
+
+          <Link href='/contactus' passHref>
+            <a>
+              <Container className=' text-center rounded-[50px]  bg-gradient-to-r from-[#FF7E00] to-[#FDBB7E] text-white font-normal m-auto p-2 px-6 mt-[6px]'>
+                Contact
+              </Container>
+            </a>
+          </Link>
         </Flex>
       </Flex>{" "}
     </Container>

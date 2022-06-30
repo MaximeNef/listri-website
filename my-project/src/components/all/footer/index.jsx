@@ -6,26 +6,24 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <Container>
-      <Container className='pt-12 bg-[#FFFAF5]' />
-      <Container className='bg-[#FF7E00]/60 text-white m-auto w-full text-center pb-5 '>
+      <Container className=' pt-10 bg-[#FFFAF5]' />
+      <Container className='bg-[#FFFAF5]  m-auto w-full text-center pb-5 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#F9CCA6]'>
         {/* btn contact us  */}
-        <Flex justify='center' className='  mt-[-25px] mb-5'>
-          <Link href='/contact'>
+        <Flex justify='center' className='  mt-[-28px] mb-5'>
+          <Link href='/contactus' passHref>
             <a className=''>
-              <Flex
-                justify='center'
-                className='rounded-[25px]  bg-gradient-to-r from-[#FF7E00] to-[#FDBB7E] py-[10px] px-4 text-white   max-w-[180px] border-2  border-[#FFFAF5] justify-center items-center'
-              >
-                <Image
-                  src='/assets/logo/email.svg'
-                  alt='Picture of the author'
-                  width={40}
-                  height={30}
-                  className=''
-                />
-
-                <Container className='ml-2 font-medium'> contact us </Container>
-              </Flex>
+              <Container className='border-[#FFFAF5] border-2 rounded-[27px] '>
+                <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[1px] rounded-[25px] shadow-realisationCard'>
+                  <Flex
+                    justify='center'
+                    className='rounded-[25px]  bg-[#FFFAF5] py-[10px] px-4 t   max-w-[180px]  justify-center items-center'
+                  >
+                    <Container className=' font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                      {"Contactez-nous "}
+                    </Container>
+                  </Flex>
+                </Container>
+              </Container>
             </a>
           </Link>
         </Flex>
@@ -60,8 +58,9 @@ const Footer = () => {
             />
           </Container>
         </Flex>
-        {/* text footer */}
-        2022 © listri | Designed with passion by LISTRI
+        <p className='text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+          {" 2022 © listri | Designed with passion by LISTRI"}
+        </p>
       </Container>{" "}
     </Container>
   );

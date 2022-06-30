@@ -14,6 +14,9 @@ module.exports = {
         realisationCard:
           "0.970276px 1.94055px 4.85138px rgba(55, 71, 79, 0.3);",
       },
+      dropShadow: {
+        contact: "0px 4px 4px rgba(55, 71, 79, 0.42)",
+      },
       backgroundImage: {
         "hero-service": "url('/assets/background/vector.svg')",
       },

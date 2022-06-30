@@ -1,14 +1,27 @@
 import Container from "../../../shared/composers/container";
+import MotionBottom from "../../../shared/composers/motion-textBottom";
 
 const ProcessBar = () => {
   return (
     <Container className='mx-6 mb-5 '>
-      <Container className='  font-medium text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] '>
-        {"Do more with Listri"}
-      </Container>
-      <Container className='mx-auto text-[24px] font-light '>
-        {"here's where the process begins."}
-      </Container>
+      <MotionBottom
+        initial='hidden'
+        animate='visible'
+        transition={{ duration: 0.2 }}
+      >
+        <Container className='leading-[48px]  font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] '>
+          {"Faites en plus"}
+        </Container>
+      </MotionBottom>
+      <MotionBottom
+        initial='hidden'
+        animate='visible'
+        transition={{ duration: 0.5 }}
+      >
+        <Container className=' text-[21px] font-light mt-3 '>
+          {"le processus commence ici "}
+        </Container>
+      </MotionBottom>
     </Container>
   );
 };

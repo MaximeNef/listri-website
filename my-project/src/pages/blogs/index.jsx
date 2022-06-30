@@ -48,16 +48,49 @@ const Blogs = ({ blogs, BlogTitle }) => {
           <ul>
             {" "}
             {blogs.map((blog) => (
-              <Link href={`/blogs/${blog.uid}`}>
-                <a key={blog.id}>
-                  <Flex
+              <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
+                <a key={blog.uid}>
+                  <Container className='rounded-tl-[10px] rounded-br-[10px] rounded-tr-[50px] rounded-bl-[50px]  m-5 mb-20 min-h-[290px] relative '>
+                    <Container className='absolute '>
+                      <Image
+                        src={blog.data.slices[0].items[0].img.url}
+                        alt='Picture of the author'
+                        width={350}
+                        height={300}
+                        className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px]'
+                      />
+                      <Container className='h-[300px] w-[350px] bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px]' />
+                    </Container>
+                    <Flex
+                      type='col'
+                      justify='end'
+                      align='center'
+                      className='z-10 '
+                    >
+                      <Container className=' text-[#FFFAF5] text-[40px] font-medium '>
+                        {blog.data.slices[0].items[0].title[0].text}{" "}
+                      </Container>
+
+                      <Container className=' text-[#FFFAF5] text-[17px] font-light text-center  max-h-[120px] max-w-[300px] mx-6 text-ellipsis overflow-hidden '>
+                        {blog.data.slices[0].items[0].description[0].text}
+                        {"..."}{" "}
+                        <Flex
+                          justify='end'
+                          className=' text-[#FFFAF5] text-[17px] font-medium'
+                        >
+                          {"suite ..."}
+                        </Flex>
+                      </Container>
+                    </Flex>
+                  </Container>
+                  {/* <Flex
                     align='center'
                     justify='between'
                     className='mx-5 bg-[#FFFAF5]  shadow-ServiceCard rounded-[20px]  hover:ease-in hover:duration-300 hover:scale-105 mb-8 text-center hover:shadow-[#FFB873] min-h-[200px]'
                   >
                     <Container className='w-1/3 mr-2 py-4'>
                       <Image
-                        src='/assets/logo/blog1.svg'
+                        src={blog.data.slices[0].items[0].img.url}
                         alt='Picture of the author'
                         width={200}
                         height={200}
@@ -71,8 +104,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
                         {blog.data.slices[0].items[0].title[0].text}{" "}
                       </Container>
                       <Container className='font-extralight text-sm max-h-[80px] text-ellipsis overflow-hidden'>
-                        Dans cet article les bases de l’experience utilisateur
-                        aussi appelé UX Dans cet article les bases de
+                        {blog.data.slices[0].items[0].description[0].text}
                         {" ... "}
                       </Container>
                       <Container className=' text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] mt-1'>
@@ -80,7 +112,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
                         lire la suite
                       </Container>
                     </Flex>
-                  </Flex>
+                  </Flex> */}
                   {/* <Blog key={blog.id} blog={blog}  /> */}
                 </a>
               </Link>

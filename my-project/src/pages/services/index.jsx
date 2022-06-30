@@ -8,6 +8,7 @@ import ServiceTitle from "../../components/services/serviceTitle";
 import Container from "../../components/shared/composers/container";
 import { motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
+import MotionLeft from "../../components/shared/composers/motion-CardLeft";
 const Services = () => {
   const [data, setData] = useState({ name: "" });
   const [services, setServices] = useState([
@@ -15,16 +16,31 @@ const Services = () => {
       id: "creation-de-contenu",
       title: "Création de contenu",
       subtitle: "UX/UI Design & Mobile Application Development",
+      src: "/assets/logo/Blog.svg",
     },
     {
       id: "website",
       title: "Web Site",
       subtitle: "UX/UI Design & Mobile Application Development",
+      src: "/assets/logo/Computer.svg",
     },
   ]);
-
+  const [services2, setServices2] = useState([
+    {
+      id: "social-media",
+      title: "Social média",
+      subtitle: "UX/UI Design & Mobile Application Development",
+      src: "/assets/logo/Blog.svg",
+    },
+    {
+      id: "referencement",
+      title: "Référencement web",
+      subtitle: "UX/UI Design & Mobile Application Development",
+      src: "/assets/logo/Computer.svg",
+    },
+  ]);
   return (
-    <NavPage current='Nos services'>
+    <NavPage current='Services'>
       {" "}
       <Head>
         <title>Create Next App</title>
@@ -37,67 +53,67 @@ const Services = () => {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-[#FFFAF5]  pt-28'>
+      <main className='bg-[#FFFAF5]  py-28 '>
         <div className='absolute inset-0 flex items-center justify-center'></div>
         <ServiceTitle />{" "}
-        <Container className='absolute '>
-          <Image
-            src='/assets/background/vector.svg'
-            alt='Picture of the author'
-            width={500}
-            height={800}
-            className='absolute'
-          />
-        </Container>
         <Container className='mx-5 relative text-center space-y-8 mt-6'>
           {services.map((service) => (
-            <Link
-              href={{
-                pathname: "services/[id]",
-                query: {
-                  id: service.id,
-                },
-              }}
-              as={`services/${service.id}`}
+            <MotionLeft
+              initial='hidden'
+              animate='visible'
+              transition={{ duration: 0.8 }}
             >
-              <a>
-                <ServiceCard serviceName={service.title} service={service} />
-              </a>
-            </Link>
+              <Link
+                href={{
+                  pathname: "services/[id]",
+                  query: {
+                    id: service.id,
+                  },
+                }}
+                as={`/services/${service.id}`}
+                passHref
+              >
+                <a>
+                  <ServiceCard
+                    key={service.id}
+                    serviceName={service.title}
+                    service={service}
+                    src={service.src}
+                  />
+                </a>
+              </Link>
+            </MotionLeft>
           ))}
-
-          <Link href='/services/website'>
-            <a>
-              <ServiceCard serviceName={"Web Design"} />
-            </a>
-          </Link>
         </Container>
         <ServiceImage />
-        <Container className='absolute mb-24'>
-          <Image
-            src='/assets/background/vector.svg'
-            alt='Picture of the author'
-            width={500}
-            height={800}
-            className='absolute'
-          />
-        </Container>
-        <Container className='mx-5 relative text-center space-y-8 mt-6'>
-          <Link href='/services/marketing'>
-            <a>
-              <ServiceCard serviceName={"Marketing"} />
-            </a>
-          </Link>
-          <Link href='/services/website'>
-            <a>
-              <ServiceCard serviceName={"Web Design"} />
-            </a>
-          </Link>
-          <Link href='/services/website'>
-            <a>
-              <ServiceCard serviceName={"Web Design"} />
-            </a>
-          </Link>
+        <Container className='mx-5 relative text-center space-y-8'>
+          {services2.map((service) => (
+            <MotionLeft
+              initial='hidden'
+              animate='visible'
+              transition={{ duration: 1 }}
+            >
+              <Link
+                href={{
+                  pathname: "services/[id]",
+                  query: {
+                    id: service.id,
+                  },
+                }}
+                as={`/services/${service.id}`}
+                passHref
+              >
+                <a>
+                  <ServiceCard
+                    key={service.id}
+                    serviceName={service.title}
+                    service={service}
+                    src={service.src}
+                  />
+                </a>
+              </Link>{" "}
+            </MotionLeft>
+          ))}
         </Container>{" "}
       </main>
     </NavPage>

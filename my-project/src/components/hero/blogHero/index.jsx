@@ -5,11 +5,11 @@ import BlogHeroCard from "./BlogHeroCard";
 import BlogHeroDescription from "./BlogHeroDescription";
 import BlogHeroEnd from "./blogHeroEnd";
 
-const BlogHero = () => {
+const BlogHero = ({ blogs }) => {
   return (
-    <Container>
+    <Container className=' my-12'>
       <BlogHeroDescription />
-      <BlogHeroCard />
+      <BlogHeroCard blogs={blogs} />
       <BlogHeroEnd />
     </Container>
   );

@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
     <PrismicProvider
       linkResolver={linkResolver}
       internalLinkComponent={({ href, children, ...props }) => (
-        <Link href={href}>
+        <Link href={href} passHref>
           <a {...props}>{children}</a>
         </Link>
       )}

@@ -4,6 +4,7 @@ import Container from "../../components/shared/composers/container";
 import { SliceZone } from "@prismicio/react";
 import { BlogsTest, components } from "../../../slices";
 import * as prismicH from "@prismicio/helpers";
+import { useState } from "react";
 
 export default function Blog({ doc }) {
   console.log(doc, "blog");
@@ -15,29 +16,13 @@ export default function Blog({ doc }) {
   );
 }
 
-// export async function getStaticProps({ params, previewData }) {
-//   const client = createClient({ previewData });
-//   const uid = context.params.uid[params.uid.length - 1];
-//   /*
-//    * `params.uid` contains an array of each part of the URL separated by a `/`.
-//    * In this example, the last part is the document's UID.
-//    */
-
-//   const doc = (await client.getByUID("blogs", uid)) || {};
-
-//   return {
-//     props: {
-//       slices: doc.data.body,
-//     },
-//   };
-// }
-
 export async function getStaticPaths() {
   const client = createClient();
   const documents = await client.getAllByType("BlogPost");
   return {
     paths: documents.map((doc) => prismicH.asLink(doc, linkResolver)),
-    fallback: true,
+
+    fallback: false,
   };
 }
 export async function getStaticProps({ params, previewData }) {

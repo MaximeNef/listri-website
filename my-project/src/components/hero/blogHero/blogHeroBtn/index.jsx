@@ -3,9 +3,9 @@ import Container from "../../../shared/composers/container";
 
 const BlogHeroBtn = () => {
   return (
-    <Container className='mx-4 py-2 text-center rounded-[50px]  bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  text-white font-normal '>
-      <Link href='/blogs'>
-        <a>Nos articles</a>
+    <Container className='  px-[24px] py-[12px] text-center rounded-[30px]  bg-gradient-to-r from-[#FF7E00] to-[#F9CCA6]  text-white font-medium  shadow-realisationCard'>
+      <Link href='/blogs' passHref>
+        <a>{" Découvrez nos articles"}</a>
       </Link>
     </Container>
   );

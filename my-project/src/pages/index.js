@@ -13,7 +13,7 @@ import Process from "../components/hero/process";
 import { createClient } from "../../prismicio";
 import ProcessHero from "../components/hero/processHero";
 
-export default function Home({ articles }) {
+export default function Home({ articles, blogs }) {
   console.log(articles, "BLABLA");
   return (
     <NavPage current='Accueil'>
@@ -36,16 +36,33 @@ export default function Home({ articles }) {
         </MaxWidth>
         <ServiceHero />
 
-        <ClientHero />
+        {/* <ClientHero /> */}
 
-        <Process />
+        {/* <Process /> */}
 
         <ProcessHero />
 
         <MaxWidth>
-          <BlogHero />
+          <BlogHero blogs={blogs} />
         </MaxWidth>
       </main>
     </NavPage>
   );
+}
+
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+
+  const blogs = await client.getAllByType("BlogPost", {
+    orderings: [
+      { field: "my.article.publishDate", direction: "desc" },
+      { field: "document.first_publication_date", direction: "desc" },
+    ],
+  });
+
+  return {
+    props: {
+      blogs,
+    },
+  };
 }

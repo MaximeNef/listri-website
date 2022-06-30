@@ -23,7 +23,7 @@ export const linkResolver = (doc) => {
   //   return `/${doc.uid}`;
   // }
 
-  return `/blogs/[uid]`;
+  return `/blogs/${doc.uid}`;
 };
 
 /**

@@ -5,7 +5,8 @@ import ContactTitle from "../../components/contact/contactTitle";
 import ProgressBar from "../../components/contact/progressBar";
 import Container from "../../components/shared/composers/container";
 import { useState } from "react";
-const Contact = () => {
+
+export default function Contact() {
   // const [step, setstep] = useState(1);
   // const [web, setweb] = useState(false);
   // const [marketing, setmarketing] = useState(false);
@@ -34,10 +35,9 @@ const Contact = () => {
       formData[field.name] = field.value;
     });
     fetch("/api/mail", {
-      methtod: "POST",
+      methtod: "post",
       main: JSON.stringify(formData),
     });
-    console.log(formData);
   }
   return (
     <NavPage current='Contact'>
@@ -76,7 +76,7 @@ const Contact = () => {
 
         <Container onClick={handleClick3}> retour </Container> */}
 
-        <form method='POST' onSubmit={handleOnSubmit}>
+        <form method='post' onSubmit={handleOnSubmit}>
           <p>
             name
             <input type='text' name='name' />
@@ -86,11 +86,10 @@ const Contact = () => {
             <input type='email' name='email' />
           </p>
           <p>
-            <button>submit</button>
+            <button type='submit'>submit</button>
           </p>
         </form>
       </main>
     </NavPage>
   );
-};
-export default Contact;
+}
