@@ -2,7 +2,8 @@ import "../styles/globals.css";
 import Link from "next/link";
 import { PrismicProvider } from "@prismicio/react";
 import { PrismicPreview } from "@prismicio/next";
-import { linkResolver, repositoryName } from "../../prismicio";
+import { linkResolver } from "../../prismicio";
+import { repositoryName } from "../../prismicio";
 import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }) {

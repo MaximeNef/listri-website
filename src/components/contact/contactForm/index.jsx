@@ -49,7 +49,9 @@ const ContactForm = ({
           {errors?.lastName && (
             <p className='text-red-500'>tell us who you are </p>
           )}
-          {errors?.lastName && <p className='text-red-500'>don't be affreid</p>}
+          {errors?.lastName && (
+            <p className='text-red-500'>{"don't be affreid"}</p>
+          )}
           <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[3px] rounded-[15px] mb-4'>
             <input
               type='email'

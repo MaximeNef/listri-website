@@ -5,7 +5,9 @@ import ClientCardDesktop from "./clientCardDesktop";
 import ClientHeroCard from "./clientHeroCard";
 import ClientHeroDescription from "./clientHeroDescription";
 import ClientHeroDesktop from "./ClientHeroDesktop";
-
+const myLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
+};
 const ClientHero = () => {
   return (
     <Container>
@@ -20,6 +22,7 @@ const ClientHero = () => {
         {/* <ClientHeroCard /> */}
         <Container className='mb-6 p-5'>
           <Image
+            loader={myLoader}
             src='/assets/logo/clientHero.svg'
             alt='Picture of the author'
             width={250}

@@ -12,15 +12,6 @@ const ServiceHero = () => {
   return (
     <Container className='relative my-8 '>
       {" "}
-      {/* <Container className='absolute mt-64   lg:containe lg:w-full lg:mt-1'>
-        <Image
-          src='/assets/background/vector.svg'
-          alt='Picture of the author'
-          width={800}
-          height={800}
-          className='absolute'
-        />
-      </Container> */}
       <Flex
         type='col'
         align='center'

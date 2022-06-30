@@ -2,7 +2,7 @@ import Container from "../../shared/composers/container";
 import ProcessBar from "./processBar";
 import ProcessContent from "./processContent";
 
-const ProcessHero = () => {
+const Processherotry = () => {
   return (
     <Container className='mt-24'>
       <ProcessBar />
@@ -10,4 +10,4 @@ const ProcessHero = () => {
     </Container>
   );
 };
-export default ProcessHero;
+export default Processherotry;

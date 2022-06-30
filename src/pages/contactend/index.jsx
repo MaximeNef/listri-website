@@ -5,6 +5,7 @@ import ContactTitle from "../../components/contact/contactTitle";
 import ProgressBar from "../../components/contact/progressBar";
 import Container from "../../components/shared/composers/container";
 import Flex from "../../components/shared/composers/flex";
+import MyImage from "../../components/shared/composers/myimage";
 
 export default function ContactEnd() {
   return (
@@ -15,13 +16,14 @@ export default function ContactEnd() {
           {"Merci pour votre demande"}
         </Flex>
         <Container className=''>
-          <Image
+          <MyImage source='/assets/logo/finish.svg' w={350} h={350} />
+          {/* <Image
             src='/assets/logo/finish.svg'
             alt='Picture of the author'
             width={350}
             height={350}
             className=''
-          />
+          /> */}
         </Container>{" "}
         <Link href='/' passHref>
           <a>

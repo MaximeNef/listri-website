@@ -3,6 +3,7 @@ import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import MyImage from "../../../shared/composers/myimage";
 
 const ProcessContent = () => {
   return (
@@ -25,13 +26,15 @@ const ProcessContent = () => {
                 "Vous nous partagez vos idées et la façon dont vous imaginez votre projet. Nous vous guidons dans cette phase en apportant notre expertise pour que votre projet soit au goût du jour."
               }
             </Container>
-            <Image
+            <MyImage source='/assets/logo/rocketProcess1.svg' w={100} h={100} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/rocketProcess1.svg'
               alt='Picture of the author'
               width={100}
               height={100}
               className='absolute'
-            />{" "}
+            />{" "} */}
           </Container>{" "}
           <Flex justify='center' align='center' className='space-x-1'>
             <Container className='min-h-[8px] min-w-[16px] rounded-full  bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  '></Container>
@@ -54,13 +57,15 @@ const ProcessContent = () => {
                 " Réalisation de l’ébauche Suite du premier rendez-vous nous vous réalisons une ébauche de votre projet pour que vous puissiez avoir un premier rendu visuel de vos idées."
               }
             </Container>
-            <Image
+            <MyImage source='/assets/logo/rocketProcess2.svg' w={100} h={100} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/rocketProcess2.svg'
               alt='Picture of the author'
               width={100}
               height={100}
               className='absolute'
-            />
+            /> */}
           </Container>
           <Flex justify='center' align='center' className='space-x-1'>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}
@@ -83,13 +88,15 @@ const ProcessContent = () => {
                 "Modifications & validation Sur base de l’ébauche nous prenons en compte vos retours et adaptons votre projet pour le préparer à la validation finale. "
               }
             </Container>
-            <Image
+            <MyImage source='/assets/logo/rocketProcess3.svg' w={100} h={100} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/rocketProcess3.svg'
               alt='Picture of the author'
               width={100}
               height={100}
               className='absolute'
-            />
+            /> */}
           </Container>
           <Flex justify='center' align='center' className='space-x-1'>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}
@@ -113,13 +120,15 @@ const ProcessContent = () => {
             <Container className='mb-6 font-medium'>
               {" Mise en ligne de votre projet !"}
             </Container>
-            <Image
+            <MyImage source='/assets/logo/rocketProcess4.svg' w={100} h={100} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/rocketProcess4.svg'
               alt='Picture of the author'
               width={100}
               height={100}
               className='absolute'
-            />
+            /> */}
           </Container>
           <Flex justify='center' align='center' className='space-x-1'>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}

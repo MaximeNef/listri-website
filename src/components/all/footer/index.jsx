@@ -2,7 +2,10 @@ import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
 import Image from "next/image";
 import Link from "next/link";
-
+import MyImage from "../../shared/composers/myimage";
+const myLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
+};
 const Footer = () => {
   return (
     <Container>
@@ -30,32 +33,39 @@ const Footer = () => {
         {/* reséaux sociaux  */}
         <Flex justify='center' className='px-7 pb-5 space-x-7'>
           <Container>
-            <Image
+            {" "}
+            <MyImage source='/assets/logo/Facebook.svg' w={30} h={30} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/Facebook.svg'
               alt='Picture of the author'
               width={30}
               height={30}
               className=''
-            />
+            /> */}
           </Container>
           <Container>
             {" "}
-            <Image
+            <MyImage source='/assets/logo/Instagram.svg' w={30} h={30} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/Instagram.svg'
               alt='Picture of the author'
               width={30}
               height={30}
               className=''
-            />
+            /> */}
           </Container>
           <Container>
-            <Image
+            <MyImage source='/assets/logo/Linkedin.svg' w={30} h={30} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/Linkedin.svg'
               alt='Picture of the author'
               width={30}
               height={30}
               className=''
-            />
+            /> */}
           </Container>
         </Flex>
         <p className='text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>

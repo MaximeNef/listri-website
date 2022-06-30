@@ -3,6 +3,7 @@ import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
 import { useState } from "react";
 import MotionBottom from "../../../shared/composers/motion-textBottom";
+import MyImage from "../../../shared/composers/myimage";
 
 const OneServiceContent = ({ Contents }) => {
   return (
@@ -17,13 +18,14 @@ const OneServiceContent = ({ Contents }) => {
             >
               <Flex type='col' justify='start' align='center' className=''>
                 <Container className=''>
-                  <Image
+                  <MyImage source={content.src} w={50} h={50} />
+                  {/* <Image
                     src={content.src}
                     alt='Picture of the author'
                     width={50}
                     height={50}
                     className='absolute'
-                  />
+                  /> */}
                 </Container>
                 <Flex
                   justify='center'

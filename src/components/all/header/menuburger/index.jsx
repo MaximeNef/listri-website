@@ -12,6 +12,12 @@ import { useRef } from "react";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
+import logolistri from "../../../../../public/assets/logo/logolistri.svg";
+import MyImage from "../../../shared/composers/myimage";
+
+const myLoader = ({ src, width, quality }) => {
+  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
+};
 const Menuburger = ({ current }) => {
   const [pause, setPause] = useState(true);
   const [play, setPlay] = useState(false);
@@ -83,13 +89,18 @@ const Menuburger = ({ current }) => {
       <Container className='fixed z-20 bg-[#FFFAF5] w-full top-0  py-2   '>
         <Container className=' m-auto  max-h-12  z-20'>
           <Link href='/' passHref>
-            <Image
-              src='/assets/logo/logolistri.svg'
+            <a>
+              <MyImage source='/assets/logo/logolistri.svg' w={200} h={50} />
+            </a>
+
+            {/* <Image
+              loader={myLoader}
+              src={"/assets/logo/logolistri.svg"}
               alt='Picture of the author'
               width={4000}
               height={1000}
               className='m-auto'
-            />
+            /> */}
           </Link>{" "}
         </Container>
         <Container onClick={handelClick} className=' left-2 z-20 fixed  mt-1 '>
@@ -102,16 +113,18 @@ const Menuburger = ({ current }) => {
             className=''
           />
         </Container>
-        <Container className=' right-3 z-20 fixed  mt-2 rounded-[25px]  bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  py-[10px] px-4 text-white text-sm shadow-lg '>
+        <Container className=' right-3 z-20 fixed  mt-1 rounded-[25px]  bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  py-[10px] px-4 text-white text-sm shadow-lg '>
           <a className='my-auto items-center' href='tel: +32470684551'>
             <Container className='m-auto'>
-              <Image
+              <MyImage source='/assets/logo/phone.svg' h={20} w={20} />
+              {/* <Image
+                loader={myLoader}
                 src='/assets/logo/phone.svg'
                 alt='Picture of the author'
                 width={20}
                 height={20}
                 className='m-auto'
-              />
+              /> */}
             </Container>
           </a>
         </Container>

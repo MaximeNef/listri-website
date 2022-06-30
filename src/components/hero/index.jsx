@@ -3,19 +3,28 @@ import Image from "next/image";
 import Typed from "react-typed";
 import Flex from "../shared/composers/flex";
 import { motion } from "framer-motion";
+import MyImage from "../shared/composers/myimage";
+// const myLoader = ({ src, width, quality }) => {
+//   console.log(myLoader, "myloader");
+//   console.log(src, "myloader");
+
+//   return `${src}`;
+// };
 
 const Hero = () => {
   return (
     <Container className='lg:min-h-full'>
       <Flex type='col' className='lg:hidden'>
         <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
-          <Image
-            src='/assets/logo/hero.svg'
+          <MyImage source='assets/logo/hero.svg' h={500} w={500} />
+          {/* <Image
+            loader={myLoader}
+            src='public/assets/logo/hero.svg'
             alt='Picture of the author'
             width={500}
             height={500}
             className=''
-          />
+          /> */}
         </motion.div>
 
         <Flex className='mx-auto my-16'>
@@ -53,13 +62,15 @@ const Hero = () => {
           >
             {" "}
             <Flex className=''>
-              <Image
-                src='/assets/logo/listri.svg'
+              <MyImage source='assets/logo/listri.svg' h={250} w={500} />
+              {/* <Image
+                loader={myLoader}
+                src='/public/assets/logo/listri.svg'
                 alt='Picture of the author'
                 width={500}
                 height={250}
                 className=''
-              />
+              /> */}
             </Flex>
             <Flex className='mt-5'>
               <Container
@@ -81,13 +92,15 @@ const Hero = () => {
             </Flex>
           </Flex>
           <Container className=' mt-12 '>
-            <Image
+            <MyImage source='/assets/logo/heroDesktop.svg' h={500} w={500} />
+            {/* <Image
+              loader={myLoader}
               src='/assets/logo/heroDesktop.svg'
               alt='Picture of the author'
               width={500}
               height={500}
               className=''
-            />
+            /> */}
           </Container>
         </Flex>{" "}
       </Container>

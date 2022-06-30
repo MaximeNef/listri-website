@@ -30,7 +30,7 @@ const Service = ({}) => {
                 "Le Content Marketing (ou marketing de contenu) est une stratégie long-terme qui consiste en la création et distribution régulière de contenus à forte valeur ajoutée pour votre audiance, prospects et clients."
               }
             />
-            <OneServiceImg src={"/assets/logo/serviceMarketing.svg"} />
+            <OneServiceImg src='/assets/logo/serviceMarketing.svg' />
 
             <OneServiceContent
               Contents={[
@@ -226,44 +226,5 @@ const Service = ({}) => {
     default:
       console.log("Sorry, we are out of " + service + ".");
   }
-
-  // return (
-  //   <NavPage current='Nos services'>
-  //     <Container className='py-20 bg-[#FFFAF5] px-5'>
-  //       <OneServiceTitle
-  //         title={initialOneservice.title}
-  //         description={initialOneservice.description}
-  //       />
-  //       {/*  <OneServiceImg Oneservice={Oneservice} />
-
-  //       <OneServiceContent Oneservice={Oneservice} />
-  //       <OneServiceBtn /> */}
-  //     </Container>
-  //   </NavPage>
-  // );
 };
 export default Service;
-{
-  /*
-  return(
-  <NavPage current='Nos services'>
-<Container className='py-20 bg-[#FFFAF5] px-5'>
-  <OneServiceTitle
-    title={""}
-    description={
-      ""
-    }
-  />
-  <OneServiceImg src={""} />
-
-  <OneServiceContent
-    Contents={[
-     
-    ]}
-  />
-  <OneServiceBtn />
-</Container>
-</NavPage>
-  )
-    */
-}

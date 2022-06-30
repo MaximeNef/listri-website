@@ -3,6 +3,7 @@ import Flex from "../../../shared/composers/flex";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import MyImage from "../../../shared/composers/myimage";
 
 const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
   function handelClick2() {
@@ -25,13 +26,15 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
                 className='text-xl font-light   tracking-wide rounded-full pl-6 py-4 bg-[#FF7E00]/10 w-full'
               >
                 <Flex justify='start'>
-                  <Image
+                  <MyImage source={link.src} w={20} h={20} />
+                  {/* <Image
+                    loader={myLoader}
                     src={link.src}
                     alt='Picture of the author'
                     width={20}
                     height={20}
                     className='mx-auto'
-                  />
+                  /> */}
                   <Flex justify='start'>
                     <p className='ml-8 '>{link.page}</p>
                   </Flex>
@@ -43,13 +46,15 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
                 className='text-xl font-light	  tracking-wide pl-6  py-2'
               >
                 <Flex>
-                  <Image
+                  <MyImage source={link.src} w={20} h={20} />
+                  {/* <Image
+                    loader={myLoader}
                     src={link.src}
                     alt='Picture of the author'
                     width={20}
                     height={20}
                     className='m-auto'
-                  />
+                  /> */}
                   <Flex justify='start'>
                     <p className='ml-8 text-center'>{link.page}</p>
                   </Flex>
