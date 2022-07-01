@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export ",
-    "start": "next start ",
+    "dev": "NODE_OPTIONS='--inspect' next dev -p 3000",
+    "build": "cross-env NODE_ENV=production next build && next export ",
+    "start": "next start -p  ",
     "lint": "next lint",
     "slicemachine": "start-slicemachine"
   },
