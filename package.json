@@ -1,9 +1,11 @@
 {
+  "homepage": "https://listri.digital",
+  "description": "my react application",
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": " next dev",
+    "dev": "next dev",
     "build": "next build && next export ",
     "start": "next start ",
     "lint": "next lint",
