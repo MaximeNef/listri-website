@@ -3,9 +3,7 @@ import Flex from "../../shared/composers/flex";
 import Image from "next/image";
 import Link from "next/link";
 import MyImage from "../../shared/composers/myimage";
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
-};
+
 const Footer = () => {
   return (
     <Container>
