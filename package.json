@@ -1,7 +1,7 @@
 {
-  "homepage": "https://listri.digital./",
+  "homepage": "https://listri.digital",
   "description": "my react application",
-  "name": "my-project",
+  "name": "listri-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
