@@ -5,7 +5,7 @@ import MyImage from "../../shared/composers/myimage";
 const ServiceCard = ({ serviceName, src }) => {
   return (
     <Container className='bg-[#FFFAF5]  shadow-ServiceCard  hover:ease-in hover:duration-300 hover:bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[20px] p-[2px] hover:scale-105'>
-      <Container className=' absolute z-10 ml-[-2px] mt-[-2px]'>
+      <Container className=' absolute z-10 ml-[-2px] mt-[-2px] md:hidden'>
         {" "}
         <MyImage source='/assets/logo/tacheCard2.png' w={500} h={235} />
       </Container>
