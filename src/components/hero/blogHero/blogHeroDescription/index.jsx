@@ -32,7 +32,7 @@ const BlogHeroDescription = () => {
         >
           <Container className='text-center font-light text-[#37474F] text-[17px] '>
             {
-              " Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0  Restez à jour avec listri "
+              " Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0  Restez à jour avec Listri "
             }
           </Container>
         </MotionBottom>

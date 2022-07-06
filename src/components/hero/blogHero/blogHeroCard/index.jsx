@@ -8,12 +8,12 @@ const BlogHeroCard = ({ blogs }) => {
     <Container>
       <Flex
         justify='start'
-        className='container-snap snap-x mx-auto snap-mandatory h-[500px] flex w-full overflow-scroll px-[30%]  pt-3 '
+        className='container-snap snap-x mx-auto snap-mandatory h-[100px] flex w-full overflow-scroll px-[30%]  pt-3 '
       >
         {blogs.map((blog, i) => (
           <Container
             key={i}
-            className='snap-center  w-[300px] flex-shrink-0 h-[400px] flex items-center justify-center relative'
+            className='snap-center  w-[300px] flex-shrink-0 h-[350px] flex items-center justify-center relative'
           >
             <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
               <a key={blog.uid}>

@@ -27,7 +27,7 @@ const ProcessContent = () => {
                   visible: { opacity: 1, y: 0 },
                 }
               : {
-                  hidden: { opacity: 0, y: +100 },
+                  hidden: { opacity: 0, y: +50 },
                   visible: { opacity: 1, y: 0 },
                 }
           }
@@ -124,7 +124,7 @@ const ProcessContent = () => {
                   visible: { opacity: 1, y: 0 },
                 }
               : {
-                  hidden: { opacity: 0, y: +100 },
+                  hidden: { opacity: 0, y: +150 },
                   visible: { opacity: 1, y: 0 },
                 }
           }
@@ -172,7 +172,7 @@ const ProcessContent = () => {
                   visible: { opacity: 1, y: 0 },
                 }
               : {
-                  hidden: { opacity: 0, y: +100 },
+                  hidden: { opacity: 0, y: +200 },
                   visible: { opacity: 1, y: 0 },
                 }
           }
