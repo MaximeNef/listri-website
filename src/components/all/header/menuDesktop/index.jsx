@@ -12,14 +12,14 @@ const MenuDesktop = ({ link, current }) => {
     <Container className=' w-full '>
       <Flex
         align='center'
-        className='fixed z-20 bg-[#FFFAF5] w-full   py-2  pr-24 '
+        className='fixed z-20 bg-[#FFFAF5] w-full   py-2  px-24 '
       >
         {" "}
-        <Flex className=' m-auto   max-h-12  ml-[-80px]'>
+        <Flex className=' m-auto   max-h-12  '>
           <Link href='/' passHref>
             <a>
               <Container className='max-h-12'>
-                <MyImage source='/assets/logo/listri.svg' w={40} h={100} />
+                <MyImage source='/assets/logo/listri.svg' w={100} h={100} />
                 {/* <Image
                   src='/public/assets/logo/listri.svg'
                   alt='Picture of the author'
