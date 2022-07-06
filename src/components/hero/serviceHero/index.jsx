@@ -120,17 +120,23 @@ const ServiceHero = () => {
               </MotionLeft>
             </Container>
             <Container className='lg:w-1/2 lg:pl-[65px] hidden lg:inline-flex '>
-              <Link href='/services/socialMedia' passHref>
-                <a>
-                  <ServiceHeroCard
-                    serviceName={"Social Media"}
-                    ServiceDescription={
-                      "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
-                    }
-                    src={"/assets/logo/Blog.svg"}
-                  />
-                </a>
-              </Link>
+              <MotionLeft
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 1 }}
+              >
+                <Link href='/services/socialMedia' passHref>
+                  <a>
+                    <ServiceHeroCard
+                      serviceName={"Social Media"}
+                      ServiceDescription={
+                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                      }
+                      src={"/assets/logo/Blog.svg"}
+                    />
+                  </a>
+                </Link>
+              </MotionLeft>
             </Container>
           </Container>
         </Flex>
