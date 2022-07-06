@@ -17,7 +17,7 @@ const BlogHeroCard = ({ blogs }) => {
           >
             <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
               <a key={blog.uid}>
-                <Container className=' m-5 mb-20 min-h-[290px]  '>
+                <Container className=' m-5 mb-20 min-h-[280px]  '>
                   <Container className='absolute '>
                     <Image
                       src={blog.data.slices[0].items[0].img.url}
