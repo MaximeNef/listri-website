@@ -43,7 +43,7 @@ const ServiceHero = () => {
         >
           <Container className='text-center font-light text-[#37474F] text-[17px]'>
             {
-              " Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons"
+              " Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience."
             }
           </Container>
         </MotionBottom>
@@ -153,7 +153,7 @@ const ServiceHero = () => {
               </Container>
               <Container className='text-center font-light text-[#37474F] text-[17px]'>
                 {
-                  " Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons"
+                  "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience."
                 }
               </Container>
             </Flex>
