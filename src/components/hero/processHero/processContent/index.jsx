@@ -137,7 +137,7 @@ const ProcessContent = () => {
             <Container className='min-h-[8px] min-w-[16px] rounded-full  bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  '></Container>
           </Flex>
         </Container>
-        <Container className=' w-28  md:hidden'></Container>
+        <Container className=' inline-flex min-w-[40px]  md:hidden'></Container>
       </Flex>
     </Container>
   );
