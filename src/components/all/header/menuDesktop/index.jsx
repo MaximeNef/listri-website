@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
 import { motion } from "framer-motion";
+import MyImage from "../../../shared/composers/myimage";
 
 const MenuDesktop = ({ link, current }) => {
   console.log(link, "link");
@@ -18,6 +19,7 @@ const MenuDesktop = ({ link, current }) => {
           <Link href='/' passHref>
             <a>
               <Container className='max-h-12'>
+                <MyImage source='/assets/logo/listri.svg' w={40} h={100} />
                 {/* <Image
                   src='/public/assets/logo/listri.svg'
                   alt='Picture of the author'
