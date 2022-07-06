@@ -5,7 +5,7 @@ const myLoader = ({ src, width, quality }) => {
   return `${src}`;
 };
 
-const MyImage = ({ source, h, w }) => {
+const MyImage = ({ source, h, w, className }) => {
   return (
     <Image
       loader={myLoader}
@@ -14,6 +14,7 @@ const MyImage = ({ source, h, w }) => {
       width={w}
       height={h}
       unoptimized={true}
+      className={className}
     />
   );
 };
