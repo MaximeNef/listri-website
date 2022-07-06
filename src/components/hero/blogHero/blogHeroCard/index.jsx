@@ -8,7 +8,7 @@ const BlogHeroCard = ({ blogs }) => {
     <Container>
       <Flex
         justify='start'
-        className='container-snap snap-x mx-auto snap-mandatory h-[100px] flex w-full overflow-scroll px-[30%]  pt-3 '
+        className='container-snap snap-x mx-auto snap-mandatory h-[400px] flex w-full overflow-scroll px-[30%]  pt-3 '
       >
         {blogs.map((blog, i) => (
           <Container
