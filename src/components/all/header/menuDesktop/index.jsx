@@ -19,7 +19,7 @@ const MenuDesktop = ({ link, current }) => {
           <Link href='/' passHref>
             <a>
               <Container className='max-h-12'>
-                <MyImage source='/assets/logo/listri.svg' w={100} h={100} />
+                <MyImage source='/assets/logo/listri.svg' w={100} h={90} />
                 {/* <Image
                   src='/public/assets/logo/listri.svg'
                   alt='Picture of the author'
