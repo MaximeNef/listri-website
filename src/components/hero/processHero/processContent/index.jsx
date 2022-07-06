@@ -36,7 +36,7 @@ const ProcessContent = () => {
               className='absolute'
             />{" "} */}
           </Container>{" "}
-          <Flex justify='center' align='center' className='space-x-1'>
+          <Flex justify='center' align='center' className='space-x-1 md:hidden'>
             <Container className='min-h-[8px] min-w-[16px] rounded-full  bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  '></Container>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>
@@ -67,7 +67,7 @@ const ProcessContent = () => {
               className='absolute'
             /> */}
           </Container>
-          <Flex justify='center' align='center' className='space-x-1'>
+          <Flex justify='center' align='center' className='space-x-1 md:hidden'>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}
             <Container className='min-h-[8px] min-w-[16px] rounded-full  bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  '></Container>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>
@@ -98,7 +98,7 @@ const ProcessContent = () => {
               className='absolute'
             /> */}
           </Container>
-          <Flex justify='center' align='center' className='space-x-1'>
+          <Flex justify='center' align='center' className='space-x-1 md:hidden'>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}
             <Container className='min-h-[8px] min-w-[16px] rounded-full  bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  '></Container>
@@ -130,7 +130,7 @@ const ProcessContent = () => {
               className='absolute'
             /> */}
           </Container>
-          <Flex justify='center' align='center' className='space-x-1'>
+          <Flex justify='center' align='center' className='space-x-1 md:hidden'>
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}
             <Container className=' min-h-[8px] min-w-[8px] rounded-full  bg-[#FF7E00]/50  '></Container>{" "}
             <Container className=' min-h-[8px] min-w-[8px] rounded-full bg-[#FF7E00]/50 '></Container>
