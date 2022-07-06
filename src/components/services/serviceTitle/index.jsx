@@ -22,7 +22,7 @@ const ServiceTitle = ({ title }) => {
           transition={{ duration: 0.5 }}
         >
           <Container className='font-semibold text-[#37474F] text-[19px] text-center'>
-            {" Nous réalisons vos projets ensemble "}
+            {" Réalisons vos projets ensemble "}
           </Container>
         </MotionBottom>
         <MotionBottom
@@ -30,9 +30,9 @@ const ServiceTitle = ({ title }) => {
           animate='visible'
           transition={{ duration: 0.5 }}
         >
-          <Container className='text-center font-light text-[#37474F] text-[17px]'>
+          <Container className='text-center font-light text-[#37474F] text-[17px] md:w-[500px]'>
             {
-              " Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons vos projets ensemble partout ou nous alons. Nous réalisons"
+              "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience."
             }
           </Container>
         </MotionBottom>

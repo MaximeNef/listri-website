@@ -10,7 +10,7 @@ const ProcessBar = () => {
         transition={{ duration: 0.2 }}
       >
         <h2 className=' leading-[48px] font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-          {"Faites en plus "}
+          {"Processus de création"}
         </h2>
       </MotionBottom>
       <MotionBottom
@@ -19,7 +19,7 @@ const ProcessBar = () => {
         transition={{ duration: 0.5 }}
       >
         <Container className=' text-[21px] font-light mt-3 '>
-          {"le processus commence ici "}
+          {"faisons de votre projet une réalité"}
         </Container>
       </MotionBottom>
     </Container>
