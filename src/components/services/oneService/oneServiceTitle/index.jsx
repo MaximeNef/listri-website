@@ -3,7 +3,7 @@ import { useState } from "react";
 import MotionBottom from "../../../shared/composers/motion-textBottom";
 const OneServiceTitle = ({ title, description }) => {
   return (
-    <Container>
+    <Container className='md:max-w-[500px] md:mx-auto'>
       <MotionBottom
         initial='hidden'
         animate='visible'

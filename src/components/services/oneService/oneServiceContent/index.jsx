@@ -7,10 +7,10 @@ import MyImage from "../../../shared/composers/myimage";
 
 const OneServiceContent = ({ Contents }) => {
   return (
-    <Container>
+    <Container className='md:flex md:flex-row'>
       {Contents.map((content, id) => {
         return (
-          <Container className='m-2 my-10' key={id}>
+          <Container className='m-2 my-10 ' key={id}>
             <MotionBottom
               initial='hidden'
               animate='visible'
@@ -19,13 +19,6 @@ const OneServiceContent = ({ Contents }) => {
               <Flex type='col' justify='start' align='center' className=''>
                 <Container className=''>
                   <MyImage source={content.src} w={50} h={50} />
-                  {/* <Image
-                    src={content.src}
-                    alt='Picture of the author'
-                    width={50}
-                    height={50}
-                    className='absolute'
-                  /> */}
                 </Container>
                 <Flex justify='center' className=' text-center'>
                   <p className=' text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] font-medium text-[32px]'>
@@ -39,7 +32,7 @@ const OneServiceContent = ({ Contents }) => {
               animate='visible'
               transition={{ duration: 0.5 }}
             >
-              <Container className='text-left mt-6 text-[17px]  leading-7'>
+              <Container className='text-left mt-6 text-[17px]  leading-7 md:max-w-[500px] md:mx-auto'>
                 {content.text}
               </Container>
             </MotionBottom>

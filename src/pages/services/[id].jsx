@@ -25,14 +25,15 @@ const Service = ({}) => {
       return (
         <NavPage current='Nos services'>
           <Container className='py-20 bg-[#FFFAF5] px-5'>
-            <OneServiceTitle
-              title={"Création de contenu"}
-              description={
-                "Le Content Marketing (ou marketing de contenu) est une stratégie long-terme qui consiste en la création et distribution régulière de contenus à forte valeur ajoutée pour votre audiance, prospects et clients."
-              }
-            />
-            <OneServiceImg src='/assets/logo/serviceMarketing.svg' />
-
+            <Container className='md:flex md:flex-row  md:items-center'>
+              <OneServiceTitle
+                title={"Création de contenu"}
+                description={
+                  "Le Content Marketing (ou marketing de contenu) est une stratégie long-terme qui consiste en la création et distribution régulière de contenus à forte valeur ajoutée pour votre audiance, prospects et clients."
+                }
+              />
+              <OneServiceImg src='/assets/logo/serviceMarketing.svg' />
+            </Container>
             <OneServiceContent
               Contents={[
                 {
@@ -65,14 +66,15 @@ const Service = ({}) => {
       return (
         <NavPage current='Nos services'>
           <Container className='py-20 bg-[#FFFAF5] px-5'>
-            <OneServiceTitle
-              title={"Social média"}
-              description={
-                " L’importance des réseaux sociaux dans le monde auctuelle n’est plus à démontrer. Les réseaux sont devenu la vitrine des entreprises moderne, il est donc primordial d’avoir une page active. "
-              }
-            />
-            <OneServiceImg src={"/assets/logo/SocialDashboard.svg"} />
-
+            <Container className='md:flex md:flex-row  md:items-center'>
+              <OneServiceTitle
+                title={"Social média"}
+                description={
+                  " L’importance des réseaux sociaux dans le monde auctuelle n’est plus à démontrer. Les réseaux sont devenu la vitrine des entreprises moderne, il est donc primordial d’avoir une page active. "
+                }
+              />
+              <OneServiceImg src={"/assets/logo/SocialDashboard.svg"} />
+            </Container>
             <OneServiceContent
               Contents={[
                 {
@@ -105,14 +107,15 @@ const Service = ({}) => {
       return (
         <NavPage current='Nos services'>
           <Container className='py-20 bg-[#FFFAF5] px-5'>
-            <OneServiceTitle
-              title={"Site web"}
-              description={
-                "Un site web permet également d'affirmer votre présence en ligne, il est indispensable à la mise en lumière de votre entreprise. Ouvre vos canaux a de nouveau clients, accroit votre crédibilité, visibilité et permet de véhiculer l’image de votre entreprise. "
-              }
-            />
-            <OneServiceImg src={"/assets/logo/WebsiteCreator.svg"} />
-
+            <Container className='md:flex md:flex-row  md:items-center'>
+              <OneServiceTitle
+                title={"Site web"}
+                description={
+                  "Un site web permet également d'affirmer votre présence en ligne, il est indispensable à la mise en lumière de votre entreprise. Ouvre vos canaux a de nouveau clients, accroit votre crédibilité, visibilité et permet de véhiculer l’image de votre entreprise. "
+                }
+              />
+              <OneServiceImg src={"/assets/logo/WebsiteCreator.svg"} />
+            </Container>
             <OneServiceContent
               Contents={[
                 {
@@ -154,14 +157,15 @@ const Service = ({}) => {
       return (
         <NavPage current='Nos services'>
           <Container className='py-20 bg-[#FFFAF5] px-5'>
-            <OneServiceTitle
-              title={"Référencement Web"}
-              description={
-                "Il est primordial pour une entreprise de se retrouver sur les moteurs de recherche pour permettre à ses clients de la retrouver facilement. Hélas la concurrence est rude, c’est pour cela que nous vous accompagnons de le référencement de votre site web. SEO, SEA, SMO, SMA "
-              }
-            />
-            <OneServiceImg src={"/assets/logo/seodashboard.svg"} />
-
+            <Container className='md:flex md:flex-row  md:items-center'>
+              <OneServiceTitle
+                title={"Référencement Web"}
+                description={
+                  "Il est primordial pour une entreprise de se retrouver sur les moteurs de recherche pour permettre à ses clients de la retrouver facilement. Hélas la concurrence est rude, c’est pour cela que nous vous accompagnons de le référencement de votre site web. SEO, SEA, SMO, SMA "
+                }
+              />
+              <OneServiceImg src={"/assets/logo/seodashboard.svg"} />
+            </Container>
             <OneServiceContent
               Contents={[
                 {

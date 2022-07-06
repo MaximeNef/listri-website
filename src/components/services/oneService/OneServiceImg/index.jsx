@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import MyImage from "../../../shared/composers/myimage";
 const OneServiceImg = ({ src }) => {
   return (
-    <Container>
+    <Container className='mx-auto'>
       <motion.div animate={{ scale: [0.7, 1] }} transition={{ duration: 1 }}>
         <MyImage source={src} w={400} h={450} />
         {/* <Image

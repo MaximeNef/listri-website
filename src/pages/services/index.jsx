@@ -56,67 +56,74 @@ const Services = () => {
       <main className='bg-[#FFFAF5]  py-28 '>
         <div className='absolute inset-0 flex items-center justify-center'></div>
         <ServiceTitle />{" "}
-        <Container className='mx-5 relative text-center space-y-8 mt-6'>
-          {services.map((service, i) => (
-            <MotionLeft
-              initial='hidden'
-              animate='visible'
-              transition={{ duration: 0.8 }}
-              key={i}
-            >
-              <Link
-                href={{
-                  pathname: "services/[id]",
-                  query: {
-                    id: service.id,
-                  },
-                }}
-                as={`/services/${service.id}`}
-                passHref
+        <Container className='md:flex md:flex-row md:justify-center md:items-center md:w-full'>
+          <Container className='mx-5 relative text-center space-y-8 mt-6 md:mt-0'>
+            {services.map((service, i) => (
+              <MotionLeft
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 0.8 }}
+                key={i}
               >
-                <a>
-                  <ServiceCard
-                    key={service.id}
-                    serviceName={service.title}
-                    service={service}
-                    src={service.src}
-                  />
-                </a>
-              </Link>
-            </MotionLeft>
-          ))}
+                <Link
+                  href={{
+                    pathname: "services/[id]",
+                    query: {
+                      id: service.id,
+                    },
+                  }}
+                  as={`/services/${service.id}`}
+                  passHref
+                >
+                  <a>
+                    <ServiceCard
+                      key={service.id}
+                      serviceName={service.title}
+                      service={service}
+                      src={service.src}
+                    />
+                  </a>
+                </Link>
+              </MotionLeft>
+            ))}
+          </Container>
+          <Container className='inline-flex md:hidden'>
+            <ServiceImage />
+          </Container>
+          <Container className='mx-5 relative text-center space-y-8 md:flex '>
+            {services2.map((service, i) => (
+              <MotionLeft
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 1 }}
+                key={i}
+              >
+                <Link
+                  href={{
+                    pathname: "services/[id]",
+                    query: {
+                      id: service.id,
+                    },
+                  }}
+                  as={`/services/${service.id}`}
+                  passHref
+                >
+                  <a>
+                    <ServiceCard
+                      key={service.id}
+                      serviceName={service.title}
+                      service={service}
+                      src={service.src}
+                    />
+                  </a>
+                </Link>{" "}
+              </MotionLeft>
+            ))}
+          </Container>{" "}
+          <Container className='hidden md:inline-flex'>
+            <ServiceImage />
+          </Container>
         </Container>
-        <ServiceImage />
-        <Container className='mx-5 relative text-center space-y-8'>
-          {services2.map((service, i) => (
-            <MotionLeft
-              initial='hidden'
-              animate='visible'
-              transition={{ duration: 1 }}
-              key={i}
-            >
-              <Link
-                href={{
-                  pathname: "services/[id]",
-                  query: {
-                    id: service.id,
-                  },
-                }}
-                as={`/services/${service.id}`}
-                passHref
-              >
-                <a>
-                  <ServiceCard
-                    key={service.id}
-                    serviceName={service.title}
-                    service={service}
-                    src={service.src}
-                  />
-                </a>
-              </Link>{" "}
-            </MotionLeft>
-          ))}
-        </Container>{" "}
       </main>
     </NavPage>
   );
