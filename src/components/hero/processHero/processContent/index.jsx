@@ -9,7 +9,7 @@ const ProcessContent = () => {
   return (
     <Container>
       <Flex
-        justify='start'
+        justify='between'
         className=' container-snap snap-x mx-auto snap-mandatory h-[500px] flex w-full overflow-scroll px-6 pb-8 pt-3 space-x-4'
       >
         {/* PROCESS CARS  */}
@@ -137,7 +137,6 @@ const ProcessContent = () => {
             <Container className='min-h-[8px] min-w-[16px] rounded-full  bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  '></Container>
           </Flex>
         </Container>
-        <Container className='snap-center  w-[20px] flex-shrink-0 h-[200px] flex items-center justify-center mx-10  '></Container>
       </Flex>
     </Container>
   );
