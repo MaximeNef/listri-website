@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import MyImage from "../../../shared/composers/myimage";
 import MotionBottom from "../../../shared/composers/motion-textBottom";
 import MotionBottomCard from "../../../shared/composers/motion- bottomcard";
+import { isMobile } from "react-device-detect";
 
 const ProcessContent = () => {
   return (
@@ -19,10 +20,17 @@ const ProcessContent = () => {
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.4 }}
-          variants={{
-            hidden: { opacity: 0, y: +50 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          variants={
+            isMobile
+              ? {
+                  hidden: { opacity: 0, y: 0 },
+                  visible: { opacity: 1, y: 0 },
+                }
+              : {
+                  hidden: { opacity: 0, y: +100 },
+                  visible: { opacity: 1, y: 0 },
+                }
+          }
         >
           <Container className='space-y-4'>
             <Container className='snap-center bg-[#FFFAF5] w-[310px] flex-shrink-0 h-[450px] flex items-center justify-between py-5  shadow-ServiceCard rounded-[20px] relative'>
@@ -60,10 +68,17 @@ const ProcessContent = () => {
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.4 }}
-          variants={{
-            hidden: { opacity: 0, y: +100 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          variants={
+            isMobile
+              ? {
+                  hidden: { opacity: 0, y: 0 },
+                  visible: { opacity: 1, y: 0 },
+                }
+              : {
+                  hidden: { opacity: 0, y: +100 },
+                  visible: { opacity: 1, y: 0 },
+                }
+          }
         >
           {" "}
           <Container className='space-y-4'>
@@ -102,10 +117,17 @@ const ProcessContent = () => {
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.4 }}
-          variants={{
-            hidden: { opacity: 0, y: +150 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          variants={
+            isMobile
+              ? {
+                  hidden: { opacity: 0, y: 0 },
+                  visible: { opacity: 1, y: 0 },
+                }
+              : {
+                  hidden: { opacity: 0, y: +100 },
+                  visible: { opacity: 1, y: 0 },
+                }
+          }
         >
           <Container className='space-y-4'>
             <Container className='snap-center bg-[#FFFAF5] w-[310px] flex-shrink-0 h-[450px] flex items-center justify-between py-5  shadow-ServiceCard rounded-[20px] relative'>
@@ -143,10 +165,17 @@ const ProcessContent = () => {
           initial='hidden'
           animate='visible'
           transition={{ duration: 0.4 }}
-          variants={{
-            hidden: { opacity: 0, y: +200 },
-            visible: { opacity: 1, y: 0 },
-          }}
+          variants={
+            isMobile
+              ? {
+                  hidden: { opacity: 0, y: 0 },
+                  visible: { opacity: 1, y: 0 },
+                }
+              : {
+                  hidden: { opacity: 0, y: +100 },
+                  visible: { opacity: 1, y: 0 },
+                }
+          }
         >
           <Container className='space-y-4'>
             <Container className='snap-center bg-[#FFFAF5] w-[310px] flex-shrink-0 h-[450px] flex items-center justify-between py-5  shadow-ServiceCard rounded-[20px] relative'>

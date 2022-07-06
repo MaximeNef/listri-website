@@ -36,7 +36,6 @@ export default function MotionBottomCard({
         animate={controls}
         transition={transition}
         variants={variants}
-        className='sm:hidden inline-flex'
       >
         {children}
       </motion.div>
