@@ -6,8 +6,8 @@ import MenuDesktop from "./menuDesktop";
 const Header = ({ current }) => {
   const [link, setLink] = useState([
     { page: "Accueil", href: "/", selected: false },
-    { page: "Nos services", href: "/services", selected: false },
-    { page: "Nos réalisations", href: "/realisations", selected: false },
+    { page: "services", href: "/services", selected: false },
+    { page: "realisations", href: "/realisations", selected: false },
     { page: "Blog", href: "/blogs", selected: false },
   ]);
 
