@@ -23,7 +23,7 @@ const ServiceHero = () => {
           transition={{ duration: 0.2 }}
         >
           <h2 className=' font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-            {"Nos services "}
+            {"Nos services"}
           </h2>
         </MotionBottom>
         <MotionBottom
@@ -141,7 +141,7 @@ const ServiceHero = () => {
           </Container>
         </Flex>
 
-        <Container className=' lg:mb-32'>
+        <Container className=' lg:mr-20'>
           <Flex className='hidden lg:inline-flex'>
             {" "}
             <Flex type='col' align='center' className=' space-y-4 mb-8 mx-10'>
