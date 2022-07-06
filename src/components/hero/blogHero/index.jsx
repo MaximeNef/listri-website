@@ -7,7 +7,7 @@ import BlogHeroEnd from "./blogHeroEnd";
 
 const BlogHero = ({ blogs }) => {
   return (
-    <Container className=' my-12'>
+    <Container className=' mt-8 mb-12'>
       <BlogHeroDescription />
       <BlogHeroCard blogs={blogs} />
       <BlogHeroEnd />

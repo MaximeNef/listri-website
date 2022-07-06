@@ -6,7 +6,7 @@ import BlogHeroBtn from "../blogHeroBtn";
 const BlogHeroEnd = () => {
   return (
     <Container className='w-full'>
-      <Container className=' mx-auto mt-10'>
+      <Container className=' mx-auto '>
         {" "}
         <BlogHeroBtn />
       </Container>

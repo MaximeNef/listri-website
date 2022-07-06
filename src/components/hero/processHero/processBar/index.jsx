@@ -9,8 +9,8 @@ const ProcessBar = () => {
         animate='visible'
         transition={{ duration: 0.2 }}
       >
-        <Container className='leading-[48px]  font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] '>
-          {"Faites en plus"}
+        <Container className='leading-[48px] font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] '>
+          <p> {"Faites en plus"}</p>
         </Container>
       </MotionBottom>
       <MotionBottom

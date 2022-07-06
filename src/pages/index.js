@@ -42,7 +42,6 @@ export default function Home({ articles, blogs }) {
         <Processherotry />
 
         <MaxWidth>
-          :
           <BlogHero blogs={blogs} />
         </MaxWidth>
       </main>

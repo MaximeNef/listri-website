@@ -7,6 +7,7 @@ import Image from "next/image";
 import OneServiceContent from "../../components/services/oneService/oneServiceContent";
 import OneServiceBtn from "../../components/services/oneService/OneServiceBtn";
 import OneServiceImg from "../../components/services/oneService/OneServiceImg";
+import Link from "next/link";
 
 const Service = ({}) => {
   const router = useRouter();
@@ -51,7 +52,11 @@ const Service = ({}) => {
                 },
               ]}
             />
-            <OneServiceBtn />
+            <Link href='/contactus' passHref>
+              <a>
+                <OneServiceBtn />
+              </a>
+            </Link>
           </Container>
         </NavPage>
       );
@@ -87,7 +92,11 @@ const Service = ({}) => {
                 },
               ]}
             />
-            <OneServiceBtn />
+            <Link href='/contactus' passHref>
+              <a>
+                <OneServiceBtn />
+              </a>
+            </Link>
           </Container>
         </NavPage>
       );
@@ -133,7 +142,11 @@ const Service = ({}) => {
                 },
               ]}
             />
-            <OneServiceBtn />
+            <Link href='/contactus' passHref>
+              <a>
+                <OneServiceBtn />
+              </a>
+            </Link>
           </Container>
         </NavPage>
       );
@@ -168,7 +181,11 @@ const Service = ({}) => {
                 },
               ]}
             />
-            <OneServiceBtn />
+            <Link href='/contactus' passHref>
+              <a>
+                <OneServiceBtn />
+              </a>
+            </Link>
           </Container>
         </NavPage>
       );
@@ -197,31 +214,6 @@ const Service = ({}) => {
           },
         ],
       };
-      break;
-    case "creation-de-contenu":
-      // initialOneservice = {
-      //   title: "marketing",
-      //   description:
-      //     "Le Content Marketing (ou marketing de contenu) est une stratégie long-terme qui consiste en la création et distribution régulière de contenus à forte valeur ajoutée pour votre audiance, prospects et clients. ",
-      //   src: "/assets/logo/serviceMarketing.svg",
-      //   contents: [
-      //     {
-      //       title: "identité",
-      //       src: "/assets/logo/serviceAvater.svg",
-      //       text: "Création & optimisation de votre identité sur le web et les réseaux sociaux à travers des contenus comme des photos, vidéos, infographies.",
-      //     },
-      //     {
-      //       title: "fidélisation de l'audiance",
-      //       src: "/assets/logo/serviceSkill.svg",
-      //       text: "Création & optimisation de votre identité sur le web et les réseaux sociaux à travers des contenus comme des photos, vidéos, infographies.",
-      //     },
-      //     {
-      //       title: "fidélisation de l'audiance",
-      //       src: "/assets/logo/serviceSkill.svg",
-      //       text: "Création & optimisation de votre identité sur le web et les réseaux sociaux à travers des contenus comme des photos, vidéos, infographies.",
-      //     },
-      //   ],
-      // };
       break;
     default:
       console.log("Sorry, we are out of " + service + ".");
