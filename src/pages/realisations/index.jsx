@@ -5,6 +5,7 @@ import ClientCardDesktop from "../../components/hero/clientHero/clientCardDeskto
 import Container from "../../components/shared/composers/container";
 import { motion } from "framer-motion";
 import MyImage from "../../components/shared/composers/myimage";
+import Flex from "../../components/shared/composers/flex";
 const Realisation = () => {
   return (
     <NavPage current='Réalisations'>
@@ -21,18 +22,12 @@ const Realisation = () => {
       </Head>
       <main className='bg-[#FFFAF5]  py-28'>
         <Container className='text-center text-[40px] font-medium mb-10'>
-          {" "}
-          Comming soon ...
+          {"Coming soon ... "}
         </Container>
         <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
-          <MyImage source='/assets/logo/Process.svg' w={400} h={400} />
-          {/* <Image
-            src='/assets/logo/Process.svg'
-            alt='Picture of the author'
-            width={400}
-            height={400}
-            className=''
-          /> */}
+          <Container className='mx-auto'>
+            <MyImage source='/assets/logo/Process.svg' w={400} h={500} />
+          </Container>
         </motion.div>
       </main>
     </NavPage>
