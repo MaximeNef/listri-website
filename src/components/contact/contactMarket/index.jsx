@@ -15,8 +15,10 @@ const ContactMarket = ({ handleClick7, handleClick8, handleClick9 }) => {
           onClick={handleClick7}
         >
           <Container className=' text-lg bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
-            <Container className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-              {" Social média"}
+            <Container className=''>
+              <p className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                {" Social média"}
+              </p>
             </Container>
           </Container>
         </Container>
@@ -26,8 +28,10 @@ const ContactMarket = ({ handleClick7, handleClick8, handleClick9 }) => {
           onClick={handleClick8}
         >
           <Container className='text-lg  bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center'>
-            <Container className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-              {"Référencement"}
+            <Container className=''>
+              <p className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                {" Référencement "}
+              </p>
             </Container>
           </Container>
         </Container>
@@ -36,8 +40,10 @@ const ContactMarket = ({ handleClick7, handleClick8, handleClick9 }) => {
           onClick={handleClick9}
         >
           <Container className=' text-lg bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
-            <Container className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-              {"Création de contenu"}
+            <Container className=''>
+              <p className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                {"Création de contenu"}
+              </p>
             </Container>
           </Container>
         </Container>

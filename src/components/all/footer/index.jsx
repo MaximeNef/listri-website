@@ -19,8 +19,10 @@ const Footer = () => {
                     justify='center'
                     className='rounded-[25px]  bg-[#FFFAF5] py-[10px] px-4 t   max-w-[180px]  justify-center items-center'
                   >
-                    <Container className=' font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
-                      {"Contactez-nous "}
+                    <Container className=''>
+                      <p className=' font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                        {"Contactez-nous "}
+                      </p>
                     </Container>
                   </Flex>
                 </Container>

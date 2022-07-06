@@ -15,8 +15,10 @@ const ContactWeb = ({ handleClick5, handleClick6 }) => {
           onClick={handleClick5}
         >
           <Container className=' text-lg bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
-            <Container className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-              {" création de site web"}
+            <Container className=''>
+              <p className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                {" création de site web"}
+              </p>
             </Container>
           </Container>
         </Container>
@@ -26,8 +28,10 @@ const ContactWeb = ({ handleClick5, handleClick6 }) => {
           onClick={handleClick6}
         >
           <Container className='text-lg  bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center'>
-            <Container className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
-              {" Web Design"}
+            <Container className=''>
+              <p className='font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                {" Web Design"}
+              </p>
             </Container>
           </Container>
         </Container>

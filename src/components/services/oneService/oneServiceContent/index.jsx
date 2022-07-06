@@ -27,11 +27,10 @@ const OneServiceContent = ({ Contents }) => {
                     className='absolute'
                   /> */}
                 </Container>
-                <Flex
-                  justify='center'
-                  className=' text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] font-medium text-[32px]'
-                >
-                  {content.title}
+                <Flex justify='center' className=' text-center'>
+                  <p className=' text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] font-medium text-[32px]'>
+                    {content.title}
+                  </p>
                 </Flex>
               </Flex>
             </MotionBottom>

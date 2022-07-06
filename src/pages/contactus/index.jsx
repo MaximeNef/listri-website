@@ -506,11 +506,10 @@ export default function ContactUs() {
         )}
         {/* schémas autres  */}
         <Flex justify='center'>
-          <Container
-            onClick={handleClick4}
-            className=' text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'
-          >
-            {" retour "}{" "}
+          <Container onClick={handleClick4}>
+            <p className=' text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+              {" retour "}
+            </p>
           </Container>
         </Flex>
       </main>

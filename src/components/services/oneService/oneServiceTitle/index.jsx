@@ -9,8 +9,10 @@ const OneServiceTitle = ({ title, description }) => {
         animate='visible'
         transition={{ duration: 0.2 }}
       >
-        <Container className='text-center font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] my-6'>
-          <h1> {title}</h1>
+        <Container className='text-center  my-6'>
+          <h1 className='font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+            {title}
+          </h1>
         </Container>
       </MotionBottom>
       <MotionBottom
