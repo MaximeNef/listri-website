@@ -13,11 +13,11 @@ const Footer = () => {
         <Flex justify='center' className='  mt-[-28px] mb-5'>
           <Link href='/contactus' passHref>
             <a className=''>
-              <Container className='border-[#FFFAF5] border-2 rounded-[27px] '>
+              <Container className='border-[#FFFFFF] border-2 rounded-[27px] '>
                 <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[1px] rounded-[25px] shadow-realisationCard'>
                   <Flex
                     justify='center'
-                    className='rounded-[25px]  bg-[#FFFAF5] py-[10px] px-4 t   max-w-[180px]  justify-center items-center'
+                    className='rounded-[25px]  bg-[#FFFFFF] py-[10px] px-4 t   max-w-[180px]  justify-center items-center'
                   >
                     <Container className=''>
                       <p className=' font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>

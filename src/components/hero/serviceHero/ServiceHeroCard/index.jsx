@@ -6,8 +6,8 @@ import MyImage from "../../../shared/composers/myimage";
 const ServiceHeroCard = ({ serviceName, ServiceDescription, src }) => {
   return (
     <Container className='relative '>
-      <Container className='bg-[#FFFAF5] p-[2px] md:p-0  shadow-ServiceCard  hover:bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[20px]  hover:ease-in hover:duration-300 hover:scale-105 lg:rounded-tl-[10px] lg:rounded-tr-[50px] lg:rounded-bl-[50px] lg:rounded-br-[10px]  lg:h-[310px] lg:w-[252px] '>
-        <Container className='  rounded-[18px] w-full py-16 bg-[#FFFAF5] relative  text-2xl text-[#37474F]  lg:rounded-tl-[10px] lg:rounded-tr-[50px] lg:rounded-bl-[50px] lg:rounded-br-[10px] lg:h-[310px] lg:w-[247px] '>
+      <Container className='bg-[#FFFFFF] p-[2px] md:p-0  shadow-ServiceCard  hover:bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[20px]  hover:ease-in hover:duration-300 hover:scale-105 lg:rounded-tl-[10px] lg:rounded-tr-[50px] lg:rounded-bl-[50px] lg:rounded-br-[10px]  lg:h-[310px] lg:w-[252px] '>
+        <Container className='  rounded-[18px] w-full py-16 bg-[#FFFFFF] relative  text-2xl text-[#37474F]  lg:rounded-tl-[10px] lg:rounded-tr-[50px] lg:rounded-bl-[50px] lg:rounded-br-[10px] lg:h-[310px] lg:w-[247px] '>
           <Flex justify='between' align='center' className='px-2'>
             {" "}
             <Container className='absolute top-4 left-4 '>

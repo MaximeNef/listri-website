@@ -19,7 +19,7 @@ const ProcessBar = () => {
         transition={{ duration: 0.5 }}
       >
         <Container className=' text-[21px] font-light mt-3 '>
-          {"faisons de votre projet une réalité"}
+          {"Faisons de votre projet une réalité"}
         </Container>
       </MotionBottom>
     </Container>
