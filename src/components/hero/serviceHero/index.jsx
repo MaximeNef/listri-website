@@ -10,7 +10,7 @@ import MotionBottom from "../../shared/composers/motion-textBottom";
 
 const ServiceHero = () => {
   return (
-    <Container className='relative my-8 '>
+    <Container className='relative my-8 md:my-0 md:mb-8   md:mt-[-50px] '>
       {" "}
       <Flex
         type='col'
