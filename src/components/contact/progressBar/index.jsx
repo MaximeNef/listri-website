@@ -2,7 +2,7 @@ import Container from "../../shared/composers/container";
 
 const ProgressBar = ({ step, total }) => {
   return (
-    <Container className='mx-5 rounded-full'>
+    <Container className='mx-5 rounded-full md:w-[600px] md:mx-auto'>
       <Container className='text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-sm mb-1 ml-1'>
         {`Etape ${step}/4`}
       </Container>

@@ -9,7 +9,7 @@ const ContactMarket = ({ handleClick7, handleClick8, handleClick9 }) => {
         {"Je souhaite plus d’information sur"}
       </Container>
 
-      <Container className='m-auto mt-6 space-y-8 text-center w-full  px-5'>
+      <Container className='m-auto mt-6 space-y-8 text-center w-full  px-5 md:w-[450px]'>
         <Container
           className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard '
           onClick={handleClick7}

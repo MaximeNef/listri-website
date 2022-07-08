@@ -9,9 +9,9 @@ const ContactHero = ({ handleClick, handleClick2, handleClick3 }) => {
         {"je suis à la recherche d'un service"}
       </Container>
 
-      <Container className='m-auto mt-6 space-y-8 text-center w-full  px-5'>
+      <Container className='m-auto mt-6 space-y-8 text-center w-full  px-5 md:w-[450px]'>
         <Container
-          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard '
+          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard md:w-full md:h-full '
           onClick={handleClick}
         >
           <Container className=' bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
@@ -24,7 +24,7 @@ const ContactHero = ({ handleClick, handleClick2, handleClick3 }) => {
         </Container>
 
         <Container
-          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard '
+          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard md:w-full md:h-full '
           onClick={handleClick2}
         >
           <Container className=' bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
@@ -37,7 +37,7 @@ const ContactHero = ({ handleClick, handleClick2, handleClick3 }) => {
         </Container>
 
         <Container
-          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard '
+          className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[20px] shadow-realisationCard md:w-full md:h-full '
           onClick={handleClick3}
         >
           <Container className=' bg-[#FFFAF5] text-center font-light rounded-[19px] w-full h-16 items-center justify-center '>
