@@ -9,6 +9,7 @@ const Header = ({ current }) => {
     { page: "Services", href: "/services", selected: false },
     { page: "Réalisations", href: "/realisations", selected: false },
     { page: "Blog", href: "/blogs", selected: false },
+    { page: "Team", href: "/team", selected: false },
   ]);
 
   return (

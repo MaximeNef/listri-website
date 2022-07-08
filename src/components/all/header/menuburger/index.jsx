@@ -53,6 +53,12 @@ const Menuburger = ({ current }) => {
       selected: false,
       src: "/assets/logo/Contacts.svg",
     },
+    {
+      page: "Team",
+      href: "/team",
+      selected: false,
+      src: "/assets/logo/Contacts.svg",
+    },
   ]);
   const defaultOptions = {
     name: "menuBurger",
