@@ -9,7 +9,7 @@ const TeamTitle = () => {
       <Container className='font-semibold text-[#37474F] text-[19px] mx-auto'>
         {" Notre histoire & notre équipe "}
       </Container>
-      <Container className='m-6 p-[2px] bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[20px] '>
+      <Container className='m-6 p-[2px] bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[20px] shadow-realisationCard'>
         <Container className='text-center font-light text-[#37474F] text-[17px] p-4 bg-[#FFFFFF] rounded-[18px] leading-8'>
           <p>
             {

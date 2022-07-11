@@ -13,20 +13,20 @@ const BlogHeroCard = ({ blogs }) => {
         {blogs.map((blog, i) => (
           <Container
             key={i}
-            className='snap-center w-[300px] flex-shrink-0 h-[350px] flex items-center justify-center relative'
+            className='snap-center w-[300px] flex-shrink-0 h-[350px] flex items-center justify-center relative '
           >
             <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
               <a key={blog.uid}>
                 <Container className=' m-5 mb-20 min-h-[280px]  '>
-                  <Container className='absolute '>
+                  <Container className='absolute  '>
                     <Image
                       src={blog.data.slices[0].items[0].img.url}
                       alt='Picture of the author'
                       width={250}
                       height={250}
-                      className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px]'
+                      className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] '
                     />
-                    <Container className='h-full w-full bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px]' />
+                    <Container className='h-full w-full bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] shadow-ServiceCard' />
                   </Container>
                   <Flex
                     type='col'

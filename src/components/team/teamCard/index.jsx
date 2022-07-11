@@ -8,7 +8,7 @@ const TeamCard = ({ team, key }) => {
   return (
     <Container>
       <Flex justify='center' className='w-full p-10  ' key={key}>
-        <Container className='mx-auto border-[2px] border-orange-400 w-fit  rounded-[20px] bg-white px-10'>
+        <Container className='mx-auto border-[2px] border-orange-400 w-fit  rounded-[20px] bg-white px-10 shadow-realisationCard'>
           <Container className='border-[2px] border-orange-400   rounded-full  w-[200px] h-[200px] m-auto mt-[-100px] '>
             <MyImage
               source={team.src}

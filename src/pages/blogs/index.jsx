@@ -62,7 +62,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
                           height={300}
                           className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px]'
                         />
-                        <Container className='h-[300px] w-[350px] bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px]' />
+                        <Container className='h-[300px] w-[350px] bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] shadow-ServiceCard' />
                       </Container>
                       <Flex
                         type='col'
