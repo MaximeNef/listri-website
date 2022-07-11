@@ -33,15 +33,19 @@ const Footer = () => {
         {/* reséaux sociaux  */}
         <Flex
           justify='between'
-          className='px-7 pb-5 mx-8  md:justify-center md:space-x-36'
+          className='px-7 pb-5 mx-8 md:justify-between'
           align='start'
         >
           <Container className='space-y-4 '>
-            <Container className='mt-[-10px] mr-auto'>
+            <Container className='mt-[-10px] mr-auto md:hidden'>
               <MyImage source='/assets/logo/listri.svg' w={100} h={50} />
             </Container>
-
-            <Container>
+            <Container className='hidden md:inline-flex md:mr-auto'>
+              <p className=' font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                {"Contactez-nous : "}
+              </p>
+            </Container>
+            <Container className='md:space-y-2'>
               <a href='tel:+32470/68.45.51'>
                 {" "}
                 <Flex>
@@ -61,8 +65,16 @@ const Footer = () => {
               </a>
             </Container>
           </Container>
+          <Container className='hidden md:inline-flex md:my-auto'>
+            <MyImage
+              source='/assets/logo/logolistri.svg'
+              w={200}
+              h={100}
+              className=''
+            />
+          </Container>
 
-          <Container>
+          <Container className='md:min-w-[187px] md:flex  md:items-end md:space-y-2'>
             <Container>
               <a href='https://www.facebook.com/Listri.digital'>
                 <MyImage source='/assets/logo/Facebook.svg' w={30} h={30} />
