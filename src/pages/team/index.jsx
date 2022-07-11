@@ -1,11 +1,13 @@
 import Head from "next/head";
+import { useEffect } from "react";
+import { useState } from "react";
 import NavPage from "../../components/all/nav-page";
 import Container from "../../components/shared/composers/container";
 import TeamCard from "../../components/team/teamCard";
 import TeamTitle from "../../components/team/teamTitle";
 
 const Team = () => {
-  const Teams = [
+  const [Teams, setTeams] = useState([
     {
       lastName: "julien",
       firstName: "Nef",
@@ -22,8 +24,7 @@ const Team = () => {
       phone: "+32472/86.06.28",
       src: "/assets/logo/maxime.png",
     },
-  ];
-
+  ]);
   return (
     <NavPage current='Team'>
       <Head>
