@@ -31,41 +31,53 @@ const Footer = () => {
           </Link>
         </Flex>
         {/* reséaux sociaux  */}
-        <Flex justify='center' className='px-7 pb-5 space-x-7'>
-          <Container>
-            {" "}
-            <MyImage source='/assets/logo/Facebook.svg' w={30} h={30} />
-            {/* <Image
-              loader={myLoader}
-              src='/assets/logo/Facebook.svg'
-              alt='Picture of the author'
-              width={30}
-              height={30}
-              className=''
-            /> */}
+        <Flex
+          justify='between'
+          className='px-7 pb-5 mx-8  md:justify-center md:space-x-36'
+          align='start'
+        >
+          <Container className='space-y-4 '>
+            <Container className='mt-[-10px] mr-auto'>
+              <MyImage source='/assets/logo/listri.svg' w={100} h={50} />
+            </Container>
+
+            <Container>
+              <a href='tel:+32470/68.45.51'>
+                {" "}
+                <Flex>
+                  <MyImage source='/assets/logo/phoneTeam.svg' w={20} h={20} />
+                  <p className='ml-1 text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                    {"+32470/68.45.51"}
+                  </p>
+                </Flex>
+              </a>
+              <a href='mailto:contact@listri.digital '>
+                <Flex>
+                  <MyImage source='/assets/logo/email.svg' w={20} h={20} />
+                  <p className='ml-1 text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                    {"contact@listri.digital"}
+                  </p>
+                </Flex>
+              </a>
+            </Container>
           </Container>
+
           <Container>
-            {" "}
-            <MyImage source='/assets/logo/Instagram.svg' w={30} h={30} />
-            {/* <Image
-              loader={myLoader}
-              src='/assets/logo/Instagram.svg'
-              alt='Picture of the author'
-              width={30}
-              height={30}
-              className=''
-            /> */}
-          </Container>
-          <Container>
-            <MyImage source='/assets/logo/Linkedin.svg' w={30} h={30} />
-            {/* <Image
-              loader={myLoader}
-              src='/assets/logo/Linkedin.svg'
-              alt='Picture of the author'
-              width={30}
-              height={30}
-              className=''
-            /> */}
+            <Container>
+              <a href='https://www.facebook.com/Listri.digital'>
+                <MyImage source='/assets/logo/Facebook.svg' w={30} h={30} />
+              </a>
+            </Container>
+            <Container>
+              <a href='https://www.instagram.com/listri.digital'>
+                <MyImage source='/assets/logo/Instagram.svg' w={30} h={30} />
+              </a>
+            </Container>
+            <Container>
+              <a href='https://www.instagram.com/listri.digital'>
+                <MyImage source='/assets/logo/Linkedin.svg' w={30} h={30} />
+              </a>
+            </Container>
           </Container>
         </Flex>
         <p className='text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>

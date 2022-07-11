@@ -5,7 +5,7 @@ import Flex from "../../../shared/composers/flex";
 
 const BlogHeroCard = ({ blogs }) => {
   return (
-    <Container className='md:mx-auto'>
+    <Container className=''>
       <Flex
         justify='start'
         className='container-snap snap-x mx-auto snap-mandatory h-[400px] flex w-full overflow-scroll px-[33%]  pt-3 '
@@ -13,7 +13,7 @@ const BlogHeroCard = ({ blogs }) => {
         {blogs.map((blog, i) => (
           <Container
             key={i}
-            className='snap-center  w-[300px] flex-shrink-0 h-[350px] flex items-center justify-center relative'
+            className='snap-center w-[300px] flex-shrink-0 h-[350px] flex items-center justify-center relative'
           >
             <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
               <a key={blog.uid}>

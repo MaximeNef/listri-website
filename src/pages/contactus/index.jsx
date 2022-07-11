@@ -50,10 +50,10 @@ export default function ContactUs() {
       setIsLoading(false);
 
       if (!response.ok) {
-        console.log("error");
+        console.log("errorrr");
       } else {
         console.log("ok");
-        reset();
+
         setIsSended(true);
       }
     }
@@ -252,10 +252,10 @@ export default function ContactUs() {
                   <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px] w-[48%] shrink '>
                     <input
                       type='text'
-                      value={lastName}
                       onChange={(e) => {
                         setLastName(e.target.value);
                       }}
+                      {...register("lastName", { required: true })}
                       name='lastName'
                       className='bg-[#FFFAF5] focus:outline-none rounded-[14px] text-center font-light h-16 shrink '
                       placeholder='Nom'
@@ -264,10 +264,10 @@ export default function ContactUs() {
                   <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px] w-[48%] shrink '>
                     <input
                       type='text'
-                      value={firstName}
                       onChange={(e) => {
                         setFirstName(e.target.value);
                       }}
+                      {...register("firstName", { required: true })}
                       name='firstName'
                       className=' bg-[#FFFAF5] focus:outline-none rounded-[14px]  text-center font-light h-16 shrink'
                       placeholder='Prénom'
@@ -284,10 +284,10 @@ export default function ContactUs() {
                   <input
                     type='email'
                     name='email'
-                    value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
+                    {...register("email", { required: true })}
                     className=' bg-[#FFFAF5] focus:outline-none rounded-[14px] h-16 text-center font-light'
                     placeholder='Mail'
                   />
@@ -299,10 +299,10 @@ export default function ContactUs() {
                   <input
                     type='tel'
                     name='phone'
-                    value={phone}
                     onChange={(e) => {
                       setPhone(e.target.value);
                     }}
+                    {...register("phone", { required: true })}
                     className=' bg-[#FFFAF5] focus:outline-none rounded-[14px] h-16 text-center font-light'
                     placeholder='Téléphone'
                   />

@@ -116,6 +116,7 @@ export default function handler(req, res) {
   (async () => {
     try {
       await sgMail.send(sendGridMail);
+      console.log(lastName, firstName, email, phone, "req body");
       res.status(200).json({
         message: "EMAIL_SENDED_SUCCESSFULLY",
       });
