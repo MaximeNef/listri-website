@@ -33,19 +33,11 @@ export default function Home({ articles, blogs }) {
       </Head>
 
       <main className='bg-[#FFFAF5] pt-28  text-[#37474F]'>
-        <MaxWidth>
-          <Hero />{" "}
-        </MaxWidth>
-        <ServiceHero />
-
+        <Hero /> <ServiceHero />
         {/* <ClientHero /> */}
-
         {/* <Process />  */}
         <Processherotry />
-
-        <MaxWidth>
-          <BlogHero blogs={blogs} />
-        </MaxWidth>
+        <BlogHero blogs={blogs} />
       </main>
     </NavPage>
   );

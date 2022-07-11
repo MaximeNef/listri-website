@@ -22,6 +22,9 @@
             },
             "blog_title": {
               "type": "SharedSlice"
+            },
+            "blog_description": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -71,6 +71,118 @@
         },
         "screenshotPaths": {}
       },
+      "blog_description": {
+        "library": "slices",
+        "id": "blog_description",
+        "name": "BlogDescription",
+        "description": "BlogDescription",
+        "model": {
+          "id": "blog_description",
+          "type": "SharedSlice",
+          "name": "BlogDescription",
+          "description": "BlogDescription",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "BlogDescription",
+              "primary": {},
+              "items": {
+                "titleDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "contentDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Content Description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "blog_description",
+            "items": [
+              {
+                "titleDescription": [
+                  {
+                    "type": "heading2",
+                    "text": "Whiteboard user-centric networks",
+                    "spans": []
+                  }
+                ],
+                "contentDescription": [
+                  {
+                    "type": "paragraph",
+                    "text": "Id in et dolor id sint aute pariatur. Duis sint deserunt sint veniam cupidatat Lorem sit ullamco.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "titleDescription": [
+                  {
+                    "type": "heading2",
+                    "text": "Incentivize turn-key functionalities",
+                    "spans": []
+                  }
+                ],
+                "contentDescription": [
+                  {
+                    "type": "paragraph",
+                    "text": "Magna Lorem elit elit exercitation et proident. Officia officia laborum do in minim proident sunt quis excepteur ea exercitation sunt cupidatat.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "titleDescription": [
+                  {
+                    "type": "heading2",
+                    "text": "Disintermediate intuitive users",
+                    "spans": []
+                  }
+                ],
+                "contentDescription": [
+                  {
+                    "type": "paragraph",
+                    "text": "Veniam sit quis labore incididunt.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {}
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/maximenef/Documents/GitHub/listri-website/.slicemachine/assets/slices/BlogDescription/default/preview.png",
+            "width": 800,
+            "height": 48
+          }
+        }
+      },
       "blog_title": {
         "library": "slices",
         "id": "blog_title",

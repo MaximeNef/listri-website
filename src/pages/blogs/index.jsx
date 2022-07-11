@@ -48,7 +48,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
             description={titlepageprops.description}
           />
           <Flex type='row' justify='center' className=' '>
-            <ul className='md:flex md:flex-row md:flex-wrap'>
+            <ul className='md:flex md:flex-row md:flex-wrap md:justify-center'>
               {" "}
               {blogs.map((blog) => (
                 <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
@@ -86,37 +86,6 @@ const Blogs = ({ blogs, BlogTitle }) => {
                         </Container>
                       </Flex>
                     </Container>
-                    {/* <Flex
-                    align='center'
-                    justify='between'
-                    className='mx-5 bg-[#FFFAF5]  shadow-ServiceCard rounded-[20px]  hover:ease-in hover:duration-300 hover:scale-105 mb-8 text-center hover:shadow-[#FFB873] min-h-[200px]'
-                  >
-                    <Container className='w-1/3 mr-2 py-4'>
-                      <Image
-                        src={blog.data.slices[0].items[0].img.url}
-                        alt='Picture of the author'
-                        width={200}
-                        height={200}
-                        className=''
-                      />
-                    </Container>
-                    <Container className=' min-h-[150px] w-[2px]  bg-gradient-to-b from-[#FF7E00] to-[#FFB873]' />
-                    <Flex type='col' className='w-2/3  px-2  space-y-4'>
-                      <Container className='font-semibold '>
-                        {" "}
-                        {blog.data.slices[0].items[0].title[0].text}{" "}
-                      </Container>
-                      <Container className='font-extralight text-sm max-h-[80px] text-ellipsis overflow-hidden'>
-                        {blog.data.slices[0].items[0].description[0].text}
-                        {" ... "}
-                      </Container>
-                      <Container className=' text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] mt-1'>
-                        {" "}
-                        lire la suite
-                      </Container>
-                    </Flex>
-                  </Flex> */}
-                    {/* <Blog key={blog.id} blog={blog}  /> */}
                   </a>
                 </Link>
               ))}

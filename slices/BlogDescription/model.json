@@ -1,0 +1,37 @@
+{
+  "id": "blog_description",
+  "type": "SharedSlice",
+  "name": "BlogDescription",
+  "description": "BlogDescription",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "BlogDescription",
+      "primary": {},
+      "items": {
+        "titleDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Title Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "contentDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Content Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        }
+      },
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

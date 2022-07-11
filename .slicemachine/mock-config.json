@@ -129,6 +129,25 @@
           }
         }
       }
+    },
+    "BlogDescription": {
+      "default": {
+        "primary": {},
+        "items": {
+          "titleDescription": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "contentDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   },
   "_cts": {

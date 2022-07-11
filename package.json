@@ -27,6 +27,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^10.0.1",
     "jimp": "^0.16.1",
+    "jslint": "^0.12.1",
     "lqip-loader": "^2.2.1",
     "next": "12.1.6",
     "next-compose-plugins": "^2.2.1",
