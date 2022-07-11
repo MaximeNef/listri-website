@@ -74,7 +74,7 @@ const Footer = () => {
               </a>
             </Container>
             <Container>
-              <a href='https://www.instagram.com/listri.digital'>
+              <a href='https://www.linkedin.com/company/listri-agence-digitale/'>
                 <MyImage source='/assets/logo/Linkedin.svg' w={30} h={30} />
               </a>
             </Container>

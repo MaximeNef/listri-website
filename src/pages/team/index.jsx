@@ -9,7 +9,7 @@ import TeamTitle from "../../components/team/teamTitle";
 const Team = () => {
   const [Teams, setTeams] = useState([
     {
-      lastName: "julien",
+      lastName: "Julien",
       firstName: "Nef",
       activite: "Marketing digital & référencement",
       mail: "julien@listri.digital",
@@ -19,7 +19,7 @@ const Team = () => {
     {
       lastName: "Maxime",
       firstName: "Nef",
-      activite: "developpeur web",
+      activite: "Developpeur web",
       mail: "maxime@listri.digital",
       phone: "+32472/86.06.28",
       src: "/assets/logo/maxime.png",
