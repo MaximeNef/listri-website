@@ -34,8 +34,13 @@ const TeamCard = ({ team, key }) => {
             </Flex>
 
             <Container className='space-y-1 text-center'>
-              <Container>{team.mail}</Container>
-              <Container>{team.phone}</Container>
+              <Container>
+                <a href={`mailto:${team.mail}`}>{team.mail}</a>
+              </Container>
+              <Container>
+                {" "}
+                <a href={`tel:${team.phone}`}>{team.phone} </a>
+              </Container>
             </Container>
             <Flex justify='center' className=' space-x-16 w-full pt-6'>
               <Container>
