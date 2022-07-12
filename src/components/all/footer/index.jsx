@@ -74,11 +74,11 @@ const Footer = () => {
             />
           </Container>
 
-          <Container className='md:min-w-[187px] md:flex  md:items-end md:space-y-2'>
+          <Container className='md:min-w-[187px] md:flex  md:items-end space-y-2'>
             <Container>
               <a href='https://www.facebook.com/Listri.digital'>
                 <Flex align='center'>
-                  <p className='mr-2 font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                  <p className='hidden md:inline-flex mr-2 font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
                     {" "}
                     Facebook
                   </p>{" "}
@@ -89,7 +89,7 @@ const Footer = () => {
             <Container>
               <a href='https://www.instagram.com/listri.digital'>
                 <Flex align='center'>
-                  <p className='mr-2  font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                  <p className=' hidden md:inline-flex mr-2  font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
                     {" "}
                     Instagram
                   </p>{" "}
@@ -100,7 +100,7 @@ const Footer = () => {
             <Container>
               <a href='https://www.linkedin.com/company/listri-agence-digitale/'>
                 <Flex align='center'>
-                  <p className='mr-2  font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                  <p className=' hidden md:inline-flex mr-2  font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
                     {" "}
                     Linkedin
                   </p>{" "}

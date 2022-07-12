@@ -17,7 +17,7 @@ const Header = ({ current }) => {
       <Container className='z-50 hidden lg:inline-flex'>
         <MenuDesktop current={current} link={link} />
       </Container>
-      <Container className='  lg:hidden'>
+      <Container className='  md:hidden'>
         <Menuburger current={current} link={link} />
       </Container>
     </Container>
