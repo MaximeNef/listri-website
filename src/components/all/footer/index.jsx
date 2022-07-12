@@ -77,17 +77,35 @@ const Footer = () => {
           <Container className='md:min-w-[187px] md:flex  md:items-end md:space-y-2'>
             <Container>
               <a href='https://www.facebook.com/Listri.digital'>
-                <MyImage source='/assets/logo/Facebook.svg' w={30} h={30} />
+                <Flex align='center'>
+                  <p className='mr-2 font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                    {" "}
+                    Facebook
+                  </p>{" "}
+                  <MyImage source='/assets/logo/Facebook.svg' w={30} h={30} />
+                </Flex>
               </a>
             </Container>
             <Container>
               <a href='https://www.instagram.com/listri.digital'>
-                <MyImage source='/assets/logo/Instagram.svg' w={30} h={30} />
+                <Flex align='center'>
+                  <p className='mr-2  font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                    {" "}
+                    Instagram
+                  </p>{" "}
+                  <MyImage source='/assets/logo/Instagram.svg' w={30} h={30} />
+                </Flex>
               </a>
             </Container>
             <Container>
               <a href='https://www.linkedin.com/company/listri-agence-digitale/'>
-                <MyImage source='/assets/logo/Linkedin.svg' w={30} h={30} />
+                <Flex align='center'>
+                  <p className='mr-2  font-light text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
+                    {" "}
+                    Linkedin
+                  </p>{" "}
+                  <MyImage source='/assets/logo/Linkedin.svg' w={30} h={30} />
+                </Flex>
               </a>
             </Container>
           </Container>
