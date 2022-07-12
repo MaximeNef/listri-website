@@ -53,8 +53,8 @@ const Blogs = ({ blogs, BlogTitle }) => {
               {blogs.map((blog) => (
                 <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
                   <a key={blog.uid}>
-                    <Container className='rounded-tl-[10px] rounded-br-[10px] rounded-tr-[50px] rounded-bl-[50px]  m-5 mb-20 min-h-[290px] relative '>
-                      <Container className='absolute '>
+                    <Container className=' rounded-tl-[10px] rounded-br-[10px] rounded-tr-[50px] rounded-bl-[50px]  m-5 mb-20 min-h-[290px] relative '>
+                      <Container className='absolute w-fit'>
                         <Image
                           src={blog.data.slices[0].items[0].img.url}
                           alt='Picture of the author'
@@ -68,21 +68,14 @@ const Blogs = ({ blogs, BlogTitle }) => {
                         type='col'
                         justify='end'
                         align='center'
-                        className='z-10 '
+                        className='z-10 mb-6'
                       >
-                        <Container className=' text-[#FFFAF5] text-[40px] font-medium '>
+                        <Container className=' text-[#FFFAF5] text-[20px] font-medium text-center w-[350px]'>
                           {blog.data.slices[0].items[0].title[0].text}{" "}
                         </Container>
 
-                        <Container className=' text-[#FFFAF5] text-[17px] font-light text-center  max-h-[120px] max-w-[300px] mx-6 text-ellipsis overflow-hidden '>
-                          {blog.data.slices[0].items[0].description[0].text}
-                          {"..."}{" "}
-                          <Flex
-                            justify='end'
-                            className=' text-[#FFFAF5] text-[17px] font-medium'
-                          >
-                            {"suite ..."}
-                          </Flex>
+                        <Container className=' text-[#FFFAF5] text-[17px] font-light text-right w-full   max-w-[300px]  '>
+                          {"suite ..."}
                         </Container>
                       </Flex>
                     </Container>

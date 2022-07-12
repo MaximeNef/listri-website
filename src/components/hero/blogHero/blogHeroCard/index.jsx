@@ -17,7 +17,7 @@ const BlogHeroCard = ({ blogs }) => {
           >
             <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
               <a key={blog.uid}>
-                <Container className=' m-5 mb-20 min-h-[280px]  '>
+                <Container className='relative m-5 mb-20 min-h-[280px]  '>
                   <Container className='absolute  '>
                     <Image
                       src={blog.data.slices[0].items[0].img.url}
@@ -32,21 +32,14 @@ const BlogHeroCard = ({ blogs }) => {
                     type='col'
                     justify='center'
                     align='center'
-                    className='z-10 '
+                    className='z-10 mx-6 mt-10'
                   >
-                    <Container className=' text-[#FFFAF5] text-[40px] font-medium text-center'>
+                    <Container className=' text-[#FFFAF5] text-[20px] font-medium text-center '>
                       {blog.data.slices[0].items[0].title[0].text}{" "}
                     </Container>
 
-                    <Container className=' text-[#FFFAF5] text-[17px] font-light text-center    mx-6  '>
-                      {blog.data.slices[0].items[0].description[0].text}
-
-                      <Flex
-                        justify='end'
-                        className=' text-[#FFFAF5] text-[17px]  mx-6 pb-5  text-center font-medium text-ellipsis overflow-hidden'
-                      >
-                        {"suite ..."}
-                      </Flex>
+                    <Container className=' text-[#FFFAF5] text-[17px] font-light text-right w-full   max-w-[300px]  '>
+                      {"suite ..."}
                     </Container>
                   </Flex>
                 </Container>
