@@ -38,7 +38,7 @@ const ProcessContent = () => {
                 {"1"}
               </Container>
               <Container className=' font-semibold text-[21px] px-7'>
-                {"Prise de contact & brainstorming."}
+                {"Prise de contact & brainstorming"}
               </Container>
               <Container className='px-7 text-[17px] '>
                 {
@@ -91,7 +91,7 @@ const ProcessContent = () => {
               </Container>
               <Container className='px-7 text-[17px]'>
                 {
-                  " Réalisation de l’ébauche Suite du premier rendez-vous nous vous réalisons une ébauche de votre projet pour que vous puissiez avoir un premier rendu visuel de vos idées."
+                  "A la suite du premier rendez-vous nous vous réalisons une ébauche de votre projet pour que vous puissiez avoir un rendu visuel de vos idées."
                 }
               </Container>
               <MyImage
@@ -139,7 +139,7 @@ const ProcessContent = () => {
               </Container>
               <Container className='px-7 text-[17px]'>
                 {
-                  "Modifications & validation Sur base de l’ébauche nous prenons en compte vos retours et adaptons votre projet pour le préparer à la validation finale. "
+                  "Sur base du rendu visuel,  nous prenons en compte vos retours et adaptons votre projet pour le préparer à la validation finale. "
                 }
               </Container>
               <MyImage
@@ -185,11 +185,14 @@ const ProcessContent = () => {
               <Container className=' font-semibold text-[21px] px-7'>
                 {"Développement de votre projet"}
               </Container>
-              <Container className='px-7 text-center'>
-                {"Votre projet entre en phase de développement."}
+              <Container className='px-7  mt-7 '>
+                {
+                  "Vous voila à l'étape finale , celle-ci consiste au développement et au testing de votre project.  "
+                }
               </Container>
-              <Container className='mb-6 font-medium'>
-                {" Mise en ligne de votre projet !"}
+
+              <Container className=' font-medium text-center px-7'>
+                {"Votre site est ligne!"}
               </Container>
               <MyImage
                 source='/assets/logo/rocketProcess4.svg'

@@ -28,15 +28,15 @@ export default function ContactUs() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const [isLoading, setIsLoading] = useState(false);
   const [isSended, setIsSended] = useState(true);
 
   const onSubmitHandler = async (data) => {
+    console.log(data);
     if (!isLoading) {
-      setIsLoading(true);
-
       const response = await fetch("/api/sendgrid", {
         method: "POST",
         headers: {
@@ -48,12 +48,12 @@ export default function ContactUs() {
       const result = await response.json();
 
       setIsLoading(false);
-
+      console.log(response, "reponse");
       if (!response.ok) {
         console.log("errorrr");
       } else {
         console.log("ok");
-
+        reset(); // ici
         setIsSended(true);
       }
     }
@@ -165,43 +165,6 @@ export default function ContactUs() {
     console.log("errors", errors);
     return isValid;
   };
-
-  //   Handling form submit
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   let isValidForm = handleValidation();
-  //   console.log(lastName, firstName, email, phone, "sendgrid");
-  //   if (isValidForm) {
-  //     setButtonText("Sending");
-  //     const res = await fetch("/api/sendgrid", {
-  //       body: JSON.stringify({
-  //         email: email,
-  //         lastName: lastName,
-  //         firstName: firstName,
-  //         phone: phone,
-  //       }),
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       method: "POST",
-  //     });
-
-  //     const { error } = await res.json();
-  //     if (error) {
-  //       console.log(error);
-  //       setShowSuccessMessage(false);
-  //       setShowFailureMessage(true);
-  //       setButtonText("Send");
-  //       return;
-  //     }
-  //     setShowSuccessMessage(true);
-  //     setShowFailureMessage(false);
-  //     setButtonText("Send");
-  //   }
-  //   console.log(lastName, firstName, email, phone);
-  // };
   return (
     <NavPage current='Contact'>
       <Head>
@@ -357,28 +320,27 @@ export default function ContactUs() {
               <Container className='mx-6 '>
                 <Container className='m-auto font-medium text-lg mt-10'>
                   {"Finalisez votre demande"}
-                </Container>
-                <Flex className=' mt-6   mb-4 w-full' justify='between'>
+                </Container>{" "}
+                <Flex className=' mt-6  mb-4 w-full ' justify='between'>
                   <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px] w-[48%] shrink '>
                     <input
                       type='text'
-                      value={lastName}
                       onChange={(e) => {
                         setLastName(e.target.value);
                       }}
+                      {...register("lastName", { required: true })}
                       name='lastName'
                       className='bg-[#FFFAF5] focus:outline-none rounded-[14px] text-center font-light h-16 shrink '
                       placeholder='Nom'
                     />
                   </Container>
-
                   <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px] w-[48%] shrink '>
                     <input
                       type='text'
-                      value={firstName}
                       onChange={(e) => {
                         setFirstName(e.target.value);
                       }}
+                      {...register("firstName", { required: true })}
                       name='firstName'
                       className=' bg-[#FFFAF5] focus:outline-none rounded-[14px]  text-center font-light h-16 shrink'
                       placeholder='Prénom'
@@ -395,36 +357,32 @@ export default function ContactUs() {
                   <input
                     type='email'
                     name='email'
-                    value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
+                    {...register("email", { required: true })}
                     className=' bg-[#FFFAF5] focus:outline-none rounded-[14px] h-16 text-center font-light'
                     placeholder='Mail'
                   />
                 </Container>
-
                 {errors?.lastName && (
                   <p className='text-red-500'>name cannot be empty.</p>
                 )}
-
                 <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px]'>
                   <input
                     type='tel'
                     name='phone'
-                    value={phone}
                     onChange={(e) => {
                       setPhone(e.target.value);
                     }}
+                    {...register("phone", { required: true })}
                     className=' bg-[#FFFAF5] focus:outline-none rounded-[14px] h-16 text-center font-light'
                     placeholder='Téléphone'
                   />
                 </Container>
-
                 {errors?.lastName && (
                   <p className='text-red-500'>name cannot be empty.</p>
                 )}
-
                 <div className='flex flex-row items-center justify-center'>
                   <button
                     type='submit'
@@ -459,28 +417,27 @@ export default function ContactUs() {
               <Container className='mx-6 '>
                 <Container className='m-auto font-medium text-lg mt-10'>
                   {"Finalisez votre demande"}
-                </Container>
-                <Flex className=' mt-6  mb-4 w-full' justify='between'>
+                </Container>{" "}
+                <Flex className=' mt-6  mb-4 w-full ' justify='between'>
                   <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px] w-[48%] shrink '>
                     <input
                       type='text'
-                      value={lastName}
                       onChange={(e) => {
                         setLastName(e.target.value);
                       }}
+                      {...register("lastName", { required: true })}
                       name='lastName'
                       className='bg-[#FFFAF5] focus:outline-none rounded-[14px] text-center font-light h-16 shrink '
                       placeholder='Nom'
                     />
                   </Container>
-
                   <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px] w-[48%] shrink '>
                     <input
                       type='text'
-                      value={firstName}
                       onChange={(e) => {
                         setFirstName(e.target.value);
                       }}
+                      {...register("firstName", { required: true })}
                       name='firstName'
                       className=' bg-[#FFFAF5] focus:outline-none rounded-[14px]  text-center font-light h-16 shrink'
                       placeholder='Prénom'
@@ -497,36 +454,32 @@ export default function ContactUs() {
                   <input
                     type='email'
                     name='email'
-                    value={email}
                     onChange={(e) => {
                       setEmail(e.target.value);
                     }}
+                    {...register("email", { required: true })}
                     className=' bg-[#FFFAF5] focus:outline-none rounded-[14px] h-16 text-center font-light'
                     placeholder='Mail'
                   />
                 </Container>
-
                 {errors?.lastName && (
                   <p className='text-red-500'>name cannot be empty.</p>
                 )}
-
                 <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[2px] rounded-[15px]'>
                   <input
                     type='tel'
                     name='phone'
-                    value={phone}
                     onChange={(e) => {
                       setPhone(e.target.value);
                     }}
+                    {...register("phone", { required: true })}
                     className=' bg-[#FFFAF5] focus:outline-none rounded-[14px] h-16 text-center font-light'
                     placeholder='Téléphone'
                   />
                 </Container>
-
                 {errors?.lastName && (
                   <p className='text-red-500'>name cannot be empty.</p>
                 )}
-
                 <div className='flex flex-row items-center justify-center'>
                   <button
                     type='submit'

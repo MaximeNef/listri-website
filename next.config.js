@@ -5,7 +5,7 @@ module.exports = {
   reactStrictMode: false,
   env: {
     SENDGRID_API_KEY:
-      "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",
+      "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",
   },
   webpack(config) {
     config.module.rules.push({
