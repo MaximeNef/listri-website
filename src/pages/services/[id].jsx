@@ -180,7 +180,7 @@ const Service = ({}) => {
               <OneServiceTitle
                 title={"Référencement Web"}
                 description={
-                  "Il est primordial pour une entreprise de se retrouver sur les moteurs de recherche pour permettre à ses clients de la retrouver facilement. Hélas la concurrence est rude, c’est pour cela que nous vous accompagnons de le référencement de votre site web. SEO, SEA, SMO, SMA "
+                  "Il est primordial pour votre entreprise de se retrouver sur les moteurs de recherche pour permettre à vos clients de vous retrouver facilement. Hélas la concurrence est rude, c’est pour cela que nous vous accompagnons de le référencement de votre site web. SEO, SEA, SMO, SMA "
                 }
               />
               <OneServiceImg src={"/assets/logo/seodashboard.svg"} />

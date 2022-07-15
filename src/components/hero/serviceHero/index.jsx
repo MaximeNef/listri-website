@@ -69,7 +69,7 @@ const ServiceHero = () => {
                     <ServiceHeroCard
                       serviceName={"Création de contenu"}
                       ServiceDescription={
-                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                        "Le Content Marketing (ou marketing de contenu) est une stratégie long-terme qui consiste en la création et distribution régulière de contenus "
                       }
                       src={"/assets/logo/Blog.svg"}
                     />
@@ -89,7 +89,7 @@ const ServiceHero = () => {
                     <ServiceHeroCard
                       serviceName={"Site web"}
                       ServiceDescription={
-                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                        "Un site web permet également d'affirmer votre présence en ligne, il est indispensable à la mise en lumière de votre entreprise. "
                       }
                       src={"/assets/logo/Computer.svg"}
                     />
@@ -111,7 +111,7 @@ const ServiceHero = () => {
                     <ServiceHeroCard
                       serviceName={"Référencement web"}
                       ServiceDescription={
-                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                        "Il est primordial pour votre entreprise de se retrouver sur les moteurs de recherche pour permettre à vos clients de vous retrouver. "
                       }
                       src={"/assets/logo/Affiliate.svg"}
                     />
@@ -125,12 +125,12 @@ const ServiceHero = () => {
                 animate='visible'
                 transition={{ duration: 1 }}
               >
-                <Link href='/services/socialMedia' passHref>
+                <Link href='/services/social-media' passHref>
                   <a>
                     <ServiceHeroCard
                       serviceName={"Social Media"}
                       ServiceDescription={
-                        "Nous vous aidons à passer au niveau 3.0 Nous vous aidons à "
+                        "Les réseaux sont devenu la vitrine des entreprises moderne, il est donc primordial d’avoir une page active. "
                       }
                       src={"/assets/logo/Blog.svg"}
                     />
