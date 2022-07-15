@@ -3,11 +3,11 @@ import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
 import MyImage from "../../shared/composers/myimage";
 
-const TeamCard = ({ team, key }) => {
+const TeamCard = ({ team }) => {
   const { lastName, firstName, activite, mail, phone, src } = team;
   return (
     <Container>
-      <Flex justify='center' className='w-full p-10  ' key={key}>
+      <Flex justify='center' className='w-full p-10  '>
         <Container className='mx-auto border-[2px] border-orange-400 w-fit  rounded-[20px] bg-white px-10 shadow-realisationCard'>
           <Container className='border-[2px] border-orange-400   rounded-full  w-[200px] h-[200px] m-auto mt-[-100px] '>
             <MyImage

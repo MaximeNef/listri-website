@@ -43,19 +43,19 @@ export default function Home({ articles, blogs }) {
   );
 }
 
-// export async function getStaticProps({ previewData }) {
-//   const client = createClient({ previewData });
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
 
-//   const blogs = await client.getAllByType("BlogPost", {
-//     orderings: [
-//       { field: "my.article.publishDate", direction: "desc" },
-//       { field: "document.first_publication_date", direction: "desc" },
-//     ],
-//   });
+  const blogs = await client.getAllByType("BlogPost", {
+    orderings: [
+      { field: "my.article.publishDate", direction: "desc" },
+      { field: "document.first_publication_date", direction: "desc" },
+    ],
+  });
 
-//   return {
-//     props: {
-//       blogs,
-//     },
-//   };
-// }
+  return {
+    props: {
+      blogs,
+    },
+  };
+}
