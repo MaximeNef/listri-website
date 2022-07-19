@@ -20,11 +20,6 @@ export default function Maxime() {
       nom: "Mail",
       link: "mailto:maxime@listri.digital",
     },
-    {
-      src: "/assets/logo/WhatsappContact.svg",
-      nom: "Whatsapp",
-      link: "whatsapp:0472860828",
-    },
   ];
   const socials = [
     {

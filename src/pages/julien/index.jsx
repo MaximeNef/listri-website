@@ -20,11 +20,6 @@ export default function Julien() {
       nom: "Mail",
       link: "mailto:julien@listri.digital",
     },
-    {
-      src: "/assets/logo/WhatsappContact.svg",
-      nom: "Whatsapp",
-      link: "whatsapp:0470684551",
-    },
   ];
   const socials = [
     {
@@ -81,15 +76,6 @@ export default function Julien() {
         {" "}
         <Container className='relative '>
           {" "}
-          <Container className='fixed top-[150px] w-full h-full bg-[#FFFAF5] '>
-            <MyImage
-              source={"/assets/logo/listripagecard.svg"}
-              h={497}
-              w={368}
-              className='absolute'
-              layout={"fill"}
-            />
-          </Container>
           <Container className='mx-auto rounded-full mt-2    z-20 shadow-realisationCard'>
             <MyImage
               source={"/assets/logo/avatar.png"}
@@ -101,17 +87,17 @@ export default function Julien() {
         </Container>{" "}
         <Container className='relative mx-5'>
           <p className='mx-auto text-[40px]'>{"Julien Nef"}</p>
-          <p className='mx-auto text-[12px]'>
+          <p className='mx-auto text-[12px] mb-6'>
             {"Vous faites la différence nous le communiquons  "}
           </p>
-          <Container className='w-full h-[2px] bg-gray-300 ' />
+          <Container className='w-full h-[1px] bg-gray-300 mb-4' />
           {/*  CONTACTEZ_MOI  */}
           <p className='mx-auto text-[25px]'>{" Contactez-moi"}</p>
-          <Container className=' mt-6 mb-3'>
+          <Container className=' mt-2 mb-6'>
             <Flex justify='between' align='center'>
               {contacts.map(function (contact, i) {
                 return (
-                  <Container key={i}>
+                  <Container key={i} className='min-w-[30%]'>
                     <a
                       href={contact.link}
                       target='_blank'
@@ -135,10 +121,10 @@ export default function Julien() {
               })}
             </Flex>
           </Container>
-          <Container className='w-full h-[2px] bg-gray-300 ' />
+          <Container className='w-full h-[1px] bg-gray-300 mb-4' />
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
           <p className='mx-auto text-[25px]'>{" Social"}</p>
-          <Container className=' mt-6 mb-3'>
+          <Container className=' mt-2 mb-6'>
             <Flex justify='between' align='center'>
               {socials.map(function (social, i) {
                 return (
@@ -167,10 +153,10 @@ export default function Julien() {
             </Flex>
           </Container>
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
-          <Container className='w-full h-[2px] bg-gray-300 ' />
+          <Container className='w-full h-[1px] bg-gray-300 mb-4' />
           {/*  AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE */}
           <p className='mx-auto text-[25px]'>{"Autre"}</p>
-          <Container className=' mt-6 mb-3'>
+          <Container className=' mt-2 mb-6'>
             <Flex justify='between' align='center'>
               {autres.map(function (autre, i) {
                 return (
