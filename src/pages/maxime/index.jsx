@@ -11,7 +11,7 @@ export default function Maxime() {
       link: "tel:0472860828",
     },
     {
-      src: "/assets/logo/messageContact.svg",
+      src: "/assets/logo/msgContact.svg",
       nom: "Message",
       link: "sms:0472860828",
     },
@@ -90,7 +90,7 @@ export default function Maxime() {
               layout={"fill"}
             />
           </Container>
-          <Container className='mx-auto rounded-full    z-20 shadow-realisationCard'>
+          <Container className='mx-auto rounded-full mt-2   z-20 shadow-realisationCard'>
             <MyImage
               source={"/assets/logo/maxime.png"}
               h={140}
@@ -100,7 +100,7 @@ export default function Maxime() {
           </Container>
         </Container>{" "}
         <Container className='relative mx-5'>
-          <p className='mx-auto text-[40px]'>{"Julien Nef"}</p>
+          <p className='mx-auto text-[40px]'>{"Maxime Nef"}</p>
           <p className='mx-auto text-[12px]'>
             {"Vous faites la différence nous le communiquons  "}
           </p>

@@ -11,7 +11,7 @@ export default function Julien() {
       link: "tel:0470684551",
     },
     {
-      src: "/assets/logo/messageContact.svg",
+      src: "/assets/logo/msgContact.svg",
       nom: "Message",
       link: "sms:0470684551",
     },
@@ -90,7 +90,7 @@ export default function Julien() {
               layout={"fill"}
             />
           </Container>
-          <Container className='mx-auto rounded-full    z-20 shadow-realisationCard'>
+          <Container className='mx-auto rounded-full mt-2    z-20 shadow-realisationCard'>
             <MyImage
               source={"/assets/logo/avatar.png"}
               h={140}
