@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Container from "../../components/shared/composers/container";
-import Flex from "../../components/shared/composers/Flex";
 import MyImage from "../../components/shared/composers/myimage";
 
 export default function Maxime() {

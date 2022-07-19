@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Container from "../../components/shared/composers/container";
-import Flex from "../../components/shared/composers/Flex";
 import MyImage from "../../components/shared/composers/myimage";
 
 export default function Julien() {
@@ -108,7 +107,7 @@ export default function Julien() {
           {/*  CONTACTEZ_MOI  */}
           <p className='mx-auto text-[25px]'>{" Contactez-moi"}</p>
           <Container className=' mt-6 mb-3'>
-            <Flex justify='between' align='center'>
+            <Container className='flex flex-row justify-between items-center'>
               {contacts.map(function (contact, i) {
                 return (
                   <Container key={i}>
@@ -133,13 +132,13 @@ export default function Julien() {
                   </Container>
                 );
               })}
-            </Flex>
+            </Container>
           </Container>
           <Container className='w-full h-[2px] bg-gray-300 ' />
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
           <p className='mx-auto text-[25px]'>{" Social"}</p>
           <Container className=' mt-6 mb-3'>
-            <Flex justify='between' align='center'>
+            <Container className='flex flex-row justify-between items-center'>
               {socials.map(function (social, i) {
                 return (
                   <Container key={i} className='min-w-[30%]'>
@@ -164,14 +163,14 @@ export default function Julien() {
                   </Container>
                 );
               })}
-            </Flex>
+            </Container>
           </Container>
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
           <Container className='w-full h-[2px] bg-gray-300 ' />
           {/*  AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE */}
           <p className='mx-auto text-[25px]'>{"Autre"}</p>
           <Container className=' mt-6 mb-3'>
-            <Flex justify='between' align='center' className=''>
+            <Container className='flex flex-row justify-between items-center'>
               {autres.map(function (autre, i) {
                 return (
                   <Container key={i} className='min-w-[30%]'>
@@ -196,7 +195,7 @@ export default function Julien() {
                   </Container>
                 );
               })}
-            </Flex>
+            </Container>
           </Container>
           {/*   AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE  */}
         </Container>{" "}
