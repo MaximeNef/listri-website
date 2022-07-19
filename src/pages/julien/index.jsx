@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Container from "../../components/shared/composers/container";
-import Flex from "../../components/shared/composers/Flex";
+import Flex from "../../components/shared/composers/flex";
 import MyImage from "../../components/shared/composers/myimage";
 
 export default function Julien() {
@@ -61,7 +61,7 @@ export default function Julien() {
     },
   ];
   return (
-    <Container className='w-full'>
+    <Container className=''>
       <Head>
         <title>Listri Agence Digitale</title>
         <meta
