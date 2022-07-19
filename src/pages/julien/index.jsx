@@ -61,7 +61,7 @@ export default function Julien() {
     },
   ];
   return (
-    <Container className='bg-black'>
+    <Container className='w-full'>
       <Head>
         <title>Listri Agence Digitale</title>
         <meta
