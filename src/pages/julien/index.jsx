@@ -93,8 +93,8 @@ export default function Julien() {
           <Container className='mx-auto rounded-full    z-20 shadow-realisationCard'>
             <MyImage
               source={"/assets/logo/avatar.png"}
-              h={150}
-              w={150}
+              h={140}
+              w={140}
               className={"rounded-[180px] "}
             />
           </Container>
