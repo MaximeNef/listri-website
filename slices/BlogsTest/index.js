@@ -9,7 +9,7 @@ const BlogsTest = ({ slice, current }) => {
   return (
     <Container className=''>
       <section>
-        <Container className='font-medium text-[40px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] '>
+        <h1 className='font-medium text-[40px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
           {slice?.items?.map(
             (
               item,
@@ -18,7 +18,8 @@ const BlogsTest = ({ slice, current }) => {
               <PrismicRichText field={item.title} key={i} />
             )
           )}
-        </Container>
+        </h1>
+
         <Container className='font-light  leading-6 text-[17px] mx-5 mt-5 text-center'>
           {slice?.items?.map(
             (

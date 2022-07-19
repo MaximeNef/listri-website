@@ -3,27 +3,27 @@ import Container from "../../components/shared/composers/container";
 import Flex from "../../components/shared/composers/Flex";
 import MyImage from "../../components/shared/composers/myimage";
 
-export default function Julien() {
+export default function Maxime() {
   const contacts = [
     {
       src: "/assets/logo/telContact.svg",
       nom: "Téléphone",
-      link: "tel:0470684551",
+      link: "tel:0472860828",
     },
     {
       src: "/assets/logo/messageContact.svg",
       nom: "Message",
-      link: "sms:0470684551",
+      link: "sms:0472860828",
     },
     {
       src: "/assets/logo/emailContact.svg",
       nom: "Mail",
-      link: "mailto:julien@listri.digital",
+      link: "mailto:maxime@listri.digital",
     },
     {
       src: "/assets/logo/WhatsappContact.svg",
       nom: "Whatsapp",
-      link: "whatsapp:0470684551",
+      link: "whatsapp:0472860828",
     },
   ];
   const socials = [
