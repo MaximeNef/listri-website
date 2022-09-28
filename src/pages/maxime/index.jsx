@@ -56,7 +56,7 @@ export default function Maxime() {
     },
   ];
   return (
-    <Container className='bg-black'>
+    <Container className=''>
       <Head>
         <title>Listri Agence Digitale</title>
         <meta
@@ -72,20 +72,11 @@ export default function Maxime() {
         />
       </Head>
 
-      <main className='bg-[#FFFAF5]    text-[#37474F]'>
+      <main className=' bg-white h-[89vh]    text-[#37474F]'>
         {" "}
         <Container className='relative '>
           {" "}
-          <Container className='fixed top-[150px] w-full h-full bg-[#FFFAF5] '>
-            <MyImage
-              source={"/assets/logo/listripagecard.svg"}
-              h={497}
-              w={368}
-              className='absolute'
-              layout={"fill"}
-            />
-          </Container>
-          <Container className='mx-auto rounded-full mt-2   z-20 shadow-realisationCard'>
+          <Container className='mx-auto rounded-full mt-2    z-20 shadow-realisationCard'>
             <MyImage
               source={"/assets/logo/maxime.png"}
               h={140}
@@ -96,17 +87,17 @@ export default function Maxime() {
         </Container>{" "}
         <Container className='relative mx-5'>
           <p className='mx-auto text-[40px]'>{"Maxime Nef"}</p>
-          <p className='mx-auto text-[12px]'>
+          <p className='mx-auto text-[12px] mb-6'>
             {"Vous faites la différence nous le communiquons  "}
           </p>
-          <Container className='w-full h-[2px] bg-gray-300 ' />
+          {/* <Container className='w-full h-[1px] bg-gray-300 mb-4' /> */}
           {/*  CONTACTEZ_MOI  */}
           <p className='mx-auto text-[25px]'>{" Contactez-moi"}</p>
-          <Container className=' mt-6 mb-3'>
+          <Container className=' mt-2 mb-6'>
             <Flex justify='between' align='center'>
               {contacts.map(function (contact, i) {
                 return (
-                  <Container key={i}>
+                  <Container key={i} className='min-w-[30%]'>
                     <a
                       href={contact.link}
                       target='_blank'
@@ -121,19 +112,19 @@ export default function Maxime() {
                         />
                       </Container>
 
-                      <p className='text-center text-[15px] mt-2'>
-                        {contact.nom}
-                      </p>
+                      {/* <p className='text-center text-[15px] mt-2'>
+                      {contact.nom}
+                    </p> */}
                     </a>
                   </Container>
                 );
               })}
             </Flex>
           </Container>
-          <Container className='w-full h-[2px] bg-gray-300 ' />
+          <Container className='w-full h-[1px] bg-gray-300 mb-4' />
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
-          <p className='mx-auto text-[25px]'>{" Social"}</p>
-          <Container className=' mt-6 mb-3'>
+          <p className='mx-auto text-[25px]'>{"Social"}</p>
+          <Container className=' mt-2 mb-6'>
             <Flex justify='between' align='center'>
               {socials.map(function (social, i) {
                 return (
@@ -152,9 +143,9 @@ export default function Maxime() {
                         />
                       </Container>
 
-                      <p className='text-center text-[15px] mt-2'>
-                        {social.nom}
-                      </p>
+                      {/* <p className='text-center text-[15px] mt-2'>
+                      {social.nom}
+                    </p> */}
                     </a>
                   </Container>
                 );
@@ -162,10 +153,10 @@ export default function Maxime() {
             </Flex>
           </Container>
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
-          <Container className='w-full h-[2px] bg-gray-300 ' />
+          <Container className='w-full h-[1px] bg-gray-300 mb-4' />
           {/*  AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE */}
-          <p className='mx-auto text-[25px]'>{"Autre"}</p>
-          <Container className=' mt-6 mb-3'>
+          <p className='mx-auto text-[25px]'>{"Autres"}</p>
+          <Container className=' mt-2 '>
             <Flex justify='between' align='center'>
               {autres.map(function (autre, i) {
                 return (
@@ -184,16 +175,16 @@ export default function Maxime() {
                         />
                       </Container>
 
-                      <p className='text-center text-[15px] mt-2'>
+                      {/* <p className='text-center text-[15px] mt-2'>
                         {autre.nom}
-                      </p>
+                      </p> */}
                     </a>
                   </Container>
                 );
               })}
             </Flex>
           </Container>
-          {/*   AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTREAUTREAUTRE  */}
+          {/*   AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE  */}
         </Container>{" "}
       </main>
     </Container>

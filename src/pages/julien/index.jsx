@@ -72,7 +72,7 @@ export default function Julien() {
         />
       </Head>
 
-      <main className='bg-[#FFFAF5]    text-[#37474F]'>
+      <main className=' bg-white h-[89vh]    text-[#37474F]'>
         {" "}
         <Container className='relative '>
           {" "}
@@ -90,7 +90,7 @@ export default function Julien() {
           <p className='mx-auto text-[12px] mb-6'>
             {"Vous faites la différence nous le communiquons  "}
           </p>
-          <Container className='w-full h-[1px] bg-gray-300 mb-4' />
+          {/* <Container className='w-full h-[1px] bg-gray-300 mb-4' /> */}
           {/*  CONTACTEZ_MOI  */}
           <p className='mx-auto text-[25px]'>{" Contactez-moi"}</p>
           <Container className=' mt-2 mb-6'>
@@ -112,9 +112,9 @@ export default function Julien() {
                         />
                       </Container>
 
-                      <p className='text-center text-[15px] mt-2'>
+                      {/* <p className='text-center text-[15px] mt-2'>
                         {contact.nom}
-                      </p>
+                      </p> */}
                     </a>
                   </Container>
                 );
@@ -123,7 +123,7 @@ export default function Julien() {
           </Container>
           <Container className='w-full h-[1px] bg-gray-300 mb-4' />
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
-          <p className='mx-auto text-[25px]'>{" Social"}</p>
+          <p className='mx-auto text-[25px]'>{"Social"}</p>
           <Container className=' mt-2 mb-6'>
             <Flex justify='between' align='center'>
               {socials.map(function (social, i) {
@@ -143,9 +143,9 @@ export default function Julien() {
                         />
                       </Container>
 
-                      <p className='text-center text-[15px] mt-2'>
+                      {/* <p className='text-center text-[15px] mt-2'>
                         {social.nom}
-                      </p>
+                      </p> */}
                     </a>
                   </Container>
                 );
@@ -155,8 +155,8 @@ export default function Julien() {
           {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
           <Container className='w-full h-[1px] bg-gray-300 mb-4' />
           {/*  AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE */}
-          <p className='mx-auto text-[25px]'>{"Autre"}</p>
-          <Container className=' mt-2 mb-6'>
+          <p className='mx-auto text-[25px]'>{"Autres"}</p>
+          <Container className=' mt-2 mb-11 '>
             <Flex justify='between' align='center'>
               {autres.map(function (autre, i) {
                 return (
@@ -175,9 +175,9 @@ export default function Julien() {
                         />
                       </Container>
 
-                      <p className='text-center text-[15px] mt-2'>
+                      {/* <p className='text-center text-[15px] mt-2'>
                         {autre.nom}
-                      </p>
+                      </p> */}
                     </a>
                   </Container>
                 );

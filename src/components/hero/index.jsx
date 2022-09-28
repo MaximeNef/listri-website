@@ -4,6 +4,8 @@ import Typed from "react-typed";
 import Flex from "../shared/composers/flex";
 import { motion } from "framer-motion";
 import MyImage from "../shared/composers/myimage";
+import Lottie from "react-lottie";
+import burgerMenu from "./../../../public/bglotties.json";
 // const myLoader = ({ src, width, quality }) => {
 //   console.log(myLoader, "myloader");
 //   console.log(src, "myloader");
@@ -12,6 +14,16 @@ import MyImage from "../shared/composers/myimage";
 // };
 
 const Hero = () => {
+  const defaultOptions = {
+    name: "menuBurger",
+    loop: true,
+    autoplay: false,
+    animationData: burgerMenu,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <Container className='lg:min-h-full'>
       <Flex type='col' className='lg:hidden'>
@@ -49,9 +61,19 @@ const Hero = () => {
       </Flex>
       {/*  responsive desktop  */}
       <Container className='lg:min-h-screen'>
+        <Container className='absolute top-0 right-0'>
+          <Lottie
+            options={defaultOptions}
+            height={"100%"}
+            width={"100%"}
+            //isPaused={pause}
+            IsPlaying={true}
+            className=''
+          />
+        </Container>
         <Flex
           type='row'
-          className='hidden lg:inline-flex lg:max-w-[1180px] lg:m-auto lg:w-full'
+          className='hidden lg:inline-flex lg:max-w-[1180px] lg:m-auto lg:w-full z-20'
         >
           {" "}
           <Flex
