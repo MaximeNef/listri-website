@@ -1,10 +1,10 @@
 import { useState } from "react";
-import NavPage from "../../components/all/Nav-page";
 import Optionform from "../../components/contact/optionform";
 import Flex from "../../components/shared/composers/flex";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Container from "../../components/shared/composers/container";
+import NavPage from "../../components/all/nav-page";
 
 export default function ContactTest() {
   // router
@@ -106,7 +106,7 @@ export default function ContactTest() {
     router.push("/");
   };
   return (
-    <NavPage current='contact'>
+    <NavPage current='contactTest'>
       <Head>
         <title>{"Barbiere-Immo "}</title>
         <meta
