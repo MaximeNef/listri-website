@@ -212,3 +212,12 @@ export default function ContactTest() {
     </NavPage>
   );
 }
+
+// export async function getServerSideProps() {
+//   console.log(process.env.LISTRI);
+//   return {
+//     props: {
+//       hello: "word",
+//     },
+//   };
+// }

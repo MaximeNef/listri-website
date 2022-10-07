@@ -2,10 +2,11 @@
 const optimizedImages = require("next-optimized-images");
 const withPlugins = require("next-compose-plugins");
 module.exports = {
-  reactStrictMode: false,
   env: {
-    MAIL: process.env.listri_mail,
+    LISTRI: process.env.listri_mail,
   },
+  reactStrictMode: false,
+
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
