@@ -4,7 +4,7 @@ const withPlugins = require("next-compose-plugins");
 module.exports = {
   reactStrictMode: false,
   env: {
-    MAIL: "SG._l_buRMFRiGM9NSj6TYKOw",
+    MAIL: process.env.listri_mail,
   },
   webpack(config) {
     config.module.rules.push({
