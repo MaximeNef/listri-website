@@ -9,8 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "slicemachine": "start-slicemachine",
-    "vercel": "vercel env pull"
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@babel/core": "^7.18.6",
