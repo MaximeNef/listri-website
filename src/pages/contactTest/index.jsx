@@ -117,7 +117,7 @@ export default function ContactTest() {
       <h1 className='mb-[40px]'>{"Nous contacter"}</h1>
       <Container className='md:flex md:flex-col mb-10'>
         <Container className='md:w-full'>
-          <p className='mb-[20px]'> {"Vous souhaitez nous contacter pour:"}</p>
+          <p className='mb-[20px]'> {"Vous souhaitez nous contacter pour"}</p>
           <Flex justify='between'>
             <Optionform
               state={vendre}
