@@ -118,7 +118,6 @@ export default function ContactTest() {
       <Container className='md:flex md:flex-col mb-10'>
         <Container className='md:w-full'>
           <p className='mb-[20px]'> {"Vous souhaitez nous contacter pour"}</p>
-          <p>{process.env.MAIL}</p>
           <Flex justify='between'>
             <Optionform
               state={vendre}
