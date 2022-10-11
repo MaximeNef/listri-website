@@ -19,23 +19,44 @@ const Services = () => {
       src: "/assets/logo/Blog.svg",
     },
     {
-      id: "website",
-      title: "Web Site",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Computer.svg",
-    },
-  ]);
-  const [services2, setServices2] = useState([
-    {
       id: "social-media",
       title: "Social média",
       subtitle: "UX/UI Design & Mobile Application Development",
       src: "/assets/logo/Blog.svg",
     },
     {
+      id: "Digital-business-card",
+      title: "Digital business card",
+      subtitle: "Digital-business-card",
+      src: "/assets/logo/Blog.svg",
+    },
+  ]);
+  const [services2, setServices2] = useState([
+    {
+      id: "website",
+      title: "Web Site",
+      subtitle: "UX/UI Design & Mobile Application Development",
+      src: "/assets/logo/Computer.svg",
+    },
+    {
+      id: "Optimisation-Web",
+      title: "Optimisation Web",
+      subtitle: "Optimisation Web",
+      src: "/assets/logo/Blog.svg",
+    },
+  ]);
+  const [services3, setServices3] = useState([
+    {
       id: "referencement",
       title: "Référencement web",
       subtitle: "UX/UI Design & Mobile Application Development",
+      src: "/assets/logo/Computer.svg",
+    },
+
+    {
+      id: "Speedtest-Web",
+      title: "Speedtest Web",
+      subtitle: "Speedtest-Web",
       src: "/assets/logo/Computer.svg",
     },
   ]);
@@ -59,7 +80,7 @@ const Services = () => {
       <main className='bg-[#FFFAF5]  py-28 '>
         <div className='absolute inset-0 flex items-center justify-center'></div>
         <ServiceTitle />{" "}
-        <Container className='md:flex md:flex-row md:justify-center md:items-center md:w-full'>
+        <Container className='md:flex md:flex-row md:justify-center md:items-start md:w-full'>
           <Container className='mx-5 relative text-center space-y-8 mt-6 md:mt-0'>
             {services.map((service, i) => (
               <MotionLeft
@@ -95,6 +116,36 @@ const Services = () => {
           </Container>
           <Container className='mx-5 relative text-center space-y-8 md:flex '>
             {services2.map((service, i) => (
+              <MotionLeft
+                initial='hidden'
+                animate='visible'
+                transition={{ duration: 1 }}
+                key={i}
+              >
+                <Link
+                  href={{
+                    pathname: "services/[id]",
+                    query: {
+                      id: service.id,
+                    },
+                  }}
+                  as={`/services/${service.id}`}
+                  passHref
+                >
+                  <a>
+                    <ServiceCard
+                      key={service.id}
+                      serviceName={service.title}
+                      service={service}
+                      src={service.src}
+                    />
+                  </a>
+                </Link>{" "}
+              </MotionLeft>
+            ))}
+          </Container>{" "}
+          <Container className='mt-8 md:mt-0 mx-5 relative text-center space-y-8 md:flex '>
+            {services3.map((service, i) => (
               <MotionLeft
                 initial='hidden'
                 animate='visible'
