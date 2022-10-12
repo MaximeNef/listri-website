@@ -37,6 +37,7 @@ export default function App({ Component, pageProps }) {
         });
     `}
       </Script>
+      <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
       <PrismicProvider
         linkResolver={linkResolver}
         internalLinkComponent={({ href, children, ...props }) => (
