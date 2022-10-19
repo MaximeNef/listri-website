@@ -3,7 +3,7 @@ const optimizedImages = require("next-optimized-images");
 const withPlugins = require("next-compose-plugins");
 module.exports = {
   env: {
-    LISTRI: process.env.listri_mail,
+    LISTRI: process.env.NEXT_PUBLIC_LISTRI_MAIL,
   },
   reactStrictMode: false,
 
