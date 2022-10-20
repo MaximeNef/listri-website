@@ -1,17 +1,18 @@
 const sgMail = require("@sendgrid/mail");
 // const { SG_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env;
-
 sgMail.setApiKey(process.env.LISTRI);
 async function sendEmail(req, res) {
   try {
     await sgMail.send({
       to: "maximenef1@gmail.com", // Your email where you'll receive emails
       from: "immersy.info@gmail.com", // your website email address here
-      subject: `${req.body.vendre ? "Je veux VENDRE ma maison" : ""}${
-        req.body.louer ? "Je veux LOUER ma maison" : ""
-      }${req.body.acheter ? "Je veux Acheter une maison" : ""}${
-        req.body.expertise ? "Je veux une EXPERTISE de ma maison" : ""
-      }${req.body.estimation ? "Je veux une ESTIMATION de ma maison" : ""}`,
+      subject: `${req.body.contenu ? "contenu" : ""}${
+        req.body.media ? " media" : ""
+      }${req.body.site ? "site" : ""}${
+        req.body.referencement ? "referencement" : ""
+      }${req.body.optimisation ? "optimisation" : ""}${
+        req.body.autres ? "autres" : ""
+      }`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
