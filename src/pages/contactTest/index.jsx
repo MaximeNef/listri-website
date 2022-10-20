@@ -101,7 +101,17 @@ export default function ContactTest() {
       console.log(error, "fuck");
       return;
     }
-    console.log(nom, prenom, mail, telephone);
+    console.log(
+      nom,
+      prenom,
+      mail,
+      telephone,
+      vendre,
+      louer,
+      acheter,
+      expertise,
+      estimation
+    );
     router.push("/");
   };
   return (
