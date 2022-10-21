@@ -12,12 +12,17 @@ import Container from "../components/shared/composers/container";
 import Process from "../components/hero/process";
 import { createClient } from "../../prismicio";
 import Processherotry from "../components/hero/processHero";
+import Script from "next/script";
 
 export default function Home({ articles, blogs }) {
   console.log(articles, "BLABLA");
   return (
     <NavPage current='Accueil'>
       <Head>
+        <meta
+          name='google-site-verification'
+          content='SiiyWySS-E4LEBuJc9YlARLPC0yJzhi4h3vjZZ7rmSk'
+        />
         <title>Listri Agence Digitale - Home</title>
         <meta
           name='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience. '
