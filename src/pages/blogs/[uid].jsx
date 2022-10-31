@@ -7,6 +7,7 @@ import * as prismicH from "@prismicio/helpers";
 import { useState } from "react";
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
+import Flex from "../../components/shared/composers/flex";
 
 export default function Blog({ doc }) {
   console.log(doc, "blog");
@@ -29,7 +30,7 @@ export default function Blog({ doc }) {
           />
         </Head>
         <main className='bg-[#FFFAF5]  pt-28'>
-          <Container>
+          <Container className='w-full'>
             <SliceZone slices={doc.data.slices} components={components} />
           </Container>
         </main>

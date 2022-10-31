@@ -8,8 +8,8 @@ const BlogsTest = ({ slice, current }) => {
   console.log(current, "current");
   return (
     <Container className=''>
-      <section>
-        <h1 className='font-medium text-[40px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+      <section className=''>
+        <h1 className='font-medium text-[40px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] mx-20'>
           {slice?.items?.map(
             (
               item,
@@ -20,7 +20,7 @@ const BlogsTest = ({ slice, current }) => {
           )}
         </h1>
 
-        <Container className='font-light  leading-6 text-[17px] mx-5 mt-5 text-center'>
+        <Container className='font-light  leading-6 text-[17px]  mt-5 text-center mx-20'>
           {slice?.items?.map(
             (
               item,
@@ -35,9 +35,9 @@ const BlogsTest = ({ slice, current }) => {
             <MyImage
               source={item.img.url}
               key={i}
-              h='300'
+              h='600'
               w='100'
-              objectFit={"cover"}
+              objectFit={"contain"}
               className='rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[10px] rounded-br-[10px] w-fit '
             />
             // <img src={item.img.url} alt={item.img.alt} key={i} />
