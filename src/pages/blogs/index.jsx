@@ -51,18 +51,24 @@ const Blogs = ({ blogs, BlogTitle }) => {
             <ul className='md:flex md:flex-row md:flex-wrap md:justify-center'>
               {" "}
               {blogs.map((blog) => (
-                <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
+                <Link
+                  href={`/blogs/${blog.uid}`}
+                  key={blog.uid}
+                  passHref
+                  className=''
+                >
                   <a key={blog.uid}>
-                    <Container className=' rounded-tl-[10px] rounded-br-[10px] rounded-tr-[50px] rounded-bl-[50px]  m-5 mb-20 min-h-[290px] relative '>
-                      <Container className='absolute w-fit'>
+                    <Container className=' rounded-tl-[10px] rounded-br-[10px] rounded-tr-[50px] rounded-bl-[50px]  m-5 mb-10 md:mb-0 min-h-[290px] relative '>
+                      <Container className=' w-fit'>
                         <Image
                           src={blog.data.slices[0].items[0].img.url}
                           alt='Picture of the author'
-                          width={350}
-                          height={300}
-                          className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px]'
+                          width={500}
+                          height={400}
+                          objectFit={"cover"}
+                          className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] '
                         />
-                        <Container className='h-[300px] w-[350px] bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] shadow-ServiceCard' />
+                        <Container className=' h-[400px] w-[500px] bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] shadow-ServiceCard' />
                       </Container>
                       <Flex
                         type='col'
@@ -70,7 +76,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
                         align='center'
                         className='z-10 mb-6'
                       >
-                        <Container className=' text-[#FFFAF5] text-[20px] font-medium text-center w-[350px]'>
+                        <Container className=' text-[#FFFAF5] text-[24px] leading-[50px] font-medium text-center w-[350px] absolute top-[45%]'>
                           {blog.data.slices[0].items[0].title[0].text}{" "}
                         </Container>
 
