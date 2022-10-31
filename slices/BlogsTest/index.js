@@ -9,7 +9,7 @@ const BlogsTest = ({ slice, current }) => {
   return (
     <Container className=''>
       <section className=''>
-        <h1 className='font-medium text-[40px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] mx-20'>
+        <h1 className='font-medium text-[40px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] md:mx-[20%]'>
           {slice?.items?.map(
             (
               item,
@@ -20,7 +20,7 @@ const BlogsTest = ({ slice, current }) => {
           )}
         </h1>
 
-        <Container className='font-light  leading-6 text-[17px]  mt-5 text-center mx-20'>
+        <Container className='font-light  leading-6 text-[17px]  mt-5 text-center mx-5 md:mx-20 md:mb-10 md:mx-[20%]'>
           {slice?.items?.map(
             (
               item,
@@ -30,17 +30,16 @@ const BlogsTest = ({ slice, current }) => {
             )
           )}
         </Container>
-        <Container className='relative mx-5 my-10  md:min-h-[500px]'>
+        <Container className=' mt-[-80px] mb-[-50px] md:mb-10 md:mt-0  '>
           {slice?.items?.map((item, i) => (
             <MyImage
               source={item.img.url}
               key={i}
-              h='600'
+              h='500'
               w='100'
               objectFit={"contain"}
-              className='rounded-tr-[50px] rounded-bl-[50px] rounded-tl-[10px] rounded-br-[10px] w-fit '
+              className=''
             />
-            // <img src={item.img.url} alt={item.img.alt} key={i} />
           ))}{" "}
         </Container>
       </section>
