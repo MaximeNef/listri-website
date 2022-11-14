@@ -6,11 +6,11 @@ const ContactTitle = ({ title }) => {
     <Container className=''>
       {" "}
       <Flex type='col' align='center' className=' space-y-4 mb-8 mx-10'>
-        <h2 className=' font-medium text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+        <h1 className=' font-medium text-[32px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
           {"Contact "}
-        </h2>
+        </h1>
         <Container className='font-semibold text-[#37474F]'>
-          {"  Parlez-nous de vous "}
+          <h2> {"  Parlez-nous de vous "}</h2>
         </Container>
         <Container className='text-center font-light text-[#37474F]'>
           {
