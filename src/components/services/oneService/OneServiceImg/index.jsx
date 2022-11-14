@@ -8,13 +8,6 @@ const OneServiceImg = ({ src }) => {
     <Container className='mx-auto'>
       <motion.div animate={{ scale: [0.7, 1] }} transition={{ duration: 1 }}>
         <MyImage source={src} w={400} h={450} />
-        {/* <Image
-          src={src}
-          alt='Picture of the author'
-          width={400}
-          height={450}
-          className=''
-        />{" "} */}
       </motion.div>
     </Container>
   );
