@@ -18,6 +18,10 @@ const Service = ({}) => {
   console.log(service.id, "debug");
   switch (service.id) {
     case "creation-de-contenu":
+      var meta_title = "Listri Agence Digitale - création de contenu";
+      var meta_name = "création de contenu";
+      var meta_content =
+        "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience. ";
       var title = "creation de contenu";
       var description =
         " Le Content Marketing (ou marketing de contenu) est une stratégie long-terme qui consiste en la création et distribution régulière de contenus à forte valeur ajoutée pour votre audiance, prospects et clients.";
@@ -41,6 +45,10 @@ const Service = ({}) => {
       ];
       break;
     case "social-media":
+      var meta_title = "Listri Agence Digitale - Social Media";
+      var meta_name = "Social Media";
+      var meta_content =
+        "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.";
       var title = "Social média";
       var description =
         "L’importance des réseaux sociaux dans le monde auctuelle n’est plus à démontrer. Les réseaux sont devenu la vitrine des entreprises moderne, il est donc primordial d’avoir une page active.";
@@ -64,6 +72,10 @@ const Service = ({}) => {
       ];
       break;
     case "website":
+      var meta_title = "Listri Agence Digitale - Web Site";
+      var meta_name = "Web Site";
+      var meta_content =
+        "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.";
       var title = "Site web";
       var description =
         "Un site web permet également d'affirmer votre présence en ligne, il est indispensable à la mise en lumière de votre entreprise. Ouvre vos canaux a de nouveau clients, accroit votre crédibilité, visibilité et permet de véhiculer l’image de votre entreprise.";
@@ -97,6 +109,10 @@ const Service = ({}) => {
       ];
       break;
     case "referencement":
+      var meta_title = "Listri Agence Digitale - Référencement";
+      var meta_name = "Référencement";
+      var meta_content =
+        "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.";
       var title = "Référencement Web";
       var description =
         "Il est primordial pour votre entreprise de se retrouver sur les moteurs de recherche pour permettre à vos clients de vous retrouver facilement. Hélas la concurrence est rude, c’est pour cela que nous vous accompagnons de le référencement de votre site web. SEO, SEA, SMO, SMA ";
@@ -120,6 +136,10 @@ const Service = ({}) => {
       ];
       break;
     case "Optimisation-Web":
+      var meta_title = "Listri Agence Digitale - Optimisation Web";
+      var meta_name = "Optimisation Web";
+      var meta_content =
+        "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par l'optimisation , nous sommes là pour vous rendre visible face à votre audience.";
       var title = "Optimisation Web";
       var description =
         "Votre site n’est pas optimsé et cela vous fait perdez tous les jours des clients potentiels sans vous en rendre compte. Mais ne vous en faites pas, grâce a l’intégration de notre outil nous serons en mesure de comprendre vos visiteurs, de savoir qui ils sont et pourquoi ils quittent votre site sans prendre contact ou passer commande. ";
@@ -138,6 +158,10 @@ const Service = ({}) => {
       ];
       break;
     case "Digital-business-card":
+      var meta_title = "Listri Agence Digitale - Digital Business Card";
+      var meta_name = "Digital business card";
+      var meta_content =
+        "Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par l'optimisation , nous sommes là pour vous rendre visible face à votre audience.";
       var title = "Digital business card";
       var description =
         "Le monde du digital va très vite, mais certaines habitudes ont la peau dure. La carte de visite en est une ! Même si toutes les nouvelles entreprises utilisent des cartes digitales, ce mouvement n’est pas encore généralisé. ";
@@ -162,6 +186,9 @@ const Service = ({}) => {
       break;
 
     default:
+      var meta_title = "";
+      var meta_name = "";
+      var meta_content = "";
       var title = "";
       var description = " ";
       var image_src = "";
@@ -170,11 +197,8 @@ const Service = ({}) => {
   return (
     <NavPage current='Services'>
       <Head>
-        <title>Listri Agence Digitale - création de contenu</title>
-        <meta
-          name='création de contenu'
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience. '
-        />
+        <title>{meta_title}</title>
+        <meta name={meta_name} content={meta_content} />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
@@ -188,7 +212,9 @@ const Service = ({}) => {
           <OneServiceTitle title={title} description={description} />
           <OneServiceImg src={image_src} />
         </Container>
+
         <OneServiceContent Contents={Contents} />
+
         <Link href='/contactus' passHref>
           <a>
             <OneServiceBtn btn={"Parlez-nous de votre projet"} />

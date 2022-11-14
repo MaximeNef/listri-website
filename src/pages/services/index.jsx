@@ -24,12 +24,6 @@ const Services = () => {
       subtitle: "UX/UI Design & Mobile Application Development",
       src: "/assets/logo/Blog.svg",
     },
-    {
-      id: "Digital-business-card",
-      title: "Digital business card",
-      subtitle: "Digital-business-card",
-      src: "/assets/logo/Blog.svg",
-    },
   ]);
   const [services2, setServices2] = useState([
     {
@@ -52,13 +46,18 @@ const Services = () => {
       subtitle: "UX/UI Design & Mobile Application Development",
       src: "/assets/logo/Computer.svg",
     },
-
     {
-      id: "Speedtest-Web",
-      title: "Speedtest Web",
-      subtitle: "Speedtest-Web",
-      src: "/assets/logo/Computer.svg",
+      id: "Digital-business-card",
+      title: "Digital business card",
+      subtitle: "Digital-business-card",
+      src: "/assets/logo/Blog.svg",
     },
+    // {
+    //   id: "Speedtest-Web",
+    //   title: "Speedtest Web",
+    //   subtitle: "Speedtest-Web",
+    //   src: "/assets/logo/Computer.svg",
+    // },
   ]);
   return (
     <NavPage current='Services'>
