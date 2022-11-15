@@ -60,16 +60,6 @@ const Hero = () => {
       </Flex>
       {/*  responsive desktop  */}
       <Container className='lg:min-h-screen'>
-        <Container className='absolute top-0 right-0'>
-          <Lottie
-            options={defaultOptions}
-            height={"100%"}
-            width={"100%"}
-            //isPaused={pause}
-            IsPlaying={true}
-            className=''
-          />
-        </Container>
         <Flex
           type='row'
           className='hidden lg:inline-flex lg:max-w-[1180px] lg:m-auto lg:w-full z-20'
@@ -98,8 +88,7 @@ const Hero = () => {
                 className='mr-2  text-4xl font-medium text-[#37474F]
         '
               >
-                {" "}
-                une agence digitale{" "}
+                <h1>une agence digitale </h1>
               </Container>
               <Container className=''>
                 <Typed
