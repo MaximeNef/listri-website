@@ -44,8 +44,7 @@ const Hero = () => {
             className='mr-1  text-xl font-medium text-[#37474F]
         '
           >
-            {" "}
-            une agence digitale{" "}
+            <h1>une agence digitale</h1>
           </Container>
 
           <Container className=''>

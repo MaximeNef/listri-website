@@ -14,7 +14,7 @@ const ServiceHeroCard = ({ serviceName, ServiceDescription, src }) => {
               <MyImage source={src} w={45} h={45} />
             </Container>
             <Container className='lg:mt-12 font-semibold text-[21px]  items-start w-fit mx-auto  '>
-              <p className='z-10'> {serviceName}</p>
+              <h3 className='z-10'> {serviceName}</h3>
               <Container className='h-2 w-full mt-[-12px] rounded-full bg-gradient-to-r from-[#FF7E00]/50 to-[#FF7E00]/30' />
             </Container>
           </Flex>
