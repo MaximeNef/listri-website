@@ -7,11 +7,11 @@ const BlogDescription = ({ slice }) => (
   <Container className='  rounded-[10px] p-5 md:mx-[20%]  mt-8 '>
     <section className=''>
       <Container className='font-semibold text-[#37474F]  text-[21px] text-left'>
-        <h2>
+        <div>
           {slice?.items?.map((item, i) => (
             <PrismicRichText field={item.subtitle} key={i} />
           ))}
-        </h2>
+        </div>
       </Container>
       <Container className='text-left font-light text-[#37474F]  leading-7 text-lg  my-5  '>
         {slice?.items?.map((item, i) => (
