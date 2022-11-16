@@ -38,7 +38,7 @@ export default function Home({ articles, blogs }) {
         {/* <ClientHero /> */}
         {/* <Process />  */}
         <Processherotry />
-        <BlogHero blogs={blogs} />
+        {/* <BlogHero blogs={blogs} /> */}
       </main>
     </NavPage>
   );

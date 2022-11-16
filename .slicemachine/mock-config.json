@@ -121,7 +121,7 @@
       "default": {
         "primary": {},
         "items": {
-          "BlogTitle": {
+          "category": {
             "config": {
               "patternType": "HEADING",
               "blocks": 1
@@ -134,13 +134,13 @@
       "default": {
         "primary": {},
         "items": {
-          "titleDescription": {
+          "subtitle": {
             "config": {
               "patternType": "HEADING",
               "blocks": 1
             }
           },
-          "contentDescription": {
+          "description": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1

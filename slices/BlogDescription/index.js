@@ -7,10 +7,9 @@ const BlogDescription = ({ slice }) => (
     <section className=''>
       <Container className='font-semibold text-[#37474F]  text-[34px] text-left'>
         <h2>
-          {" "}
           {slice?.items?.map((item, i) => (
             <PrismicRichText field={item.titleDescription} key={i} />
-          ))}{" "}
+          ))}
         </h2>
       </Container>
       <Container className='text-left font-light text-[#37474F] text-[19px] leading-10 md:leading-normal  py-4'>

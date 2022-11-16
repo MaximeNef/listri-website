@@ -12,22 +12,30 @@
       "description": "BlogDescription",
       "primary": {},
       "items": {
-        "titleDescription": {
+        "subtitle": {
           "type": "StructuredText",
           "config": {
-            "label": "Title Description",
+            "label": "subtitle",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "heading2"
           }
         },
-        "contentDescription": {
+        "description": {
           "type": "StructuredText",
           "config": {
-            "label": "Content Description",
+            "label": "description",
             "placeholder": "",
             "allowTargetBlank": true,
             "single": "paragraph"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
           }
         }
       },

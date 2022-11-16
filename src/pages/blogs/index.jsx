@@ -54,15 +54,15 @@ const Blogs = ({ blogs, BlogTitle }) => {
                 <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
                   <a key={blog.uid}>
                     <Container className=' rounded-tl-[10px] rounded-br-[10px] rounded-tr-[50px] rounded-bl-[50px]  m-5 mb-10 md:mb-0 min-h-[290px] relative '>
-                      <Container className=' w-fit'>
-                        <Image
+                      <Container className='mx-20 w-fit'>
+                        {/* <Image
                           src={blog.data.slices[0].items[0].img.url}
                           alt='Picture of the author'
                           width={500}
                           height={400}
                           objectFit={"cover"}
                           className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] '
-                        />
+                        /> */}
                         <Container className=' h-[280px] w-full md:h-[400px] md:w-[500px] bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] shadow-ServiceCard' />
                       </Container>
                       <Flex
@@ -71,9 +71,9 @@ const Blogs = ({ blogs, BlogTitle }) => {
                         align='center'
                         className='z-10 mb-6'
                       >
-                        <Container className=' text-[#FFFAF5] text-[24px] leading-[50px] font-medium text-center w-[350px] absolute top-[25%] md:top-[45%]'>
+                        {/* <Container className=' text-[#FFFAF5] text-[24px] leading-[50px] font-medium text-center w-[350px] absolute top-[25%] md:top-[45%]'>
                           {blog.data.slices[0].items[0].title[0].text}{" "}
-                        </Container>
+                        </Container> */}
 
                         <Container className=' text-[#FFFAF5] text-[17px] font-light text-right w-full   max-w-[300px] absolute bottom-10 md:right-10 '>
                           {"suite ..."}
