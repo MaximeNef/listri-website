@@ -8,7 +8,7 @@ const BlogTitle = ({ slice }) => (
   <section>
     {slice?.items?.map(
       (item, i /* import { PrismicRichText } from '@prismicio/react' */) => (
-        <Container key={i} className='mx-5 '>
+        <Container key={i} className='mx-5 mb-5'>
           <div className='flex flex-row space-x-5 mb-5'>
             <div>
               <Flex className='bg-[#FEA249] w-fit rounded-[20px] text-white space-x-1 py-2 px-4 font-[350]'>

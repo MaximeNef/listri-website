@@ -10,10 +10,7 @@ const MenuDesktop = ({ link, current }) => {
   console.log(current, "current");
   return (
     <Container className=' w-full '>
-      <Flex
-        align='center'
-        className='fixed z-20 bg-[#FFFAF5] w-full   py-2  px-24'
-      >
+      <Flex align='center' className='fixed z-20 bg-white w-full   py-2  px-24'>
         {" "}
         <Flex className=' m-auto   max-h-12  '>
           <Link href='/' passHref>

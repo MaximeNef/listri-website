@@ -34,7 +34,7 @@ const ProcessContent = () => {
         >
           <Container className='space-y-4'>
             <Container className='snap-center bg-[#FFFFFF] w-[310px] flex-shrink-0 h-[450px] flex items-center justify-between py-5  shadow-ServiceCard rounded-[20px] relative'>
-              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50 absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-[#FFFAF5]'>
+              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50 absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-white'>
                 {"1"}
               </Container>
               <Container className=' font-semibold text-[21px] px-7'>
@@ -83,7 +83,7 @@ const ProcessContent = () => {
           {" "}
           <Container className='space-y-4'>
             <Container className='snap-center bg-[#FFFFFF] w-[310px] flex-shrink-0 h-[450px] flex items-center justify-between py-5  shadow-ServiceCard rounded-[20px] relative'>
-              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-[#FFFAF5]'>
+              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-white'>
                 {"2"}
               </Container>
               <Container className=' font-semibold text-[21px] px-7'>
@@ -131,7 +131,7 @@ const ProcessContent = () => {
         >
           <Container className='space-y-4'>
             <Container className='snap-center bg-[#FFFFFF] w-[310px] flex-shrink-0 h-[450px] flex items-center justify-between py-5  shadow-ServiceCard rounded-[20px] relative'>
-              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-[#FFFAF5]'>
+              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-white'>
                 {"3"}
               </Container>
               <Container className=' font-semibold text-[21px] px-7'>
@@ -179,7 +179,7 @@ const ProcessContent = () => {
         >
           <Container className='space-y-4'>
             <Container className='snap-center bg-[#FFFFFF] w-[310px] flex-shrink-0 h-[450px] flex items-center justify-between py-5  shadow-ServiceCard rounded-[20px] relative'>
-              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-[#FFFAF5]'>
+              <Container className=' bg-gradient-to-b from-[#FF7E00] to-[#FF7E00]/50  absolute right-0 h-16 w-16 top-0 rounded-tr-[20px] rounded-bl-[50px] items-center justify-center text-[21px] font-medium text-white'>
                 {"4"}
               </Container>
               <Container className=' font-semibold text-[21px] px-7'>

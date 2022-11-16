@@ -24,7 +24,7 @@ const Referencement = () => {
           rel='stylesheet'
         />
       </Head>
-      <Container className='py-20 bg-[#FFFAF5] px-5'>
+      <Container className='py-20 bg-white px-5'>
         <Container className='md:flex md:flex-row  md:items-center'>
           <OneServiceTitle
             title={"Référencement Web"}

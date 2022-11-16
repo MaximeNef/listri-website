@@ -42,7 +42,7 @@ const Team = () => {
         />
       </Head>
 
-      <main className='bg-[#FFFAF5] pt-28  text-[#37474F]'>
+      <main className='bg-white pt-28  text-[#37474F]'>
         <TeamTitle />
         <Container className='space-y-20  mt-28 md:flex-row md:justify-center md:space-y-0'>
           {Teams.map((team, i) => {

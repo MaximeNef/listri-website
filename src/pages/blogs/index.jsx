@@ -13,6 +13,7 @@ import { components } from "../../../slices";
 import Flex from "../../components/shared/composers/flex";
 import Image from "next/image";
 import TitlePage from "../../components/all/titlePage";
+import Cardblog from "../../components/blog/CardBlog";
 
 const Blogs = ({ blogs, BlogTitle }) => {
   console.log(blogs, "blogs");
@@ -40,7 +41,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
         />
       </Head>
 
-      <main className='bg-[#FFFAF5]  pt-28 '>
+      <main className='bg-white  pt-28 '>
         <Container className='mb-10  '>
           <TitlePage
             title={titlepageprops.title}
@@ -53,33 +54,15 @@ const Blogs = ({ blogs, BlogTitle }) => {
               {blogs.map((blog) => (
                 <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
                   <a key={blog.uid}>
-                    <Container className=' rounded-tl-[10px] rounded-br-[10px] rounded-tr-[50px] rounded-bl-[50px]  m-5 mb-10 md:mb-0 min-h-[290px] relative '>
-                      <Container className='mx-20 w-fit'>
-                        {/* <Image
-                          src={blog.data.slices[0].items[0].img.url}
-                          alt='Picture of the author'
-                          width={500}
-                          height={400}
-                          objectFit={"cover"}
-                          className='rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] '
-                        /> */}
-                        <Container className=' h-[280px] w-full md:h-[400px] md:w-[500px] bg-gradient-to-t from-black/80 absolute m-auto rounded-tl-[20px] rounded-br-[20px] rounded-tr-[80px] rounded-bl-[80px] shadow-ServiceCard' />
-                      </Container>
-                      <Flex
-                        type='col'
-                        justify='end'
-                        align='center'
-                        className='z-10 mb-6'
-                      >
-                        {/* <Container className=' text-[#FFFAF5] text-[24px] leading-[50px] font-medium text-center w-[350px] absolute top-[25%] md:top-[45%]'>
-                          {blog.data.slices[0].items[0].title[0].text}{" "}
-                        </Container> */}
-
-                        <Container className=' text-[#FFFAF5] text-[17px] font-light text-right w-full   max-w-[300px] absolute bottom-10 md:right-10 '>
-                          {"suite ..."}
-                        </Container>
-                      </Flex>
-                    </Container>
+                    <Cardblog
+                      src={blog.data.slices[0].items[0].image.url}
+                      timing={blog.data.slices[0].items[0].timing[0].text}
+                      category={blog.data.slices[0].items[0].category[0].text}
+                      title={blog.data.slices[0].items[0].title[0].text}
+                      subtitle={
+                        blog.data.slices[0].items[0].description[0].text
+                      }
+                    />
                   </a>
                 </Link>
               ))}

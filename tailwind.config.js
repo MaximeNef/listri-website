@@ -14,6 +14,7 @@ module.exports = {
         ServiceCard: "2px 4px 10px 2px rgba(55, 71, 79, 0.3)",
         realisationCard:
           "0.970276px 1.94055px 4.85138px rgba(55, 71, 79, 0.3);",
+        blog: "3px 4px 10px 1px rgba(37, 37, 37, 0.05)",
       },
       dropShadow: {
         contact: "0px 4px 4px rgba(55, 71, 79, 0.42)",

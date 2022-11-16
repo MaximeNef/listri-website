@@ -149,7 +149,7 @@ export default function Contactus() {
         />
       </Head>
 
-      <Container className='md:flex md:flex-col mb-20 md:mb-10 md:w-[60%] mx-auto bg-[#FFFAF5] pt-[90px] '>
+      <Container className='md:flex md:flex-col mb-20 md:mb-10 md:w-[60%] mx-auto bg-white pt-[90px] '>
         {" "}
         <Container className='md:w-full '>
           <ContactTitle />

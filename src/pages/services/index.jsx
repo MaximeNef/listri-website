@@ -76,7 +76,7 @@ const Services = () => {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-[#FFFAF5]  py-28 '>
+      <main className='bg-white  py-28 '>
         <div className='absolute inset-0 flex items-center justify-center'></div>
         <ServiceTitle />{" "}
         <Container className='md:flex md:flex-row md:justify-center md:items-start md:w-full'>

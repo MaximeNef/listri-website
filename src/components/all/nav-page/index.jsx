@@ -6,7 +6,7 @@ import Container from "../../shared/composers/container";
 const NavPage = ({ children, current }) => {
   return (
     <Container className=''>
-      <Page className='font-family text-[#37474F] bg-[#FFFAF5] '>
+      <Page className='font-family text-[#37474F] bg-white '>
         <Header current={current} />
         {children}
       </Page>{" "}

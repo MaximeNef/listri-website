@@ -23,7 +23,7 @@ const Realisation = () => {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-[#FFFAF5]  py-28'>
+      <main className='bg-white  py-28'>
         <Container className='text-center text-[40px] font-medium mb-10'>
           {"Coming soon ... "}
         </Container>

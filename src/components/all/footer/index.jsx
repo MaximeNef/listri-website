@@ -7,8 +7,8 @@ import MyImage from "../../shared/composers/myimage";
 const Footer = () => {
   return (
     <Container>
-      <Container className=' pt-10 bg-[#FFFAF5]' />
-      <Container className='bg-[#FFFAF5]  m-auto w-full text-center pb-5 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#F9CCA6]'>
+      <Container className=' pt-10 bg-white' />
+      <Container className='bg-white  m-auto w-full text-center pb-5 rounded-tl-[25px] rounded-tr-[25px] border-t-[3px] border-[#F9CCA6]'>
         {/* btn contact us  */}
         <Flex justify='center' className='  mt-[-28px] mb-5'>
           <Link href='/contactus' passHref>

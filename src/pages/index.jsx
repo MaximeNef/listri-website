@@ -33,7 +33,7 @@ export default function Home({ articles, blogs }) {
         />
       </Head>
 
-      <main className='bg-[#FFFAF5] pt-28  text-[#37474F]'>
+      <main className='bg-white pt-28  text-[#37474F]'>
         <Hero /> <ServiceHero />
         {/* <ClientHero /> */}
         {/* <Process />  */}

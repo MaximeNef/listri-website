@@ -25,7 +25,7 @@ export default function ContactEnd() {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-[#FFFAF5] pt-28  text-[#37474F] pb-20'>
+      <main className='bg-white pt-28  text-[#37474F] pb-20'>
         <ProgressBar step={4} total={4} />
         <Flex justify='center' className=' font-medium text-lg mt-10 mb-6 '>
           {"Merci pour votre demande"}
