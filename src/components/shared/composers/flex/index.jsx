@@ -1,5 +1,5 @@
 export default function Flex(
-  props = { type: "col", align: "center", justify: "center" }
+  props = { type: 'col', align: 'center', justify: 'center' }
 ) {
   return (
     <div
