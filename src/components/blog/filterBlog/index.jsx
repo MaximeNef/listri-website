@@ -6,7 +6,7 @@ const FilterBlog = (props) => {
   }
 
   return (
-    <Container className=' pb-5 rounded-[20px] mt-[-50px] mb-4 md:w-full  md:max-w-[50%] mx-auto '>
+    <Container className=' pb-5 rounded-[20px] mt-[-50px] mb-4 md:w-full  md:max-w-[50%] mx-auto min-w-[80%]'>
       <Container className='md:flex-row md:w-full md:space-x-4 space-y-5 md:space-y-0'>
         <Container className='md:w-full'>
           <select
@@ -15,7 +15,7 @@ const FilterBlog = (props) => {
             placeholder={"placeholder"}
             className='rounded-[10px] h-10 drop-shadow-xl bg-white outline-0 px-2'
           >
-            <option value='all' className='text-white'>
+            <option value='all' className=''>
               choisis ton sujet
             </option>
 
