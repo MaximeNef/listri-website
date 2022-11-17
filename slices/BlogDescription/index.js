@@ -5,7 +5,7 @@ import MyImage from "../../src/components/shared/composers/myimage";
 
 const BlogDescription = ({ slice }) => (
   <Container className='  rounded-[10px] p-5 md:mx-[20%]  mt-8 '>
-    <section className=''>
+    {/* <section className=''>
       <Container className='font-semibold text-[#37474F]  text-[21px] text-left'>
         <div>
           {slice?.items?.map((item, i) => (
@@ -35,7 +35,7 @@ const BlogDescription = ({ slice }) => (
           ) : null}
         </>
       ))}
-    </section>
+    </section> */}
   </Container>
 );
 

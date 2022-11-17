@@ -19,7 +19,7 @@ const BlogTitle = ({ slice }) => {
               </div>
               <div>
                 <Flex className='bg-[#FEA249] w-fit rounded-[20px] text-white space-x-1 py-2 px-4 font-[350]'>
-                  <PrismicRichText field={item.category} />
+                  {item.category}
                 </Flex>
               </div>
             </div>

@@ -28,18 +28,18 @@ const Blogs = ({ blogs, BlogTitle }) => {
     description:
       "Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0 Restez à jour avec listri",
   };
-  // function onFilterValueSelected(filterValue) {
-  //   console.log(filterValue);
-  //   setFilterValue(filterValue);
-  // }
-  // const filteredProductList = newProductList.filter((blog) => {
-  //   if (filterValue === "all") {
-  //     return blog;
-  //   }
-  //   if (filterValue === blog?.data.slices[0].items[0].category) {
-  //     return blog;
-  //   }
-  // });
+  function onFilterValueSelected(filterValue) {
+    console.log(filterValue);
+    setFilterValue(filterValue);
+  }
+  const filteredProductList = newProductList.filter((blog) => {
+    if (filterValue === "all") {
+      return blog;
+    }
+    if (filterValue === blog?.data.slices[0].items[0].category) {
+      return blog;
+    }
+  });
 
   return (
     <NavPage current='Blog'>
@@ -65,9 +65,9 @@ const Blogs = ({ blogs, BlogTitle }) => {
             subtitle={titlepageprops.subtitle}
             description={titlepageprops.description}
           />
-          {/* <FilterBlog filterValueSelected={onFilterValueSelected} /> */}
+          <FilterBlog filterValueSelected={onFilterValueSelected} />
           <Flex type='row' justify='center' className=' md:mx-10  '>
-            {/* <ul className='md:flex md:flex-row md:flex-wrap md:justify-center'>
+            <ul className='md:flex md:flex-row md:flex-wrap md:justify-center'>
               {filteredProductList.map((blog, i) => (
                 <li
                   key={blog.uid}
@@ -93,7 +93,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
                   </Link>
                 </li>
               ))}
-            </ul>{" "} */}
+            </ul>{" "}
           </Flex>
         </Container>
       </main>
