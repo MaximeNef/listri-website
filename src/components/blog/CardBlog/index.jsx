@@ -16,7 +16,7 @@ const Cardblog = ({ src, timing, category, title, subtitle }) => {
           className=' rounded-t-[10px] '
         />
       </Container>
-      <Container className=' bg-slate-100/30'>
+      <Container className=' bg-slate-100/30 relative'>
         <Flex className='justify-between m-[10px]'>
           <Container className='w-[80%]'>
             <p className=' font-light text-[14px]'>
@@ -28,12 +28,12 @@ const Cardblog = ({ src, timing, category, title, subtitle }) => {
               {subtitle}
             </h3>
           </Container>
-          <Container className='flex justify-end mb-1 '>
+          <Container className='flex justify-end mb-1 p-2 rounded-full bg-[#FEA249] h-fit w-fit absolute bottom-2 right-3 '>
             <MyImage
               source='/assets/logo/arrow_right.svg'
               alt='Picture of the author'
-              w={50}
-              h={40}
+              w={25}
+              h={25}
               objectFit={"contain"}
               className=''
             />

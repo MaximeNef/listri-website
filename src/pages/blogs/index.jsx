@@ -18,7 +18,7 @@ import Cardblog from "../../components/blog/CardBlog";
 const Blogs = ({ blogs, BlogTitle }) => {
   console.log(blogs, "blogs");
   const titlepageprops = {
-    title: " Blog",
+    title: " L’actualité & les ressources ",
     subtitle: "L’actualité & les ressources ",
     description:
       "Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0 Restez à jour avec listri",

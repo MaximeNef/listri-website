@@ -6,9 +6,9 @@ const TitlePage = ({ title, subtitle, description }) => {
     <Container className=''>
       {" "}
       <Flex type='col' align='center' className=' space-y-4 mb-20 mx-10'>
-        <h2 className=' font-medium text-[30px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+        <h1 className=' text-center font-medium text-[30px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
           {title}
-        </h2>
+        </h1>
         <Container className='font-semibold text-[#37474F]'>
           {" "}
           {subtitle}
