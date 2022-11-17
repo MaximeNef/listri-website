@@ -14,15 +14,32 @@ import Flex from "../../components/shared/composers/flex";
 import Image from "next/image";
 import TitlePage from "../../components/all/titlePage";
 import Cardblog from "../../components/blog/CardBlog";
+import FilterBlog from "../../components/blog/filterBlog";
+import { useState } from "react";
 
 const Blogs = ({ blogs, BlogTitle }) => {
+  const [filterValue, setFilterValue] = useState("all");
+  const [newProductList, setNewProductList] = useState(blogs);
   console.log(blogs, "blogs");
+
   const titlepageprops = {
     title: " L’actualité & les ressources ",
-    subtitle: "L’actualité & les ressources ",
+    subtitle: "",
     description:
       "Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0 Restez à jour avec listri",
   };
+  function onFilterValueSelected(filterValue) {
+    console.log(filterValue);
+    setFilterValue(filterValue);
+  }
+  const filteredProductList = newProductList.filter((blog) => {
+    if (filterValue === "all") {
+      return blog;
+    }
+    if (filterValue === blog?.data.slices[0].items[0].category) {
+      return blog;
+    }
+  });
 
   return (
     <NavPage current='Blog'>
@@ -42,29 +59,39 @@ const Blogs = ({ blogs, BlogTitle }) => {
       </Head>
 
       <main className='bg-white  pt-28 '>
-        <Container className='mb-10  '>
+        <Container className='mb-10 mx-auto md:max-w-[1600px] '>
           <TitlePage
             title={titlepageprops.title}
             subtitle={titlepageprops.subtitle}
             description={titlepageprops.description}
           />
-          <Flex type='row' justify='center' className=' '>
+          <FilterBlog filterValueSelected={onFilterValueSelected} />
+          <Flex type='row' justify='center' className=' md:mx-10  '>
             <ul className='md:flex md:flex-row md:flex-wrap md:justify-center'>
-              {" "}
-              {blogs.map((blog) => (
-                <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
-                  <a key={blog.uid}>
-                    <Cardblog
-                      src={blog.data.slices[0].items[0].image.url}
-                      timing={blog.data.slices[0].items[0].timing[0].text}
-                      category={blog.data.slices[0].items[0].category[0].text}
-                      title={blog.data.slices[0].items[0].title[0].text}
-                      subtitle={
-                        blog.data.slices[0].items[0].description[0].text
-                      }
-                    />
-                  </a>
-                </Link>
+              {filteredProductList.map((blog, i) => (
+                <li
+                  key={blog.uid}
+                  className={`${
+                    i == 0
+                      ? "md:flex md:flex-row md:flex-wrap md:w-[100%]"
+                      : "md:flex md:flex-row md:flex-wrap md:w-[33%]"
+                  }`}
+                >
+                  <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
+                    <a key={blog.uid}>
+                      <Cardblog
+                        i={i}
+                        src={blog.data.slices[0].items[0].image.url}
+                        timing={blog.data.slices[0].items[0].timing[0].text}
+                        category={blog.data.slices[0].items[0].category}
+                        title={blog.data.slices[0].items[0].title[0].text}
+                        subtitle={
+                          blog.data.slices[0].items[0].description[0].text
+                        }
+                      />
+                    </a>
+                  </Link>
+                </li>
               ))}
             </ul>{" "}
           </Flex>

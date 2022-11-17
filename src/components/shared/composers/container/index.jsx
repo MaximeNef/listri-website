@@ -37,7 +37,7 @@ export default function Container(props) {
       >
         {props.children}
       </div>
-      <div className='justify-between flex-row flex-row-reverse w-8 w-16 w-24 w-32 w-40 w-48 w-56 w-[375px] w-full ml-28 mr-28 bg-danger  hidden bg-secondary' />
+      {/* <div className='justify-between flex-row flex-row-reverse w-8 w-16 w-24 w-32 w-40 w-48 w-56 w-[375px] w-full ml-28 mr-28 bg-danger  hidden bg-secondary' /> */}
     </>
   );
 }

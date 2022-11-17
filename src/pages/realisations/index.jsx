@@ -6,7 +6,13 @@ import Container from "../../components/shared/composers/container";
 import { motion } from "framer-motion";
 import MyImage from "../../components/shared/composers/myimage";
 import Flex from "../../components/shared/composers/flex";
+import TitlePage from "../../components/all/titlePage";
 const Realisation = () => {
+  const titlepageprops = {
+    title: "Coming soon ...",
+    subtitle: "",
+    description: "",
+  };
   return (
     <NavPage current='Réalisations'>
       <Head>
@@ -25,7 +31,11 @@ const Realisation = () => {
       </Head>
       <main className='bg-white  py-28'>
         <Container className='text-center text-[40px] font-medium mb-10'>
-          {"Coming soon ... "}
+          <TitlePage
+            title={titlepageprops.title}
+            subtitle={titlepageprops.subtitle}
+            description={titlepageprops.description}
+          />
         </Container>
         <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
           <Container className='mx-auto'>

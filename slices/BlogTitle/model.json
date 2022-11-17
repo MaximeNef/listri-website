@@ -22,12 +22,15 @@
           }
         },
         "category": {
-          "type": "StructuredText",
+          "type": "Select",
           "config": {
-            "label": "category",
+            "label": "Category",
             "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "heading1"
+            "options": [
+              "all",
+              "dev",
+              "marketing"
+            ]
           }
         },
         "title": {

@@ -120,14 +120,7 @@
     "BlogTitle": {
       "default": {
         "primary": {},
-        "items": {
-          "category": {
-            "config": {
-              "patternType": "HEADING",
-              "blocks": 1
-            }
-          }
-        }
+        "items": {}
       }
     },
     "BlogDescription": {
