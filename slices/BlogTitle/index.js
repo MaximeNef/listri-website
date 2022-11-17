@@ -32,14 +32,14 @@ const BlogTitle = ({ slice }) => {
               <PrismicRichText field={item.description} />
             </Container>
             <Container>
-              {/* <MyImage
-              source={item.image.url}
-              key={i}
-              h='400'
-              w='200'
-              objectFit={"cover"}
-              className='rounded-xl'
-            /> */}
+              <MyImage
+                source={item.image.url}
+                key={i}
+                h='400'
+                w='200'
+                objectFit={"cover"}
+                className='rounded-xl'
+              />
             </Container>
           </Container>
         )
