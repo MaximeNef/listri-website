@@ -12,9 +12,9 @@ const ServiceTitle = ({ title }) => {
           animate='visible'
           transition={{ duration: 0.2 }}
         >
-          <h2 className=' font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+          <h1 className=' font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
             {"Nos services "}
-          </h2>{" "}
+          </h1>{" "}
         </MotionBottom>
         <MotionBottom
           initial='hidden'
