@@ -13,9 +13,7 @@ const Realisation = () => {
   return (
     <NavPage current='Réalisations'>
       <Head>
-        <title>
-          Nos réalisations - Nous rendons chaque projet unique, le vôtre aussi
-        </title>
+        <title>Nos réalisations - Nous rendons votre projet unique</title>
         <meta
           name='description'
           content='Listri à pour objectif de vous aider dans votre démarche digitale.'
