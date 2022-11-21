@@ -24,6 +24,12 @@ const Team = () => {
       phone: "+32472/86.06.28",
       src: "/assets/logo/maxime.png",
     },
+    {
+      lastName: "Félicien",
+      firstName: "De Hertogh",
+      activite: "Developpeur web",
+      src: "/assets/logo/felicien.jpg",
+    },
   ]);
   return (
     <NavPage current='Team'>
@@ -43,7 +49,7 @@ const Team = () => {
 
       <main className='bg-white pt-28  text-[#37474F]'>
         <TeamTitle />
-        <Container className='space-y-20  mt-28 md:flex-row md:justify-center md:space-y-0'>
+        <Container className='space-y-20  mt-28 md:flex-row md:justify-start md:space-y-0'>
           {Teams.map((team, i) => {
             return <TeamCard team={team} key={i} />;
           })}

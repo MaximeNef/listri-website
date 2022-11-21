@@ -4,7 +4,7 @@ import ProcessContent from "./processContent";
 
 const Processherotry = () => {
   return (
-    <Container className='mt-24'>
+    <Container className='mt-24 md:mx-5'>
       <ProcessBar />
       <ProcessContent />
     </Container>

@@ -9,7 +9,7 @@ import BlogHeroEnd from "./blogHeroEnd";
 
 const BlogHero = ({ blogs }) => {
   return (
-    <Container className=' mt-8 mb-12'>
+    <Container className=' mt-8 mb-12 md:mx-5'>
       {/* {blogs.map((blog, i) => {
         return (
           <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
