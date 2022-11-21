@@ -1,6 +1,9 @@
 import Head from "next/head";
+import { useState } from "react";
+import { createClient } from "../../../prismicio";
 
 const Sitemap = ({ blogs }) => {
+  const [count, setCount] = useState([]);
   return (
     <div>
       <Head>
@@ -81,17 +84,19 @@ const Sitemap = ({ blogs }) => {
             <li>
               <ul className='level-1'>
                 <li className='lhead'>
-                  blogs/ <span className='lcount'>3 pages</span>
+                  blogs/ <span className='lcount'>{blogs.length}</span>
                 </li>
-                {blogs.map((blog) => {
-                  <li className='lpage'>
-                    <a
-                      href={`https://listri.digital/blogs/${blog.uid}`}
-                      title={`https://listri.digital/blogs/${blog.data.slices[0].items[0].metatitle[0].text}`}
-                    >
-                      https://listri.digital/blogs/{blog.uid}
-                    </a>
-                  </li>;
+                {blogs.map((blog, i) => {
+                  return (
+                    <li className='lpage' key={i}>
+                      <a
+                        href={`https://listri.digital/blogs/${blog.uid}`}
+                        title={`https://listri.digital/blogs/${blog.data.slices[0].items[0].metatitle[0].text}`}
+                      >
+                        https://listri.digital/blogs/{blog.uid}
+                      </a>
+                    </li>
+                  );
                 })}
               </ul>
               <ul className='level-1'>
