@@ -11,7 +11,9 @@ const BusinessCard = () => {
   return (
     <NavPage current='Services'>
       <Head>
-        <title>Listri Agence Digitale - Digital business card</title>
+        <title>
+          Digital Business Card - Faites une meilleure première impression
+        </title>
         <meta
           name={"description"}
           content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'

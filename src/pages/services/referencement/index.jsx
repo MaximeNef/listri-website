@@ -11,7 +11,9 @@ const Referencement = () => {
   return (
     <NavPage current='Services'>
       <Head>
-        <title>Listri Agence Digitale - Référencement</title>
+        <title>
+          Agence N°1 - Référencement naturel, SEO, SEA de votre site web
+        </title>
         <meta
           name={"description"}
           content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'

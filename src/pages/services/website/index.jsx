@@ -11,7 +11,7 @@ const Website = () => {
   return (
     <NavPage current='Services'>
       <Head>
-        <title>Listri Agence Digitale - Site web</title>
+        <title>Création de votre site web & e-commerce sur mesure</title>
         <meta
           name={"description"}
           content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'

@@ -13,7 +13,9 @@ const Realisation = () => {
   return (
     <NavPage current='Réalisations'>
       <Head>
-        <title>Listri Agence Digitale - Réalisations</title>
+        <title>
+          Nos réalisations - Nous rendons chaque projet unique, le vôtre aussi
+        </title>
         <meta
           name='description'
           content='Listri à pour objectif de vous aider dans votre démarche digitale.'

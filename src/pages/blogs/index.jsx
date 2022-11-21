@@ -44,7 +44,9 @@ const Blogs = ({ blogs, BlogTitle }) => {
   return (
     <NavPage current='Blog'>
       <Head>
-        <title>découvrez tous nos articles sur les dernieres actualité</title>
+        <title>
+          Notre blog - Actualités & astuces digitales pour votre entreprise
+        </title>
         <meta
           name='description'
           content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'

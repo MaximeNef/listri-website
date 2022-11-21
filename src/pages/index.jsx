@@ -22,7 +22,7 @@ export default function Home({ articles, blogs }) {
     <NavPage current='Accueil'>
       <Head>
         <title>
-          Listri digital est la nouvelle solution de votre digitalisation
+          Boostez votre PME avec un site web & un marketing digital sur-mesure
         </title>
         <meta
           name='description'
