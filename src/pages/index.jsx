@@ -13,6 +13,8 @@ import Process from "../components/hero/process";
 import { createClient } from "../../prismicio";
 import Processherotry from "../components/hero/processHero";
 import Script from "next/script";
+import Link from "next/link";
+import Cardblog from "../components/blog/CardBlog";
 
 export default function Home({ articles, blogs }) {
   console.log(articles, "BLABLA");
@@ -44,7 +46,7 @@ export default function Home({ articles, blogs }) {
         {/* <ClientHero /> */}
         {/* <Process />  */}
         <Processherotry />
-        {/* <BlogHero blogs={blogs} /> */}
+        <BlogHero blogs={blogs} />
       </main>
     </NavPage>
   );

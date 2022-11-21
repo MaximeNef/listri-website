@@ -52,12 +52,6 @@ const Services = () => {
       subtitle: "Digital-business-card",
       src: "/assets/logo/Blog.svg",
     },
-    // {
-    //   id: "Speedtest-Web",
-    //   title: "Speedtest Web",
-    //   subtitle: "Speedtest-Web",
-    //   src: "/assets/logo/Computer.svg",
-    // },
   ]);
   return (
     <NavPage current='Services'>
