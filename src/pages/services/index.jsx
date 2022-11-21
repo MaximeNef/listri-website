@@ -89,12 +89,7 @@ const Services = () => {
                 key={i}
               >
                 <Link
-                  href={{
-                    pathname: "services/[id]",
-                    query: {
-                      id: service.id,
-                    },
-                  }}
+                  href={`/services/${service.id}`}
                   as={`/services/${service.id}`}
                   passHref
                 >
@@ -122,12 +117,7 @@ const Services = () => {
                 key={i}
               >
                 <Link
-                  href={{
-                    pathname: "services/[id]",
-                    query: {
-                      id: service.id,
-                    },
-                  }}
+                  href={`/services/${service.id}`}
                   as={`/services/${service.id}`}
                   passHref
                 >
@@ -152,12 +142,7 @@ const Services = () => {
                 key={i}
               >
                 <Link
-                  href={{
-                    pathname: "services/[id]",
-                    query: {
-                      id: service.id,
-                    },
-                  }}
+                  href={`/services/${service.id}`}
                   as={`/services/${service.id}`}
                   passHref
                 >

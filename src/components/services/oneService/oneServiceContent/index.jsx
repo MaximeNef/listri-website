@@ -7,10 +7,10 @@ import MyImage from "../../../shared/composers/myimage";
 
 const OneServiceContent = ({ Contents }) => {
   return (
-    <Container className='md:flex md:flex-row md:flex-wrap md:justify-center md:w-[100%] md:mx-auto'>
+    <Container className='md:flex md:flex-row md:flex-wrap md:justify-center md:w-[100%] md:mx-auto  md:max-w-[1400px] md:space-x-10 '>
       {Contents.map((content, id) => {
         return (
-          <Container className='m-2 my-10 md:mx-32 ' key={id}>
+          <Container className='m-2 my-10 ' key={id}>
             <MotionBottom
               initial='hidden'
               animate='visible'

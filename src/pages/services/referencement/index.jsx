@@ -13,7 +13,7 @@ const Referencement = () => {
       <Head>
         <title>Listri Agence Digitale - Référencement</title>
         <meta
-          name={"Référencement"}
+          name={"description"}
           content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'
         />
         <link rel='icon' href='/favicon.svg' />
