@@ -44,6 +44,8 @@
     "webp-loader": "^0.6.0"
   },
   "devDependencies": {
+    "@locator/babel-jsx": "^0.2.2",
+    "@locator/runtime": "^0.2.2",
     "autoprefixer": "^10.4.7",
     "babel-eslint": "^10.1.0",
     "eslint": "8.16.0",

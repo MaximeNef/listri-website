@@ -6,6 +6,7 @@ import { linkResolver } from "../../prismicio";
 import { repositoryName } from "../../prismicio";
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import setupLocatorUI from "@locator/runtime";
 
 export default function App({ Component, pageProps }) {
   console.log("render");
@@ -21,6 +22,9 @@ export default function App({ Component, pageProps }) {
     };
   }, []);
 
+  if (process.env.NODE_ENV === "development") {
+    setupLocatorUI();
+  }
   return (
     <>
       <Script
