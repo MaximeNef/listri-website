@@ -16,9 +16,7 @@ export default function Blog({ doc }) {
     <NavPage current='Blog'>
       <Container>
         <Head>
-          <title>
-            Listri Agence Digitale - {doc.data.slices[0].items[0].title[0].text}
-          </title>
+          <title>{doc.data.slices[0].items[0].title[0].text}</title>
           <meta
             name='description'
             content={`cette articles va vous aider dans: ${doc.data.slices[0].items[0].title[0].text} , réalisé par des expert pour vous !`}
