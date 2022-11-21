@@ -14,12 +14,19 @@ const BlogHeroCard = ({ blogs }) => {
       >
         {blogs.map((blog, i) => {
           return (
-            <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>
+            <Link
+              href={`/blogs/${blog.uid}`}
+              key={blog.uid}
+              passHref
+              className=' snap-center '
+            >
               <Container className=' snap-center flex-shrink-0 w-[90vw] md:w-[800px]'>
                 {" "}
                 <a key={blog.uid}>
                   <Container
-                    className={"m-5 rounded-[10px] border-[1px] md:border-0"}
+                    className={
+                      "md:m-5 mx-1 rounded-[10px] border-[1px] md:border-0"
+                    }
                   >
                     <Container>
                       {" "}
