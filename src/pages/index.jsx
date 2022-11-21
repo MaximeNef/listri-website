@@ -19,7 +19,9 @@ export default function Home({ articles, blogs }) {
   return (
     <NavPage current='Accueil'>
       <Head>
-        <title>Listri Agence Digitale - Home</title>
+        <title>
+          Listri digital est la nouvelle solution de votre digitalisation
+        </title>
         <meta
           name='description'
           content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience. '
