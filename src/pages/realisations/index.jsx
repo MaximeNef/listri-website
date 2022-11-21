@@ -16,7 +16,7 @@ const Realisation = () => {
         <title>Listri Agence Digitale - Réalisations</title>
         <meta
           name='description'
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience. '
+          content='Listri à pour objectif de vous aider dans votre démarche digitale.'
         />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
