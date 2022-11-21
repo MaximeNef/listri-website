@@ -1,14 +1,16 @@
-const Sitemap = () => {
+import Head from "next/head";
+
+const Sitemap = ({ blogs }) => {
   return (
     <div>
-      <head>
+      <Head>
         <meta charset='utf-8' />
         <title>listri.digital Site Map</title>
         <meta
           content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
           name='viewport'
         />
-      </head>
+      </Head>
 
       <body>
         <div id='top'>
@@ -81,31 +83,16 @@ const Sitemap = () => {
                 <li className='lhead'>
                   blogs/ <span className='lcount'>3 pages</span>
                 </li>
-
-                <li className='lpage'>
-                  <a
-                    href='https://listri.digital/blogs/blog3'
-                    title='Listri Agence Digitale'
-                  >
-                    Listri Agence Digitale
-                  </a>
-                </li>
-                <li className='lpage'>
-                  <a
-                    href='https://listri.digital/blogs/blog2'
-                    title='Listri Agence Digitale'
-                  >
-                    Listri Agence Digitale
-                  </a>
-                </li>
-                <li className='lpage last-page'>
-                  <a
-                    href='https://listri.digital/blogs/blog1'
-                    title='Listri Agence Digitale'
-                  >
-                    Listri Agence Digitale
-                  </a>
-                </li>
+                {blogs.map((blog) => {
+                  <li className='lpage'>
+                    <a
+                      href={`https://listri.digital/blogs/${blog.uid}`}
+                      title={`https://listri.digital/blogs/${blog.data.slices[0].items[0].metatitle[0].text}`}
+                    >
+                      https://listri.digital/blogs/{blog.uid}
+                    </a>
+                  </li>;
+                })}
               </ul>
               <ul className='level-1'>
                 <li className='lhead'>
@@ -160,14 +147,6 @@ const Sitemap = () => {
                     https://listri.digital/services/Optimisation-Web
                   </a>
                 </li>
-                <li className='lpage last-page'>
-                  <a
-                    href='https://listri.digital/services/Speedtest-Web'
-                    title='https://listri.digital/services/Speedtest-Web'
-                  >
-                    https://listri.digital/services/Speedtest-Web
-                  </a>
-                </li>
               </ul>
             </li>
           </ul>
@@ -177,3 +156,20 @@ const Sitemap = () => {
   );
 };
 export default Sitemap;
+
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+
+  const blogs = await client.getAllByType("BlogPost", {
+    orderings: [
+      { field: "my.article.publishDate", direction: "desc" },
+      { field: "document.first_publication_date", direction: "desc" },
+    ],
+  });
+
+  return {
+    props: {
+      blogs,
+    },
+  };
+}
