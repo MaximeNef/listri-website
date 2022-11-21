@@ -3,9 +3,9 @@ import Container from "../../shared/composers/container";
 const TeamTitle = () => {
   return (
     <Container className=' w-full'>
-      <h2 className='mx-auto font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+      <h1 className='mx-auto font-medium text-[40px] text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
         {"Team "}
-      </h2>
+      </h1>
       <Container className='font-semibold text-[#37474F] text-[19px] mx-auto'>
         {" Notre histoire & notre équipe "}
       </Container>

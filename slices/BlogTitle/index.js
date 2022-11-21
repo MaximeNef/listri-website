@@ -24,9 +24,9 @@ const BlogTitle = ({ slice }) => {
               </div>
             </div>
 
-            <div className='pb-5 font-semibold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  overflow-hidden '>
+            <h1 className='pb-5 font-semibold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  overflow-hidden '>
               <PrismicRichText field={item.title} />
-            </div>
+            </h1>
 
             <Container className='font-light leading-7 text-lg mb-7'>
               <PrismicRichText field={item.description} />
