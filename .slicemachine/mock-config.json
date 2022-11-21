@@ -120,7 +120,20 @@
     "BlogTitle": {
       "default": {
         "primary": {},
-        "items": {}
+        "items": {
+          "metadescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "metatitle": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
       }
     },
     "BlogDescription": {

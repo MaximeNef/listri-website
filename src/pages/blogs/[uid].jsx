@@ -16,10 +16,10 @@ export default function Blog({ doc }) {
     <NavPage current='Blog'>
       <Container>
         <Head>
-          <title>{doc.data.slices[0].items[0].title[0].text}</title>
+          <title>{doc.data.slices[0].items[0].metatitle[0].text}</title>
           <meta
             name='description'
-            content={`cette articles va vous aider dans: ${doc.data.slices[0].items[0].title[0].text} , réalisé par des expert pour vous !`}
+            content={`cette articles va vous aider dans: ${doc.data.slices[0].items[0].metadescription[0].text}`}
           />
           <link rel='icon' href='/favicon.svg' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
