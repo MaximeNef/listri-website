@@ -69,7 +69,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
           />
           <FilterBlog filterValueSelected={onFilterValueSelected} />
           <Flex type='row' justify='center' className=' md:mx-10  '>
-            <ul className='md:flex md:flex-row md:flex-wrap md:justify-center'>
+            <ul className='md:flex md:flex-row md:flex-wrap md:justify-between'>
               {filteredProductList.map((blog, i) => (
                 <li
                   key={blog.uid}
