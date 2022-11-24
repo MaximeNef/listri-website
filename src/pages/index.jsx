@@ -24,7 +24,7 @@ export default function Home({ articles, blogs }) {
         <title>Boostez votre PME avec un site web & du marketing digital</title>
         <meta
           name='description'
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience. '
+          content='🚀 Augmentez votre visibilité avec la création de votre site web sur-mesure ! Contactez notre agence digitale spécialisée en développement web et marketing.'
         />
         <meta
           name='google-site-verification'

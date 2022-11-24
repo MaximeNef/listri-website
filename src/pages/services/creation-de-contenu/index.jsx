@@ -17,7 +17,8 @@ const BusinessCard = () => {
         </title>
         <meta
           name={"description"}
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'
+          content='Création de contenu pour une communication sur mesure et à votre image.
+          Notre contenu est optimisé pour votre référencement sur les réseaux et google. '
         />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

@@ -16,7 +16,9 @@ const Referencement = () => {
         </title>
         <meta
           name={"description"}
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'
+          content='Boostez votre référencement avec notre équipe experte en SEO, SEA, SMO, SMA !
+          Spécialiste en référencement, on place nos clients en 1ère page !
+          Demandez votre audit gratuit'
         />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
