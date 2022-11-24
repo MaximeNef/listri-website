@@ -212,7 +212,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/feliciendehertogh/dev/listri-website/.slicemachine/assets/slices/BlogDescription/default/preview.png",
+            "path": "/Users/maximenef/Documents/GitHub/listri-website/.slicemachine/assets/slices/BlogDescription/default/preview.png",
             "width": 800,
             "height": 72
           }
@@ -318,7 +318,64 @@
             }
           ]
         },
-        "mocks": {},
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "metatitle": [
+                  {
+                    "type": "paragraph",
+                    "text": "Do sunt cupidatat proident laboris esse est nostrud ut nulla nisi occaecat irure excepteur consectetur. Mollit nulla culpa dolore duis consequat velit. Non aliquip est fugiat consequat voluptate.",
+                    "spans": []
+                  }
+                ],
+                "metadescription": [
+                  {
+                    "type": "paragraph",
+                    "text": "Officia nisi eu sit cillum culpa ut ipsum commodo cillum. Et sint velit ea deserunt. Duis mollit quis consequat incididunt occaecat pariatur occaecat.",
+                    "spans": []
+                  }
+                ],
+                "timing": [
+                  {
+                    "type": "paragraph",
+                    "text": "Cupidatat qui officia mollit officia cillum eiusmod. Dolor qui Lorem do reprehenderit. Nulla aliqua officia eiusmod mollit incididunt irure aute.",
+                    "spans": []
+                  }
+                ],
+                "category": "dev",
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Magna quis aute magna excepteur cupidatat qui et officia in quis labore irure. Aliqua ex est id proident officia fugiat sint eiusmod incididunt elit nisi qui pariatur. Proident fugiat amet sint cupidatat nulla.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Voluptate eu ipsum quis. Aute Lorem anim mollit culpa reprehenderit ullamco aute exercitation laborum id adipisicing ea aliqua dolore officia. Velit adipisicing velit in velit aliqua quis irure dolore laboris.",
+                    "spans": []
+                  }
+                ],
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
+                },
+                "test": "1"
+              }
+            ],
+            "primary": {},
+            "slice_type": "blog_title"
+          }
+        },
         "meta": {
           "fileName": "index",
           "extension": "js"
@@ -386,7 +443,42 @@
             }
           ]
         },
-        "mocks": {},
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": [
+                  {
+                    "type": "paragraph",
+                    "text": "Commodo eiusmod id occaecat duis Lorem qui officia fugiat qui qui minim dolor. Laborum cupidatat ullamco eu eu amet enim. Deserunt anim nostrud reprehenderit sit nisi minim quis veniam commodo minim ad.",
+                    "spans": []
+                  }
+                ],
+                "description": [
+                  {
+                    "type": "paragraph",
+                    "text": "Enim veniam velit elit duis sunt tempor minim deserunt duis anim. Enim aliquip aliqua non voluptate aliquip veniam pariatur sunt.",
+                    "spans": []
+                  }
+                ],
+                "img": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9"
+                },
+                "test": "2"
+              }
+            ],
+            "primary": {},
+            "slice_type": "blogs_test"
+          }
+        },
         "meta": {
           "fileName": "index",
           "extension": "js"
@@ -436,6 +528,14 @@
                     "constraint": {},
                     "thumbnails": []
                   }
+                },
+                "clientLogo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Client Logo",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
                 }
               },
               "items": {},
@@ -446,21 +546,22 @@
         "mocks": {
           "default": {
             "variation": "default",
-            "name": "Default",
-            "slice_type": "realisations_client",
-            "items": [],
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
             "primary": {
               "client": [
                 {
                   "type": "heading1",
-                  "text": "Envisioneer cross-media markets",
+                  "text": "Grass",
                   "spans": []
                 }
               ],
               "clientDescription": [
                 {
                   "type": "paragraph",
-                  "text": "Mollit Lorem commodo nostrud irure officia velit et pariatur sint dolor ex qui nulla qui. Minim veniam exercitation consequat consequat velit deserunt nisi labore esse duis aliquip ea commodo mollit.",
+                  "text": "Do esse Lorem ea aliqua pariatur ex labore proident ut mollit ex Lorem in anim adipisicing. Laborum exercitation incididunt veniam laborum eiusmod laborum magna in excepteur deserunt id. Fugiat ipsum non velit.",
                   "spans": []
                 }
               ],
@@ -469,11 +570,21 @@
                   "width": 900,
                   "height": 500
                 },
-                "alt": "Placeholder image",
+                "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+              },
+              "clientLogo": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
               }
-            }
+            },
+            "slice_type": "realisations_client"
           }
         },
         "meta": {

@@ -36,6 +36,14 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "clientLogo": {
+          "type": "Image",
+          "config": {
+            "label": "Client Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {},
