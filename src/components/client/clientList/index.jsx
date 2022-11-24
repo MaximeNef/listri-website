@@ -1,10 +1,12 @@
-import Container from "../../shared/composers/container";
-import ClientCard from "../ClientCard";
+import Container from '../../shared/composers/container';
+import ClientCard from '../ClientCard';
 
-const ClientList = () => {
+const ClientList = ({ realisations }) => {
   return (
     <Container>
-      <ClientCard />
+      {realisations.map((realisation, index) => {
+        return <ClientCard realisation={realisation} key={index} />;
+      })}
     </Container>
   );
 };
