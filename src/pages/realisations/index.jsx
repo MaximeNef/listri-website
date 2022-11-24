@@ -4,6 +4,7 @@ import Container from "../../components/shared/composers/container";
 import { motion } from "framer-motion";
 import MyImage from "../../components/shared/composers/myimage";
 import TitlePage from "../../components/all/titlePage";
+import ClientList from "../../components/client/clientList";
 const Realisation = () => {
   const titlepageprops = {
     title: "Coming soon ...",
@@ -34,6 +35,7 @@ const Realisation = () => {
             description={titlepageprops.description}
           />
         </Container>
+        <ClientList />
         <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
           <Container className='mx-auto'>
             <MyImage source='/assets/logo/Process.svg' w={400} h={500} />

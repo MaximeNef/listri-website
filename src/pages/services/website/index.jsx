@@ -27,7 +27,7 @@ const Website = () => {
       <Container className='py-20 bg-white px-5'>
         <Container className='md:flex md:flex-row  md:items-center'>
           <OneServiceTitle
-            title={"Site web"}
+            title={"Création de site web"}
             description={
               "Un site web permet également d'affirmer votre présence en ligne, il est indispensable à la mise en lumière de votre entreprise. Ouvre vos canaux a de nouveau clients, accroit votre crédibilité, visibilité et permet de véhiculer l’image de votre entreprise."
             }
