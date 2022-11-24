@@ -212,7 +212,7 @@
         },
         "screenshotPaths": {
           "default": {
-            "path": "/Users/maximenef/Documents/GitHub/listri-website/.slicemachine/assets/slices/BlogDescription/default/preview.png",
+            "path": "/Users/feliciendehertogh/dev/listri-website/.slicemachine/assets/slices/BlogDescription/default/preview.png",
             "width": 800,
             "height": 72
           }
@@ -318,64 +318,7 @@
             }
           ]
         },
-        "mocks": {
-          "default": {
-            "variation": "default",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {
-                "metatitle": [
-                  {
-                    "type": "paragraph",
-                    "text": "Do sunt cupidatat proident laboris esse est nostrud ut nulla nisi occaecat irure excepteur consectetur. Mollit nulla culpa dolore duis consequat velit. Non aliquip est fugiat consequat voluptate.",
-                    "spans": []
-                  }
-                ],
-                "metadescription": [
-                  {
-                    "type": "paragraph",
-                    "text": "Officia nisi eu sit cillum culpa ut ipsum commodo cillum. Et sint velit ea deserunt. Duis mollit quis consequat incididunt occaecat pariatur occaecat.",
-                    "spans": []
-                  }
-                ],
-                "timing": [
-                  {
-                    "type": "paragraph",
-                    "text": "Cupidatat qui officia mollit officia cillum eiusmod. Dolor qui Lorem do reprehenderit. Nulla aliqua officia eiusmod mollit incididunt irure aute.",
-                    "spans": []
-                  }
-                ],
-                "category": "dev",
-                "title": [
-                  {
-                    "type": "paragraph",
-                    "text": "Magna quis aute magna excepteur cupidatat qui et officia in quis labore irure. Aliqua ex est id proident officia fugiat sint eiusmod incididunt elit nisi qui pariatur. Proident fugiat amet sint cupidatat nulla.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "paragraph",
-                    "text": "Voluptate eu ipsum quis. Aute Lorem anim mollit culpa reprehenderit ullamco aute exercitation laborum id adipisicing ea aliqua dolore officia. Velit adipisicing velit in velit aliqua quis irure dolore laboris.",
-                    "spans": []
-                  }
-                ],
-                "image": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": null,
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
-                },
-                "test": "1"
-              }
-            ],
-            "primary": {},
-            "slice_type": "blog_title"
-          }
-        },
+        "mocks": {},
         "meta": {
           "fileName": "index",
           "extension": "js"
@@ -443,40 +386,94 @@
             }
           ]
         },
+        "mocks": {},
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "realisations_client": {
+        "library": "slices",
+        "id": "realisations_client",
+        "name": "RealisationsClient",
+        "description": "RealisationsClient",
+        "model": {
+          "id": "realisations_client",
+          "type": "SharedSlice",
+          "name": "RealisationsClient",
+          "description": "RealisationsClient",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "RealisationsClient",
+              "primary": {
+                "client": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Client",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "clientDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Client Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "clientImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Client Image ",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
         "mocks": {
           "default": {
             "variation": "default",
-            "version": "sktwi1xtmkfgx8626",
-            "items": [
-              {
-                "title": [
-                  {
-                    "type": "paragraph",
-                    "text": "Commodo eiusmod id occaecat duis Lorem qui officia fugiat qui qui minim dolor. Laborum cupidatat ullamco eu eu amet enim. Deserunt anim nostrud reprehenderit sit nisi minim quis veniam commodo minim ad.",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "paragraph",
-                    "text": "Enim veniam velit elit duis sunt tempor minim deserunt duis anim. Enim aliquip aliqua non voluptate aliquip veniam pariatur sunt.",
-                    "spans": []
-                  }
-                ],
-                "img": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": null,
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9"
+            "name": "Default",
+            "slice_type": "realisations_client",
+            "items": [],
+            "primary": {
+              "client": [
+                {
+                  "type": "heading1",
+                  "text": "Envisioneer cross-media markets",
+                  "spans": []
+                }
+              ],
+              "clientDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Mollit Lorem commodo nostrud irure officia velit et pariatur sint dolor ex qui nulla qui. Minim veniam exercitation consequat consequat velit deserunt nisi labore esse duis aliquip ea commodo mollit.",
+                  "spans": []
+                }
+              ],
+              "clientImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
                 },
-                "test": "2"
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
               }
-            ],
-            "primary": {},
-            "slice_type": "blogs_test"
+            }
           }
         },
         "meta": {

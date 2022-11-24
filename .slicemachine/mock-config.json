@@ -155,7 +155,25 @@
         }
       }
     },
-    "Select": {}
+    "Select": {},
+    "RealisationsClient": {
+      "default": {
+        "primary": {
+          "client": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "clientDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   },
   "_cts": {
     "blogs": {},
@@ -171,6 +189,7 @@
     "bloglistri": {},
     "projectlistri": {},
     "testlistri": {},
-    "BlogPost": {}
+    "BlogPost": {},
+    "realisation-client": {}
   }
 }
