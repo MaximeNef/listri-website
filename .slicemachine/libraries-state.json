@@ -536,6 +536,77 @@
                     "constraint": {},
                     "thumbnails": []
                   }
+                },
+                "screenImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "screen Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "realisationDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "réalisation description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "mockupImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "mockup image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "avisClient": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "avis Client",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "nomClient": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Nom client",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "statutClient": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "statut client",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "lienProjet": {
+                  "type": "Link",
+                  "config": {
+                    "label": "lien projet client",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "serviceCategorie": {
+                  "type": "Select",
+                  "config": {
+                    "label": "service catégorie ",
+                    "placeholder": "",
+                    "options": [
+                      "1",
+                      "2"
+                    ]
+                  }
                 }
               },
               "items": {},
@@ -554,14 +625,14 @@
               "client": [
                 {
                   "type": "heading1",
-                  "text": "Grass",
+                  "text": "Whenever",
                   "spans": []
                 }
               ],
               "clientDescription": [
                 {
                   "type": "paragraph",
-                  "text": "Do esse Lorem ea aliqua pariatur ex labore proident ut mollit ex Lorem in anim adipisicing. Laborum exercitation incididunt veniam laborum eiusmod laborum magna in excepteur deserunt id. Fugiat ipsum non velit.",
+                  "text": "Laborum ullamco sint do minim ex enim eiusmod Lorem occaecat dolor ad ea. Ipsum mollit qui eiusmod do laborum consequat aliquip. Eiusmod culpa esse excepteur velit excepteur ad nulla cupidatat labore irure aute commodo.",
                   "spans": []
                 }
               ],
@@ -572,7 +643,7 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+                "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764"
               },
               "clientLogo": {
                 "dimensions": {
@@ -581,8 +652,59 @@
                 },
                 "alt": null,
                 "copyright": null,
-                "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
-              }
+                "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+              },
+              "screenImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c"
+              },
+              "realisationDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Consequat ex aliqua non laboris laborum sit duis amet non occaecat laboris. Aliquip cupidatat labore reprehenderit exercitation Lorem ipsum culpa aute consequat non occaecat.",
+                  "spans": []
+                }
+              ],
+              "mockupImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef"
+              },
+              "avisClient": [
+                {
+                  "type": "paragraph",
+                  "text": "Deserunt laborum culpa officia pariatur eiusmod cupidatat esse non sint aliqua excepteur. Aliquip aute eiusmod ex sunt aliqua id non proident laborum velit adipisicing esse fugiat quis fugiat. Esse aliquip incididunt voluptate incididunt ad irure labore voluptate duis esse ea Lorem nulla sunt irure.",
+                  "spans": []
+                }
+              ],
+              "nomClient": [
+                {
+                  "type": "paragraph",
+                  "text": "Duis aliquip quis laboris anim incididunt culpa occaecat. Irure eu duis labore cupidatat esse cillum sunt laboris fugiat id nulla. Minim culpa consectetur nostrud mollit.",
+                  "spans": []
+                }
+              ],
+              "statutClient": [
+                {
+                  "type": "paragraph",
+                  "text": "Anim nostrud culpa sunt duis ad sint duis et sunt ut dolor eu veniam proident occaecat.",
+                  "spans": []
+                }
+              ],
+              "lienProjet": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              },
+              "serviceCategorie": "2"
             },
             "slice_type": "realisations_client"
           }

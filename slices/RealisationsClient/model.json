@@ -44,6 +44,77 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "screenImage": {
+          "type": "Image",
+          "config": {
+            "label": "screen Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "realisationDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "réalisation description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "mockupImage": {
+          "type": "Image",
+          "config": {
+            "label": "mockup image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "avisClient": {
+          "type": "StructuredText",
+          "config": {
+            "label": "avis Client",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nomClient": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nom client",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "statutClient": {
+          "type": "StructuredText",
+          "config": {
+            "label": "statut client",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "lienProjet": {
+          "type": "Link",
+          "config": {
+            "label": "lien projet client",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "serviceCategorie": {
+          "type": "Select",
+          "config": {
+            "label": "service catégorie ",
+            "placeholder": "",
+            "options": [
+              "1",
+              "2"
+            ]
+          }
         }
       },
       "items": {},
