@@ -1,2 +1,0 @@
-AB test files will automatically be generated.
-Please include the AB file coresponding to the DOMAIN NAME of the tracked site.
