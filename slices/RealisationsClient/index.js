@@ -48,9 +48,10 @@ const RealisationsClient = ({ slices }) => (
       </Link>
     </Container>
     <p className='text-[#FF7E00] font-semibold text-[16px] mb-5'>
-      Ce que nous avons réalisé{" "}
-    </p>{" "}
+      Ce que nous avons réalisé
+    </p>
     <p>
+      
       L’équipe de Listri Digital à réalisé un site web dynamique et responsive
       pour permettre à l’agence François Barbière un affichage optimisé sur tout
       support. Nous leur avons également développé un système facile

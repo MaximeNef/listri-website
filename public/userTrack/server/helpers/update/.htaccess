@@ -1,0 +1,14 @@
+<FilesMatch "\.(?:zip)$">
+    # Apache 2.2
+    <IfModule !authz_core_module>
+        Order Allow,Deny
+        Deny from all
+    </IfModule>
+
+    # Apache 2.4+
+    <IfModule authz_core_module>
+        <RequireAll>
+            Require all denied
+        </RequireAll>
+    </IfModule>
+</FilesMatch>
