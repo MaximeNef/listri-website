@@ -1,12 +1,12 @@
 import Container from "../../shared/composers/container";
 
-const FilterBlog = (props) => {
+const FilterClient = (props) => {
   function onFilterValueChanged(event) {
     props.filterValueSelected(event.target.value);
   }
 
   return (
-    <Container className='absolute pb-5 rounded-[20px] mt-[-50px] mb-4 md:w-full  md:max-w-[50%] mx-auto min-w-[80%] '>
+    <Container className=' absolute pb-5 rounded-[20px] mt-[-50px] mb-4 md:w-full  md:max-w-[50%] mx-auto min-w-[80%]'>
       <Container className='md:flex-row md:w-full md:space-x-4 space-y-5 md:space-y-0'>
         <Container className='md:w-full'>
           <select
@@ -27,4 +27,4 @@ const FilterBlog = (props) => {
     </Container>
   );
 };
-export default FilterBlog;
+export default FilterClient;

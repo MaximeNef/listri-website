@@ -1,13 +1,14 @@
-import Container from '../../shared/composers/container';
-import ClientCard from '../ClientCard';
+import Container from "../../shared/composers/container";
+import Flex from "../../shared/composers/flex";
+import ClientCard from "../ClientCard";
 
 const ClientList = ({ realisations }) => {
   return (
-    <Container>
+    <Flex type='row' justify='center' className=' '>
       {realisations.map((realisation, index) => {
         return <ClientCard realisation={realisation} key={index} />;
       })}
-    </Container>
+    </Flex>
   );
 };
 export default ClientList;

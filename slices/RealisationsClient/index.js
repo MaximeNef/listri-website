@@ -30,39 +30,36 @@ const servicesClient = [
 const RealisationsClient = ({ slices }) => (
   <section className='mx-5 mb-10'>
     <h1 className='font-bold text-[23px] mb-[30px]'>
-      {slices[0].primary.client[0].text}
+      {slices[0].primary.client[0]?.text}
     </h1>
     <p className='text-[#FF7E00] font-semibold text-[16px] mb-[10px]'>
       Description du projet
     </p>
-    <p> {slices[0].primary.clientDescription[0].text}</p>
+    <p> {slices[0].primary.clientDescription[0]?.text}</p>
     <Container className='h-[250px] relative my-[30px]'>
-      <MyImage source={slices[0].primary.clientImage.url} layout={"fill"} />
+      <MyImage source={slices[0].primary.screenImage?.url} layout={"fill"} />
     </Container>
     <Container
       className='mx-auto text-center w-full border  border-[#FF7E00]
  rounded-[10px] my-2 py-2 text-white font-bold mb-[60px]  '
     >
-      <Link href='/realisations'>
-        <a className='text-[#FF7E00] text-[20px] '>visiter le site </a>
-      </Link>
+      <a
+        className='text-[#FF7E00] text-[20px] '
+        href={slices[0].primary.lienProjet?.url}
+      >
+        visiter le site{" "}
+      </a>
     </Container>
     <p className='text-[#FF7E00] font-semibold text-[16px] mb-5'>
       Ce que nous avons réalisé
     </p>
-    <p>
-      
-      L’équipe de Listri Digital à réalisé un site web dynamique et responsive
-      pour permettre à l’agence François Barbière un affichage optimisé sur tout
-      support. Nous leur avons également développé un système facile
-      d’utilisation de publication de biens.
-    </p>
+    <p>{slices[0].primary.realisationDescription[0]?.text}</p>
     <Container className='h-[250px] relative my-[30px] mx-[-20px]'>
-      <MyImage source={"/assets/logo/clientbarbiere.png"} layout={"fill"} />
+      <MyImage source={slices[0].primary.mockupImage?.url} layout={"fill"} />
     </Container>
     <p
       className='text-[#474747
-] font-normal text-[35px] tracking-wider'
+] font-light text-[35px] tracking-wider'
     >
       Ce que dit notre client
     </p>
@@ -86,14 +83,14 @@ const RealisationsClient = ({ slices }) => (
       </Flex>
     </Flex>
     <Container className='bg-white p-[25px] shadow-clientss rounded-[10px] mt-[30px]'>
-      <p className='mb-[18px]'>
-        “Notre ancien site web devenait peu à peu dépassé et nous avons décidé
-        de faire appel à Weeb pour en créer un nouveau qui répondent au code et
-        au design actuels. Nous sommes très satisfaits du résultat, merci à
-        toute l’équipe.”
+      <p className='mb-[18px]'>“{slices[0].primary.avisClient[0]?.text}”</p>
+      <p className='text-[20px] text-[#414040] mb-2'>
+        {slices[0].primary.nomClient[0]?.text}
       </p>
-      <p className='text-[20px] text-[#414040] mb-2'>François</p>
-      <p className='text-[14px] text-[#BFBFBF]'>Dirigeant d’agence</p>
+      <p className='text-[14px] text-[#BFBFBF]'>
+        {" "}
+        {slices[0].primary.statutClient[0]?.text}
+      </p>
     </Container>
     <Container className='mx-auto text-center w-full  bg-[#FF7E00] rounded-[10px] my-2 py-2 text-white font-bold mt-[40px]  '>
       <Link href='/realisations'>
@@ -118,12 +115,12 @@ const RealisationsClient = ({ slices }) => (
     </p>
     <Flex className='space-x-2 mt-[20px]'>
       <Container className='mx-auto text-center w-full  bg-[#FF7E00]  rounded-[10px] my-2 py-2 text-white font-bold  '>
-        <Link href='/realisations'>
+        <Link href='/contactus'>
           <a>demander une offre</a>
         </Link>
       </Container>
       <Container className='mx-auto text-center w-full   border-[2px] border-[#FF7E00] rounded-[10px] my-2 py-2 text-white font-bold '>
-        <Link href='/realisations'>
+        <Link href='/services'>
           <a className='text-[#FF7E00]'>nos services</a>
         </Link>
       </Container>
