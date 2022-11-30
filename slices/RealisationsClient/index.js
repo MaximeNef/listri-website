@@ -104,7 +104,7 @@ const RealisationsClient = ({ slices }) => {
           />
         </div>
       </Container>
-      <Container className='h-[250px] md:h-[600px]  relative my-[60px] mx-[-20px] md:mx-[-80px]'>
+      <Container className='h-[250px] md:h-[70vh]  relative my-[60px] mx-[-20px] md:mx-[-80px]'>
         <MyImage
           source={
             slices[0].primary.mockupImage?.url
@@ -113,7 +113,7 @@ const RealisationsClient = ({ slices }) => {
           }
           layout={"fill"}
           objectFit={"cover"}
-          className=' md:object-bottom'
+          className=' md:object-[center_bottom]'
         />
       </Container>
       <p
@@ -146,7 +146,7 @@ const RealisationsClient = ({ slices }) => {
       </Flex>
       <div className='md:flex md:space-x-10'>
         <div className='md:w-[25%] '>
-          <Container className='bg-white p-[25px] shadow-clientss rounded-[10px] mt-[30px] md:mt-[40px]  md:h-[90%]'>
+          <Container className='bg-white p-[25px] shadow-clientss rounded-[10px] mt-[30px] md:mt-[40px]  md:h-[88%]'>
             <p className='mb-[18px]'>
               “{slices[0].primary.avisClient[0]?.text}”
             </p>
