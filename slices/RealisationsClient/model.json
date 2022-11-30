@@ -1,0 +1,140 @@
+{
+  "id": "realisations_client",
+  "type": "SharedSlice",
+  "name": "RealisationsClient",
+  "description": "RealisationsClient",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "RealisationsClient",
+      "primary": {
+        "client": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Client",
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
+          }
+        },
+        "clientDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Client Description",
+            "placeholder": "A nice description of your feature",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "clientImage": {
+          "type": "Image",
+          "config": {
+            "label": "Client Image ",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "clientLogo": {
+          "type": "Image",
+          "config": {
+            "label": "Client Logo",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "screenImage": {
+          "type": "Image",
+          "config": {
+            "label": "screen Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "descriptionImage": {
+          "type": "Image",
+          "config": {
+            "label": "descriptionImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "realisationDescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "réalisation description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "realisationImage": {
+          "type": "Image",
+          "config": {
+            "label": "realisationImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "mockupImage": {
+          "type": "Image",
+          "config": {
+            "label": "mockup image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "avisClient": {
+          "type": "StructuredText",
+          "config": {
+            "label": "avis Client",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "nomClient": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Nom client",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "statutClient": {
+          "type": "StructuredText",
+          "config": {
+            "label": "statut client",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "lienProjet": {
+          "type": "Link",
+          "config": {
+            "label": "lien projet client",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "serviceCategorie": {
+          "type": "Select",
+          "config": {
+            "label": "service catégorie ",
+            "placeholder": "",
+            "options": [
+              "1",
+              "2"
+            ]
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

@@ -96,7 +96,7 @@
                     "label": "subtitle",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "single": "heading2"
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 },
                 "description": {
@@ -105,7 +105,7 @@
                     "label": "description",
                     "placeholder": "",
                     "allowTargetBlank": true,
-                    "single": "paragraph"
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 },
                 "image": {
@@ -124,21 +124,20 @@
         "mocks": {
           "default": {
             "variation": "default",
-            "name": "Default",
-            "slice_type": "blog_description",
+            "version": "sktwi1xtmkfgx8626",
             "items": [
               {
                 "subtitle": [
                   {
-                    "type": "heading2",
-                    "text": "Deliver scalable action-items",
+                    "type": "heading1",
+                    "text": "Rather",
                     "spans": []
                   }
                 ],
                 "description": [
                   {
                     "type": "paragraph",
-                    "text": "Commodo nulla do voluptate ipsum nulla proident laborum quis ipsum reprehenderit ea ipsum. Voluptate magna laborum nostrud dolore eiusmod laborum in ea magna Lorem nulla.",
+                    "text": "Do non culpa Lorem. Quis eu deserunt veniam cupidatat.",
                     "spans": []
                   }
                 ],
@@ -147,63 +146,14 @@
                     "width": 900,
                     "height": 500
                   },
-                  "alt": "Placeholder image",
+                  "alt": null,
                   "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
-                }
-              },
-              {
-                "subtitle": [
-                  {
-                    "type": "heading2",
-                    "text": "Reinvent interactive web services",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "paragraph",
-                    "text": "Nostrud laborum consectetur quis elit dolore ad aliqua dolore proident ad nisi.",
-                    "spans": []
-                  }
-                ],
-                "image": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
-                }
-              },
-              {
-                "subtitle": [
-                  {
-                    "type": "heading2",
-                    "text": "E-enable world-class eyeballs",
-                    "spans": []
-                  }
-                ],
-                "description": [
-                  {
-                    "type": "paragraph",
-                    "text": "Nisi ullamco enim commodo eu deserunt duis dolor adipisicing minim occaecat. Occaecat consequat consequat pariatur ad qui eu sint eiusmod veniam.",
-                    "spans": []
-                  }
-                ],
-                "image": {
-                  "dimensions": {
-                    "width": 900,
-                    "height": 500
-                  },
-                  "alt": "Placeholder image",
-                  "copyright": null,
-                  "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+                  "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1"
                 }
               }
             ],
-            "primary": {}
+            "primary": {},
+            "slice_type": "blog_description"
           }
         },
         "meta": {
@@ -477,6 +427,270 @@
             ],
             "primary": {},
             "slice_type": "blogs_test"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "realisations_client": {
+        "library": "slices",
+        "id": "realisations_client",
+        "name": "RealisationsClient",
+        "description": "RealisationsClient",
+        "model": {
+          "id": "realisations_client",
+          "type": "SharedSlice",
+          "name": "RealisationsClient",
+          "description": "RealisationsClient",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "RealisationsClient",
+              "primary": {
+                "client": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Client",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1"
+                  }
+                },
+                "clientDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Client Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                },
+                "clientImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Client Image ",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "clientLogo": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Client Logo",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "screenImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "screen Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "descriptionImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "descriptionImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "realisationDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "réalisation description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "realisationImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "realisationImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "mockupImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "mockup image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "avisClient": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "avis Client",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "nomClient": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Nom client",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "statutClient": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "statut client",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "lienProjet": {
+                  "type": "Link",
+                  "config": {
+                    "label": "lien projet client",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "serviceCategorie": {
+                  "type": "Select",
+                  "config": {
+                    "label": "service catégorie ",
+                    "placeholder": "",
+                    "options": [
+                      "1",
+                      "2"
+                    ]
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "client": [
+                {
+                  "type": "heading1",
+                  "text": "Cutting",
+                  "spans": []
+                }
+              ],
+              "clientDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Irure do sit amet consequat mollit deserunt fugiat sunt mollit eu nulla.",
+                  "spans": []
+                }
+              ],
+              "clientImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da"
+              },
+              "clientLogo": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e"
+              },
+              "screenImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c"
+              },
+              "descriptionImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+              },
+              "realisationDescription": [
+                {
+                  "type": "paragraph",
+                  "text": "Cupidatat officia quis adipisicing sint ea irure nulla do commodo ullamco. Deserunt dolor veniam enim nisi ut ea velit do.",
+                  "spans": []
+                }
+              ],
+              "realisationImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0"
+              },
+              "mockupImage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+              },
+              "avisClient": [
+                {
+                  "type": "paragraph",
+                  "text": "Mollit excepteur nulla aliquip. Mollit id ea aliquip incididunt ipsum enim occaecat eu sunt proident aliqua id cupidatat. Ex laborum veniam est quis duis elit cupidatat eiusmod minim ipsum et exercitation.",
+                  "spans": []
+                }
+              ],
+              "nomClient": [
+                {
+                  "type": "paragraph",
+                  "text": "Nostrud incididunt sint magna ipsum occaecat ut et incididunt. Ut quis cillum reprehenderit sit esse eiusmod amet quis. Nisi deserunt cupidatat amet mollit in qui sint consectetur aute id sint consequat.",
+                  "spans": []
+                }
+              ],
+              "statutClient": [
+                {
+                  "type": "paragraph",
+                  "text": "Do dolor id Lorem officia in sunt pariatur consequat anim commodo quis voluptate in deserunt. Dolor velit do ex anim laboris laboris Lorem.",
+                  "spans": []
+                }
+              ],
+              "lienProjet": {
+                "link_type": "Web",
+                "url": "https://slicemachine.dev"
+              },
+              "serviceCategorie": "1"
+            },
+            "slice_type": "realisations_client"
           }
         },
         "meta": {

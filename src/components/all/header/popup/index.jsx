@@ -16,7 +16,7 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
   }
   console.log(isOpen, " reg");
   return (
-    <Container className=' pt-36 text-2xl font-light	 tracking-wide  mx-6 space-y-7 w-full'>
+    <Container className=' pt-36 text-2xl font-light	 tracking-wide  mx-6 space-y-7 w-full '>
       {link.map((link) => {
         return (
           <Link href={link.href} key={link.page} passHref>

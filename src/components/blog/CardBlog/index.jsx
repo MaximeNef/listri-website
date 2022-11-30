@@ -19,7 +19,7 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
               w={500}
               h={300}
               objectFit={"cover"}
-              className=' rounded-t-[10px] md:rounded-[10px] '
+              className={` rounded-t-[9px] md:rounded-[10px] `}
             />
           </Container>
           <Container className=' bg-slate-100/30 md:bg-transparent relative md:ml-10'>
@@ -62,11 +62,11 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
               w={500}
               h={300}
               objectFit={"cover"}
-              className=' rounded-t-[10px] md:rounded-[10px] '
+              className=' rounded-t-[9px] md:rounded-[10px] transform transition duration-500 hover:scale-110 '
             />
           </Container>
           <Container className=' bg-slate-100/30 md:bg-transparent relative'>
-            <Flex className='justify-between m-[10px]'>
+            <Flex className='justify-between m-[10px] md:ml-1'>
               <Container className='w-[80%] md:w-full'>
                 <p className=' font-light text-[14px] md:text-[18px]'>
                   {timing} min de lecture • {category}

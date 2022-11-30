@@ -33,7 +33,7 @@ const BlogTitle = ({ slice }) => {
             </Container>
             <Container>
               <MyImage
-                source={item.image.url}
+                source={item.image?.url}
                 key={i}
                 h='400'
                 w='200'
