@@ -6,8 +6,7 @@ const ClientList = ({ realisations }) => {
   return (
     <Flex
       type='col'
-      justify='center'
-      className=' md:mx-10 md:mt-10 md:flex-row mt-5'
+      className=' md:mx-10 md:mt-10 md:flex-row mt-5 justify-center md:justify-start'
     >
       {realisations.map((realisation, index) => {
         return <ClientCard realisation={realisation} key={index} />;
