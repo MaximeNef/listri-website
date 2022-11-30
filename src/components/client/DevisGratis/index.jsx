@@ -4,7 +4,7 @@ import Flex from "../../shared/composers/flex";
 
 const DevisGratis = () => {
   return (
-    <Container className=' p-[25px] shadow-clientss rounded-[10px] mt-[40px]'>
+    <Container className=' md:w-full p-[25px] shadow-clientss rounded-[10px] mt-[40px]'>
       <p className='text-center text-[26px] font-black'>Un devis gratuit ?</p>
       <p className='text-center text-[22px] font-normal mb-[30px]'>
         Remplissez le formulaire et recevez votre devis

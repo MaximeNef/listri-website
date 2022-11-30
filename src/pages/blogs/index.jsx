@@ -67,11 +67,10 @@ const Blogs = ({ blogs, BlogTitle }) => {
             subtitle={titlepageprops.subtitle}
             description={titlepageprops.description}
           />
-          <div className='relative ml-[60px] max-w-[20%]'>
-            <FilterBlog filterValueSelected={onFilterValueSelected} />
-          </div>
 
-          <Flex type='row' justify='center' className=' md:mx-10   md:mt-10 '>
+          <FilterBlog filterValueSelected={onFilterValueSelected} />
+
+          <Flex type='row' justify='center' className=' md:mx-10   md:mt-5 '>
             <ul className='md:flex md:flex-row md:flex-wrap md:justify-between'>
               {filteredProductList.map((blog, i) => (
                 <li

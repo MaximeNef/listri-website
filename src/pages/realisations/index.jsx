@@ -55,9 +55,8 @@ const Realisation = ({ realisations }) => {
             subtitle={titlepageprops.subtitle}
             description={titlepageprops.description}
           />
-          <div className='relative ml-[60px] max-w-[70%]'>
-            <FilterClient filterValueSelected={onFilterValueSelected} />
-          </div>
+
+          <FilterClient filterValueSelected={onFilterValueSelected} />
 
           <ClientList realisations={filteredProductList} />
           {/* <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>

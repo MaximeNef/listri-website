@@ -92,7 +92,7 @@ const Menuburger = ({ current }) => {
 
   return (
     <Container className=' w-full '>
-      <Container className='fixed z-20 bg-white w-full top-0  py-2   '>
+      <Container className='fixed z-[90] bg-white w-full top-0  py-2   '>
         <Container className=' m-auto  max-h-12  z-20'>
           <Link href='/' passHref>
             <a>

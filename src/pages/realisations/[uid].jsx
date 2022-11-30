@@ -13,7 +13,7 @@ export default function Realisation({ projet }) {
   console.log(projet, "realisation");
 
   return (
-    <NavPage current='Blog'>
+    <NavPage current='Réalisations'>
       <Container>
         <Head>
           {/* <title>{projet.data.slices[0].items[0].metatitle[0].text}</title>
