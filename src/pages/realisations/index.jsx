@@ -27,7 +27,7 @@ const Realisation = ({ realisations }) => {
     if (filterValue === "all") {
       return realisation;
     }
-    if (filterValue === blog?.data.slices[0].items[0].category) {
+    if (filterValue === realisation?.data.slices[0].items[0].serviceCategorie) {
       return realisation;
     }
   });
@@ -59,11 +59,10 @@ const Realisation = ({ realisations }) => {
           <FilterClient filterValueSelected={onFilterValueSelected} />
 
           <ClientList realisations={filteredProductList} />
-          {/* <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
-          <Container className="mx-auto">
-            <MyImage source="/assets/logo/Process.svg" w={400} h={500} />
+
+          <Container className='mx-auto'>
+            <MyImage source='/assets/logo/Process.svg' w={400} h={500} />
           </Container>
-        </motion.div> */}
         </Container>
       </main>
     </NavPage>

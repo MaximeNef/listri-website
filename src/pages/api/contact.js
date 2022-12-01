@@ -53,26 +53,3 @@ async function sendEmail(req, res) {
 }
 
 export default sendEmail;
-
-// export default async function handler(req, res) {
-//   const { nom, prenom, mail, telephone } = req.body;
-//   const msg = {
-//     to: "maximenef1@gmail.com",
-//     from: "barbiere@listri.digital",
-//     subject: "formulaire immo",
-//     html: `<p> ${nom} ${prenom} ${mail} ${telephone} </p> `,
-//   };
-//   await sgMail.send(msg);
-//   res.json({ succes: true });
-// }
-
-// try {
-//   await mail.send(data);
-//   res.status(200).json({ status: "OK" });
-// } catch (error) {
-//   console.log(error);
-//   if (error.response) {
-//     console.log(error.response.body);
-//   }
-//   res.status(400).json({ status: "ERROR", message: error.message });
-// }

@@ -20,7 +20,7 @@ const FilterClient = (props) => {
             </option>
 
             <option value='marketing'>Marketing</option>
-            <option value='dev'>développement</option>
+            <option value='dev'>Développement</option>
           </select>
         </Container>
       </Container>

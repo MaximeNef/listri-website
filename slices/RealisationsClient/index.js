@@ -129,7 +129,7 @@ const RealisationsClient = ({ slices }) => {
               "https://www.google.com/search?q=listri+digital&sxsrf=ALiCzsYt_sdzKTeIHmNX7V0XG5pSRvddMw%3A1669381209688&ei=WbyAY7_aKYm5sAfKmYDYAQ&ved=0ahUKEwj_6v3Pscn7AhWJHOwKHcoMABsQ4dUDCA8&uact=5&oq=listri+digital&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECCMQJzIECCMQJzIECCMQJzIGCAAQBxAeMggIABAHEB4QDzIICAAQBRAHEB4yCAgAEAUQBxAeMggIABAFEAcQHjIICAAQBRAHEB4yCAgAEAUQBxAeOgcIIxCwAxAnOgkIABAeELADEA06CwgAEAgQHhCwAxANSgQIQRgBSgQIRhgAUJMCWJMCYMoIaAJwAHgAgAE3iAE3kgEBMZgBAKABAcgBA8ABAQ&sclient=gws-wiz-serp"
             }
           >
-            <a> Voir tout sur google</a>
+            <a> Voir les avis Google</a>
           </Link>
         </p>
         <Flex
