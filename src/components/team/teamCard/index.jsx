@@ -13,7 +13,9 @@ const TeamCard = ({ team }) => {
           source={team.src}
           w={100}
           h={400}
-          className={" object-cover  rounded-[18px] "}
+          className={` object-cover  rounded-[18px] ${
+            team.lastName == "Félicien" ? " object-bottom" : ""
+          }`}
         />
       </Container>{" "}
       <Container className='p-[2px] bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[20px] drop-shadow-lg z-10 mt-[-50px]'>
