@@ -104,8 +104,7 @@ const RealisationsClient = ({ slices }) => {
           />
         </div>
       </Container>
-      <Container className=' h-[70vw]  relative my-[60px] mx-[-20px] md:mx-[-80px]'>
-        {/* h-[250px] md:h-[70vh] */}
+      <Container className='h-[250px] md:h-[70vh] relative my-[60px] mx-[-20px] md:mx-[-80px]'>
         <MyImage
           source={
             slices[0].primary.mockupImage?.url
@@ -113,7 +112,7 @@ const RealisationsClient = ({ slices }) => {
               : "/assets/logo/Logo.svg"
           }
           layout={"fill"}
-          objectFit={"contain"}
+          objectFit={"cover"}
           className=' md:object-[center_bottom]'
         />
       </Container>
