@@ -16,10 +16,10 @@ export default function Realisation({ projet }) {
     <NavPage current='Réalisations'>
       <Container>
         <Head>
-          {/* <title>{projet.data.slices[0].items[0].metatitle[0]?.text}</title>
+          <title>{projet.data.slices[0].primary[0].metatitle[0]?.text}</title>
           <meta
             name='description'
-            content={`cette articles va vous aider dans: ${projet.data.slices[0].items[0].metadescription[0]?.text}`}
+            content={`cette articles va vous aider dans: ${projet.data.slices[0].primary[0].metadescription[0]?.text}`}
           />
           <link rel='icon' href='/favicon.svg' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
@@ -27,7 +27,7 @@ export default function Realisation({ projet }) {
           <link
             href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
             rel='stylesheet'
-          /> */}
+          />
         </Head>
         <main className='bg-white  pt-28'>
           <Container className='w-full'>
