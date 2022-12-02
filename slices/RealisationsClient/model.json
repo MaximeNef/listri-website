@@ -11,6 +11,24 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "RealisationsClient",
       "primary": {
+        "metatitle": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Méta Title",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "metadescription": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Méta Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
         "client": {
           "type": "StructuredText",
           "config": {

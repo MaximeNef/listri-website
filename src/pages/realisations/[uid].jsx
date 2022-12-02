@@ -16,10 +16,10 @@ export default function Realisation({ projet }) {
     <NavPage current='Réalisations'>
       <Container>
         <Head>
-          <title>{projet.data.slices[0].items[0].metatitle[0].text}</title>
+          <title>{projet.data.slices[0].items[0].metatitle[0]?.text}</title>
           <meta
             name='description'
-            content={`cette articles va vous aider dans: ${projet.data.slices[0].items[0].metadescription[0].text}`}
+            content={`cette articles va vous aider dans: ${projet.data.slices[0].items[0].metadescription[0]?.text}`}
           />
           <link rel='icon' href='/favicon.svg' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
