@@ -45,7 +45,7 @@ const MenuDesktop = ({ link, current }) => {
                       justify='start'
                       className=' hover:transform hover:-translate-y-1.5 hover:duration-700 duration-500 '
                     >
-                      <a className='mb-2  text-[14px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] min-w-[38px] font-semibold'>
+                      <a className='mb-2  text-[14px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] min-w-[38px] font-semibold cursor-pointer'>
                         {p.page}
                       </a>
                     </Flex>

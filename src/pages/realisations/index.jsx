@@ -59,10 +59,6 @@ const Realisation = ({ realisations }) => {
           <FilterClient filterValueSelected={onFilterValueSelected} />
 
           <ClientList realisations={filteredProductList} />
-
-          <Container className='mx-auto'>
-            <MyImage source='/assets/logo/Process.svg' w={400} h={500} />
-          </Container>
         </Container>
       </main>
     </NavPage>

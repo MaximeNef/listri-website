@@ -60,9 +60,12 @@ const RealisationsClient = ({ slices }) => {
           <p className='text-[#FF7E00] font-semibold text-[16px] md:text-[35px] mb-[10px]'>
             Description du projet
           </p>
-          <p> {slices[0].primary.clientDescription[0]?.text}</p>{" "}
+          <p className='md:mr-40'>
+            {" "}
+            {slices[0].primary.clientDescription[0]?.text}
+          </p>{" "}
         </div>
-        <div className='md:max-w-[50%] mt-[10px] min-w-[1vw] min-h-[100vw] md:min-h-[30vw] md:min-w-[50%] relative'>
+        <div className='md:max-w-[50%] md:mt-[10px] min-h-[70vw] md:min-h-[30vw] md:min-w-[50%] relative'>
           <MyImage
             source={
               slices[0].primary.descriptionImage?.url
@@ -87,12 +90,15 @@ const RealisationsClient = ({ slices }) => {
           />
         </div>
         <div className='md:max-w-[50%]  md:flex md:flex-col  md:my-auto md:w-[50%]'>
-          <p className='text-[#FF7E00] font-semibold text-[16px] md:text-[35px] mb-[10px]'>
+          <p className='text-[#FF7E00] font-semibold text-[16px] md:text-[35px] mb-[10px] md:mr-40'>
             Ce que nous avons réalisé
           </p>
-          <p> {slices[0].primary.realisationDescription[0]?.text}</p>{" "}
+          <p className='md:mr-40'>
+            {" "}
+            {slices[0].primary.realisationDescription[0]?.text}
+          </p>{" "}
         </div>
-        <div className='md:hidden inline-flex  md:max-w-[50%] md:mt-[10px] min-w-[1vw] min-h-[60vw] md:min-h-[40vw] md:min-w-[50%] relative'>
+        <div className='md:hidden inline-flex   min-w-[1vw] min-h-[70vw] mt-10  relative'>
           <MyImage
             source={
               slices[0].primary.realisationImage?.url
