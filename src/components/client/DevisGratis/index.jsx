@@ -2,8 +2,10 @@ import Link from "next/link";
 import { useState } from "react";
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
-
+import { useRouter } from "next/router";
 const DevisGratis = () => {
+  const router = useRouter();
+
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [mail, setMail] = useState("");
@@ -27,18 +29,12 @@ const DevisGratis = () => {
       return;
     }
 
-    const res = await fetch("/api/contact", {
+    const res = await fetch("/api/realisationForm", {
       body: JSON.stringify({
         nom: nom,
         prenom: prenom,
         mail: mail,
         telephone: description,
-        contenu: contenu,
-        media: media,
-        site: site,
-        referencement: referencement,
-        optimisation: optimisation,
-        autres: autres,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -50,18 +46,7 @@ const DevisGratis = () => {
       console.log(error, "fuck");
       return;
     }
-    console.log(
-      nom,
-      prenom,
-      mail,
-      description,
-      contenu,
-      media,
-      site,
-      referencement,
-      optimisation,
-      autres
-    );
+    console.log(nom, prenom, mail, description);
     router.push("/");
   };
   return (
@@ -85,7 +70,7 @@ const DevisGratis = () => {
           type='text'
           name='nom'
           placeholder={`Numero de téléphone `}
-          value={nom}
+          value={prenom}
           onChange={(e) => {
             setPrenom(e.target.value);
           }}
@@ -95,7 +80,7 @@ const DevisGratis = () => {
           type='text'
           name='nom'
           placeholder={`Adresse email`}
-          value={nom}
+          value={mail}
           onChange={(e) => {
             setMail(e.target.value);
           }}
@@ -106,7 +91,7 @@ const DevisGratis = () => {
           type='text'
           name='nom'
           placeholder={"Decrivez votre projet"}
-          value={nom}
+          value={description}
           onChange={(e) => {
             setDescription(e.target.value);
           }}
@@ -126,9 +111,9 @@ const DevisGratis = () => {
           </label>
         </Flex>
         <Container className='mx-auto text-center w-full  bg-[#FF7E00] rounded-[10px] my-2 py-2 text-white font-bold mt-[30px]  '>
-          <Link href='/realisations'>
+          <button type='submit'>
             <a>Recevoir mon devis</a>
-          </Link>
+          </button>
         </Container>
       </form>
     </Container>
