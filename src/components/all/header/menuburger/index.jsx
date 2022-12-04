@@ -14,6 +14,7 @@ import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
 import logolistri from "../../../../../public/assets/logo/logolistri.svg";
 import MyImage from "../../../shared/composers/myimage";
+import BurgerIcone from "./BurgerIcone";
 
 const myLoader = ({ src, width, quality }) => {
   return `https://example.com/${src}?w=${width}&q=${quality || 75}`;
@@ -80,46 +81,33 @@ const Menuburger = ({ current }) => {
   };
   //function qui permet de changer la valeur de la fonction
   function handelClick() {
-    if (pause) {
-      setIsOpen((previsOpen) => !previsOpen);
-      setTimeout(function () {
-        setPause((prevPause) => !prevPause);
-      }, 1500);
-      setPause((prevPause) => !prevPause);
-    } else {
-    }
+    setIsOpen((previsOpen) => !previsOpen);
+    // if (isOpen) {
+    //   setIsOpen((previsOpen) => !previsOpen);
+    //   setTimeout(function () {
+    //     setPause((prevPause) => !prevPause);
+    //   }, 1500);
+    //   setPause((prevPause) => !prevPause);
+    // } else {
+    //   setIsOpen((previsOpen) => !previsOpen);
+    // }
   }
 
   return (
     <Container className=' w-full '>
-      <Container className='fixed z-[90] bg-white w-full top-0  py-2   '>
+      <Container className='fixed z-[90] bg-white bg-clip-padding backdrop-filter backdrop-blur bg-opacity-70 w-full top-0  py-2    '>
         <Container className=' m-auto  max-h-12  z-20'>
           <Link href='/' passHref>
-            <a>
-              <MyImage source='/assets/logo/logolistri.svg' w={200} h={50} />
+            <a className='h-[40px]'>
+              <MyImage source='/assets/logo/logolistri.svg' w={200} h={40} />{" "}
+              <p className='z-[90]'>{isOpen}</p>
             </a>
-
-            {/* <Image
-              loader={myLoader}
-              src={"/assets/logo/logolistri.svg"}
-              alt='Picture of the author'
-              width={4000}
-              height={1000}
-              className='m-auto'
-            /> */}
           </Link>{" "}
         </Container>
-        <Container onClick={handelClick} className=' left-2 z-20 fixed  mt-1 '>
-          <Lottie
-            options={defaultOptions}
-            height={48}
-            width={43}
-            isPaused={pause}
-            IsPlaying={play}
-            className=''
-          />
-        </Container>
-        <Container className=' right-3 z-20 fixed  mt-1 rounded-[25px]  bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  py-[10px] px-4 text-white text-sm shadow-lg '>
+
+        <BurgerIcone handelClick={handelClick} isOpen={isOpen} />
+
+        <Container className=' right-3 z-20 fixed  mt-[6px] rounded-[10px]  bg-gradient-to-r from-[#FF7E00]/80 to-[#ffb873]/50  py-[5px] px-[10px] text-white text-sm  shadow-client '>
           <a className='my-auto items-center' href='tel: +32470684551'>
             <Container className='m-auto'>
               <MyImage source='/assets/logo/phone.svg' h={20} w={20} />
@@ -134,29 +122,29 @@ const Menuburger = ({ current }) => {
             </Container>
           </a>
         </Container>
-        {/* pop-Up menu burger */}
-        <motion.div
-          initial={false}
-          variants={menuVariants}
-          animate={isOpen ? "opened" : "closed"}
-          className='bg-white h-full w-full fixed z-10 flex '
-          transition={{
-            duration: 0.7,
-            times: [0, 0.1, 0.3, 0],
-            // ease: [0.57, 0.97, 0.73, 0.57],
-          }}
-        >
-          <Popup
-            link={link}
-            isOpen={isOpen}
-            setIsOpen={setIsOpen}
-            pause={pause}
-            setPause={setPause}
-            handelClick={handelClick}
-            current={current}
-          />
-        </motion.div>
       </Container>{" "}
+      {/* pop-Up menu burger */}
+      <motion.div
+        initial={false}
+        variants={menuVariants}
+        animate={isOpen ? "opened" : "closed"}
+        className='bg-white h-full w-full fixed z-[80] flex '
+        transition={{
+          duration: 0.7,
+          times: [0, 0.1, 0.3, 0],
+          // ease: [0.57, 0.97, 0.73, 0.57],
+        }}
+      >
+        <Popup
+          link={link}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          pause={pause}
+          setPause={setPause}
+          handelClick={handelClick}
+          current={current}
+        />
+      </motion.div>
     </Container>
   );
 };
