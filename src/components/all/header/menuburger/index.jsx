@@ -130,7 +130,7 @@ const Menuburger = ({ current }) => {
         animate={isOpen ? "opened" : "closed"}
         className='bg-white h-full w-full fixed z-[80] flex '
         transition={{
-          duration: 0.7,
+          duration: 0.4,
           times: [0, 0.1, 0.3, 0],
           // ease: [0.57, 0.97, 0.73, 0.57],
         }}
