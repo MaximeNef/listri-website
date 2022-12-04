@@ -145,8 +145,8 @@
             "label": "service catégorie ",
             "placeholder": "",
             "options": [
-              "1",
-              "2"
+              "marketing",
+              "dev"
             ]
           }
         }
