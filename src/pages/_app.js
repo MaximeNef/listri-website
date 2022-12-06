@@ -38,8 +38,8 @@ export default function App({ Component, pageProps }) {
     `}
       </Script>
       <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
-      <script>
-        UST_CT = []; UST =[
+      <Script id='my-script'>
+        UST_CT = []; UST = [{" "}
         {{
           s: Date.now(),
           addTag: function (tag) {
@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }) {
           },
         }}
         ] ;UST.addEvent = UST.addTag;
-      </script>
+      </Script>
       <script
         src='https://stats.listri.digital/server/ust.min.js?v=3.5.3'
         async
