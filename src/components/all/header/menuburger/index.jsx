@@ -82,15 +82,6 @@ const Menuburger = ({ current }) => {
   //function qui permet de changer la valeur de la fonction
   function handelClick() {
     setIsOpen((previsOpen) => !previsOpen);
-    // if (isOpen) {
-    //   setIsOpen((previsOpen) => !previsOpen);
-    //   setTimeout(function () {
-    //     setPause((prevPause) => !prevPause);
-    //   }, 1500);
-    //   setPause((prevPause) => !prevPause);
-    // } else {
-    //   setIsOpen((previsOpen) => !previsOpen);
-    // }
   }
 
   return (
