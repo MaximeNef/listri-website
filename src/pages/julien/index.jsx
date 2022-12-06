@@ -70,20 +70,6 @@ export default function Julien() {
           href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
           rel='stylesheet'
         />
-        <script>
-          UST_CT = []; UST ={" "}
-          {{
-            s: Date.now(),
-            addTag: function (tag) {
-              UST_CT.push(tag);
-            },
-          }}
-          ;UST.addEvent = UST.addTag;
-        </script>
-        <script
-          src='https://stats.listri.digital/server/ust.min.js?v=3.5.3'
-          async
-        ></script>
       </Head>
 
       <main className=' bg-white h-[89vh]    text-[#37474F]'>
