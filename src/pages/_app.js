@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
     `}
       </Script>
       <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
-      <Script id='uxWizz'>
+      <script>
         UST_CT = []; UST =
         {{
           s: Date.now(),
@@ -47,11 +47,11 @@ export default function App({ Component, pageProps }) {
           },
         }}
         ;UST.addEvent = UST.addTag;
-      </Script>
-      <Script
+      </script>
+      <script
         src='https://stats.listri.digital/server/ust.min.js?v=3.5.3'
         async
-      ></Script>
+      ></script>
       <PrismicProvider
         linkResolver={linkResolver}
         internalLinkComponent={({ href, children, ...props }) => (
