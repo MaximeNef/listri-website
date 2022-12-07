@@ -38,7 +38,8 @@ const Realisation = ({ realisations }) => {
         <title>Nos réalisations - Nous rendons votre projet unique</title>
         <meta
           name='description'
-          content='Listri à pour objectif de vous aider dans votre démarche digitale.'
+          content='Votre site web est le premier support de communication consultée par un prospect.
+          Découvrez ceux qui nous font confiance et pourquoi vous devriez aussi.'
         />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

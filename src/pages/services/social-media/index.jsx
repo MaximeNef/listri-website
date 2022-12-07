@@ -13,8 +13,8 @@ const SocialMedia = () => {
       <Head>
         <title>Votre agence spécialisée en social media marketing </title>
         <meta
-          name={"description"}
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'
+          name='description'
+          content='Nous aidons les indépendants et les PME à développer une communication digitale sur les réseaux sociaux pour ciblez la bonne audience.'
         />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

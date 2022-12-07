@@ -49,7 +49,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
         </title>
         <meta
           name='description'
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'
+          content='Listri met son expertise a votre service au travers d’astuces et de la découverte des dernières actualités marketing, référencement et création de site web.'
         />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

@@ -13,8 +13,9 @@ const OptimisationWeb = () => {
       <Head>
         <title>Optimisez votre site pour un meilleur référencement</title>
         <meta
-          name={"description"}
-          content='Listri a pour objectif de vous aider dans votre démarche digitale. Du site web jusqu’à vos réseaux sociaux en passant par le référencement, nous sommes là pour vous rendre visible face à votre audience.'
+          name='description'
+          content='Listri s’occupe d’optimiser votre site en pour que vous restiez compétitif.
+          L’optimisation continue adapte votre site à la navigation de vos clients..'
         />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
