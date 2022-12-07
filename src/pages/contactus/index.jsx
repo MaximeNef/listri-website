@@ -14,10 +14,10 @@ export default function Contactus() {
   // btn options  contact
   const [contenu, setContenu] = useState(false);
   const [media, setMedia] = useState(false);
-  const [site, setSite] = useState(false);
+  const [site, setSite] = useState(true);
   const [referencement, setReferencement] = useState(false);
   const [optimisation, setOptimisation] = useState(false);
-  const [autres, setAutres] = useState(true);
+  const [autres, setAutres] = useState(false);
 
   // formulaire contact
   const [nom, setNom] = useState("");
