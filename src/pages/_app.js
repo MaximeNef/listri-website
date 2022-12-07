@@ -39,14 +39,14 @@ export default function App({ Component, pageProps }) {
       </Script>
       <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
       {/* UXWIZZ script  */}
-      <script>
+      <Script id='id'>
         UST_CT = [];UST = s: Date.now(), addTag: function(tag){" "}
         {UST_CT.push(tag)} ;UST.addEvent = UST.addTag;
-      </script>
-      <script
+      </Script>
+      <Script
         src='https://stats.listri.digital/server/ust.min.js?v=4.5.0'
         async
-      ></script>
+      ></Script>
       {/* UXWIZZ script  */}
       <PrismicProvider
         linkResolver={linkResolver}
