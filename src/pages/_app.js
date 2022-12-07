@@ -6,6 +6,7 @@ import { linkResolver } from "../../prismicio";
 import { repositoryName } from "../../prismicio";
 import { useEffect, useState } from "react";
 import Script from "next/script";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   console.log("render");
@@ -39,9 +40,15 @@ export default function App({ Component, pageProps }) {
       </Script>
       <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
       {/* UXWIZZ script  */}
-    
-      <script>UST_CT = [];UST = { s: Date.now(), addTag: function(tag) { UST_CT.push(tag) } };UST.addEvent = UST.addTag;</script>
-<script src="https://stats.listri.digital/server/ust.min.js?v=4.5.0" async></script>
+      <script>
+        UST_CT = []; UST = "
+        {"s: Date.now(), addTag: function(tag) {UST_CT.push(tag)} "}
+        ";UST.addEvent = UST.addTag;
+      </script>
+      <script
+        src='https://stats.listri.digital/server/ust.min.js?v=4.5.0'
+        async
+      ></script>
       {/* UXWIZZ script  */}
       <PrismicProvider
         linkResolver={linkResolver}
