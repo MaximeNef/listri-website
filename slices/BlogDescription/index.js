@@ -36,6 +36,18 @@ const BlogDescription = ({ slice }) => (
         </>
       ))}
     </section>
+    <style>{`
+    
+       p a {
+        color: blue;
+        text-decoration: underline;
+    }
+    p strong{
+      font-weight: 500;
+      letter-spacing: 0.22px;
+    }
+     
+    `}</style>
   </Container>
 );
 

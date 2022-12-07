@@ -6,7 +6,7 @@ import MyImage from "../../src/components/shared/composers/myimage";
 
 const BlogTitle = ({ slice }) => {
   return (
-    <Container>
+    <Container className='md:mx-[20%] '>
       {slice?.items?.map(
         (item, i /* import { PrismicRichText } from '@prismicio/react' */) => (
           <Container key={i} className='mx-5 mb-5'>
