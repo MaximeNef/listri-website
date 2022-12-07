@@ -152,55 +152,57 @@ export default function Contactus() {
         />
       </Head>
 
-      <Container className='md:flex md:flex-col mb-20 md:mb-10 md:w-[60%] mx-auto bg-white pt-[90px] '>
+      <Container className='md:flex md:flex-col mb-20 md:mb-10 w-full  mx-auto bg-white pt-[90px] '>
         {" "}
-        <Container className='md:w-full '>
+        <Container className='md:w-[80%] mx-auto'>
           <ContactTitle />
           <p className=' mx-auto'> {"Vous souhaitez nous contacter pour"}</p>
-          <Flex justify='between'>
-            <Optionform
-              state={contenu}
-              handleClick={handleClick("contenu")}
-              name={"Création de contenu"}
-            />
-          </Flex>{" "}
-          <Flex justify='betwwen'>
-            <Optionform
-              state={media}
-              handleClick={handleClick("media")}
-              name={"Social média"}
-            />
-          </Flex>
-          <Flex justify='betwwen'>
-            <Optionform
-              state={site}
-              handleClick={handleClick("site")}
-              name={"site web"}
-            />
-          </Flex>{" "}
-          <Flex justify='betwwen'>
-            <Optionform
-              state={referencement}
-              handleClick={handleClick("referencement")}
-              name={"Référencement web"}
-            />{" "}
-          </Flex>
-          <Flex>
-            <Optionform
-              state={optimisation}
-              handleClick={handleClick("optimisation")}
-              name={"Optimisation Web"}
-            />
-          </Flex>{" "}
-          <Flex>
-            <Optionform
-              state={autres}
-              handleClick={handleClick("autres")}
-              name={"Autres"}
-            />
-          </Flex>{" "}
+          <div className=' md:flex md:flex-row md:flex-wrap md:flex-shrink'>
+            <Flex justify='between md:min-w-[33%]'>
+              <Optionform
+                state={contenu}
+                handleClick={handleClick("contenu")}
+                name={"Création de contenu"}
+              />
+            </Flex>{" "}
+            <Flex justify='between md:min-w-[33%]'>
+              <Optionform
+                state={media}
+                handleClick={handleClick("media")}
+                name={"Social média"}
+              />
+            </Flex>
+            <Flex justify='between md:min-w-[33%]'>
+              <Optionform
+                state={site}
+                handleClick={handleClick("site")}
+                name={"site web"}
+              />
+            </Flex>{" "}
+            <Flex justify='between md:min-w-[33%]'>
+              <Optionform
+                state={referencement}
+                handleClick={handleClick("referencement")}
+                name={"Référencement web"}
+              />{" "}
+            </Flex>
+            <Flex justify='between md:min-w-[33%]'>
+              <Optionform
+                state={optimisation}
+                handleClick={handleClick("optimisation")}
+                name={"Optimisation Web"}
+              />
+            </Flex>{" "}
+            <Flex justify='between md:min-w-[33%]'>
+              <Optionform
+                state={autres}
+                handleClick={handleClick("autres")}
+                name={"Autres"}
+              />
+            </Flex>{" "}
+          </div>
         </Container>{" "}
-        <Flex className='flex-wrap md:w-full md:flex-col'>
+        <Flex className='flex-wrap md:w-[80%] md:mx-auto md:flex-col'>
           <p className=' mt-[40px]   mx-auto'>{"Complétez vos informations"}</p>
 
           <form onSubmit={handleSubmit} method='post' className='space-y-3'>
@@ -244,7 +246,7 @@ export default function Contactus() {
               }}
               className='w-[95%] md:w-[98%] h-[60px] border-[#FF7E00] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
             />{" "}
-            <Flex justify='center' className='mt-5 relative'>
+            <Flex justify='center' className='mt-5 relative '>
               <button
                 type='submit'
                 className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[10px] w-fit shadow-cardcta absolute  '
