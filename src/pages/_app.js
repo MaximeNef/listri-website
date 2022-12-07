@@ -41,8 +41,8 @@ export default function App({ Component, pageProps }) {
       <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
       {/* UXWIZZ script  */}
       <script>
-        UST_CT = []; UST = (s: Date.now(), addTag: function(tag){" "}
-        {UST_CT.push(tag)} );UST.addEvent = UST.addTag;
+        UST_CT = []; UST = [s: Date.now(), addTag: function(tag){" "}
+        {UST_CT.push(tag)} ];UST.addEvent = UST.addTag;
       </script>
       <script
         src='https://stats.listri.digital/server/ust.min.js?v=4.5.0'
