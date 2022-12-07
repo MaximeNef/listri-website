@@ -92,7 +92,7 @@ const BurgerIcone = ({ handelClick }) => {
           height: 3px;
           border-radius: 3px;
           background: #ffb873;
-          width: 25px;
+          width: 26px;
         }
 
         input {
