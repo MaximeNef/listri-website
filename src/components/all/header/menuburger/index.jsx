@@ -96,7 +96,7 @@ const Menuburger = ({ current }) => {
           </Link>{" "}
         </Container>
 
-        <BurgerIcone handelClick={handelClick} isOpen={isOpen} />
+        <BurgerIcone handelClick={handelClick} />
 
         <Container className=' right-3 z-20 fixed  mt-[6px] rounded-[10px]  bg-gradient-to-r from-[#FF7E00]/80 to-[#ffb873]/50  py-[5px] px-[10px] text-white text-sm  shadow-client '>
           <a className='my-auto items-center' href='tel: +32470684551'>

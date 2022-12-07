@@ -1,6 +1,6 @@
 import Container from "../../../../shared/composers/container";
 
-const BurgerIcone = ({ handelClick, isOpen }) => {
+const BurgerIcone = ({ handelClick }) => {
   return (
     <Container className=' left-2 z-20 fixed  mt-1'>
       <input
@@ -100,44 +100,6 @@ const BurgerIcone = ({ handelClick, isOpen }) => {
         }
       `}</style>
     </Container>
-
-    // <Container className=' left-2 z-20 fixed  mt-1 '>
-    //   <input
-    //     type='checkbox'
-    //     id='checkboxBurger'
-    //     className='hidden '
-    //     onClick={handelClick}
-    //   />
-    //   <label
-    //     className='burger h-[31px] w-[31px] block relative '
-    //     htmlFor='checkboxBurger'
-    //   >
-    //     {/* <button> */}
-    //     <div
-    //       className={`container top absolute left-[7px] top-[15px]${
-    //         isOpen ? "transform-none " : ""
-    //       }`}
-    //     >
-    //       <div
-    //         className={`line top h-[2px] rounded-[3px] bg-black w-[17px ${
-    //           isOpen ? " transform-none delay-[100ms] rotate-[-45deg]" : ""
-    //         }`}
-    //       ></div>
-    //     </div>
-    //     <div
-    //       className={`container bottom absolute left-[7px] top-[15px]${
-    //         isOpen ? "transform-none" : ""
-    //       }`}
-    //     >
-    //       <div
-    //         className={`line bottom h-[2px] rounded-[3px] bg-black w-[17px ${
-    //           isOpen ? " transform-none delay-[100ms] rotate-[45deg]" : ""
-    //         }`}
-    //       ></div>
-    //     </div>
-    //     {/* </button> */}
-    //   </label>
-    // </Container>
   );
 };
 export default BurgerIcone;
