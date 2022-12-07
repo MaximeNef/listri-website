@@ -27,7 +27,7 @@ const Realisation = ({ realisations }) => {
     if (filterValue === "all") {
       return realisation;
     }
-    if (filterValue === realisation?.data.slices[0].items[0].serviceCategorie) {
+    if (filterValue === realisation?.data.slices[0].primary.serviceCategorie) {
       return realisation;
     }
   });
