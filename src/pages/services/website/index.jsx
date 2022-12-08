@@ -16,6 +16,7 @@ const Website = () => {
           name={"description"}
           content='Notre agence spécialisée dans la création de site web (vitrine ou E-commerce) pour un visibilité en ligne optimale grâce à une solution 100% sur mesure.'
         />
+        <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

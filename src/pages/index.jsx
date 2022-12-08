@@ -30,6 +30,7 @@ export default function Home({ articles, blogs }) {
           name='google-site-verification'
           content='SiiyWySS-E4LEBuJc9YlARLPC0yJzhi4h3vjZZ7rmSk'
         />
+        <meta charset='UTF-8' />
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

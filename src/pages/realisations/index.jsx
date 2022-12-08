@@ -41,6 +41,7 @@ const Realisation = ({ realisations }) => {
           content='Votre site web est le premier support de communication consultée par un prospect.
           Découvrez ceux qui nous font confiance et pourquoi vous devriez aussi.'
         />
+        <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

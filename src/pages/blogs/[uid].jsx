@@ -21,6 +21,7 @@ export default function Blog({ doc }) {
             name='description'
             content={`cette articles va vous aider dans: ${doc.data.slices[0].items[0].metadescription[0].text}`}
           />
+          <meta charset='UTF-8' />
           <link rel='icon' href='/favicon.svg' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

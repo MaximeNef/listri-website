@@ -20,6 +20,7 @@ const BusinessCard = () => {
           content='Création de contenu pour une communication sur mesure et à votre image.
           Notre contenu est optimisé pour votre référencement sur les réseaux et google. '
         />
+        <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

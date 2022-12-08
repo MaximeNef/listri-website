@@ -16,6 +16,7 @@ const SocialMedia = () => {
           name='description'
           content='Nous aidons les indépendants et les PME à développer une communication digitale sur les réseaux sociaux pour ciblez la bonne audience.'
         />
+        <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

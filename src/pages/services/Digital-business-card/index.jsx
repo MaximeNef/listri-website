@@ -19,6 +19,7 @@ const BusinessCard = () => {
           content='La meilleure carte de visite pour indépendant et entreprises, faites passer votre réseautage au niveau supérieur.
           Partagez vos informations en un seul tap.'
         />
+        <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

@@ -20,6 +20,7 @@ const Referencement = () => {
           Spécialiste en référencement, on place nos clients en 1ère page !
           Demandez votre audit gratuit'
         />
+        <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

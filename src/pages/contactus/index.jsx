@@ -143,6 +143,7 @@ export default function Contactus() {
           content='Une question concernant nos services ou la création de site web, contactez-nous par téléphone 0470/68.45.51 ou via le formulaire suivant. 
           Votre devis gratuit'
         />
+        <meta charset='UTF-8' />
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

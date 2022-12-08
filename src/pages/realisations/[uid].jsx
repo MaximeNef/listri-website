@@ -21,6 +21,7 @@ export default function Realisation({ projet }) {
             name='description'
             content={`cette articles va vous aider dans: ${projet.data.slices[0].primary.metadescription[0]?.text}`}
           />
+          <meta charset='UTF-8' />
           <link rel='icon' href='/favicon.svg' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />

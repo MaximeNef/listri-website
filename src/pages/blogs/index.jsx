@@ -51,6 +51,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
           name='description'
           content='Listri met son expertise a votre service au travers d’astuces et de la découverte des dernières actualités marketing, référencement et création de site web.'
         />
+        <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
