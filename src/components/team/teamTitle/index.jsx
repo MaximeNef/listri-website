@@ -9,11 +9,11 @@ const TeamTitle = () => {
       <Container className='font-semibold text-[#37474F] text-[19px] mx-auto'>
         {" Notre histoire & notre équipe "}
       </Container>
-      <Container className='m-6 p-[2px] bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[20px] shadow-realisationCard'>
-        <Container className='text-center font-light text-[#37474F] text-[17px] p-4 bg-[#FFFFFF] rounded-[18px] leading-8'>
+      <Container className='m-6 p-[2px]  bg-gradient-to-r from-[#ffb873]  to-[#010D2B] rounded-[20px] '>
+        <Container className='text-center font-light text-[#37474F] text-[17px] p-4  bg-white w-full  rounded-[18px] leading-8'>
           <p>
             {
-              "Listri, une jeune agence digitale familiale spécialisée dans la création de site web & dans le marketing digitale. Créée par deux frères. Maxime, spécialisé dans la programmation, l’UX & l’UI design et Julien spécialisé dans le marketing digital & les réseaux sociaux. Qui ont décidé de mettre en commun leurs talents et leurs passions. Suite à l’obtention de leurs diplômes et de leurs diverses expériences dans le monde du travail, les deux frères se sont rendu compte que très peu d’agences digitales se focalisent sur les TPE & PME. C’est pour cela que Listri a vu le jour; dans le but d’offrir les services d’une grande agence aux petites entreprises."
+              "Listri, une jeune agence digitale familiale spécialisée dans la création de site web & dans le marketing digitale. pensée par deux frère; spécialisé dans la programmation, l’UX & l’UI, le marketing digital & les réseaux sociau; Qui ont décidé de transmettre leurs talents et leurs passions. C’est pour cela que Listri a voit le jour dans le but d’offrir les services d’une grande agence aux petites entreprises."
             }
           </p>
         </Container>
@@ -22,3 +22,5 @@ const TeamTitle = () => {
   );
 };
 export default TeamTitle;
+
+// "Listri, une jeune agence digitale familiale spécialisée dans la création de site web & dans le marketing digitale. Créée par deux frères. Maxime, spécialisé dans la programmation, l’UX & l’UI design et Julien spécialisé dans le marketing digital & les réseaux sociaux. Qui ont décidé de mettre en commun leurs talents et leurs passions. Suite à l’obtention de leurs diplômes et de leurs diverses expériences dans le monde du travail, les deux frères se sont rendu compte que très peu d’agences digitales se focalisent sur les TPE & PME. C’est pour cela que Listri a vu le jour; dans le but d’offrir les services d’une grande agence aux petites entreprises."

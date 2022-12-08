@@ -53,7 +53,7 @@ const Team = () => {
 
       <main className='bg-white pt-28  text-[#37474F]'>
         <TeamTitle />
-        <Container className='space-y-20  mt-28 md:flex-row md:justify-center md:space-y-0'>
+        <Container className='space-y-12  mt-28 md:flex-row md:justify-center md:space-y-0 mb-20'>
           {Teams.map((team, i) => {
             return <TeamCard team={team} key={i} />;
           })}
