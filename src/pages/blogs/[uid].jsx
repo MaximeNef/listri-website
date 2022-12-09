@@ -8,9 +8,10 @@ import { useState } from "react";
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
 import Flex from "../../components/shared/composers/flex";
+import ProgressBar from "../../components/shared/composers/progressBar";
 
 export default function Blog({ doc }) {
-  console.log(doc, "blog");
+  console.log(doc, "url");
 
   return (
     <NavPage current='Blog'>
@@ -32,6 +33,12 @@ export default function Blog({ doc }) {
         </Head>
         <main className='bg-white  pt-28'>
           <Container className='w-full'>
+            <div className='fixed right-5 hidden md:inline-flex'>
+              <ProgressBar
+                url={doc.uid}
+                timing={doc.data.slices[0].items[0].timing[0].text}
+              />
+            </div>
             <SliceZone slices={doc.data.slices} components={components} />
           </Container>
         </main>

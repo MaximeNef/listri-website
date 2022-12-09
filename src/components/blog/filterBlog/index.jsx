@@ -20,7 +20,7 @@ const FilterBlog = (props) => {
             </option>
 
             <option value='marketing'>Marketing</option>
-            <option value='dev'>développement</option>
+            <option value='dev'>Dev</option>
           </select>
         </Container>
       </Container>

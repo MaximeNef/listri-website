@@ -4,7 +4,10 @@ import Container from "../../src/components/shared/composers/container";
 import MyImage from "../../src/components/shared/composers/myimage";
 
 const BlogDescription = ({ slice }) => (
-  <Container className='  rounded-[10px] p-5 md:mx-[20%]  mt-8 '>
+  <Container
+    key={slice.uid}
+    className='  rounded-[10px] p-5 md:mx-[20%]  mt-8 '
+  >
     <section className=''>
       <Container className='font-semibold text-[#37474F]  text-[21px] text-left'>
         <div>

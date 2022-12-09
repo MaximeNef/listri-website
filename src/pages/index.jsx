@@ -15,6 +15,7 @@ import Processherotry from "../components/hero/processHero";
 import Script from "next/script";
 import Link from "next/link";
 import Cardblog from "../components/blog/CardBlog";
+import ProgressBar from "../components/shared/composers/progressBar";
 
 export default function Home({ articles, blogs }) {
   console.log(articles, "BLABLA");
