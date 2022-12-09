@@ -143,6 +143,10 @@ export default function Contactus() {
           content='Une question concernant nos services ou la création de site web, contactez-nous par téléphone 0470/68.45.51 ou via le formulaire suivant. 
           Votre devis gratuit'
         />
+        <meta
+          name='keywords'
+          content='contact, contacter, coordonnées, adresse, téléphone, email, formulaire, localisation, listri digital, nous contacter'
+        />
         <meta charset='UTF-8' />
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

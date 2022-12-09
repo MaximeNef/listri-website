@@ -16,6 +16,10 @@ const Website = () => {
           name={"description"}
           content='Notre agence spécialisée dans la création de site web (vitrine ou E-commerce) pour un visibilité en ligne optimale grâce à une solution 100% sur mesure.'
         />
+        <meta
+          name='keywords'
+          content='site web, site internet, conception de site web, design de site web, développement de site web, création de site web, gestion de site web, optimisation de site web, conception de site web, responsive design, référencement de site web, listri digital'
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

@@ -41,6 +41,10 @@ const Team = () => {
           name='description'
           content="Plus qu'une agence, Listri vous accompagne dans la digitalisation grâce à ses experts passionnés de leurs domaines pour vous obtenir les meilleurs résultats"
         />
+        <meta
+          name='keywords'
+          content='équipe, membres, notre équipe, la team, expertises, listri digital, experts digital, nos experts, collaborateurs, équipe d’experts'
+        />
         <meta charset='UTF-8' />
         <link rel='shortcut icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

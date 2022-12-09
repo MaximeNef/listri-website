@@ -19,6 +19,10 @@ const BusinessCard = () => {
           content='La meilleure carte de visite pour indépendant et entreprises, faites passer votre réseautage au niveau supérieur.
           Partagez vos informations en un seul tap.'
         />
+        <meta
+          name='keywords'
+          content='carte de visite digitale, Carte de visite visrtuelle personnalisée, Carte de visite numérique, Carte de visite virtuelle d’entreprise, profil professionnel en ligne, Créer une carte de visite virtuelle, carte de visite personnelle, listri digital, Carte de visite virtuelle, Digital business card, Digital card'
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

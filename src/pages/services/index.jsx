@@ -64,6 +64,10 @@ const Services = () => {
           name='description'
           content='Listri Digital propose aux indépendants et PME les mêmes services que les grandes marques de la conception de votre site jusqu’à votre marketing digital'
         />
+        <meta
+          name='keywords'
+          content='Services de marketing numérique, gestion des réseaux sociaux, Optimisation des moteurs de recherche (SEO), Publicité en ligne, Marketing digital, création de contenu, Services de création de site web, Services de stratégie numérique, optimisation site web'
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

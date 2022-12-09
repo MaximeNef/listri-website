@@ -16,6 +16,10 @@ const SocialMedia = () => {
           name='description'
           content='Nous aidons les indépendants et les PME à développer une communication digitale sur les réseaux sociaux pour ciblez la bonne audience.'
         />
+        <meta
+          name='keywords'
+          content='réseaux sociaux, stratégie de réseaux sociaux, gestion de réseaux sociaux, community management, publicité sur les réseaux sociaux, contenu pour les réseaux sociaux, analyse de réseaux sociaux, engagement sur les réseaux sociaux, listri digital, Social media marketing, Marketing réseaux sociaux'
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

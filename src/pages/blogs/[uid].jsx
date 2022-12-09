@@ -22,6 +22,10 @@ export default function Blog({ doc }) {
             name='description'
             content={`cette articles va vous aider dans: ${doc.data.slices[0].items[0].metadescription[0].text}`}
           />
+          <meta
+            name='keywords'
+            content='blogs, articles, contenu, écriture, rédaction, actualités, conseils, astuces, listri digital'
+          />
           <meta charset='UTF-8' />
           <link rel='icon' href='/favicon.svg' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />

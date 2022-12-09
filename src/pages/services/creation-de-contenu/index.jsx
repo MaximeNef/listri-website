@@ -20,6 +20,10 @@ const BusinessCard = () => {
           content='Création de contenu pour une communication sur mesure et à votre image.
           Notre contenu est optimisé pour votre référencement sur les réseaux et google. '
         />
+        <meta
+          name='keywords'
+          content='création de contenu, écriture de contenu, rédaction de contenu, production de contenu, conception de contenu, stratégie de contenu, gestion de contenu, optimisation de contenu, listri digital'
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

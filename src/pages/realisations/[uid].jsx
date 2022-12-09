@@ -21,6 +21,10 @@ export default function Realisation({ projet }) {
             name='description'
             content={`cette articles va vous aider dans: ${projet.data.slices[0].primary.metadescription[0]?.text}`}
           />
+          <meta
+            name='keywords'
+            content='réseaux sociaux, stratégie de réseaux sociaux, gestion de réseaux sociaux, community management, publicité sur les réseaux sociaux, contenu pour les réseaux sociaux, analyse de réseaux sociaux, engagement sur les réseaux sociaux, listri digital, Social media marketing, Marketing réseaux sociaux'
+          />
           <meta charset='UTF-8' />
           <link rel='icon' href='/favicon.svg' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />

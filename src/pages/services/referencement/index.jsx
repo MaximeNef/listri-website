@@ -20,6 +20,10 @@ const Referencement = () => {
           Spécialiste en référencement, on place nos clients en 1ère page !
           Demandez votre audit gratuit'
         />
+        <meta
+          name='keywords'
+          content='référencement, référencement naturel, optimisation de référencement, référencement local, audit de référencement, stratégie de référencement, suivi de référencement, listri digital, SEO, SERP, mots-clés, backlinks, meta tags, SEA, SMO, SMA'
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

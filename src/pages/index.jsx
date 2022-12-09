@@ -28,6 +28,10 @@ export default function Home({ articles, blogs }) {
           content='🚀 Augmentez votre visibilité avec la création de votre site web sur-mesure ! Contactez notre agence digitale spécialisée en développement web et marketing.'
         />
         <meta
+          name='keywords'
+          content=' Listri, Agence digitale, Marketing digital, Stratégie marketing, Communication Digitale, Contenu Numérique, Création de site Web, Création de contenu, Gestion réseaux sociaux, SEO, E-commerce, Analyse de Données, Mesure des Performances, Optimisation site web'
+        />
+        <meta
           name='google-site-verification'
           content='SiiyWySS-E4LEBuJc9YlARLPC0yJzhi4h3vjZZ7rmSk'
         />

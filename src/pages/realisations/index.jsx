@@ -41,6 +41,10 @@ const Realisation = ({ realisations }) => {
           content='Votre site web est le premier support de communication consultée par un prospect.
           Découvrez ceux qui nous font confiance et pourquoi vous devriez aussi.'
         />
+        <meta
+          name='keywords'
+          content='réalisations site web, projets, nos partenaires, nos projets, Nos réalisations, cas clients, réussites, partenaires, listri digital, portfolio, exemples de réussite, clients satisfaits'
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />

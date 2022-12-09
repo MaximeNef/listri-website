@@ -17,6 +17,10 @@ const OptimisationWeb = () => {
           content='Listri s’occupe d’optimiser votre site en pour que vous restiez compétitif.
           L’optimisation continue adapte votre site à la navigation de vos clients..'
         />
+        <meta
+          name='keywords'
+          content="optimisation web, performance web, vitesse de chargement, optimisation des images, optimisation du code, optimisation du référencement, listri digital, optimisation de la vitesse, optimisation du SEO, optimisation de l'expérience utilisateur, optimisation UI UX, optimisation pour les moteurs de recherche, stratégie d'optimisation web"
+        />
         <meta charset='UTF-8' />
         <link rel='icon' href='/favicon.svg' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
