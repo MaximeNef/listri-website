@@ -9,7 +9,7 @@ const TeamCard = ({ team }) => {
   return (
     <div className='mx-6 rounded-[20px] md:w-1/3 '>
       <div className='  shadow-apple rounded-[15px] w-full  mx-auto bg-gradient-to-r from-[#ffb873]  to-[#010D2B] '>
-        <div className='relative h-[500px]'>
+        <div className='relative h-[420px] md:h-[500px]'>
           <MyImage
             className=' rounded-t-[15px]  transform transition duration-500 hover:scale-110'
             source={team.src}
