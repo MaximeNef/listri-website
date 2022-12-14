@@ -25,16 +25,28 @@ const BlogDescription = ({ slice }) => (
       {slice?.items?.map((item, i) => (
         <>
           {item.image.url ? (
-            <Container className='mx-[-20px]'>
-              <MyImage
-                source={item.image.url}
-                key={i}
-                w={1000}
-                h={600}
-                objectFit={"cover"}
-                className=' max-w-full h-auto '
-              />
-            </Container>
+            <>
+              <Container className='mx-[-20px] md:hidden'>
+                <MyImage
+                  source={item.image.url}
+                  key={i}
+                  w={1000}
+                  h={600}
+                  objectFit={"contain"}
+                  className=' max-w-full h-auto  '
+                />
+              </Container>
+              <Container className='mx-[-20px] hidden md:inline-flex'>
+                <MyImage
+                  source={item.image.url}
+                  key={i}
+                  w={1000}
+                  h={200}
+                  objectFit={"contain"}
+                  className=' max-w-full h-auto  '
+                />
+              </Container>
+            </>
           ) : null}
         </>
       ))}
