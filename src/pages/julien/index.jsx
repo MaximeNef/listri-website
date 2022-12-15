@@ -70,7 +70,7 @@ export default function Julien() {
         />
       </Head>
 
-      <main className=' bg-white h-[89vh]    text-[#37474F]'>
+      <main className=' bg-white  text-[#37474F]'>
         {" "}
         <Container className='relative '>
           {" "}

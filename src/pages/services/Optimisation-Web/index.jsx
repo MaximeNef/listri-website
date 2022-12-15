@@ -33,7 +33,7 @@ const OptimisationWeb = () => {
       <Container className='py-20 bg-white px-5'>
         <Container className='md:flex md:flex-row  md:items-center'>
           <OneServiceTitle
-            title={"Référencement Web"}
+            title={"Optimisation Web"}
             description={
               "Votre site n’est pas optimsé et cela vous fait perdez tous les jours des clients potentiels sans vous en rendre compte. Mais ne vous en faites pas, grâce a l’intégration de notre outil nous serons en mesure de comprendre vos visiteurs, de savoir qui ils sont et pourquoi ils quittent votre site sans prendre contact ou passer commande. "
             }
