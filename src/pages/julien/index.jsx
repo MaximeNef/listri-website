@@ -63,7 +63,7 @@ export default function Julien() {
       </Head>
 
       <main className=' bg-white  text-[#37474F]'>
-        <div className=' h-[250px] pt-[20px]  bg-gradient-to-b from-[#283445]/[.65] to-[#FFF]'>
+        <div className=' h-[200px] pt-[20px]  bg-gradient-to-b from-[#283445]/[.65] to-[#FFF]'>
           <div className=' h-[200px] relative'>
             {" "}
             <MyImage source='/assets/logo/ListriGray.svg' layout={"fill"} />
