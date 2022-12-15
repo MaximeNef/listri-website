@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Flex from "../../shared/composers/flex";
 import MyImage from "../../shared/composers/myimage";
 
@@ -10,27 +11,37 @@ const Reseaux = () => {
       </Flex>
       <div className='space-x-[32px] my-[22px] flex'>
         <div>
-          <MyImage
-            source='/assets/logo/linkedinBusiness.svg'
-            w={"40px"}
-            h={"40px"}
-          />{" "}
+          <Link href='https://www.linkedin.com/company/listri-agence-digitale/'>
+            <a target='_blank'>
+              <MyImage
+                source='/assets/logo/linkedinBusiness.svg'
+                w={"40px"}
+                h={"40px"}
+              />
+            </a>
+          </Link>
         </div>
         <div>
-          {" "}
-          <MyImage
-            source='/assets/logo/instagramBusiness.svg'
-            w={"40px"}
-            h={"40px"}
-          />
+          <Link href='https://www.instagram.com/listri.digital/'>
+            <a target='_blank'>
+              <MyImage
+                source='/assets/logo/instagramBusiness.svg'
+                w={"40px"}
+                h={"40px"}
+              />{" "}
+            </a>
+          </Link>
         </div>
         <div>
-          {" "}
-          <MyImage
-            source='/assets/logo/facebookBusiness.svg'
-            w={"40px"}
-            h={"40px"}
-          />{" "}
+          <Link href='https://www.facebook.com/Listri.digital' target='_blank'>
+            <a target='_blank'>
+              <MyImage
+                source='/assets/logo/facebookBusiness.svg'
+                w={"40px"}
+                h={"40px"}
+              />{" "}
+            </a>
+          </Link>
         </div>
       </div>
     </div>
