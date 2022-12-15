@@ -4,11 +4,12 @@ import MyImage from "../../shared/composers/myimage";
 const CardContact = ({ contactInfo }) => {
   return (
     <div className=' my-10 flex flex-row mx-[22px] shadow-2xl rounded-[10px] h-[150px] bg-[#283445]'>
-      <div className='relative h-[150px] w-[48%] bg-gradient-to-r from-[#FFF] to-[#283445]'>
+      <div className='relative h-[150px] w-[48%] bg-gradient-to-r from-[#FFF] to-[#283445] rounded-[10px]'>
         <MyImage
           source='/assets/logo/julien.png'
           objectFit={"contain"}
           layout={"fill"}
+          className=''
         />
       </div>
       <div className='flex flex-col pl-2  justify-evenly text-white '>
