@@ -22,9 +22,11 @@ module.exports = {
         client: "3px 4px 10px 1px rgba(37, 37, 37, 0.1)",
         clientss: "1px 1px 22px 0px  rgba(0, 0, 0, 0.1)",
         apple: "2px 4px 16px rgb(0 0 0 / 16%)",
+        business: "0 -4px 25px 0 rgba(37, 37, 37, 0.2);",
       },
       dropShadow: {
         contact: "0px 4px 4px rgba(55, 71, 79, 0.42)",
+        shadow: "0 -4px 25px 0 rgba(37, 37, 37, 0.2);",
       },
       backgroundImage: {
         "hero-service": "url('/assets/background/vector.svg')",
