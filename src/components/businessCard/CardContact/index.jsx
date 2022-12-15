@@ -6,7 +6,7 @@ const CardContact = ({ contactInfo }) => {
     <div className=' my-10 flex flex-row mx-[22px] shadow-2xl rounded-[10px] h-[150px] bg-[#283445]'>
       <div className='relative h-[150px] w-[48%] bg-gradient-to-r from-[#FFF] to-[#283445] rounded-[10px]'>
         <MyImage
-          source='/assets/logo/julien.png'
+          source={contactInfo.img}
           objectFit={"contain"}
           layout={"fill"}
           className=''

@@ -11,6 +11,7 @@ import { response } from "next";
 import CardContact from "../../components/businessCard/CardContact";
 export default function Julien() {
   const contactInfo = {
+    img: "/assets/logo/julien.png",
     nom: "julien Nef",
     tel: "0470684551",
     email: "julien@listri.digital",
@@ -63,16 +64,15 @@ export default function Julien() {
       </Head>
 
       <main className=' bg-white  text-[#37474F]'>
-        <div className=' h-[200px] pt-[20px]  bg-gradient-to-b from-[#283445]/[.65] to-[#FFF]'>
+        <div className=' h-[200px] pt-[20px]  bg-gradient-to-b from-[#283445]/[.65] to-[#FFF] '>
           <div className=' h-[200px] relative'>
             {" "}
             <MyImage source='/assets/logo/ListriGray.svg' layout={"fill"} />
           </div>
         </div>
-        <div className=''>
+        <div className=' '>
           <CardContact contactInfo={contactInfo} />
           <Reseaux socials={socials} />
-
           {btnCtaS.map((btnCta, i) => {
             return <BoutonCTA key={i} btnCta={btnCta} />;
           })}
