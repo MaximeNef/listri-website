@@ -4,7 +4,7 @@ sgMail.setApiKey(process.env.LISTRI);
 async function sendEmail(req, res) {
   try {
     await sgMail.send({
-      to: "maximenef1@gmail.com", // Your email where you'll receive emails
+      to: "contact@listri.digital", // Your email where you'll receive emails
       from: "immersy.info@gmail.com", // your website email address here
       subject: `form réalisation`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
