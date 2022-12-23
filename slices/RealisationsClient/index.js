@@ -49,8 +49,10 @@ const RealisationsClient = ({ slices }) => {
  rounded-[10px] my-2 py-2 text-white font-bold mb-[60px]  '
       >
         <a
+          rel='noreferrer'
           className='text-[#FF7E00] text-[20px] '
           href={slices[0].primary.lienProjet?.url}
+          target='_blank'
         >
           visiter le site{" "}
         </a>
