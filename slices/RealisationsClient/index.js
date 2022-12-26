@@ -42,6 +42,7 @@ const RealisationsClient = ({ slices }) => {
               : "/assets/logo/Logo.svg"
           }
           layout={"fill"}
+          objectFit={"contain"}
         />
       </Container>
       <Container
@@ -120,7 +121,7 @@ const RealisationsClient = ({ slices }) => {
               : "/assets/logo/Logo.svg"
           }
           layout={"fill"}
-          objectFit={"cover"}
+          objectFit={"contain"}
           className=' md:object-[center_bottom]'
         />
       </Container>
