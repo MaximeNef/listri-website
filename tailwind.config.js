@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        default: "#37474F",
+        default: "#6E6E73",
+        orangeLight: "#F8A65E",
+        rougeLight: "#FC1E60",
+        saumon: "#F36F5F",
       },
       backdropFilter: {
         none: "none",
