@@ -4,7 +4,7 @@ import MyImage from "../../shared/composers/myimage";
 const CardContact = ({ contactInfo, color }) => {
   return (
     <div
-      className={` my-10 flex flex-row mx-[22px] shadow-2xl rounded-[10px] h-[150px]  ${color}`}
+      className={` my-10 flex flex-row mx-[22px]  shadow-apple rounded-[10px] h-[150px]  ${color}`}
     >
       <div
         className={`relative h-[150px] w-[48%]  rounded-[10px] ${
