@@ -62,7 +62,7 @@ export default function Julien() {
       </Head>
       <main className=' bg-white  text-[#37474F] z-20 '>
         {" "}
-        <div className=' h-[200px] pt-[20px]  bg-white'>
+        <div className=' h-[200px] pt-[20px]  bg-white/0'>
           <div className=' h-[200px] relative'>
             {" "}
             <MyImage source='/assets/logo/listriOrange.svg' layout={"fill"} />
@@ -74,7 +74,7 @@ export default function Julien() {
           {btnCtaS.map((btnCta, i) => {
             return <BoutonCTA key={i} btnCta={btnCta} current={true} />;
           })}{" "}
-          <div className='absolute bottom-[-150px] w-full h-full  z-[-10]'>
+          <div className='absolute top-[40%] w-full h-3/4  z-[-10]'>
             <MyImage source='/assets/logo/vagueFinale.svg' layout={"fill"} />
           </div>
         </div>{" "}
