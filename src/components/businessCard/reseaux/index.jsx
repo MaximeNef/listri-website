@@ -6,7 +6,7 @@ const Reseaux = () => {
   return (
     <div className='mx-[25px]'>
       <Flex align='center'>
-        <h2 className='text-[20px] font-light '>réseaux</h2>
+        <h2 className='text-[20px] font-light '>réseaux </h2>
         <div className='w-full h-[1px] ml-1 bg-[#B4B4B4]' />
       </Flex>
       <div className='space-x-[32px] my-[22px] flex'>

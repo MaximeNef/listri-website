@@ -1,14 +1,12 @@
 import Head from "next/head";
-import { useState } from "react";
 import BoutonCTA from "../../components/businessCard/BoutonCTA";
 import Reseaux from "../../components/businessCard/reseaux";
 import Container from "../../components/shared/composers/container";
-import Flex from "../../components/shared/composers/flex";
 import MyImage from "../../components/shared/composers/myimage";
 
 import React from "react";
-import { response } from "next";
 import CardContact from "../../components/businessCard/CardContact";
+
 export default function Julien() {
   const contactInfo = {
     img: "/assets/logo/julien.png",
@@ -62,136 +60,29 @@ export default function Julien() {
           rel='stylesheet'
         />
       </Head>
-
-      <main className=' bg-white  text-[#37474F]'>
-        <div className=' h-[200px] pt-[20px]  bg-gradient-to-b from-[#283445]/[.65] to-[#FFF] '>
+      <main className=' bg-white  text-[#37474F] z-20 '>
+        {" "}
+        <div className=' h-[200px] pt-[20px]  bg-white'>
           <div className=' h-[200px] relative'>
             {" "}
-            <MyImage source='/assets/logo/ListriGray.svg' layout={"fill"} />
+            <MyImage source='/assets/logo/listriOrange.svg' layout={"fill"} />
           </div>
-        </div>
-        <div className=' '>
-          <CardContact contactInfo={contactInfo} />
+        </div>{" "}
+        <div className=''>
+          <CardContact contactInfo={contactInfo} color={"bg-white"} />
           <Reseaux socials={socials} />
           {btnCtaS.map((btnCta, i) => {
-            return <BoutonCTA key={i} btnCta={btnCta} />;
-          })}
-        </div>
-      </main>
+            return <BoutonCTA key={i} btnCta={btnCta} current={true} />;
+          })}{" "}
+          <div className='absolute bottom-[-150px] w-full h-full  z-[-10]'>
+            <MyImage
+              source='/assets/logo/vagueFinale.svg'
+              layout={"fill"}
+              objectFit={"contain"}
+            />
+          </div>
+        </div>{" "}
+      </main>{" "}
     </Container>
   );
 }
-
-// <Container className='relative '>
-//bg-[url('/assets/logo/hero-pattern.svg')]
-// {" "}
-// <Container className='mx-auto rounded-full mt-2    z-20 shadow-realisationCard'>
-//   <MyImage
-//     source={"/assets/logo/avatar.png"}
-//     h={140}
-//     w={140}
-//     className={"rounded-[180px] "}
-//   />
-// </Container>
-// </Container>{" "}
-// <Container className='relative mx-5'>
-// <p className='mx-auto text-[40px]'>{"Julien Nef"}</p>
-// <p className='mx-auto text-[12px] mb-6'>
-//   {"Vous faites la différence nous le communiquons  "}
-// </p>
-// {/* <Container className='w-full h-[1px] bg-gray-300 mb-4' /> */}
-// {/*  CONTACTEZ_MOI  */}
-// <p className='mx-auto text-[25px]'>{" Contactez-moi"}</p>
-// <Container className=' mt-2 mb-6'>
-//   <Flex justify='between' align='center'>
-//     {contacts.map(function (contact, i) {
-//       return (
-//         <Container key={i} className='min-w-[30%]'>
-//           <a
-//             href={contact.link}
-//             target='_blank'
-//             rel='noopener noreferrer'
-//           >
-//             <Container>
-//               <MyImage
-//                 source={contact.src}
-//                 h={40}
-//                 w={49}
-//                 className='mx-auto'
-//               />
-//             </Container>
-
-//             {/* <p className='text-center text-[15px] mt-2'>
-//               {contact.nom}
-//             </p> */}
-//           </a>
-//         </Container>
-//       );
-//     })}
-//   </Flex>
-// </Container>
-// <Container className='w-full h-[1px] bg-gray-300 mb-4' />
-// {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
-// <p className='mx-auto text-[25px]'>{"Social"}</p>
-// <Container className=' mt-2 mb-6'>
-//   <Flex justify='between' align='center'>
-//     {socials.map(function (social, i) {
-//       return (
-//         <Container key={i} className='min-w-[30%]'>
-//           <a
-//             href={social.link}
-//             target='_blank'
-//             rel='noopener noreferrer'
-//           >
-//             <Container>
-//               <MyImage
-//                 source={social.src}
-//                 h={40}
-//                 w={49}
-//                 className='mx-auto'
-//               />
-//             </Container>
-
-//             {/* <p className='text-center text-[15px] mt-2'>
-//               {social.nom}
-//             </p> */}
-//           </a>
-//         </Container>
-//       );
-//     })}
-//   </Flex>
-// </Container>
-// {/*  SOCIAL SOCIAL SOCIAL SOCIAL SOCIAL   */}
-// <Container className='w-full h-[1px] bg-gray-300 mb-4' />
-// {/*  AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE */}
-// <p className='mx-auto text-[25px]'>{"Autres"}</p>
-// <Container className=' mt-2 mb-11 '>
-//   <Flex justify='between' align='center'>
-//     {autres.map(function (autre, i) {
-//       return (
-//         <Container key={i} className='min-w-[30%]'>
-//           <a
-//             href={autre.link}
-//             target='_blank'
-//             rel='noopener noreferrer'
-//           >
-//             <Container>
-//               <MyImage
-//                 source={autre.src}
-//                 h={40}
-//                 w={49}
-//                 className='mx-auto'
-//               />
-//             </Container>
-
-//             {/* <p className='text-center text-[15px] mt-2'>
-//               {autre.nom}
-//             </p> */}
-//           </a>
-//         </Container>
-//       );
-//     })}
-//   </Flex>
-// </Container>
-// {/*   AUTRE AUTRE AUTRE AUTRE  AUTRE AUTRE AUTRE  */}
-// </Container>{" "}
