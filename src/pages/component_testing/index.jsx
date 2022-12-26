@@ -1,5 +1,6 @@
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
+import ServiceHeroV2 from "../../components/services/serviceHeroV2";
 import TitleServiceV2 from "../../components/services/TitleServiceV2";
 const ComponentTesting = () => {
   return (
@@ -33,6 +34,13 @@ const ComponentTesting = () => {
           TextWhite={false}
         /> */}
         <TitleServiceV2 />
+        <ServiceHeroV2
+          title={"Création de site web"}
+          subtitle={"Rapide et sur mesure"}
+          linkText={"Découvrir"}
+          href={"/"}
+          textWhite={false}
+        />
       </main>
     </NavPage>
   );
