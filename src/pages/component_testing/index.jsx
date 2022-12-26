@@ -1,5 +1,7 @@
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
+import TitleServiceV2 from "../../components/services/serviceTitleV2";
+import ServiceTitleV2 from "../../components/services/serviceTitleV2";
 import SubtiltV2 from "../../components/shared/composers/ListriV2/subtitleV2";
 const ComponentTesting = () => {
   return (
@@ -32,6 +34,7 @@ const ComponentTesting = () => {
           subtitle2={"Encore plus de raisons de commencer avec nous. "}
           TextWhite={false}
         /> */}
+        <TitleServiceV2 />
       </main>
     </NavPage>
   );
