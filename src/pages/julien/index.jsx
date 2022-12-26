@@ -75,11 +75,7 @@ export default function Julien() {
             return <BoutonCTA key={i} btnCta={btnCta} current={true} />;
           })}{" "}
           <div className='absolute bottom-[-150px] w-full h-full  z-[-10]'>
-            <MyImage
-              source='/assets/logo/vagueFinale.svg'
-              layout={"fill"}
-              objectFit={"contain"}
-            />
+            <MyImage source='/assets/logo/vagueFinale.svg' layout={"fill"} />
           </div>
         </div>{" "}
       </main>{" "}
