@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Flex from '../../shared/composers/flex';
 
-const ServiceTitleV2 = ({ title, subtitle, linkText, href, textWhite }) => {
+const serviceHeroV2 = ({ title, subtitle, linkText, href, textWhite }) => {
   return (
     <Flex className={'flex-col justify-center'}>
       <div
@@ -27,4 +27,4 @@ const ServiceTitleV2 = ({ title, subtitle, linkText, href, textWhite }) => {
   );
 };
 
-export default ServiceTitleV2;
+export default serviceHeroV2;
