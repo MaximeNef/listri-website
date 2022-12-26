@@ -74,7 +74,7 @@ export default function Julien() {
           {btnCtaS.map((btnCta, i) => {
             return <BoutonCTA key={i} btnCta={btnCta} current={true} />;
           })}{" "}
-          <div className='absolute  w-full h-full top-0  z-[-10]'>
+          <div className='absolute  w-full h-full top-1/4  z-[-10] '>
             <MyImage source='/assets/logo/vagueFinale.svg' layout={"fill"} />
           </div>
         </div>{" "}
