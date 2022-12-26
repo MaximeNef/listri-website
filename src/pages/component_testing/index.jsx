@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
-import SubtiltV2 from "../../components/shared/composers/subtitleV2";
+import SubtiltV2 from "../../components/shared/composers/ListriV2/subtitleV2";
 const ComponentTesting = () => {
   return (
     <NavPage current='Team'>
@@ -27,11 +27,11 @@ const ComponentTesting = () => {
       </Head>
 
       <main className='bg-white pt-28  text-default mx-[25px]'>
-        <SubtiltV2
+        {/* <SubtiltV2
           subtitle1={"L’identité de Listri. "}
           subtitle2={"Encore plus de raisons de commencer avec nous. "}
           TextWhite={false}
-        />
+        /> */}
       </main>
     </NavPage>
   );

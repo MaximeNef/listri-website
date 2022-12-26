@@ -1,4 +1,4 @@
-import Container from "../container";
+import Container from "../../container";
 
 const SubtiltV2 = ({ subtitle1, subtitle2, TextWhite }) => {
   return (
