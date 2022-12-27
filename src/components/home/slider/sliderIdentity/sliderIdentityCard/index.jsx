@@ -8,7 +8,7 @@ const SliderIdentityCard = ({
   blackText3,
 }) => {
   return (
-    <div className="h-[215px] max-w-[270px] rounded-[18px] shadow-sliderIdentity snap-center flex-shrink-0 mr-5 my-10">
+    <div className="h-[215px] max-w-[270px] rounded-[18px] shadow-slider snap-center flex-shrink-0 mr-5 my-10">
       <div className="py-4 px-7">
         <MyImage source={logo} h={'50'} w={'50'} />
         <div className="mt-3">
