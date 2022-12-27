@@ -1,7 +1,9 @@
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
+import SliderExperience from "../../components/home/slider/sliderExperience";
 import ServiceHeroV2 from "../../components/services/serviceHeroV2";
 import TitleServiceV2 from "../../components/services/TitleServiceV2";
+import BtnPrimaire from "../../components/shared/composers/ListriV2/btnPrimaire";
 const ComponentTesting = () => {
   return (
     <NavPage current='Team'>
@@ -28,11 +30,6 @@ const ComponentTesting = () => {
       </Head>
 
       <main className='bg-white pt-28  text-default mx-[25px]'>
-        {/* <SubtiltV2
-          subtitle1={"L’identité de Listri. "}
-          subtitle2={"Encore plus de raisons de commencer avec nous. "}
-          TextWhite={false}
-        /> */}
         <TitleServiceV2 />
         <ServiceHeroV2
           title={"Création de site web"}
@@ -41,6 +38,8 @@ const ComponentTesting = () => {
           href={"/"}
           textWhite={false}
         />
+        <BtnPrimaire text={"Nos Services"} href={"/"} />
+        <SliderExperience />
       </main>
     </NavPage>
   );
