@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         default: '#6E6E73',
+        darkBlue: '#283445',
         orangeLight: '#F8A65E',
         rougeLight: '#FC1E60',
         saumon: '#F36F5F',
@@ -26,7 +27,7 @@ module.exports = {
         clientss: '1px 1px 22px 0px  rgba(0, 0, 0, 0.1)',
         apple: '2px 4px 16px rgb(0 0 0 / 16%)',
         business: '0 -4px 25px 0 rgba(37, 37, 37, 0.2);',
-        sliderIdentity: '2px 4px 12px rgba(0, 0, 0, 0.08)',
+        slider: '2px 4px 12px rgba(0, 0, 0, 0.08)',
       },
       dropShadow: {
         contact: '0px 4px 4px rgba(55, 71, 79, 0.42)',

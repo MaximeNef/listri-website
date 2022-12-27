@@ -1,8 +1,12 @@
+import { createClient } from '../../../prismicio';
 import Head from 'next/head';
 import NavPage from '../../components/all/nav-page';
-import SliderIdentity from '../../components/home/slider/sliderIdentity';
+import SliderBlog from '../../components/home/slider/sliderBlog';
+import SliderBlogCard from '../../components/home/slider/sliderBlog/sliderBlogCard';
 
-const ComponentTesting = () => {
+const ComponentTesting = ({ blogs }) => {
+  console.log(blogs[0].data.slices[0].items[0].image.url, 'blog');
+  // console.log(blogs, 'blog');
   return (
     <NavPage current="Team">
       <Head>
@@ -28,9 +32,26 @@ const ComponentTesting = () => {
       </Head>
 
       <main className="bg-white pt-28  text-default mx-[25px]">
-        <SliderIdentity />
+        <SliderBlog blogs={blogs} />
       </main>
     </NavPage>
   );
 };
 export default ComponentTesting;
+
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+
+  const blogs = await client.getAllByType('BlogPost', {
+    orderings: [
+      { field: 'my.article.publishDate', direction: 'desc' },
+      { field: 'document.first_publication_date', direction: 'desc' },
+    ],
+  });
+
+  return {
+    props: {
+      blogs,
+    },
+  };
+}
