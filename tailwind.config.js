@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         default: "#6E6E73",
+        darkBlue: "#283445",
         orangeLight: "#F8A65E",
         rougeLight: "#FC1E60",
         saumon: "#F36F5F",

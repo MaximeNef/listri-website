@@ -4,7 +4,9 @@ import SliderExperience from "../../components/home/slider/sliderExperience";
 import ServiceHeroV2 from "../../components/services/serviceHeroV2";
 import TitleServiceV2 from "../../components/services/TitleServiceV2";
 import BtnPrimaire from "../../components/shared/composers/ListriV2/btnPrimaire";
-const ComponentTesting = () => {
+import { createClient } from "../../../prismicio";
+
+const ComponentTesting = ({ blogs }) => {
   return (
     <NavPage current='Team'>
       <Head>
@@ -45,3 +47,20 @@ const ComponentTesting = () => {
   );
 };
 export default ComponentTesting;
+
+export async function getStaticProps({ previewData }) {
+  const client = createClient({ previewData });
+
+  const blogs = await client.getAllByType("BlogPost", {
+    orderings: [
+      { field: "my.article.publishDate", direction: "desc" },
+      { field: "document.first_publication_date", direction: "desc" },
+    ],
+  });
+
+  return {
+    props: {
+      blogs,
+    },
+  };
+}
