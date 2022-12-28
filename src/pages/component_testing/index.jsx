@@ -14,6 +14,7 @@ import AnimatingDiv from "../../components/home/réalisation";
 import Carousel from "../../components/home/réalisation";
 import ServicesV2 from "../../components/services/ServicesV2";
 import Realisation from "../../components/home/réalisation";
+import RealisationLoop from "../../components/home/réalisation";
 
 const ComponentTesting = ({ blogs }) => {
   return (
@@ -52,7 +53,7 @@ const ComponentTesting = ({ blogs }) => {
         />
         <BtnPrimaire text={"Nos Services"} href={"/"} />
         <SliderExperience />
-        <Realisation />
+        <RealisationLoop />
       </main>
     </NavPage>
   );
