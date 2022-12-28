@@ -19,6 +19,9 @@ const RealisationLoop = () => {
     { img: "/assets/logoV2/MayaReal.svg" },
     { img: "/assets/logoV2/ImmersyReal.svg" },
     { img: "/assets/logoV2/barbiereReal.svg" },
+    { img: "/assets/logoV2/MayaReal.svg" },
+    { img: "/assets/logoV2/ImmersyReal.svg" },
+    { img: "/assets/logoV2/barbiereReal.svg" },
   ];
   return (
     <section className='slide-option h-[400px]'>
