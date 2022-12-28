@@ -1,8 +1,7 @@
 import { createClient } from '../../../prismicio';
 import Head from 'next/head';
 import NavPage from '../../components/all/nav-page';
-import SliderBlog from '../../components/home/slider/sliderBlog';
-import SliderBlogCard from '../../components/home/slider/sliderBlog/sliderBlogCard';
+import ServiceCardV2 from '../../components/shared/composers/ListriV2/serviceCardV2';
 
 const ComponentTesting = ({ blogs }) => {
   return (
@@ -30,7 +29,36 @@ const ComponentTesting = ({ blogs }) => {
       </Head>
 
       <main className="bg-white pt-28  text-default mx-[25px]">
-        <SliderBlog blogs={blogs} />
+        <ServiceCardV2
+          title={'Référencement'}
+          subtitle={
+            'This holiday season, find the perfect gift for everyone on your list.'
+          }
+          linkText={'Découvrir'}
+          href={'/'}
+          imgSrc={'/assets/logoV2/seo.svg'}
+          blueBg={true}
+        />
+        <ServiceCardV2
+          title={'Référencement'}
+          subtitle={
+            'This holiday season, find the perfect gift for everyone on your list.'
+          }
+          linkText={'Découvrir'}
+          href={'/'}
+          imgSrc={'/assets/logoV2/seo.svg'}
+          blueBg={''}
+        />
+        <ServiceCardV2
+          title={'Référencement'}
+          subtitle={
+            'This holiday season, find the perfect gift for everyone on your list.'
+          }
+          linkText={'Découvrir'}
+          href={'/'}
+          imgSrc={'/assets/logoV2/seo.svg'}
+          blueBg={true}
+        />
       </main>
     </NavPage>
   );

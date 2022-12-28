@@ -1,9 +1,9 @@
-import Container from "../../../shared/composers/container";
-import Flex from "../../../shared/composers/flex";
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import MyImage from "../../../shared/composers/myimage";
+import Container from '../../../shared/composers/container';
+import Flex from '../../../shared/composers/flex';
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import MyImage from '../../../shared/composers/myimage';
 
 const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
   function handelClick2() {
@@ -14,18 +14,17 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
     }, 1500);
     setPause((prevPause) => !prevPause);
   }
-  console.log(isOpen, " reg");
   return (
-    <Container className=' pt-36 text-2xl font-light	 tracking-wide  mx-6 space-y-7 w-full '>
+    <Container className=" pt-36 text-2xl font-light	 tracking-wide  mx-6 space-y-7 w-full ">
       {link.map((link) => {
         return (
           <Link href={link.href} key={link.page} passHref>
             {link.page == current ? (
               <a
                 onClick={handelClick2}
-                className='text-xl font-light   tracking-wide rounded-full pl-6 py-4 bg-[#FF7E00]/10 w-full'
+                className="text-xl font-light   tracking-wide rounded-full pl-6 py-4 bg-[#FF7E00]/10 w-full"
               >
-                <Flex justify='start'>
+                <Flex justify="start">
                   <MyImage source={link.src} w={20} h={20} />
                   {/* <Image
                     loader={myLoader}
@@ -35,15 +34,15 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
                     height={20}
                     className='mx-auto'
                   /> */}
-                  <Flex justify='start'>
-                    <p className='ml-8 '>{link.page}</p>
+                  <Flex justify="start">
+                    <p className="ml-8 ">{link.page}</p>
                   </Flex>
                 </Flex>
               </a>
             ) : (
               <a
                 onClick={handelClick2}
-                className='text-xl font-light	  tracking-wide pl-6  py-2'
+                className="text-xl font-light	  tracking-wide pl-6  py-2"
               >
                 <Flex>
                   <MyImage source={link.src} w={20} h={20} />
@@ -55,8 +54,8 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
                     height={20}
                     className='m-auto'
                   /> */}
-                  <Flex justify='start'>
-                    <p className='ml-8 text-center'>{link.page}</p>
+                  <Flex justify="start">
+                    <p className="ml-8 text-center">{link.page}</p>
                   </Flex>
                 </Flex>
               </a>
