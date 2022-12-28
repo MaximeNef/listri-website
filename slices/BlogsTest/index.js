@@ -5,7 +5,6 @@ import Container from '../../src/components/shared/composers/container';
 import MyImage from '../../src/components/shared/composers/myimage';
 
 const BlogsTest = ({ slice, current }) => {
-  console.log(current, 'current');
   return (
     <Container className="">
       <section className="">

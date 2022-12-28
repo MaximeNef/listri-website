@@ -1,34 +1,29 @@
-import "../styles/globals.css";
-import Link from "next/link";
-import { PrismicProvider } from "@prismicio/react";
-import { PrismicPreview } from "@prismicio/next";
-import { linkResolver } from "../../prismicio";
-import { repositoryName } from "../../prismicio";
-import { useEffect, useState } from "react";
-import Script from "next/script";
-import Head from "next/head";
+import '../styles/globals.css';
+import Link from 'next/link';
+import { PrismicProvider } from '@prismicio/react';
+import { PrismicPreview } from '@prismicio/next';
+import { linkResolver } from '../../prismicio';
+import { repositoryName } from '../../prismicio';
+import { useEffect, useState } from 'react';
+import Script from 'next/script';
+import Head from 'next/head';
 
 export default function App({ Component, pageProps }) {
-  console.log("render");
-
   const [state, setState] = useState(() => {
-    console.log("state initialize");
-    return "state";
+    return 'state';
   });
 
   useEffect(() => {
-    return () => {
-      console.log("unmounted");
-    };
+    return () => {};
   }, []);
 
   return (
     <>
       <Script
-        strategy='lazyOnload'
+        strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <Script strategy='lazyOnload' id='my-script'>
+      <Script strategy="lazyOnload" id="my-script">
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -38,15 +33,15 @@ export default function App({ Component, pageProps }) {
         });
     `}
       </Script>
-      <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
+      <Script src="https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP"></Script>
       {/* UXWIZZ script  */}
-      <Script id='uxwizz'>
+      <Script id="uxwizz">
         UST_CT = []; UST = "
-        {"s: Date.now(), addTag: function(tag) {UST_CT.push(tag)} "}
+        {'s: Date.now(), addTag: function(tag) {UST_CT.push(tag)} '}
         ";UST.addEvent = UST.addTag;
       </Script>
       <Script
-        src='https://stats.listri.digital/server/ust.min.js?v=4.5.0'
+        src="https://stats.listri.digital/server/ust.min.js?v=4.5.0"
         async
       ></Script>
       {/* UXWIZZ script  */}
@@ -61,7 +56,7 @@ export default function App({ Component, pageProps }) {
         <PrismicPreview repositoryName={repositoryName}>
           <Component {...pageProps} />
         </PrismicPreview>
-      </PrismicProvider>{" "}
+      </PrismicProvider>{' '}
     </>
   );
 }

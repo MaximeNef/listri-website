@@ -5,8 +5,6 @@ import SliderBlog from '../../components/home/slider/sliderBlog';
 import SliderBlogCard from '../../components/home/slider/sliderBlog/sliderBlogCard';
 
 const ComponentTesting = ({ blogs }) => {
-  console.log(blogs[0].data.slices[0].items[0].image.url, 'blog');
-  // console.log(blogs, 'blog');
   return (
     <NavPage current="Team">
       <Head>

@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Container from "../container";
+import Image from 'next/image';
+import Container from '../container';
 
 const myLoader = ({ src, width, quality }) => {
-  console.log(src, "src");
   return `${src}`;
 };
 
@@ -12,7 +11,7 @@ const MyImage = ({ source, h, w, className, objectFit, layout, id }) => {
       id={id}
       loader={myLoader}
       src={source}
-      alt='Picture of the author'
+      alt="Picture of the author"
       width={w}
       height={h}
       unoptimized={true}
