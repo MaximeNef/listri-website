@@ -36,7 +36,7 @@ const ComponentTesting = ({ blogs }) => {
           }
           linkText={'Découvrir'}
           href={'/'}
-          imgSrc={'/assets/logoV2/seo.svg'}
+          imgSrc={'/assets/logoV2/digital-card.svg'}
           blueBg={true}
         />
         <ServiceCardV2
@@ -46,7 +46,7 @@ const ComponentTesting = ({ blogs }) => {
           }
           linkText={'Découvrir'}
           href={'/'}
-          imgSrc={'/assets/logoV2/seo.svg'}
+          imgSrc={'/assets/logoV2/digital-card.svg'}
           blueBg={''}
         />
         <ServiceCardV2
@@ -56,7 +56,7 @@ const ComponentTesting = ({ blogs }) => {
           }
           linkText={'Découvrir'}
           href={'/'}
-          imgSrc={'/assets/logoV2/seo.svg'}
+          imgSrc={'/assets/logoV2/digital-card.svg'}
           blueBg={true}
         />
       </main>
