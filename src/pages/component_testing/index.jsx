@@ -5,17 +5,17 @@ import ServiceCardV2 from "../../components/shared/composers/ListriV2/serviceCar
 import SliderIdentity from "../../components/home/slider/sliderIdentity";
 
 import SliderExperience from "../../components/home/slider/sliderExperience";
-import ServiceHeroV2 from "../../components/services/serviceHeroV2";
-import TitleServiceV2 from "../../components/services/TitleServiceV2";
+// import ServiceHeroV2 from "../../components/services/serviceHeroV2";
+// import TitleServiceV2 from "../../components/services/TitleServiceV2";
 import BtnPrimaire from "../../components/shared/composers/ListriV2/btnPrimaire";
 import { createClient } from "../../../prismicio";
-import HorizontalLoopAnimation from "../../components/home/réalisation";
-import HorizontalAnimationTranslate from "../../components/home/réalisation";
-import HorizontalAnimation from "../../components/home/réalisation";
-import AnimatingDiv from "../../components/home/réalisation";
-import Carousel from "../../components/home/réalisation";
-import ServicesV2 from "../../components/services/ServicesV2";
-import Realisation from "../../components/home/réalisation";
+// import HorizontalLoopAnimation from "../../components/home/réalisation";
+// import HorizontalAnimationTranslate from "../../components/home/réalisation";
+// import HorizontalAnimation from "../../components/home/réalisation";
+// import AnimatingDiv from "../../components/home/réalisation";
+// import Carousel from "../../components/home/réalisation";
+// import ServicesV2 from "../../components/services/ServicesV2";
+// import Realisation from "../../components/home/réalisation";
 import RealisationLoop from "../../components/home/réalisation";
 
 const ComponentTesting = ({ blogs }) => {
