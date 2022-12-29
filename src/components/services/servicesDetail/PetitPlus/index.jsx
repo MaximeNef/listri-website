@@ -2,7 +2,7 @@ import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
 import MyImage from "../../../shared/composers/myimage";
 
-const DetailsPetitPlus = () => {
+const PetitPlus = () => {
   const petitPlus = [
     {
       img: "/assets/logoV2/referencement.svg",
@@ -51,4 +51,4 @@ const DetailsPetitPlus = () => {
     </Container>
   );
 };
-export default DetailsPetitPlus;
+export default PetitPlus;

@@ -18,7 +18,9 @@ import { createClient } from "../../../prismicio";
 // import Realisation from "../../components/home/réalisation";
 import RealisationLoop from "../../components/home/réalisation";
 import SliderServices from "../../components/services/SliderServices";
-import DetailsPetitPlus from "../../components/services/servicesDetail/detailspetitPlus";
+import DetailsPetitPlus from "../../components/services/servicesDetail/PetitPlus";
+import EncorePlus from "../../components/services/servicesDetail/EncorePlus";
+import PetitPlus from "../../components/services/servicesDetail/PetitPlus";
 
 const ComponentTesting = ({ blogs }) => {
   return (
@@ -80,7 +82,8 @@ const ComponentTesting = ({ blogs }) => {
         <SliderExperience />
         <RealisationLoop /> 
         <SliderServices />*/}
-        <DetailsPetitPlus />
+        <PetitPlus />
+        <EncorePlus />
       </main>
     </NavPage>
   );
