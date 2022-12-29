@@ -22,6 +22,7 @@ import DetailsPetitPlus from "../../components/services/servicesDetail/PetitPlus
 import EncorePlus from "../../components/services/servicesDetail/EncorePlus";
 import PetitPlus from "../../components/services/servicesDetail/PetitPlus";
 import CallToAction from "../../components/services/servicesDetail/callToAction";
+import DetailSerivceRealisation from "../../components/services/servicesDetail/DetailSerivceRealisation";
 
 const ComponentTesting = ({ blogs }) => {
   return (
@@ -86,6 +87,7 @@ const ComponentTesting = ({ blogs }) => {
         <PetitPlus />
         <EncorePlus />
         <CallToAction />
+        <DetailSerivceRealisation />
       </main>
     </NavPage>
   );

@@ -162,7 +162,12 @@ const RealisationLoop = () => {
             {realisations.map((real, i) => {
               return (
                 <Link href={"/"} key={i}>
-                  <li className='highway-car  relative max-w-[180px]' key={i}>
+                  <li
+                    className={`highway-car  relative max-w-[180px] ${
+                      i % 2 == 0 ? "" : ""
+                    }`}
+                    key={i}
+                  >
                     <MyImage
                       source={real.img}
                       layout={"fill"}
