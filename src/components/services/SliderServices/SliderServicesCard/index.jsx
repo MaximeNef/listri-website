@@ -3,16 +3,22 @@ import MyImage from "../../../shared/composers/myimage";
 
 const SliderServicesCard = ({ source, text }) => {
   return (
-    <Container>
-      <div className='relative h-[65px] w-[65px]'>
+    <Container className=' flex flex-col items-center   mr-7 w-[80px]'>
+      <div
+        className={`relative  ${
+          text == "Optimisation" ? "h-[65px] w-[50px]" : "h-[65px] w-[65px]"
+        }`}
+      >
         <MyImage
           source={source}
           layout={"fill"}
-          objectFit={"cover"}
-          className={"rounded-t-[18px]"}
+          objectFit={"contain"}
+          className={""}
         />
       </div>
-      <p>{text}</p>
+      <p className='text-[14px] font-bold tracking-[-0.22px] leading-[20px] text-center text-[#1D1D1F] mt-[18px] '>
+        {text}
+      </p>
     </Container>
   );
 };
