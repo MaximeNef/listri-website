@@ -10,7 +10,7 @@ const DetailsPetitPlus = () => {
     },
     {
       img: "/assets/logoV2/referencement.svg",
-      text: "Sur mesure",
+      text: "Sur mesure ",
     },
     {
       img: "/assets/logoV2/referencement.svg",
@@ -41,7 +41,7 @@ const DetailsPetitPlus = () => {
                   className={""}
                 />
               </Container>
-              <p className='text-[17px] tracking-[-0.37px] leading-[25px] text-darkBlue'>
+              <p className='text-[17px] tracking-[-0.37px] leading-[25px] text-darkBlue text-center'>
                 {plus.text}
               </p>
             </Container>
