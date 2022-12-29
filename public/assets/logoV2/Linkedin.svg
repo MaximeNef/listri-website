@@ -5,20 +5,20 @@
 <path d="M40 1H4C2.34315 1 1 2.34315 1 4V40C1 41.6569 2.34315 43 4 43H40C41.6569 43 43 41.6569 43 40V4C43 2.34315 41.6569 1 40 1Z" stroke="url(#paint3_linear_19_3834)" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_19_3834" x1="10" y1="7" x2="10" y2="13" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF7E00"/>
-<stop offset="1" stop-color="#FF7E00" stop-opacity="0.49"/>
+<stop stop-color="#F5F5F7"/>
+<stop offset="1" stop-color="#F5F5F7" stop-opacity="1"/>
 </linearGradient>
 <linearGradient id="paint1_linear_19_3834" x1="10" y1="17" x2="10" y2="37" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF7E00"/>
-<stop offset="1" stop-color="#FF7E00" stop-opacity="0.49"/>
+<stop stop-color="#F5F5F7"/>
+<stop offset="1" stop-color="#F5F5F7" stop-opacity="1"/>
 </linearGradient>
 <linearGradient id="paint2_linear_19_3834" x1="27" y1="16.9984" x2="27" y2="37" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF7E00"/>
-<stop offset="1" stop-color="#FF7E00" stop-opacity="0.49"/>
+<stop stop-color="#F5F5F7"/>
+<stop offset="1" stop-color="#F5F5F7" stop-opacity="1"/>
 </linearGradient>
 <linearGradient id="paint3_linear_19_3834" x1="22" y1="1" x2="22" y2="43" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FF7E00"/>
-<stop offset="1" stop-color="#FF7E00" stop-opacity="0.49"/>
+<stop stop-color="#F5F5F7"/>
+<stop offset="1" stop-color="#F5F5F7" stop-opacity="1"/>
 </linearGradient>
 </defs>
 </svg>

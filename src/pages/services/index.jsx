@@ -9,50 +9,66 @@ import Container from "../../components/shared/composers/container";
 import { motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
 import MotionLeft from "../../components/shared/composers/motion-CardLeft";
+import ServiceCardV2 from "../../components/shared/composers/ListriV2/serviceCardV2";
+import SliderServices from "../../components/services/SliderServices";
+import SubtitleV2 from "../../components/shared/composers/ListriV2/subtitleV2";
+import CallToAction from "../../components/services/servicesDetail/callToAction";
 const Services = () => {
   const [data, setData] = useState({ name: "" });
-  const [services, setServices] = useState([
+  const services1 = [
     {
-      id: "creation-de-contenu",
-      title: "Création de contenu",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Blog.svg",
+      title: "Création de site web",
+      subtitle: "Rapide et sur mesure",
+
+      linkText: "Découvrir",
+      href: "/services/website",
+      imgSrc: "/assets/logoV2/Website-creator.svg",
+      blueBg: true,
     },
     {
-      id: "social-media",
-      title: "Social média",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Blog.svg",
+      title: "Marketing",
+      subtitle:
+        "This holiday season, find the perfect gift for everyone on your list.",
+
+      linkText: "Découvrir",
+      href: "services/Optimisation-Web",
+      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      blueBg: false,
+      ancre: "Marketing",
     },
-  ]);
-  const [services2, setServices2] = useState([
+  ];
+  const services2 = [
     {
-      id: "website",
-      title: "Web Site",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Computer.svg",
-    },
-    {
-      id: "Optimisation-Web",
-      title: "Optimisation Web",
-      subtitle: "Optimisation Web",
-      src: "/assets/logo/Blog.svg",
-    },
-  ]);
-  const [services3, setServices3] = useState([
-    {
-      id: "referencement",
-      title: "Référencement web",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Computer.svg",
+      title: "Création de site web",
+      subtitle: "Rapide et sur mesure",
+
+      linkText: "Découvrir",
+      href: "/services/website",
+      imgSrc: "/assets/logoV2/Website-creator.svg",
+      blueBg: true,
     },
     {
-      id: "Digital-business-card",
-      title: "Digital business card",
-      subtitle: "Digital-business-card",
-      src: "/assets/logo/Blog.svg",
+      title: "Référencement",
+      subtitle:
+        "This holiday season, find the perfect gift for everyone on your list.",
+
+      linkText: "Découvrir",
+      href: "/services/referencement",
+      imgSrc: "/assets/logoV2/digital-card.svg",
+      blueBg: false,
     },
-  ]);
+    {
+      title: "Marketing",
+      subtitle:
+        "This holiday season, find the perfect gift for everyone on your list.",
+
+      linkText: "Découvrir",
+      href: "services/Optimisation-Web",
+      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      blueBg: true,
+      CTA: true,
+    },
+  ];
   return (
     <NavPage current='Services'>
       {" "}
@@ -77,8 +93,41 @@ const Services = () => {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-white  py-28 '>
-        <div className='absolute inset-0 flex items-center justify-center'></div>
+      <main className='bg-white pt-28  text-default '>
+        <Container className='mx-[25px]'>
+          <div className='mb-[40px] space-y-[36px]'>
+            <ServiceTitle
+              subtitle1={"Services."}
+              subtitle2={
+                "Du site web au marketing recevez le service que vous aimez "
+              }
+            />
+            <SliderServices />{" "}
+          </div>
+          {services1.map((service, i) => {
+            return (
+              <ServiceCardV2
+                key={i}
+                title={service.title}
+                subtitle={service.subtitle}
+                linkText={service.linkText}
+                href={service.href}
+                imgSrc={service.imgSrc}
+                blueBg={service.blueBg}
+                CTA={service.CTA}
+                ancre={service.ancre}
+              />
+            );
+          })}
+          <CallToAction />
+        </Container>
+      </main>
+    </NavPage>
+  );
+};
+export default Services;
+{
+  /* <div className='absolute inset-0 flex items-center justify-center'></div>
         <ServiceTitle />{" "}
         <Container className='md:flex md:flex-row md:justify-center md:items-start md:w-full'>
           <Container className='mx-5 relative text-center space-y-8 mt-6 md:mt-0'>
@@ -162,9 +211,5 @@ const Services = () => {
           <Container className='hidden md:inline-flex'>
             <ServiceImage />
           </Container>
-        </Container>
-      </main>
-    </NavPage>
-  );
-};
-export default Services;
+        </Container> */
+}

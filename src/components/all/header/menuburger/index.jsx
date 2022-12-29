@@ -98,10 +98,10 @@ const Menuburger = ({ current }) => {
 
         <BurgerIcone handelClick={handelClick} />
 
-        <Container className=' right-3 z-20 fixed  mt-[6px] rounded-[10px]  bg-gradient-to-r from-[#FF7E00]/80 to-[#ffb873]/50  py-[5px] px-[10px] text-white text-sm  shadow-client '>
+        <Container className=' right-3 z-20 fixed  mt-[5px] py-[5px] px-[10px] text-white text-sm  '>
           <a className='my-auto items-center' href='tel: +32470684551'>
             <Container className='m-auto'>
-              <MyImage source='/assets/logo/phone.svg' h={20} w={20} />
+              <MyImage source='/assets/logoV2/phone.svg' h={25} w={25} />
               {/* <Image
                 loader={myLoader}
                 src='/assets/logo/phone.svg'

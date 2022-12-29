@@ -1,42 +1,42 @@
-import Container from '../../../shared/composers/container';
-import Flex from '../../../shared/composers/flex';
-import SliderIdentityCard from './sliderIdentityCard';
+import Container from "../../../shared/composers/container";
+import Flex from "../../../shared/composers/flex";
+import SliderIdentityCard from "./sliderIdentityCard";
 
 const SliderIdentity = () => {
   const raisons = [
     {
-      logo: 'assets/logoV2/rate.svg',
-      color: 'text-[#6CCA4E]',
-      blackText1: 'Profitez',
-      colorText2: 'd’une expertise et d’un soutien',
-      blackText3: 'supplémentaire',
+      logo: "assets/logoV2/rate.svg",
+      color: "text-[#6CCA4E]",
+      blackText1: "Profitez",
+      colorText2: "d’une expertise et d’un soutien",
+      blackText3: "supplémentaire",
     },
     {
-      logo: 'assets/logoV2/lightBulb.svg',
-      color: 'text-[#FC1E60]',
-      blackText1: 'Nous vous apportons des',
-      colorText2: 'solutions à la pointe adaptées à votre entreprise',
-      blackText3: '',
+      logo: "assets/logoV2/lightBulb.svg",
+      color: "text-[#FC1E60]",
+      blackText1: "Nous vous apportons des",
+      colorText2: "solutions à la pointe adaptées à votre entreprise",
+      blackText3: "",
     },
     {
-      logo: 'assets/logoV2/screen.svg',
-      color: 'text-[#AC39FF]',
-      blackText1: '',
-      colorText2: 'Augmentation des conversions',
-      blackText3: 'de votre site web',
+      logo: "assets/logoV2/screen.svg",
+      color: "text-[#AC39FF]",
+      blackText1: "",
+      colorText2: "Augmentation des conversions",
+      blackText3: "de votre site web",
     },
     {
-      logo: 'assets/logoV2/content.svg',
-      color: 'text-[#F8A65E]',
-      blackText1: 'Une stratégie de contenu',
-      colorText2: 'riche et cohérente',
-      blackText3: '',
+      logo: "assets/logoV2/content.svg",
+      color: "text-[#F8A65E]",
+      blackText1: "Une stratégie de contenu",
+      colorText2: "riche et cohérente",
+      blackText3: "",
     },
   ];
 
   return (
-    <Flex className="snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2">
-      <Container className={'min-w-[25px]'} />
+    <Flex className='snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2 '>
+      <Container className={"min-w-[25px]"} />
       {raisons.map((raison, i) => {
         return (
           <SliderIdentityCard
@@ -49,7 +49,7 @@ const SliderIdentity = () => {
           />
         );
       })}
-      <Container className={'min-w-[20px]'} />
+      <Container className={"min-w-[20px]"} />
     </Flex>
   );
 };

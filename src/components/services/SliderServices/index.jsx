@@ -12,7 +12,7 @@ const SliderServices = () => {
     {
       source: "/assets/logoV2/brand.svg",
       text: "Marketing",
-      ancre: "#Site-web",
+      ancre: "#Marketing",
     },
     {
       source: "/assets/logoV2/referencement.svg",

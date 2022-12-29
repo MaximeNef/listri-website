@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Container from "../../shared/composers/container";
-import MyImage from "../../shared/composers/myimage";
+import Container from "../../../shared/composers/container";
+import MyImage from "../../../shared/composers/myimage";
 
 const RealisationLoop = () => {
   const realisations = [
@@ -70,7 +70,7 @@ const RealisationLoop = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #fff;
+            background: #283445;
             color: #343434;
           }
           @keyframes translatestf {

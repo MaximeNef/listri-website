@@ -16,7 +16,7 @@ import { createClient } from "../../../prismicio";
 // import Carousel from "../../components/home/réalisation";
 // import ServicesV2 from "../../components/services/ServicesV2";
 // import Realisation from "../../components/home/réalisation";
-import RealisationLoop from "../../components/home/réalisation";
+import RealisationLoop from "../../components/home/HomeRealisation/RealisationLoop";
 import SliderServices from "../../components/services/SliderServices";
 import DetailsPetitPlus from "../../components/services/servicesDetail/PetitPlus";
 import EncorePlus from "../../components/services/servicesDetail/EncorePlus";
