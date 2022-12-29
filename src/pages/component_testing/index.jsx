@@ -18,6 +18,7 @@ import { createClient } from "../../../prismicio";
 // import Realisation from "../../components/home/réalisation";
 import RealisationLoop from "../../components/home/réalisation";
 import SliderServices from "../../components/services/SliderServices";
+import DetailsPetitPlus from "../../components/services/servicesDetail/detailspetitPlus";
 
 const ComponentTesting = ({ blogs }) => {
   return (
@@ -77,8 +78,9 @@ const ComponentTesting = ({ blogs }) => {
         />
         <BtnPrimaire text={"Nos Services"} href={"/"} />
         <SliderExperience />
-        <RealisationLoop /> */}
-        <SliderServices />
+        <RealisationLoop /> 
+        <SliderServices />*/}
+        <DetailsPetitPlus />
       </main>
     </NavPage>
   );

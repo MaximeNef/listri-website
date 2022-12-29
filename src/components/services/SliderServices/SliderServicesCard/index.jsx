@@ -16,7 +16,7 @@ const SliderServicesCard = ({ source, text }) => {
           className={""}
         />
       </div>
-      <p className='text-[14px] font-bold tracking-[-0.22px] leading-[20px] text-center text-[#1D1D1F] mt-[18px] '>
+      <p className='text-[14px] font-bold tracking-[-0.22px] leading-[20px] text-center text-darkBlue mt-[18px] '>
         {text}
       </p>
     </Container>
