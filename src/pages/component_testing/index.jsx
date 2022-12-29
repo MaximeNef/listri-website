@@ -17,6 +17,7 @@ import { createClient } from "../../../prismicio";
 // import ServicesV2 from "../../components/services/ServicesV2";
 // import Realisation from "../../components/home/réalisation";
 import RealisationLoop from "../../components/home/réalisation";
+import SliderServices from "../../components/services/SliderServices";
 
 const ComponentTesting = ({ blogs }) => {
   return (
@@ -44,7 +45,7 @@ const ComponentTesting = ({ blogs }) => {
       </Head>
 
       <main className='bg-white pt-28  text-default mx-[25px]'>
-        <ServiceCardV2
+        {/* <ServiceCardV2
           title={"Référencement"}
           subtitle={
             "This holiday season, find the perfect gift for everyone on your list."
@@ -76,7 +77,8 @@ const ComponentTesting = ({ blogs }) => {
         />
         <BtnPrimaire text={"Nos Services"} href={"/"} />
         <SliderExperience />
-        <RealisationLoop />
+        <RealisationLoop /> */}
+        <SliderServices />
       </main>
     </NavPage>
   );
