@@ -21,6 +21,7 @@ import SliderServices from "../../components/services/SliderServices";
 import DetailsPetitPlus from "../../components/services/servicesDetail/PetitPlus";
 import EncorePlus from "../../components/services/servicesDetail/EncorePlus";
 import PetitPlus from "../../components/services/servicesDetail/PetitPlus";
+import CallToAction from "../../components/services/servicesDetail/callToAction";
 
 const ComponentTesting = ({ blogs }) => {
   return (
@@ -81,9 +82,10 @@ const ComponentTesting = ({ blogs }) => {
         <BtnPrimaire text={"Nos Services"} href={"/"} />
         <SliderExperience />
         <RealisationLoop /> 
-        <SliderServices />*/}
+        <SliderServices />
         <PetitPlus />
-        <EncorePlus />
+        <EncorePlus />*/}
+        <CallToAction />
       </main>
     </NavPage>
   );
