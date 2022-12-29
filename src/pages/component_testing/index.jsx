@@ -49,7 +49,7 @@ const ComponentTesting = ({ blogs }) => {
       </Head>
 
       <main className='bg-white pt-28  text-default mx-[25px]'>
-        {/* <ServiceCardV2
+        <ServiceCardV2
           title={"Référencement"}
           subtitle={
             "This holiday season, find the perfect gift for everyone on your list."
@@ -81,10 +81,10 @@ const ComponentTesting = ({ blogs }) => {
         />
         <BtnPrimaire text={"Nos Services"} href={"/"} />
         <SliderExperience />
-        <RealisationLoop /> 
+        <RealisationLoop />
         <SliderServices />
         <PetitPlus />
-        <EncorePlus />*/}
+        <EncorePlus />
         <CallToAction />
       </main>
     </NavPage>
