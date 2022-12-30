@@ -11,6 +11,59 @@ import BtnPrimaire from "../../../components/shared/composers/ListriV2/btnPrimai
 import MyImage from "../../../components/shared/composers/myimage";
 
 const Website = () => {
+  const infoCards = [
+    {
+      blueBg: true,
+      title: "Responsive",
+      subTitle: "A la pointe du développement",
+      description1:
+        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+
+      description2:
+        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+
+      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+
+      description4:
+        "Accompagné d'une optimisation pour un référencement naturel",
+
+      src: "/assets/logoV2/website-creator.svg",
+    },
+    {
+      blueBg: false,
+      title: "Responsive",
+      subTitle: "A la pointe du développement",
+      description1:
+        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+
+      description2:
+        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+
+      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+
+      description4:
+        "Accompagné d'une optimisation pour un référencement naturel",
+
+      src: "/assets/logoV2/website-creator.svg",
+    },
+    {
+      blueBg: true,
+      title: "Responsive",
+      subTitle: "A la pointe du développement",
+      description1:
+        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+
+      description2:
+        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+
+      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+
+      description4:
+        "Accompagné d'une optimisation pour un référencement naturel",
+
+      src: "/assets/logoV2/website-creator.svg",
+    },
+  ];
   return (
     <NavPage current='Services'>
       <Head>
@@ -50,60 +103,31 @@ const Website = () => {
           <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]'>
             un petit +
           </p>
-          <ServiceDetailCard
-            blueBg={true}
-            title={"Responsive"}
-            subTitle={"A la pointe du développement"}
-            description1={
-              "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique."
-            }
-            description2={
-              "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal"
-            }
-            description3={
-              "Simple & efficace, un site avec tout ce qu'il vous faut !"
-            }
-            description4={
-              "Accompagné d'une optimisation pour un référencement naturel"
-            }
-            src={"/assets/logoV2/website-creator.svg"}
-          />
-          <ServiceDetailCard
-            blueBg={false}
-            title={"Responsive"}
-            subTitle={"A la pointe du développement"}
-            description1={
-              "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique."
-            }
-            description2={
-              "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal"
-            }
-            description3={
-              "Simple & efficace, un site avec tout ce qu'il vous faut !"
-            }
-            description4={
-              "Accompagné d'une optimisation pour un référencement naturel"
-            }
-            src={"/assets/logoV2/website-creator.svg"}
-          />
-          <ServiceDetailCard
-            blueBg={true}
-            title={"ghfh"}
-            subTitle={"A la pointe du développement"}
-            description1={
-              "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique."
-            }
-            description2={
-              "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal"
-            }
-            description3={
-              "Simple & efficace, un site avec tout ce qu'il vous faut !"
-            }
-            description4={
-              "Accompagné d'une optimisation pour un référencement naturel"
-            }
-            src={"/assets/logoV2/website-creator.svg"}
-          />
+          {infoCards.map((info, i) => {
+            const {
+              blueBg,
+              title,
+              subTitle,
+              description1,
+              description2,
+              description3,
+              description4,
+              src,
+            } = info;
+            return (
+              <ServiceDetailCard
+                key={i}
+                description1={description1}
+                title={title}
+                subTitle={subTitle}
+                description2={description2}
+                description3={description3}
+                description4={description4}
+                src={src}
+                blueBg={blueBg}
+              />
+            );
+          })}
         </Container>
         <div className='my-[100px]'>
           <CallToAction />
