@@ -1,11 +1,10 @@
 import Image from 'next/image';
-import Container from '../container';
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}`;
 };
 
-const MyImage = ({ source, h, w, className, objectFit, layout, id }) => {
+const MyImage = ({ source, h, w, className, objectFit, layout, id, style }) => {
   return (
     <Image
       id={id}

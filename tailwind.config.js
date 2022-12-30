@@ -13,6 +13,7 @@ module.exports = {
         orangeLight: '#F8A65E',
         rougeLight: '#FC1E60',
         saumon: '#F36F5F',
+        lightGrey: '#F5F5F7',
       },
       backdropFilter: {
         none: 'none',
