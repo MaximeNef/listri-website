@@ -64,7 +64,6 @@ const Website = () => {
       src: '/assets/logoV2/website-creator.svg',
     },
   ];
-
   const EncorePlus = [
     {
       categorie: 'gfghf',
@@ -88,14 +87,14 @@ const Website = () => {
   return (
     <NavPage current="Services">
       <Head>
-        <title>Création de votre site web & e-commerce sur mesure</title>
+        <title>Votre agence spécialisée en social media marketing </title>
         <meta
-          name={'description'}
-          content="Notre agence spécialisée dans la création de site web (vitrine ou E-commerce) pour un visibilité en ligne optimale grâce à une solution 100% sur mesure."
+          name="description"
+          content="Nous aidons les indépendants et les PME à développer une communication digitale sur les réseaux sociaux pour ciblez la bonne audience."
         />
         <meta
           name="keywords"
-          content="site web, site internet, conception de site web, design de site web, développement de site web, création de site web, gestion de site web, optimisation de site web, conception de site web, responsive design, référencement de site web, listri digital"
+          content="réseaux sociaux, stratégie de réseaux sociaux, gestion de réseaux sociaux, community management, publicité sur les réseaux sociaux, contenu pour les réseaux sociaux, analyse de réseaux sociaux, engagement sur les réseaux sociaux, listri digital, Social media marketing, Marketing réseaux sociaux"
         />
         <meta charset="UTF-8" />
         <link rel="icon" href="/favicon.svg" />
@@ -107,7 +106,7 @@ const Website = () => {
         />
       </Head>
       <main className="bg-white pt-28  text-default">
-        <TitleServiceDetail title="Création de Site Web" />
+        <TitleServiceDetail title="Marketing digital" />
         <Container className="mx-auto mt-8">
           <MyImage
             source={'/assets/logoV2/Website-creator.svg'}
