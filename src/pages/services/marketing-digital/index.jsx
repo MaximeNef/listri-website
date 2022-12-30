@@ -64,7 +64,7 @@ const Website = () => {
       src: '/assets/logoV2/website-creator.svg',
     },
   ];
-  const EncorePlus = [
+  const cardPlus = [
     {
       categorie: 'gfghf',
       image: '/assets/logoV2/siteWeb.svg',
@@ -153,7 +153,7 @@ const Website = () => {
           <CallToAction />
         </div>
         <div className="mx-[25px] ">
-          <EncorePlus EncorePlus={EncorePlus} />
+          <EncorePlus EncorePlus={cardPlus} />
         </div>
         <div className="px-[25px] mt-[60px]">
           <DetailSerivceRealisation current="Services" />

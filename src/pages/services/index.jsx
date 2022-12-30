@@ -1,106 +1,106 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import NavPage from "../../components/all/nav-page";
+import NavPage from '../../components/all/nav-page';
 
-import ServiceTitle from "../../components/services/serviceTitle";
-import Container from "../../components/shared/composers/container";
-import { motion, MotionConfig } from "framer-motion";
-import { useState } from "react";
-import MotionLeft from "../../components/shared/composers/motion-CardLeft";
-import ServiceCardV2 from "../../components/shared/composers/ListriV2/serviceCardV2";
-import SliderServices from "../../components/services/SliderServices";
-import SubtitleV2 from "../../components/shared/composers/ListriV2/subtitleV2";
-import CallToAction from "../../components/services/servicesDetail/callToAction";
-import ServicePageCard from "../../components/services/servicePageCard";
+import ServiceTitle from '../../components/services/serviceTitle';
+import Container from '../../components/shared/composers/container';
+import { motion, MotionConfig } from 'framer-motion';
+import { useState } from 'react';
+import MotionLeft from '../../components/shared/composers/motion-CardLeft';
+import ServiceCardV2 from '../../components/shared/composers/ListriV2/serviceCardV2';
+import SliderServices from '../../components/services/SliderServices';
+import SubtitleV2 from '../../components/shared/composers/ListriV2/subtitleV2';
+import CallToAction from '../../components/services/servicesDetail/callToAction';
+import ServicePageCard from '../../components/services/servicePageCard';
 const Services = () => {
-  const [data, setData] = useState({ name: "" });
+  const [data, setData] = useState({ name: '' });
   const services1 = [
     {
-      title: "Création de site web",
-      subtitle: "Rapide et sur mesure",
+      title: 'Création de site web',
+      subtitle: 'Rapide et sur mesure',
 
-      linkText: "Découvrir",
-      href: "/services/website",
-      imgSrc: "/assets/logoV2/Website-creator.svg",
+      linkText: 'Découvrir',
+      href: '/services/website',
+      imgSrc: '/assets/logoV2/Website-creator.svg',
       blueBg: false,
     },
     {
-      title: "Référencement",
+      title: 'Référencement',
       subtitle:
-        "This holiday season, find the perfect gift for everyone on your list.",
+        'This holiday season, find the perfect gift for everyone on your list.',
 
-      linkText: "Découvrir",
-      href: "services/Optimisation-Web",
-      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      linkText: 'Découvrir',
+      href: 'services/referencement',
+      imgSrc: '/assets/logoV2/social-dashboard.svg',
       blueBg: true,
-      ancre: "Marketing",
+      ancre: 'Marketing',
     },
   ];
   const services2 = [
     {
-      title: "Marketing digital",
-      subtitle: "Rapide et sur mesure",
+      title: 'Marketing digital',
+      subtitle: 'Rapide et sur mesure',
 
-      linkText: "Découvrir",
-      href: "/services/website",
-      imgSrc: "/assets/logoV2/Website-creator.svg",
+      linkText: 'Découvrir',
+      href: '/services/marketing-digital',
+      imgSrc: '/assets/logoV2/Website-creator.svg',
       blueBg: false,
     },
     {
-      title: "Optimisation Digital",
+      title: 'Optimisation Digital',
       subtitle:
-        "This holiday season, find the perfect gift for everyone on your list.",
+        'This holiday season, find the perfect gift for everyone on your list.',
 
-      linkText: "Découvrir",
-      href: "/services/referencement",
-      imgSrc: "/assets/logoV2/digital-card.svg",
+      linkText: 'Découvrir',
+      href: '/services/optimisation-web',
+      imgSrc: '/assets/logoV2/digital-card.svg',
       blueBg: true,
     },
     {
-      title: "Digital Card",
+      title: 'Digital Card',
       subtitle:
-        "This holiday season, find the perfect gift for everyone on your list.",
+        'This holiday season, find the perfect gift for everyone on your list.',
 
-      linkText: "Découvrir",
-      href: "services/Optimisation-Web",
-      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      linkText: 'Découvrir',
+      href: 'services/digital-business-card',
+      imgSrc: '/assets/logoV2/social-dashboard.svg',
       blueBg: false,
     },
   ];
   return (
-    <NavPage current='Services'>
-      {" "}
+    <NavPage current="Services">
+      {' '}
       <Head>
         <title>
           Nos services digitaux - Fait sur-mesure pour votre entreprise
         </title>
         <meta
-          name='description'
-          content='Listri Digital propose aux indépendants et PME les mêmes services que les grandes marques de la conception de votre site jusqu’à votre marketing digital'
+          name="description"
+          content="Listri Digital propose aux indépendants et PME les mêmes services que les grandes marques de la conception de votre site jusqu’à votre marketing digital"
         />
         <meta
-          name='keywords'
-          content='Services de marketing numérique, gestion des réseaux sociaux, Optimisation des moteurs de recherche (SEO), Publicité en ligne, Marketing digital, création de contenu, Services de création de site web, Services de stratégie numérique, optimisation site web'
+          name="keywords"
+          content="Services de marketing numérique, gestion des réseaux sociaux, Optimisation des moteurs de recherche (SEO), Publicité en ligne, Marketing digital, création de contenu, Services de création de site web, Services de stratégie numérique, optimisation site web"
         />
-        <meta charset='UTF-8' />
-        <link rel='icon' href='/favicon.svg' />
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
-          rel='stylesheet'
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
         />
       </Head>
-      <main className='bg-white pt-28  text-default '>
-        <Container className='mx-[25px]'>
-          <div className='mb-[40px] space-y-[36px]'>
+      <main className="bg-white pt-28  text-default ">
+        <Container className="mx-[25px]">
+          <div className="mb-[40px] space-y-[36px]">
             <ServiceTitle
-              subtitle1={"Services."}
+              subtitle1={'Services.'}
               subtitle2={
-                "Du site web au marketing recevez le service que vous aimez "
+                'Du site web au marketing recevez le service que vous aimez '
               }
             />
-            <SliderServices />{" "}
+            <SliderServices />{' '}
           </div>
           {services1.map((service, i) => {
             return (
@@ -117,7 +117,7 @@ const Services = () => {
               />
             );
           })}
-          <div className='my-[40px]'>
+          <div className="my-[40px]">
             <CallToAction />
           </div>
 
