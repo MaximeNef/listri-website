@@ -1,88 +1,13 @@
 import Head from "next/head";
+import Link from "next/link";
 import NavPage from "../../../components/all/nav-page";
-import ServiceDetailCard from "../../../components/services/serviceDetail/serviceDetailCard";
-import CallToAction from "../../../components/services/servicesDetail/callToAction";
-import DetailSerivceRealisation from "../../../components/services/servicesDetail/DetailSerivceRealisation";
-import EncorePlus from "../../../components/services/servicesDetail/EncorePlus";
-import PetitPlus from "../../../components/services/servicesDetail/PetitPlus";
-import TitleServiceDetail from "../../../components/services/servicesDetail/TitleServiceDetail";
-
+import OneServiceBtn from "../../../components/services/oneService/OneServiceBtn";
+import OneServiceContent from "../../../components/services/oneService/oneServiceContent";
+import OneServiceImg from "../../../components/services/oneService/OneServiceImg";
+import OneServiceTitle from "../../../components/services/oneService/oneServiceTitle";
 import Container from "../../../components/shared/composers/container";
-import BtnPrimaire from "../../../components/shared/composers/ListriV2/btnPrimaire";
-import MyImage from "../../../components/shared/composers/myimage";
 
 const Referencement = () => {
-  const infoCards = [
-    {
-      blueBg: true,
-      title: "Responsive",
-      subTitle: "A la pointe du développement",
-      description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
-
-      description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
-
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
-
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: "/assets/logoV2/website-creator.svg",
-    },
-    {
-      blueBg: false,
-      title: "Responsive",
-      subTitle: "A la pointe du développement",
-      description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
-
-      description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
-
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
-
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: "/assets/logoV2/website-creator.svg",
-    },
-    {
-      blueBg: true,
-      title: "Responsive",
-      subTitle: "A la pointe du développement",
-      description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
-
-      description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
-
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
-
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: "/assets/logoV2/website-creator.svg",
-    },
-  ];
-  const petitPlus = [
-    {
-      img: "/assets/logoV2/referencement.svg",
-      text: "Sur mesure",
-    },
-    {
-      img: "/assets/logoV2/referencement.svg",
-      text: "Sur mesure ",
-    },
-    {
-      img: "/assets/logoV2/referencement.svg",
-      text: "Sur mesure",
-    },
-    {
-      img: "/assets/logoV2/referencement.svg",
-      text: "Sur mesure",
-    },
-  ];
   return (
     <NavPage current='Services'>
       <Head>
@@ -108,60 +33,43 @@ const Referencement = () => {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-white pt-28  text-default'>
-        <TitleServiceDetail title='Référencement' />
-        <Container className='mx-auto mt-8'>
-          <MyImage
-            source={"/assets/logoV2/Website-creator.svg"}
-            h={300}
-            w={300}
-          />{" "}
+      <Container className='py-20 bg-white px-5'>
+        <Container className='md:flex md:flex-row  md:items-center'>
+          <OneServiceTitle
+            title={"Référencement Web"}
+            description={
+              "Il est primordial pour votre entreprise de se retrouver sur les moteurs de recherche pour permettre à vos clients de vous retrouver facilement. Hélas la concurrence est rude, c’est pour cela que nous vous accompagnons de le référencement de votre site web. SEO, SEA, SMO, SMA "
+            }
+          />
+          <OneServiceImg src={"/assets/logo/seodashboard.svg"} />
         </Container>
-        <Container className=' h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]' />
-        <BtnPrimaire text='Devis gratuit' href='/' />
-        <Container className='mt-[87px]'>
-          <PetitPlus petitPlus={petitPlus} />
-        </Container>
-        <Container className='mt-[140px]'>
-          <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]'>
-            un petit +
-          </p>
-          {infoCards.map((info, i) => {
-            const {
-              blueBg,
-              title,
-              subTitle,
-              description1,
-              description2,
-              description3,
-              description4,
-              src,
-            } = info;
-            return (
-              <ServiceDetailCard
-                key={i}
-                description1={description1}
-                title={title}
-                subTitle={subTitle}
-                description2={description2}
-                description3={description3}
-                description4={description4}
-                src={src}
-                blueBg={blueBg}
-              />
-            );
-          })}
-        </Container>
-        <div className='my-[100px]'>
-          <CallToAction />
-        </div>
-        <div className='mx-[25px] '>
-          <EncorePlus />
-        </div>
-        <div className='px-[25px] mt-[60px]'>
-          <DetailSerivceRealisation current='Services' />
-        </div>
-      </main>
+
+        <OneServiceContent
+          Contents={[
+            {
+              title: "Référencements SEO & SEA",
+              src: "/assets/logo/Advertising.svg",
+              text: "Il y à plusieures façons de référencer son site web sur internet. La première est le SEO (Search Engine Optimisation) il permet d’optimiser les données se trouvant sur votre site pour qu’il réponde exactement aux recherches éffectuées sur les moteurs de recherche par vos clients. Le SEA (Search Engine Advertising) est la façon payante de se référencer, nous optimisons avec vous la stratégie de communication et les mots clefs sur lesquels vous voulez vous référencer pour vous faire apparaitre en première page des recherches Google.",
+            },
+            {
+              title: "Référencement SMO & SMA",
+              src: "/assets/logo/People.svg",
+              text: "Le SMO (Social Media Optimisation) est l’optimisation de vos réseaux sociaux pour faire en sorte que vos visiteurs soient redirigés vers votre site web. Le SMA (Social Media Advertising) est l’équivalent du SEA sauf que les publicités payantes se font sur les réseaux sociaux pour faire en sorte de rediriger cette audiance vers votre site web.",
+            },
+            {
+              title: "Optimisation & reporting",
+              src: "/assets/logo/refperformance.svg",
+              text: "Selon la stratégie de référencement dont vous avez besoin, nous définirons vos objectifs ensemble. En fonction de ce qui à été choisi, nous analyserons votre site et la concurrence. Nous optimiserons votre site web pour les moteurs de recherche. Dans le cas de publicité payante, nous mettrons en place des campagnes publicitaires en adéquation avec votre stratgie d’entreprise. Vous recevrez un rapport permetant d’évaluer chacune des campagnes de référencement. Selon les résultats obtenus, nous continuerons d’optimiser vos campagnes pour cibler au mieux vos clients.",
+            },
+          ]}
+        />
+
+        <Link href='/contactus' passHref>
+          <a>
+            <OneServiceBtn btn={"Parlez-nous de votre projet"} />
+          </a>
+        </Link>
+      </Container>
     </NavPage>
   );
 };

@@ -2,7 +2,25 @@ import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
 import MyImage from "../../../shared/composers/myimage";
 
-const PetitPlus = ({ petitPlus }) => {
+const PetitPlus = () => {
+  const petitPlus = [
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure ",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+  ];
   return (
     <Container>
       <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center'>
