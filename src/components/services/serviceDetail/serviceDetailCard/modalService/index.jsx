@@ -1,3 +1,5 @@
+import Container from "../../../../shared/composers/container";
+
 const ModalService = ({
   title,
   description1,
@@ -23,14 +25,14 @@ const ModalService = ({
 
   return (
     <div>
-      <div className="mx-[50px] font-bold space-y-[25px] mt-[100px]">
-        <p className="text-black text-[38px]">{title}</p>
+      <div className='mx-[50px] font-bold space-y-[25px] mt-[100px]'>
+        <p className='text-black text-[38px]'>{title}</p>
         <p>{description1}</p>
         <p>{description2}</p>
         <p>{description3}</p>
         <p>{description4}</p>
       </div>
-      <div className="absolute h-[27px] w-[27px] top-[20px] left-[20px] ">
+      <div className='absolute h-[27px] w-[27px] top-[25px] left-[25px] '>
         <div
           onClick={handleCloseModal}
           dangerouslySetInnerHTML={{

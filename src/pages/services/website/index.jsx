@@ -1,5 +1,6 @@
 import Head from "next/head";
 import NavPage from "../../../components/all/nav-page";
+import ServiceDetailCard from "../../../components/services/serviceDetail/serviceDetailCard";
 import CallToAction from "../../../components/services/servicesDetail/callToAction";
 import DetailSerivceRealisation from "../../../components/services/servicesDetail/DetailSerivceRealisation";
 import EncorePlus from "../../../components/services/servicesDetail/EncorePlus";
@@ -44,6 +45,65 @@ const Website = () => {
         <BtnPrimaire text='Devis gratuit' href='/' />
         <Container className='mt-[87px]'>
           <PetitPlus />
+        </Container>
+        <Container className='mt-[140px]'>
+          <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]'>
+            un petit +
+          </p>
+          <ServiceDetailCard
+            blueBg={true}
+            title={"Responsive"}
+            subTitle={"A la pointe du développement"}
+            description1={
+              "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique."
+            }
+            description2={
+              "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal"
+            }
+            description3={
+              "Simple & efficace, un site avec tout ce qu'il vous faut !"
+            }
+            description4={
+              "Accompagné d'une optimisation pour un référencement naturel"
+            }
+            src={"/assets/logoV2/website-creator.svg"}
+          />
+          <ServiceDetailCard
+            blueBg={false}
+            title={"Responsive"}
+            subTitle={"A la pointe du développement"}
+            description1={
+              "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique."
+            }
+            description2={
+              "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal"
+            }
+            description3={
+              "Simple & efficace, un site avec tout ce qu'il vous faut !"
+            }
+            description4={
+              "Accompagné d'une optimisation pour un référencement naturel"
+            }
+            src={"/assets/logoV2/website-creator.svg"}
+          />
+          <ServiceDetailCard
+            blueBg={true}
+            title={"ghfh"}
+            subTitle={"A la pointe du développement"}
+            description1={
+              "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique."
+            }
+            description2={
+              "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal"
+            }
+            description3={
+              "Simple & efficace, un site avec tout ce qu'il vous faut !"
+            }
+            description4={
+              "Accompagné d'une optimisation pour un référencement naturel"
+            }
+            src={"/assets/logoV2/website-creator.svg"}
+          />
         </Container>
         <div className='my-[40px]'>
           <CallToAction />
