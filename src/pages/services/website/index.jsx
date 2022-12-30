@@ -105,10 +105,10 @@ const Website = () => {
             src={"/assets/logoV2/website-creator.svg"}
           />
         </Container>
-        <div className='my-[40px]'>
+        <div className='my-[100px]'>
           <CallToAction />
         </div>
-        <div className='mx-[25px] mt-[100px]'>
+        <div className='mx-[25px] '>
           <EncorePlus />
         </div>
         <div className='px-[25px] mt-[60px]'>

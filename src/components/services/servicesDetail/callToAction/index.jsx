@@ -8,7 +8,7 @@ const CallToAction = () => {
       <p className='w-fit text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon'>
         Chaque projet est unique.
       </p>
-      <p className='mb-[70px]'>Le vôtre aussi.</p>
+      <p className='mb-[50px]'>Le vôtre aussi.</p>
       <BtnPrimaire text={"Devis gratuit"} href={"/contact"} />
     </Container>
   );
