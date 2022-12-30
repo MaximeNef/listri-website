@@ -5,7 +5,7 @@ import Flex from "../../../shared/composers/flex";
 import SubtitleV2 from "../../../shared/composers/ListriV2/subtitleV2";
 import MyImage from "../../../shared/composers/myimage";
 
-const DetailSerivceRealisation = () => {
+const DetailSerivceRealisation = ({ current }) => {
   return (
     <Container>
       <SubtitleV2
@@ -14,7 +14,7 @@ const DetailSerivceRealisation = () => {
         TextWhite={""}
       />{" "}
       <div className='mt-[30px]'>
-        <RealisationLoop />
+        <RealisationLoop current='Services' />
       </div>
       <div className='w-full h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[20px] ml-[-10px]' />
       <Flex>

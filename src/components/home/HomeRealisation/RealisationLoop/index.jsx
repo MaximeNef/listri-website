@@ -2,7 +2,7 @@ import Link from "next/link";
 import Container from "../../../shared/composers/container";
 import MyImage from "../../../shared/composers/myimage";
 
-const RealisationLoop = () => {
+const RealisationLoop = ({ current }) => {
   const realisations = [
     { img: "/assets/logoV2/MayaReal.svg" },
     { img: "/assets/logoV2/ImmersyReal.svg" },
@@ -70,7 +70,7 @@ const RealisationLoop = () => {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #283445;
+            background: ${(current = "Services" ? "" : " #283445")};
             color: #343434;
           }
           @keyframes translatestf {
