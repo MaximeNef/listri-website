@@ -8,6 +8,24 @@ import OneServiceTitle from "../../../components/services/oneService/oneServiceT
 import Container from "../../../components/shared/composers/container";
 
 const BusinessCard = () => {
+  const petitPlus = [
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure ",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+  ];
   return (
     <NavPage current='Services'>
       <Head>

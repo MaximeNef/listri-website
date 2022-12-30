@@ -64,6 +64,24 @@ const Website = () => {
       src: "/assets/logoV2/website-creator.svg",
     },
   ];
+  const petitPlus = [
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure ",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+  ];
   return (
     <NavPage current='Services'>
       <Head>
@@ -97,7 +115,7 @@ const Website = () => {
         <Container className=' h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]' />
         <BtnPrimaire text='Devis gratuit' href='/' />
         <Container className='mt-[87px]'>
-          <PetitPlus />
+          <PetitPlus petitPlus={petitPlus} />
         </Container>
         <Container className='mt-[140px]'>
           <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]'>
