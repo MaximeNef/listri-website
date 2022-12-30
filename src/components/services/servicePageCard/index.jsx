@@ -1,9 +1,9 @@
-import MyImage from "../../myimage";
-import ServiceHeroV2 from "../serviceHeroV2";
-import Flex from "../../flex";
-import BtnPrimaire from "../btnPrimaire";
+import Flex from "../../shared/composers/flex";
+import BtnPrimaire from "../../shared/composers/ListriV2/btnPrimaire";
+import ServiceHeroV2 from "../../shared/composers/ListriV2/serviceHeroV2";
+import MyImage from "../../shared/composers/myimage";
 
-const ServiceCardV2 = ({
+const ServicePageCard = ({
   title,
   subtitle,
   linkText,
@@ -26,27 +26,18 @@ const ServiceCardV2 = ({
 
   return (
     <div className='ml-[-25px] mr-[-25px] ' id={ancre}>
-      {blueBg ? (
+      {blueBg ? null : (
         <div
-          className={`mb-[-1px]  ${
-            title == "Création de site web" ? "" : "bg-lightGrey"
-          }`}
+          className={`mb-[-1px] `}
           dangerouslySetInnerHTML={{
             __html: svg,
           }}
         />
-      ) : title == "Marketing digital" ? (
-        <div
-          className={`mb-[-1px]  transform rotate-180`}
-          dangerouslySetInnerHTML={{
-            __html: svgBottom,
-          }}
-        />
-      ) : null}
+      )}
 
       <Flex
         className={`${
-          blueBg ? "bg-darkBlue  " : "bg-lightGrey"
+          blueBg ? "bg-darkBlue " : "bg-lightGrey"
         } flex-col pb-[50px] pt-[40px] px-5 `}
       >
         <ServiceHeroV2
@@ -65,16 +56,16 @@ const ServiceCardV2 = ({
           </div>
         )}
       </Flex>
-      {blueBg ? (
+      {blueBg ? null : (
         <div
-          className={`mt-[-1px]  ${
-            title == "Marketing" ? "" : "bg-lightGrey  mt-[-1px]"
-          }`}
+          className={`mt-[-1px] bg-darkBlue`}
           dangerouslySetInnerHTML={{
             __html: svgBottom,
           }}
         />
-      ) : title == "Digital Card" ? (
+      )}
+
+      {title == "Référencement" ? (
         <div
           className={`mt-[-1px]  transform rotate-180`}
           dangerouslySetInnerHTML={{
@@ -86,4 +77,4 @@ const ServiceCardV2 = ({
   );
 };
 
-export default ServiceCardV2;
+export default ServicePageCard;

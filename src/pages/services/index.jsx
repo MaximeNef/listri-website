@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+
 import NavPage from "../../components/all/nav-page";
-import ServiceCard from "../../components/services/serviceCard";
-import ServiceImage from "../../components/services/serviceImage";
+
 import ServiceTitle from "../../components/services/serviceTitle";
 import Container from "../../components/shared/composers/container";
 import { motion, MotionConfig } from "framer-motion";
@@ -13,6 +11,7 @@ import ServiceCardV2 from "../../components/shared/composers/ListriV2/serviceCar
 import SliderServices from "../../components/services/SliderServices";
 import SubtitleV2 from "../../components/shared/composers/ListriV2/subtitleV2";
 import CallToAction from "../../components/services/servicesDetail/callToAction";
+import ServicePageCard from "../../components/services/servicePageCard";
 const Services = () => {
   const [data, setData] = useState({ name: "" });
   const services1 = [
@@ -23,29 +22,7 @@ const Services = () => {
       linkText: "Découvrir",
       href: "/services/website",
       imgSrc: "/assets/logoV2/Website-creator.svg",
-      blueBg: true,
-    },
-    {
-      title: "Marketing",
-      subtitle:
-        "This holiday season, find the perfect gift for everyone on your list.",
-
-      linkText: "Découvrir",
-      href: "services/Optimisation-Web",
-      imgSrc: "/assets/logoV2/social-dashboard.svg",
       blueBg: false,
-      ancre: "Marketing",
-    },
-  ];
-  const services2 = [
-    {
-      title: "Création de site web",
-      subtitle: "Rapide et sur mesure",
-
-      linkText: "Découvrir",
-      href: "/services/website",
-      imgSrc: "/assets/logoV2/Website-creator.svg",
-      blueBg: true,
     },
     {
       title: "Référencement",
@@ -53,20 +30,41 @@ const Services = () => {
         "This holiday season, find the perfect gift for everyone on your list.",
 
       linkText: "Découvrir",
-      href: "/services/referencement",
-      imgSrc: "/assets/logoV2/digital-card.svg",
+      href: "services/Optimisation-Web",
+      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      blueBg: true,
+      ancre: "Marketing",
+    },
+  ];
+  const services2 = [
+    {
+      title: "Marketing digital",
+      subtitle: "Rapide et sur mesure",
+
+      linkText: "Découvrir",
+      href: "/services/website",
+      imgSrc: "/assets/logoV2/Website-creator.svg",
       blueBg: false,
     },
     {
-      title: "Marketing",
+      title: "Optimisation Digital",
+      subtitle:
+        "This holiday season, find the perfect gift for everyone on your list.",
+
+      linkText: "Découvrir",
+      href: "/services/referencement",
+      imgSrc: "/assets/logoV2/digital-card.svg",
+      blueBg: true,
+    },
+    {
+      title: "Digital Card",
       subtitle:
         "This holiday season, find the perfect gift for everyone on your list.",
 
       linkText: "Découvrir",
       href: "services/Optimisation-Web",
       imgSrc: "/assets/logoV2/social-dashboard.svg",
-      blueBg: true,
-      CTA: true,
+      blueBg: false,
     },
   ];
   return (
@@ -106,6 +104,25 @@ const Services = () => {
           </div>
           {services1.map((service, i) => {
             return (
+              <ServicePageCard
+                key={i}
+                title={service.title}
+                subtitle={service.subtitle}
+                linkText={service.linkText}
+                href={service.href}
+                imgSrc={service.imgSrc}
+                blueBg={service.blueBg}
+                CTA={service.CTA}
+                ancre={service.ancre}
+              />
+            );
+          })}
+          <div className='my-[40px]'>
+            <CallToAction />
+          </div>
+
+          {services2.map((service, i) => {
+            return (
               <ServiceCardV2
                 key={i}
                 title={service.title}
@@ -119,7 +136,6 @@ const Services = () => {
               />
             );
           })}
-          <CallToAction />
         </Container>
       </main>
     </NavPage>
