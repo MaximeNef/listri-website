@@ -70,7 +70,7 @@ const RealisationLoop = ({ current }) => {
             display: flex;
             justify-content: center;
             align-items: center;
-            background: ${(current = "Services" ? "" : " #283445")};
+            ${current == "Services" ? "" : "  background:#283445"};
             color: #343434;
           }
           @keyframes translatestf {
