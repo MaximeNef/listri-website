@@ -1,24 +1,24 @@
-import Head from 'next/head';
-import NavPage from '../../../components/all/nav-page';
+import Head from "next/head";
+import NavPage from "../../../components/all/nav-page";
 
-import ServiceDetailCard from '../../../components/services/serviceDetail/serviceDetailCard';
-import CallToAction from '../../../components/services/servicesDetail/callToAction';
-import DetailSerivceRealisation from '../../../components/services/servicesDetail/DetailSerivceRealisation';
-import EncorePlus from '../../../components/services/servicesDetail/EncorePlus';
-import PetitPlus from '../../../components/services/servicesDetail/PetitPlus';
-import TitleServiceDetail from '../../../components/services/servicesDetail/TitleServiceDetail';
-import Container from '../../../components/shared/composers/container';
-import BtnPrimaire from '../../../components/shared/composers/ListriV2/btnPrimaire';
-import MyImage from '../../../components/shared/composers/myimage';
+import ServiceDetailCard from "../../../components/services/serviceDetail/serviceDetailCard";
+import CallToAction from "../../../components/services/servicesDetail/callToAction";
+import DetailSerivceRealisation from "../../../components/services/servicesDetail/DetailSerivceRealisation";
+import EncorePlus from "../../../components/services/servicesDetail/EncorePlus";
+import PetitPlus from "../../../components/services/servicesDetail/PetitPlus";
+import TitleServiceDetail from "../../../components/services/servicesDetail/TitleServiceDetail";
+import Container from "../../../components/shared/composers/container";
+import BtnPrimaire from "../../../components/shared/composers/ListriV2/btnPrimaire";
+import MyImage from "../../../components/shared/composers/myimage";
 
 const BusinessCard = () => {
   const infoCards = [
     {
       blueBg: true,
-      title: 'Responsive',
-      subTitle: 'A la pointe du développement',
+      title: "Responsive",
+      subTitle: "A la pointe du développement",
       description1:
-        'Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.',
+        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
 
       description2:
         "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
@@ -28,14 +28,14 @@ const BusinessCard = () => {
       description4:
         "Accompagné d'une optimisation pour un référencement naturel",
 
-      src: '/assets/logoV2/website-creator.svg',
+      src: "/assets/logoV2/website-creator.svg",
     },
     {
       blueBg: false,
-      title: 'Responsive',
-      subTitle: 'A la pointe du développement',
+      title: "Responsive",
+      subTitle: "A la pointe du développement",
       description1:
-        'Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.',
+        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
 
       description2:
         "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
@@ -45,14 +45,14 @@ const BusinessCard = () => {
       description4:
         "Accompagné d'une optimisation pour un référencement naturel",
 
-      src: '/assets/logoV2/website-creator.svg',
+      src: "/assets/logoV2/website-creator.svg",
     },
     {
       blueBg: true,
-      title: 'Responsive',
-      subTitle: 'A la pointe du développement',
+      title: "Responsive",
+      subTitle: "A la pointe du développement",
       description1:
-        'Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.',
+        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
 
       description2:
         "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
@@ -62,69 +62,88 @@ const BusinessCard = () => {
       description4:
         "Accompagné d'une optimisation pour un référencement naturel",
 
-      src: '/assets/logoV2/website-creator.svg',
+      src: "/assets/logoV2/website-creator.svg",
     },
   ];
   const EncorePlus = [
     {
-      categorie: 'gfghf',
-      image: '/assets/logoV2/siteWeb.svg',
-      ligne1: 'fhgfgh',
-      ligne2: 'fhgfhgff',
+      categorie: "gfghf",
+      image: "/assets/logoV2/siteWeb.svg",
+      ligne1: "fhgfgh",
+      ligne2: "fhgfhgff",
     },
     {
-      categorie: 'fghfhgfhgfghf',
-      image: '/assets/logoV2/siteWeb.svg',
-      ligne1: 'hgfhgfg',
-      ligne2: 'fghfghf',
+      categorie: "fghfhgfhgfghf",
+      image: "/assets/logoV2/siteWeb.svg",
+      ligne1: "hgfhgfg",
+      ligne2: "fghfghf",
     },
     {
-      categorie: 'hgfghfgh',
-      image: '/assets/logoV2/siteWeb.svg',
-      ligne1: 'gfhgfgh',
-      ligne2: 'ghfghfhg',
+      categorie: "hgfghfgh",
+      image: "/assets/logoV2/siteWeb.svg",
+      ligne1: "gfhgfgh",
+      ligne2: "ghfghfhg",
+    },
+  ];
+
+  const petitPlus = [
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure ",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
+    },
+    {
+      img: "/assets/logoV2/referencement.svg",
+      text: "Sur mesure",
     },
   ];
   return (
-    <NavPage current="Services">
+    <NavPage current='Services'>
       <Head>
         <title>
           Digital Business Card - Faites une meilleure première impression
         </title>
         <meta
-          name="description"
-          content="La meilleure carte de visite pour indépendant et entreprises, faites passer votre réseautage au niveau supérieur.
-          Partagez vos informations en un seul tap."
+          name='description'
+          content='La meilleure carte de visite pour indépendant et entreprises, faites passer votre réseautage au niveau supérieur.
+          Partagez vos informations en un seul tap.'
         />
         <meta
-          name="keywords"
-          content="carte de visite digitale, Carte de visite visrtuelle personnalisée, Carte de visite numérique, Carte de visite virtuelle d’entreprise, profil professionnel en ligne, Créer une carte de visite virtuelle, carte de visite personnelle, listri digital, Carte de visite virtuelle, Digital business card, Digital card"
+          name='keywords'
+          content='carte de visite digitale, Carte de visite visrtuelle personnalisée, Carte de visite numérique, Carte de visite virtuelle d’entreprise, profil professionnel en ligne, Créer une carte de visite virtuelle, carte de visite personnelle, listri digital, Carte de visite virtuelle, Digital business card, Digital card'
         />
-        <meta charset="UTF-8" />
-        <link rel="icon" href="/favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <meta charset='UTF-8' />
+        <link rel='icon' href='/favicon.svg' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
+          rel='stylesheet'
         />
       </Head>
-      <main className="bg-white pt-28  text-default">
-        <TitleServiceDetail title="Digital business card" />
-        <Container className="mx-auto mt-8">
+      <main className='bg-white pt-28  text-default'>
+        <TitleServiceDetail title='Digital business card' />
+        <Container className='mx-auto mt-8'>
           <MyImage
-            source={'/assets/logoV2/Website-creator.svg'}
+            source={"/assets/logoV2/Website-creator.svg"}
             h={300}
             w={300}
-          />{' '}
+          />{" "}
         </Container>
-        <Container className=" h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]" />
-        <BtnPrimaire text="Devis gratuit" href="/" />
-        <Container className="mt-[87px]">
-          <PetitPlus />
+        <Container className=' h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]' />
+        <BtnPrimaire text='Devis gratuit' href='/' />
+        <Container className='mt-[87px]'>
+          <PetitPlus petitPlus={petitPlus} />
         </Container>
-        <Container className="mt-[140px]">
-          <p className="text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]">
+        <Container className='mt-[140px]'>
+          <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]'>
             un petit +
           </p>
           {infoCards.map((info, i) => {
@@ -153,14 +172,14 @@ const BusinessCard = () => {
             );
           })}
         </Container>
-        <div className="my-[100px]">
+        <div className='my-[100px]'>
           <CallToAction />
         </div>
-        <div className="mx-[25px] ">
+        <div className='mx-[25px] '>
           <EncorePlus EncorePlus={EncorePlus} />
         </div>
-        <div className="px-[25px] mt-[60px]">
-          <DetailSerivceRealisation current="Services" />
+        <div className='px-[25px] mt-[60px]'>
+          <DetailSerivceRealisation current='Services' />
         </div>
       </main>
     </NavPage>
