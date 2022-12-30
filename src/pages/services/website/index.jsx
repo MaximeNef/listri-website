@@ -1,11 +1,13 @@
 import Head from "next/head";
-import Link from "next/link";
 import NavPage from "../../../components/all/nav-page";
-import OneServiceBtn from "../../../components/services/oneService/OneServiceBtn";
-import OneServiceContent from "../../../components/services/oneService/oneServiceContent";
-import OneServiceImg from "../../../components/services/oneService/OneServiceImg";
-import OneServiceTitle from "../../../components/services/oneService/oneServiceTitle";
+import CallToAction from "../../../components/services/servicesDetail/callToAction";
+import DetailSerivceRealisation from "../../../components/services/servicesDetail/DetailSerivceRealisation";
+import EncorePlus from "../../../components/services/servicesDetail/EncorePlus";
+import PetitPlus from "../../../components/services/servicesDetail/PetitPlus";
+import TitleServiceDetail from "../../../components/services/servicesDetail/TitleServiceDetail";
 import Container from "../../../components/shared/composers/container";
+import BtnPrimaire from "../../../components/shared/composers/ListriV2/btnPrimaire";
+import MyImage from "../../../components/shared/composers/myimage";
 
 const Website = () => {
   return (
@@ -29,53 +31,30 @@ const Website = () => {
           rel='stylesheet'
         />
       </Head>
-      <Container className='py-20 bg-white px-5'>
-        <Container className='md:flex md:flex-row  md:items-center'>
-          <OneServiceTitle
-            title={"Création de site web"}
-            description={
-              "Un site web permet également d'affirmer votre présence en ligne, il est indispensable à la mise en lumière de votre entreprise. Ouvre vos canaux a de nouveau clients, accroit votre crédibilité, visibilité et permet de véhiculer l’image de votre entreprise."
-            }
-          />
-          <OneServiceImg src={"/assets/logo/WebsiteCreator.svg"} />
+      <main className='bg-white pt-28  text-default'>
+        <TitleServiceDetail title='Création de Site Web' />
+        <Container className='mx-auto mt-8'>
+          <MyImage
+            source={"/assets/logoV2/Website-creator.svg"}
+            h={300}
+            w={300}
+          />{" "}
         </Container>
-
-        <OneServiceContent
-          Contents={[
-            {
-              title: "Sur mesure",
-              src: "/assets/logo/Smartphone.svg",
-              text: "Un site qui vous ressemble et vous appartient ! Un design 100% modulable et en harmonie avec votre charte graphique. Un affichage adapté à toutes les tailles d’écrans , afin d’avoir un rendu optimal sur tous les appareils. Simple et efficace, un site avec tout ce qu’il vous faut la ou il le faut et une gestion optimale. Le tout accompagné d’une optimisation pour  un référencement naturel, votre site est en bonne position. un support continu est disponible en permanence afin d’évoluer avec vous.",
-            },
-            {
-              title: "À la pointe du développement",
-              src: "/assets/logo/Developer.svg",
-              text: "en proposant un site avec une expérience utilisateur et une ergonomie sans pareil ! cela permets d’augmente la satisfaction de vos clients, et d’informer votre cible tout en mettant en valeur vos produits et services.nous travaillons pour vous avec les meilleures technologie en fonction de vos besoins, afin d’assurer des performances optimales et une sécurité sans faille.",
-            },
-            {
-              title: "Réalisons votre project",
-              src: "/assets/logo/Concept.svg",
-              text: "du brainstorming à la production** , nous répondons a vos besoins. nous analysons précisément vos objectifs, afin de vous satisfaire et de conquérir le coeur vos clients. Listri est une agence Web spécialisé dans le partage et la communication afin de vous fournir des services irréprochable. notre équipe est passionnée , et expert dans l’univers du web.",
-            },
-            {
-              title: "Site vitrine",
-              src: "/assets/logo/sitevitrine.svg",
-              text: "un site vitrine permets de transmettre votre univers à travers un design 100%  adaptable. il offre une présence en ligne, rassure et augmente la crédibilité de votre activité. permet d’accrocher l’attention du visiteur via une navigation clair, un design ergonomique et captivant.",
-            },
-            {
-              title: "Site e-commerce",
-              src: "/assets/logo/ecommerce.svg",
-              text: "un site e-commerce est indispensable pour les entreprise qui désire vendre en ligne. il offre de nombreux avantages, permets d’atteindre une clientelle plus vaste. elle permet également d’offrire plus de visibilité a vos produits et services.  offre la possibilité de suivre les résultat et d’optimiser votre e-commerce, stratégie ,ect. les ventes se font en toute sécurité. il offre aussi un outil de communication indispensable pour rassurer les clients",
-            },
-          ]}
-        />
-
-        <Link href='/contactus' passHref>
-          <a>
-            <OneServiceBtn btn={"Parlez-nous de votre projet"} />
-          </a>
-        </Link>
-      </Container>
+        <Container className=' h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]' />
+        <BtnPrimaire text='Devis gratuit' href='/' />
+        <Container className='mt-[87px]'>
+          <PetitPlus />
+        </Container>
+        <div className='my-[40px]'>
+          <CallToAction />
+        </div>
+        <div className='mx-[25px] mt-[100px]'>
+          <EncorePlus />
+        </div>
+        <div className='px-[25px] mt-[60px]'>
+          <DetailSerivceRealisation current='Services' />
+        </div>
+      </main>
     </NavPage>
   );
 };
