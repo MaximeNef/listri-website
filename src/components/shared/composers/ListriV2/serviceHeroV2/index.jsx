@@ -25,7 +25,11 @@ const ServiceHeroV2 = ({ title, subtitle, linkText, href, textWhite }) => {
           <a className='flex justify-center items-center'>
             <div className='mr-1'>{linkText}</div>
             <div>
-              <MyImage source={"/assets/logoV2/arrow.svg"} w={15} h={9} />
+              <MyImage
+                source={"/assets/logoV2/arrowRightServices.svg"}
+                w={15}
+                h={9}
+              />
             </div>
           </a>
         </Link>
