@@ -2,32 +2,32 @@ import Container from '../../shared/composers/container';
 import Flex from '../../shared/composers/flex';
 import RealisationLabelCard from './RealisationLabelCard';
 
-const RealisationLabelSlider = () => {
+const RealisationLabelSlider = ({ setFilterRealisation }) => {
   const realisations = [
     {
       source: '/assets/logoV2/siteWeb.svg',
       text: 'Site-web',
-      ancre: '#Site-web',
+      filtre: 'dev',
     },
     {
       source: '/assets/logoV2/brand.svg',
       text: 'Marketing',
-      ancre: '#Marketing',
+      filtre: 'marketing',
     },
     {
       source: '/assets/logoV2/referencement.svg',
       text: 'référencement',
-      ancre: '#Site-web',
+      filtre: 'référencement',
     },
     {
       source: '/assets/logoV2/opti.svg',
       text: 'Optimisation',
-      ancre: '#Site-web',
+      filtre: 'Optimisation',
     },
     {
       source: '/assets/logoV2/digitalCard.svg',
       text: 'Digital Card',
-      ancre: '#Site-web',
+      filtre: 'Digital Card',
     },
   ];
   return (
@@ -36,7 +36,7 @@ const RealisationLabelSlider = () => {
         <Container className={'min-w-[25px] '} />
         {realisations.map((realisation, i) => {
           return (
-            <a key={i} href={realisation.ancre}>
+            <a key={i} onClick={() => setFilterRealisation(realisation.filtre)}>
               <RealisationLabelCard
                 source={realisation.source}
                 text={realisation.text}

@@ -18,22 +18,25 @@ const Realisation = ({ realisations }) => {
     description:
       'Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0 Restez à jour avec listri',
   };
-  const [filterValue, setFilterValue] = useState('all');
-  const [newProductList, setNewProductList] = useState(realisations);
 
-  function onFilterValueSelected(filterValue) {
-    setFilterValue(filterValue);
-  }
-  const filteredProductList = newProductList.filter((realisation) => {
-    if (filterValue === 'all') {
+  const [allRealisations, setAllRealisations] = useState(realisations);
+  const [filterRealisation, setFilterRealisation] = useState('all');
+
+  console.log('filter value', filterRealisation);
+
+  console.log('realisations', realisations);
+
+  const newRealisationList = allRealisations.filter((realisation) => {
+    if (filterRealisation == 'all') {
       return realisation;
     }
-    if (filterValue === realisation?.data.slices[0].primary.serviceCategorie) {
+
+    if (
+      realisation?.data.slices[0].primary.serviceCategorie == filterRealisation
+    ) {
       return realisation;
     }
   });
-
-  console.log('realisations', realisations);
 
   return (
     <NavPage current="Réalisations">
@@ -66,12 +69,13 @@ const Realisation = ({ realisations }) => {
             }
           />
           <Container className="mt-[30px] mb-[50px]">
-            <RealisationLabelSlider />
+            <RealisationLabelSlider
+              setFilterRealisation={setFilterRealisation}
+            />
           </Container>
 
           <Container className="mb-10 mx-auto md:max-w-[1600px] ">
-            {/* <FilterClient filterValueSelected={onFilterValueSelected} /> */}
-            <RealisationList realisations={filteredProductList} />
+            <RealisationList realisations={newRealisationList} />
           </Container>
         </Container>
       </main>
