@@ -1,13 +1,9 @@
 import Head from 'next/head';
 import NavPage from '../../components/all/nav-page';
 import Container from '../../components/shared/composers/container';
-
-import ClientList from '../../components/client/clientList';
 import { createClient } from '../../../prismicio';
 import { useState } from 'react';
-import FilterClient from '../../components/client/filterClient';
 import ServiceTitle from '../../components/services/serviceTitle';
-import SliderServicesCard from '../../components/services/SliderServices/SliderServicesCard';
 import RealisationLabelSlider from '../../components/realisation/realisationLabelSlider';
 import RealisationList from '../../components/realisation/realisationList';
 
@@ -21,10 +17,6 @@ const Realisation = ({ realisations }) => {
 
   const [allRealisations, setAllRealisations] = useState(realisations);
   const [filterRealisation, setFilterRealisation] = useState('all');
-
-  console.log('filter value', filterRealisation);
-
-  console.log('realisations', realisations);
 
   const newRealisationList = allRealisations.filter((realisation) => {
     if (filterRealisation == 'all') {

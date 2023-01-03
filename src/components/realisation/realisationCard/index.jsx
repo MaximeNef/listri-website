@@ -1,9 +1,12 @@
 import Link from 'next/link';
+import { useState } from 'react';
 import Container from '../../shared/composers/container';
 import Flex from '../../shared/composers/flex';
 import MyImage from '../../shared/composers/myimage';
 
 const RealisationCard = ({ realisation }) => {
+  const [style, setStyle] = useState('rounded-[10px]');
+
   return (
     <Link href={`/realisations/${realisation.uid}`}>
       <Container
@@ -46,25 +49,28 @@ const RealisationCard = ({ realisation }) => {
           <Container className=" bg-black/[35%] z-30 h-full w-full absolute rounded-t-[10px] "></Container>
         </Container>
 
-        <Container className="bg-lightGrey">
-          <p className="mt-[30px] mb-[20px] mx-1 font-light">
-            {realisation.data.slices[0].primary.serviceCategorie}
-          </p>
-          <p className=" mb-3 h-[40px]  overflow-hidden mx-1 font-medium text-[15px]">
-            {realisation.data.slices[0].primary.clientDescription[0]?.text}
-          </p>
-          <Link href={`/realisations/${realisation.uid}`}>
-            <a className="color-[#FF7E00] mx-1">
-              <Flex>
-                <p className="text-[#FF7E00] mr-2 text-">Découvrir</p>
-                <MyImage
-                  source={'/assets/logo/arrow_right_orange.svg'}
-                  w={10}
-                  h={10}
-                />
-              </Flex>
-            </a>
-          </Link>
+        <Container className="bg-lightGrey rounded-b-[10px] relative">
+          <Container className="mx-6 mb-6">
+            <p className="mt-[30px] mb-[20px] mx-1 font-light">
+              {realisation.data.slices[0].primary.serviceCategorie}
+            </p>
+            <p className=" mb-3 h-[40px] overflow-hidden mx-1 font-medium text-[15px] mr-10">
+              {realisation.data.slices[0].primary.clientDescription[0]?.text}
+            </p>
+            <Link href={`/realisations/${realisation.uid}`}>
+              <Container className="absolute bottom-6 right-2">
+                <a className="color-[#FF7E00] mx-1">
+                  <Flex>
+                    <MyImage
+                      source={'/assets/logoV2/orange-circle-arrow.svg'}
+                      w={50}
+                      h={50}
+                    />
+                  </Flex>
+                </a>
+              </Container>
+            </Link>
+          </Container>
         </Container>
       </Container>
     </Link>
