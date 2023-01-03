@@ -113,11 +113,6 @@ export default function Home({ articles, blogs }) {
           <SliderBlog blogs={blogs} />
           <BtnPrimaire text={"Nos articles"} href={"/blogs"} />
         </Container>
-        {/* <ServiceHero /> */}
-        {/* <ClientHero /> */}
-        {/* <Process /> 
-        <Processherotry />
-        <BlogHero blogs={blogs} /> */}
       </main>
     </NavPage>
   );
