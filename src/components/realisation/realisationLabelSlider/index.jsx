@@ -1,9 +1,9 @@
 import Container from '../../shared/composers/container';
 import Flex from '../../shared/composers/flex';
-import SliderServicesCard from './SliderServicesCard';
+import RealisationLabelCard from './RealisationLabelCard';
 
-const SliderServices = () => {
-  const services = [
+const RealisationLabelSlider = () => {
+  const realisations = [
     {
       source: '/assets/logoV2/siteWeb.svg',
       text: 'Site-web',
@@ -34,10 +34,13 @@ const SliderServices = () => {
     <Container>
       <Flex className="snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2">
         <Container className={'min-w-[25px] '} />
-        {services.map((service, i) => {
+        {realisations.map((realisation, i) => {
           return (
-            <a key={i} href={service.ancre}>
-              <SliderServicesCard source={service.source} text={service.text} />
+            <a key={i} href={realisation.ancre}>
+              <RealisationLabelCard
+                source={realisation.source}
+                text={realisation.text}
+              />
             </a>
           );
         })}
@@ -46,4 +49,4 @@ const SliderServices = () => {
     </Container>
   );
 };
-export default SliderServices;
+export default RealisationLabelSlider;

@@ -1,13 +1,15 @@
 import Head from 'next/head';
 import NavPage from '../../components/all/nav-page';
 import Container from '../../components/shared/composers/container';
-import { motion } from 'framer-motion';
-import MyImage from '../../components/shared/composers/myimage';
-import TitlePage from '../../components/all/titlePage';
+
 import ClientList from '../../components/client/clientList';
 import { createClient } from '../../../prismicio';
 import { useState } from 'react';
 import FilterClient from '../../components/client/filterClient';
+import ServiceTitle from '../../components/services/serviceTitle';
+import SliderServicesCard from '../../components/services/SliderServices/SliderServicesCard';
+import RealisationLabelSlider from '../../components/realisation/realisationLabelSlider';
+import RealisationList from '../../components/realisation/realisationList';
 
 const Realisation = ({ realisations }) => {
   const titlepageprops = {
@@ -31,6 +33,8 @@ const Realisation = ({ realisations }) => {
     }
   });
 
+  console.log('realisations', realisations);
+
   return (
     <NavPage current="Réalisations">
       <Head>
@@ -53,17 +57,22 @@ const Realisation = ({ realisations }) => {
           rel="stylesheet"
         />
       </Head>
-      <main className="bg-white  py-28 ">
-        <Container className="mb-10 mx-auto md:max-w-[1600px] ">
-          <TitlePage
-            title={titlepageprops.title}
-            subtitle={titlepageprops.subtitle}
-            description={titlepageprops.description}
+      <main>
+        <Container className=" py-28 mx-[25px]">
+          <ServiceTitle
+            subtitle1={'Réalisation.'}
+            subtitle2={
+              'Du site web au marketing recevez le service que vous aimez '
+            }
           />
+          <Container className="mt-[30px] mb-[50px]">
+            <RealisationLabelSlider />
+          </Container>
 
-          <FilterClient filterValueSelected={onFilterValueSelected} />
-
-          <ClientList realisations={filteredProductList} />
+          <Container className="mb-10 mx-auto md:max-w-[1600px] ">
+            {/* <FilterClient filterValueSelected={onFilterValueSelected} /> */}
+            <RealisationList realisations={filteredProductList} />
+          </Container>
         </Container>
       </main>
     </NavPage>
