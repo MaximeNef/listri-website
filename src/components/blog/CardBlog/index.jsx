@@ -2,10 +2,33 @@ import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
 import MyImage from "../../shared/composers/myimage";
 
-const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
+const Cardblog = ({ source, timing, category, title, subtitle, i }) => {
   return (
     <>
-      {i === 0 ? (
+      {/* idées une  */}
+      <div className='rounded-[18px]  h-[385px] shadow-slider  my-[12px] relative '>
+        <div className=' bg-gradient-to-b from-darkBlue/20 to-darkBlue h-full w-full absolute z-10 rounded-[18px]' />
+        <div className='mx-[30px] mt-[29px] absolute bottom-0 z-20 m-10'>
+          <p className='text-xs text-white font-bold uppercase'>
+            {timing} min de lecture • {category}
+          </p>
+          <p className='mt-[13px] text-xl text-white font-bold leading-[25px] tracking-[0.231px]'>
+            {title}
+          </p>
+        </div>
+        <div className='relative h-[385px]'>
+          <MyImage
+            source={source}
+            layout={"fill"}
+            objectFit={"cover"}
+            className={"rounded-[18px]"}
+          />
+        </div>
+      </div>
+
+      {/* idées deux   */}
+
+      {/* {i === 0 ? (
         <Flex
           className={
             "m-5 rounded-[10px] border-[1px] md:border-0 flex-col md:flex-row"
@@ -95,7 +118,7 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
             </Flex>
           </Container>
         </Container>
-      )}
+      )} */}
     </>
   );
 };
