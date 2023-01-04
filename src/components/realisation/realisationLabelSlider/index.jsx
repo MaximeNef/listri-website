@@ -5,7 +5,7 @@ import RealisationLabelCard from './RealisationLabelCard';
 const RealisationLabelSlider = ({ setFilterRealisation }) => {
   const realisations = [
     {
-      source: '/assets/logoV2/siteWeb.svg',
+      source: '',
       text: 'Site-web',
       filtre: 'dev',
     },
@@ -30,6 +30,7 @@ const RealisationLabelSlider = ({ setFilterRealisation }) => {
       filtre: 'Digital Card',
     },
   ];
+
   return (
     <Container>
       <Flex className="snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2">
