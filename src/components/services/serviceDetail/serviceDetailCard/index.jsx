@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
+import MotionBottomCard from "../../../shared/composers/motion- bottomcard";
 import MyImage from "../../../shared/composers/myimage";
 import ModalService from "./modalService";
 
@@ -13,6 +14,7 @@ const ServiceDetailCard = ({
   description2,
   description3,
   description4,
+  description5,
 }) => {
   const svg = `<svg
   width="27"
@@ -50,6 +52,7 @@ const ServiceDetailCard = ({
             description2={description2}
             description3={description3}
             description4={description4}
+            description5={description5}
             setShowModal={setShowModal}
           />{" "}
         </Container>
@@ -68,7 +71,7 @@ const ServiceDetailCard = ({
             >
               {title}
             </p>
-            <p className='mt-[10px] mx-[60px] font-bold text-[19px] text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon'>
+            <p className=' mt-[10px] mx-[70px] font-bold text-[19px] text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon'>
               {subTitle}
             </p>
             <div className='mt-[9px]'>

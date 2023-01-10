@@ -6,6 +6,7 @@ import MyImage from "../../shared/composers/myimage";
 const ServicePageCard = ({
   title,
   subtitle,
+  subtitle2,
   linkText,
   href,
   imgSrc,
@@ -43,6 +44,7 @@ const ServicePageCard = ({
         <ServiceHeroV2
           title={title}
           subtitle={subtitle}
+          subtitle2={subtitle2}
           linkText={linkText}
           href={href}
           textWhite={blueBg}

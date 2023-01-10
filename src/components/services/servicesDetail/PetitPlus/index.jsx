@@ -2,7 +2,7 @@ import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
 import MyImage from "../../../shared/composers/myimage";
 
-const PetitPlus = () => {
+const PetitPlus = ({ info }) => {
   const petitPlus = [
     {
       img: "/assets/logoV2/referencement.svg",
@@ -24,10 +24,10 @@ const PetitPlus = () => {
   return (
     <Container>
       <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center'>
-        un petit +
+        Nos petit +
       </p>
       <Flex className='flex-wrap mt-[54px]'>
-        {petitPlus.map((plus, i) => {
+        {info.map((plus, i) => {
           return (
             <Container
               key={i}
@@ -41,7 +41,7 @@ const PetitPlus = () => {
                   className={""}
                 />
               </Container>
-              <p className='text-[17px] tracking-[-0.37px] leading-[25px] text-darkBlue text-center'>
+              <p className='text-[17px] tracking-[-0.37px] leading-[25px] text-darkBlue text-center mx-10'>
                 {plus.text}
               </p>
             </Container>

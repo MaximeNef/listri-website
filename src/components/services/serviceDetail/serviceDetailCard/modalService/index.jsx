@@ -6,6 +6,7 @@ const ModalService = ({
   description2,
   description3,
   description4,
+  description5,
   setShowModal,
 }) => {
   const svg = `<svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +32,7 @@ const ModalService = ({
         <p>{description2}</p>
         <p>{description3}</p>
         <p>{description4}</p>
+        <p>{description5}</p>
       </div>
       <div className='absolute h-[27px] w-[27px] top-[25px] left-[25px] '>
         <div

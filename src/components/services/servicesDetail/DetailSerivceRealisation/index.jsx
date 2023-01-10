@@ -11,7 +11,7 @@ const DetailSerivceRealisation = ({ current }) => {
     <Container>
       <SubtitleV2
         subtitle1={"Nos réalisations."}
-        subtitle2={"Exclusive savings for businesses, school, and more."}
+        subtitle2={"Innovantes & uniques tout comme vous."}
         TextWhite={""}
       />{" "}
       <div className='mt-[10px]'>
@@ -23,10 +23,10 @@ const DetailSerivceRealisation = ({ current }) => {
           type='col'
           className='font-bold text-[21px] leading-[25px] tracking-[0.23px] text-right'
         >
-          <p>Retrouvez toutes </p>
+          <p>Découvrez toutes </p>
           <p>nos réalisations</p>
         </Flex>{" "}
-        <Link href='/'>
+        <Link href='/realisations'>
           <Container className='ml-[16px] bg-gradient-to-bl via-[#FEA249] from-[#FF7E00] to-[#F9CCA6] h-fit p-[14px] rounded-full '>
             <MyImage
               source={"/assets/logoV2/arrowRight.svg"}

@@ -22,14 +22,18 @@ const HomeRealisation = () => {
       <div className='px-[25px] bg-darkBlue '>
         <div className='mb-[10px]'>
           <SubtitleV2
-            subtitle1={"L’expérience Listri."}
-            subtitle2={"Votre projet en 4 étapes."}
+            TextWhite={true}
+            subtitle1={"Nos réalisations."}
+            subtitle2={"Innovantes & uniques tout comme vous. "}
           />{" "}
         </div>
 
         <RealisationLoop />
         <Container className='mt-[70px] relative'>
-          <BtnPrimaire text={"Nos réalisations"} href={"/realisations"} />
+          <BtnPrimaire
+            text={"Découvrez nos réalisations"}
+            href={"/realisations"}
+          />
         </Container>
       </div>
 

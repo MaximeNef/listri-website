@@ -15,17 +15,16 @@ export default function Home({ articles, blogs }) {
   const services = [
     {
       title: "Création de site web",
-      subtitle: "Rapide et sur mesure",
-
+      subtitle: "Unique & à la pointe ",
+      subtitle2: "de la technologie",
       linkText: "Découvrir",
-      href: "/services/website",
+      href: "/services/creation-site-web",
       imgSrc: "/assets/logoV2/Website-creator.svg",
       blueBg: true,
     },
     {
       title: "Référencement",
-      subtitle:
-        "This holiday season, find the perfect gift for everyone on your list.",
+      subtitle: "Boostez votre visibilité en un click.",
 
       linkText: "Découvrir",
       href: "/services/referencement",
@@ -33,12 +32,11 @@ export default function Home({ articles, blogs }) {
       blueBg: false,
     },
     {
-      title: "Marketing",
-      subtitle:
-        "This holiday season, find the perfect gift for everyone on your list.",
+      title: "Marketing digital",
+      subtitle: "Bien plus qu’une notoriété.",
 
       linkText: "Découvrir",
-      href: "services/Optimisation-Web",
+      href: "services/marketing-digital",
       imgSrc: "/assets/logoV2/social-dashboard.svg",
       blueBg: true,
       CTA: true,
@@ -79,6 +77,7 @@ export default function Home({ articles, blogs }) {
                 key={i}
                 title={service.title}
                 subtitle={service.subtitle}
+                subtitle2={service.subtitle2}
                 linkText={service.linkText}
                 href={service.href}
                 imgSrc={service.imgSrc}
@@ -90,14 +89,14 @@ export default function Home({ articles, blogs }) {
           <div className=' mt-[60px] space-y-[10px]'>
             <SubtitleV2
               subtitle1={"L’identité de Listri."}
-              subtitle2={"Encore plus de raisons de commencer avec nous."}
+              subtitle2={"Une multitude d’opportunités de collaborer."}
             />
             <SliderIdentity />
           </div>
           <div className='mt-[50px] mb-[20px] space-y-[50px]'>
             <SubtitleV2
               subtitle1={"L’expérience Listri."}
-              subtitle2={"Votre projet en 4 étapes."}
+              subtitle2={"Réalisons votre projet en 4 étapes."}
             />
             <SliderExperience />
             <BtnPrimaire text={" Lancer mon projet"} href={"/"} />
@@ -107,11 +106,11 @@ export default function Home({ articles, blogs }) {
           <div className='mt-[20px] mb-[30px]'>
             <SubtitleV2
               subtitle1={"Notre actualitée"}
-              subtitle2={"Exclusive savings for businesses, school, and more."}
+              subtitle2={"Suivez les dernières tendances digitales."}
             />{" "}
           </div>
           <SliderBlog blogs={blogs} />
-          <BtnPrimaire text={"Nos articles"} href={"/blogs"} />
+          <BtnPrimaire text={"Découvrez nos articles"} href={"/blogs"} />
         </Container>
       </main>
     </NavPage>

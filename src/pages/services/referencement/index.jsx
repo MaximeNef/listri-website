@@ -1,136 +1,157 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import NavPage from '../../../components/all/nav-page';
-import OneServiceBtn from '../../../components/services/oneService/OneServiceBtn';
-import OneServiceContent from '../../../components/services/oneService/oneServiceContent';
-import OneServiceImg from '../../../components/services/oneService/OneServiceImg';
-import OneServiceTitle from '../../../components/services/oneService/oneServiceTitle';
-import ServiceDetailCard from '../../../components/services/serviceDetail/serviceDetailCard';
-import CallToAction from '../../../components/services/servicesDetail/callToAction';
-import DetailSerivceRealisation from '../../../components/services/servicesDetail/DetailSerivceRealisation';
-import EncorePlus from '../../../components/services/servicesDetail/EncorePlus';
-import PetitPlus from '../../../components/services/servicesDetail/PetitPlus';
-import TitleServiceDetail from '../../../components/services/servicesDetail/TitleServiceDetail';
-import Container from '../../../components/shared/composers/container';
-import BtnPrimaire from '../../../components/shared/composers/ListriV2/btnPrimaire';
-import MyImage from '../../../components/shared/composers/myimage';
+import Head from "next/head";
+import Link from "next/link";
+import NavPage from "../../../components/all/nav-page";
+import OneServiceBtn from "../../../components/services/oneService/OneServiceBtn";
+import OneServiceContent from "../../../components/services/oneService/oneServiceContent";
+import OneServiceImg from "../../../components/services/oneService/OneServiceImg";
+import OneServiceTitle from "../../../components/services/oneService/oneServiceTitle";
+import ServiceDetailCard from "../../../components/services/serviceDetail/serviceDetailCard";
+import CallToAction from "../../../components/services/servicesDetail/callToAction";
+import DetailSerivceRealisation from "../../../components/services/servicesDetail/DetailSerivceRealisation";
+import EncorePlus from "../../../components/services/servicesDetail/EncorePlus";
+import PetitPlus from "../../../components/services/servicesDetail/PetitPlus";
+import TitleServiceDetail from "../../../components/services/servicesDetail/TitleServiceDetail";
+import Container from "../../../components/shared/composers/container";
+import BtnPrimaire from "../../../components/shared/composers/ListriV2/btnPrimaire";
+import MyImage from "../../../components/shared/composers/myimage";
 
 const Referencement = () => {
   const cardPlus = [
     {
-      categorie: 'gfghf',
-      image: '/assets/logoV2/siteWeb.svg',
-      ligne1: 'fhgfgh',
-      ligne2: 'fhgfhgff',
+      categorie: "+ de trafic",
+      image: "/assets/logoV2/trafic-white.svg",
+      ligne1: "Un référencement optimisé",
+      ligne2: "attire du trafic de qualité.",
     },
     {
-      categorie: 'fghfhgfhgfghf',
-      image: '/assets/logoV2/siteWeb.svg',
-      ligne1: 'hgfhgfg',
-      ligne2: 'fghfghf',
+      categorie: "+ de conversion",
+      image: "/assets/logoV2/performent.svg",
+      ligne1: "Un site correctement ",
+      ligne2: "référencé converti plus",
     },
     {
-      categorie: 'hgfghfgh',
-      image: '/assets/logoV2/siteWeb.svg',
-      ligne1: 'gfhgfgh',
-      ligne2: 'ghfghfhg',
+      categorie: "+ de visibilité",
+      image: "/assets/logoV2/visibilite-white.svg",
+      ligne1: "Google montre plus souvent",
+      ligne2: "un site bien référencé. ",
+    },
+    {
+      categorie: "- d’argent dépensé",
+      image: "/assets/logoV2/Moinsdepenses.svg",
+      ligne1: "Un site référencé",
+      ligne2: "nécessite moins de publicité.",
     },
   ];
   const infoCards = [
     {
       blueBg: true,
-      title: 'Responsive',
-      subTitle: 'A la pointe du développement',
+      title: "Visibilité",
+      subTitle: "A la pointe du développement",
       description1:
-        'Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.',
+        "La visibilité, la notoriété et la popularité sont des éléments clés dans le monde du référencement.",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "En effet, plus votre site web est visible sur internet, plus vous avez de chances d'attirer de nouveaux visiteurs & de développer votre audience.",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "Notre service de référencement vous permet d'atteindre de nouveaux sommets de visibilité sur les moteurs de recherche.",
 
       description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
+        "De plus, une meilleure présence en ligne peut contribuer à une augmentation du trafic et des conversions.",
+      description5:
+        "En somme, la visibilité, la notoriété et la popularité sont des éléments essentiels pour tout site web qui souhaite se démarquer et performer sur internet.",
 
-      src: '/assets/logoV2/website-creator.svg',
+      src: "/assets/logoV2/website-creator.svg",
     },
     {
       blueBg: false,
-      title: 'Responsive',
-      subTitle: 'A la pointe du développement',
-      description1:
-        'Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.',
-
+      title: "Trafic",
+      subTitle: "A la pointe du développement",
+      description1: "Le trafic est un élément crucial du référencement.",
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Un bon référencement permet au site Web d'accroître le trafic organique, c'est-à-dire le trafic provenant de moteurs de recherche.",
+      description3:
+        "Pour cela, il est nécessaire d'utiliser des techniques de référencement, telles que l'optimisation des mots clés, l'optimisation des contenus, l'acquisition de liens, le développement de contenus pertinents et la création de liens entrants.",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
-
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: '/assets/logoV2/website-creator.svg',
+      src: "/assets/logoV2/website-creator.svg",
     },
     {
       blueBg: true,
-      title: 'Responsive',
-      subTitle: 'A la pointe du développement',
+      title: "Crédibilité",
+      subTitle: "A la pointe du développement",
       description1:
-        'Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.',
+        "La crédibilité est un élément clé pour le référencement. C'est ce qui fait la différence entre un site web qui a un bon classement et un site qui est ignoré par les moteurs de recherche. ",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Une bonne crédibilité signifie que votre site web est considéré comme digne de confiance par les moteurs de recherche et qu'il est légitime. Les moteurs de recherche vérifient le contenu et les liens vers et depuis votre site web, et seuls les sites dignes de confiance auront le meilleur classement. ",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "Par conséquent, pour obtenir un bon classement, le service de référencement doit vous aider à construire une bonne réputation et à développer votre crédibilité sur le web.",
 
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
+      src: "/assets/logoV2/website-creator.svg",
+    },
+  ];
+  const info = [
+    {
+      img: "/assets/logoV2/trafic.svg",
+      text: "+ de trafic",
+    },
 
-      src: '/assets/logoV2/website-creator.svg',
+    {
+      img: "/assets/logoV2/visibilite.svg",
+      text: "+ de visibilité",
+    },
+    {
+      img: "/assets/logoV2/performent.svg",
+      text: "+ de conversion",
+    },
+    {
+      img: "/assets/logoV2/Moinsdepenses.svg",
+      text: "- d’argent dépensé",
     },
   ];
   return (
-    <NavPage current="Services">
+    <NavPage current='Services'>
       <Head>
         <title>
           Agence N°1 - Référencement naturel, SEO, SEA de votre site web
         </title>
         <meta
-          name={'description'}
-          content="Boostez votre référencement avec notre équipe experte en SEO, SEA, SMO, SMA !
+          name={"description"}
+          content='Boostez votre référencement avec notre équipe experte en SEO, SEA, SMO, SMA !
           Spécialiste en référencement, on place nos clients en 1ère page !
-          Demandez votre audit gratuit"
+          Demandez votre audit gratuit'
         />
         <meta
-          name="keywords"
-          content="référencement, référencement naturel, optimisation de référencement, référencement local, audit de référencement, stratégie de référencement, suivi de référencement, listri digital, SEO, SERP, mots-clés, backlinks, meta tags, SEA, SMO, SMA"
+          name='keywords'
+          content='référencement, référencement naturel, optimisation de référencement, référencement local, audit de référencement, stratégie de référencement, suivi de référencement, listri digital, SEO, SERP, mots-clés, backlinks, meta tags, SEA, SMO, SMA'
         />
-        <meta charset="UTF-8" />
-        <link rel="icon" href="/favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <meta charset='UTF-8' />
+        <link rel='icon' href='/favicon.svg' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'
+          rel='stylesheet'
         />
       </Head>
-      <main className="bg-white pt-28  text-default">
-        <TitleServiceDetail title="Création de Site Web" />
-        <Container className="mx-auto mt-8">
+      <main className='bg-white pt-28  text-default'>
+        <TitleServiceDetail title='Référencement' />
+        <Container className='mx-auto mt-8'>
           <MyImage
-            source={'/assets/logoV2/Website-creator.svg'}
+            source={"/assets/logoV2/Website-creator.svg"}
             h={300}
             w={300}
-          />{' '}
+          />{" "}
         </Container>
-        <Container className=" h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]" />
-        <BtnPrimaire text="Devis gratuit" href="/" />
-        <Container className="mt-[87px]">
-          <PetitPlus />
+        <Container className=' h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]' />
+        <BtnPrimaire text='Devis gratuit' href='/' />
+        <Container className='mt-[87px]'>
+          <PetitPlus info={info} />
         </Container>
-        <Container className="mt-[140px]">
-          <p className="text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]">
-            un petit +
+        <Container className='mt-[140px]'>
+          <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]  mx-10'>
+            Recevez une expérience, complète
           </p>
           {infoCards.map((info, i) => {
             const {
@@ -141,6 +162,7 @@ const Referencement = () => {
               description2,
               description3,
               description4,
+              description5,
               src,
             } = info;
             return (
@@ -152,20 +174,21 @@ const Referencement = () => {
                 description2={description2}
                 description3={description3}
                 description4={description4}
+                description5={description5}
                 src={src}
                 blueBg={blueBg}
               />
             );
           })}
         </Container>
-        <div className="my-[100px]">
+        <div className='my-[100px]'>
           <CallToAction />
         </div>
-        <div className="mx-[25px] ">
+        <div className='mx-[25px] '>
           <EncorePlus EncorePlus={cardPlus} />
         </div>
-        <div className="px-[25px] mt-[60px]">
-          <DetailSerivceRealisation current="Services" />
+        <div className='px-[25px] mt-[60px]'>
+          <DetailSerivceRealisation current='Services' />
         </div>
       </main>
     </NavPage>

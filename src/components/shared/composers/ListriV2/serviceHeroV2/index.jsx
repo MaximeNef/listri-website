@@ -3,7 +3,14 @@ import Flex from "../../flex";
 import MyImage from "../../myimage";
 import BtnPrimaire from "../btnPrimaire";
 
-const ServiceHeroV2 = ({ title, subtitle, linkText, href, textWhite }) => {
+const ServiceHeroV2 = ({
+  title,
+  subtitle,
+  linkText,
+  href,
+  textWhite,
+  subtitle2,
+}) => {
   return (
     <Flex className={"flex-col justify-center"}>
       <div
@@ -16,14 +23,27 @@ const ServiceHeroV2 = ({ title, subtitle, linkText, href, textWhite }) => {
       <p
         className={`${
           textWhite ? "text-[#FBFBFD]" : "text-darkBlue"
-        } text-center text-[17px] mt-[5px] mb-[0.7em]`}
+        } text-center text-[17px] mt-[5px] mb-[0.7em] `}
       >
         {subtitle}
+        <p> {subtitle2}</p>
       </p>
-      <div className='text-[#FF7E00] text-center '>
+      <div className='text-[#FF7E00] text-center flex justify-center space-x-5'>
         <Link href={href}>
           <a className='flex justify-center items-center'>
             <div className='mr-1'>{linkText}</div>
+            <div>
+              <MyImage
+                source={"/assets/logoV2/arrowRightServices.svg"}
+                w={15}
+                h={9}
+              />
+            </div>
+          </a>
+        </Link>
+        <Link href={href}>
+          <a className='flex justify-center items-center'>
+            <div className='mr-1'>{"Commencer"}</div>
             <div>
               <MyImage
                 source={"/assets/logoV2/arrowRightServices.svg"}

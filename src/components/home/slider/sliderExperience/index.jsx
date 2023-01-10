@@ -19,14 +19,14 @@ const SliderExperience = () => {
       text: "ÉTAPE 2",
       title: "Réalisation de l'ébauche",
       description:
-        "Vous nous partagez vos idées et la façon dont vous imaginez votre projet. Nous vous guidons dans cette phase en apportant notre expertise pour que votre projet soit au goût du jour.",
+        "A la suite du premier rendez-vous nous vous réalisons une ébauche de votre projet pour que vous puissiez avoir un rendu visuel de vos idées.",
     },
     {
       img: "/assets/logoV2/ExpSlider3.jpg",
       text: "ÉTAPE 3",
       title: "Modification & validation",
       description:
-        "Vous nous partagez vos idées et la façon dont vous imaginez votre projet. Nous vous guidons dans cette phase en apportant notre expertise pour que votre projet soit au goût du jour.",
+        "Sur base du rendu visuel, nous prenons en compte vos retours et adaptons votre projet pour le préparer à la validation finale.",
     },
 
     {
@@ -34,7 +34,7 @@ const SliderExperience = () => {
       text: "ÉTAPE 4",
       title: "Développement de votre projet",
       description:
-        "Vous nous partagez vos idées et la façon dont vous imaginez votre projet. Nous vous guidons dans cette phase en apportant notre expertise pour que votre projet soit au goût du jour.",
+        "Vous voila à l'étape finale , celle-ci consiste au développement et au testing de votre project.",
     },
   ];
 
