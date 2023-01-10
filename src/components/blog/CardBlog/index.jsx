@@ -8,7 +8,7 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
       {i === 0 ? (
         <Flex
           className={
-            "m-5 rounded-[10px] border-[1px] md:border-0 flex-col md:flex-row"
+            "my-5 rounded-[10px] border-[1px] md:border-0 flex-col md:flex-row"
           }
         >
           <Container className='w-full'>
@@ -35,9 +35,6 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
                 >
                   {title}
                 </h2>{" "}
-                <h3 className=' font-[285] text-[14px] w-fit  overflow-hidden  max-h-[40px] mt-2 md:w-[80%]'>
-                  {subtitle}
-                </h3>
               </Container>
               <Container className='flex justify-end mb-1 p-2 rounded-full bg-[#FEA249] h-fit w-fit absolute bottom-2 right-3 md:left-0 '>
                 <MyImage
@@ -53,7 +50,7 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
           </Container>
         </Flex>
       ) : (
-        <Container className={"m-5 rounded-[10px] border-[1px] md:border-0"}>
+        <Container className={"my-5 rounded-[10px] border-[1px] md:border-0"}>
           <Container>
             {" "}
             <MyImage
@@ -78,9 +75,6 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
                 >
                   {title}
                 </h2>{" "}
-                <h3 className=' font-[285] text-[14px] w-fit  overflow-hidden  max-h-[40px] mt-2 md:w-[80%]'>
-                  {subtitle}
-                </h3>
               </Container>
               <Container className='flex justify-end mb-1 p-2 rounded-full bg-[#FEA249] h-fit w-fit absolute bottom-2 right-3 '>
                 <MyImage
