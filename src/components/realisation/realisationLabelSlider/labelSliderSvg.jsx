@@ -1,4 +1,7 @@
-const SvgSliderItems = ({ isSelected, text }) => {
+const SvgSliderItems = ({ filtre, filterRealisation, isSelected, text }) => {
+  {
+    filterRealisation == filtre ? (isSelected = true) : (isSelected = false);
+  }
   const svgSiteWeb = `<svg width="61" height="56" viewBox="0 0 61 56" xmlns="http://www.w3.org/2000/svg">
 <path d="M55.9056 0.0546875H5.4156C2.6956 0.0546875 0.485596 2.26469 0.485596 4.98469V37.1997C0.485596 39.9197 2.6956 42.1297 5.4156 42.1297H24.9656V49.6947H18.5056C15.7856 49.6947 13.6606 51.9047 13.6606 54.5397C13.6606 55.1347 14.1706 55.5597 14.6806 55.5597H46.6406C47.2356 55.5597 47.6606 55.0497 47.6606 54.5397C47.6606 51.8197 45.4506 49.6947 42.8156 49.6947H36.3556V42.1297H55.9056C58.6256 42.1297 60.8356 39.9197 60.8356 37.1997V5.06969C60.9206 2.34969 58.6256 0.0546875 55.9056 0.0546875ZM27.0906 49.7797V42.2147H34.3156V49.7797H27.0906ZM42.8156 51.8197C44.0056 51.8197 45.0256 52.4997 45.4506 53.6047H15.9556C16.3806 52.5847 17.4006 51.8197 18.5906 51.8197H42.8156ZM58.7956 36.3497V37.1997C58.7956 38.8147 57.5206 40.0897 55.9056 40.0897H5.4156C3.8006 40.0897 2.5256 38.8147 2.5256 37.1997V36.3497H58.7956ZM58.7956 6.85469V34.2247H2.5256V6.85469H58.7956ZM58.7956 4.81469H2.5256C2.6956 3.36969 3.8856 2.17969 5.4156 2.17969H55.9056C57.4356 2.17969 58.6256 3.28469 58.7956 4.81469Z" fill="url(#paint0_linear_10_10040)"/>
 <path d="M4.8206 10.5097H7.9656C8.5606 10.5097 8.9856 9.99973 8.9856 9.48973C8.9856 8.97973 8.4756 8.46973 7.9656 8.46973H4.8206C4.2256 8.46973 3.8006 8.97973 3.8006 9.48973C3.8006 9.99973 4.2256 10.5097 4.8206 10.5097Z" fill="url(#paint1_linear_10_10040)"/>
@@ -11,57 +14,57 @@ const SvgSliderItems = ({ isSelected, text }) => {
 <path d="M28.8756 31.2497H51.4006C51.9956 31.2497 52.4206 30.8247 52.4206 30.2297C52.4206 29.6347 51.9106 29.2097 51.4006 29.2097H28.8756C28.2806 29.2097 27.8556 29.7197 27.8556 30.2297C27.8556 30.7397 28.2806 31.2497 28.8756 31.2497Z" fill="url(#paint8_linear_10_10040)"/>
 <defs>
 <linearGradient id="paint0_linear_10_10040" x1="-9.99976" y1="52.5" x2="107.5" y2="-11.5" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint1_linear_10_10040" x1="2.89978" y1="10.3973" x2="7.89378" y2="4.03888" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint2_linear_10_10040" x1="8.76477" y1="10.3973" x2="13.7588" y2="4.03888" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint3_linear_10_10040" x1="14.6298" y1="10.3973" x2="19.6238" y2="4.03888" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint4_linear_10_10040" x1="0.861858" y1="31.6452" x2="36.5048" y2="15.7832" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint5_linear_10_10040" x1="23.5878" y1="15.9222" x2="25.2465" y2="5.91639" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint6_linear_10_10040" x1="23.5878" y1="21.0223" x2="25.2465" y2="11.0165" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint7_linear_10_10040" x1="23.5878" y1="26.0372" x2="25.2465" y2="16.0314" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint8_linear_10_10040" x1="23.5878" y1="31.1373" x2="25.2465" y2="21.1315" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 </defs>
@@ -76,27 +79,27 @@ const SvgSliderItems = ({ isSelected, text }) => {
 </g>
 <defs>
 <linearGradient id="paint0_linear_10_10053" x1="2.19147" y1="34.4675" x2="65.5916" y2="34.4675" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.49"/>
 </linearGradient>
 <linearGradient id="paint1_linear_10_10053" x1="14.1402" y1="49.904" x2="21.7688" y2="49.904" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.49"/>
 </linearGradient>
 <linearGradient id="paint2_linear_10_10053" x1="18.1159" y1="41.1676" x2="35.1132" y2="41.1676" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.49"/>
 </linearGradient>
 <linearGradient id="paint3_linear_10_10053" x1="31.0772" y1="32.8305" x2="38.8287" y2="32.8305" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.49"/>
 </linearGradient>
 <clipPath id="clip0_10_10053">
@@ -113,21 +116,21 @@ const SvgSliderItems = ({ isSelected, text }) => {
 </g>
 <defs>
 <linearGradient id="paint0_linear_10_10063" x1="5.17097" y1="30.4449" x2="65.1427" y2="-21.9304" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.49"/>
 </linearGradient>
 <linearGradient id="paint1_linear_10_10063" x1="1.02998" y1="54.457" x2="80.9964" y2="-2.5997" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.49"/>
 </linearGradient>
 <linearGradient id="paint2_linear_10_10063" x1="-14.9996" y1="63.0002" x2="135" y2="-2.49976" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.49"/>
 </linearGradient>
 <clipPath id="clip0_10_10063">
@@ -144,33 +147,33 @@ const SvgSliderItems = ({ isSelected, text }) => {
 <path d="M4.93006 30.6C7.05506 30.6 8.84006 28.9 8.84006 26.69C8.84006 26.095 8.67006 25.415 8.41506 24.905L16.1501 17.85C16.7451 18.19 17.4251 18.445 18.1901 18.445C19.1251 18.445 20.0601 18.105 20.8251 17.425L27.7101 21.76C27.6251 22.185 27.5401 22.525 27.5401 22.865C27.5401 24.99 29.3251 26.775 31.4501 26.775C33.5751 26.775 35.3601 24.99 35.3601 22.865C35.3601 21.93 35.0201 21.08 34.4251 20.4L43.3501 7.565C43.7751 7.735 44.2001 7.82 44.6251 7.82C46.7501 7.82 48.5351 6.035 48.5351 3.91C48.5351 1.785 46.7501 0 44.6251 0C42.5001 0 40.7151 1.785 40.7151 3.91C40.7151 4.845 41.0551 5.695 41.6501 6.375L32.6401 19.125C31.2801 18.7 29.8351 18.955 28.7301 19.89L21.8451 15.555C21.9301 15.13 22.0151 14.79 22.0151 14.45C22.0151 12.325 20.2301 10.54 18.1051 10.54C15.9801 10.54 14.1951 12.325 14.1951 14.45C14.1951 15.045 14.3651 15.64 14.6201 16.235L6.88506 23.29C6.29006 22.95 5.52506 22.695 4.84506 22.695C2.72006 22.695 0.935059 24.48 0.935059 26.605C1.02006 28.815 2.72006 30.6 4.93006 30.6ZM19.6351 15.47C19.3801 15.895 18.7851 16.235 18.1901 16.235C17.5951 16.32 17.0851 16.065 16.7451 15.725C16.4051 15.385 16.2351 14.96 16.2351 14.535C16.2351 13.515 17.0001 12.75 18.0201 12.75C19.0401 12.75 19.8051 13.6 19.8051 14.535C19.8901 14.875 19.8051 15.215 19.6351 15.47ZM3.06006 26.69C3.06006 25.67 3.91006 24.905 4.84506 24.905C5.35506 24.905 5.86506 25.075 6.20506 25.5C6.54506 25.84 6.71506 26.265 6.71506 26.69C6.71506 27.71 5.86506 28.475 4.93006 28.475C3.91006 28.475 3.06006 27.71 3.06006 26.69ZM42.7551 3.91C42.7551 2.89 43.6051 2.125 44.5401 2.125C45.4751 2.125 46.3251 2.975 46.3251 3.91C46.3251 4.93 45.4751 5.695 44.5401 5.695C44.2001 5.695 43.8601 5.61 43.6051 5.44L43.5201 5.355C43.0101 5.015 42.7551 4.42 42.7551 3.91ZM29.4951 22.865C29.4951 22.525 29.5801 22.185 29.7501 21.93C30.0901 21.42 30.6851 21.08 31.2801 21.08C31.6201 21.08 31.9601 21.165 32.3001 21.42C32.8101 21.76 33.0651 22.27 33.0651 22.865C33.0651 23.885 32.3001 24.65 31.2801 24.65C30.3451 24.65 29.4951 23.8 29.4951 22.865Z" fill="url(#paint4_linear_127_26)"/>
 <defs>
 <linearGradient id="paint0_linear_127_26" x1="-2.57511" y1="59.4642" x2="26.6193" y2="52.2433" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint1_linear_127_26" x1="10.6873" y1="58.7788" x2="40.9179" y2="54.1121" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint2_linear_127_26" x1="23.8624" y1="59.2619" x2="53.6526" y2="53.3814" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint3_linear_127_26" x1="37.0349" y1="58.5162" x2="67.4601" y2="54.4061" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint4_linear_127_26" x1="-11.5927" y1="29.1226" x2="69.2898" y2="-46.0336" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 </defs>
@@ -187,58 +190,58 @@ const SvgSliderItems = ({ isSelected, text }) => {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65691 8.38898C5.80674 10.9397 5.9828 11.2 6.09836 11.6892C6.18604 12.0602 6.31773 12.3104 6.57062 12.5866C6.79643 12.8331 7.33184 13.0827 7.3975 13.0827C7.82269 13.0418 7.99556 12.6745 7.76133 12.5866C7.69997 12.5521 7.39345 12.4918 7.27048 12.4296C7.0117 12.2988 6.75997 12.1192 6.65691 11.8174C6.5155 11.4031 6.33378 10.9174 7.08641 8.69509L7.67976 6.91965C7.67976 6.91965 7.84508 6.55232 7.9566 6.55232C8.06811 6.55232 8.68168 6.61354 8.68168 6.61354C9.3566 6.71184 9.74265 7.25583 9.74316 7.98541C9.74335 8.25201 9.61637 8.56743 8.87625 10.7823C8.41747 12.1553 8.02117 13.4087 7.99556 13.5675C7.90144 14.152 8.1139 14.8095 8.5165 15.18C8.62859 15.283 8.86449 15.4383 9.04078 15.525L9.3613 15.6825C10.1118 16.0389 12.1751 16.1569 12.9843 15.7105C13.1607 15.6132 13.2221 15.3071 13.2221 15.3071C13.2221 15.3071 13.3448 14.7918 13.4061 14.3887C13.4723 13.9542 13.3235 13.7765 13.2221 13.5675C13.0646 13.2433 12.6286 12.9385 12.3299 12.7942C11.9182 12.5953 11.6862 12.5632 10.6557 12.5626L9.67825 12.5621L9.49928 12.5866C9.04078 12.8582 9.48904 13.1881 9.49928 13.1984C9.50956 13.2086 9.90007 13.2153 10.3671 13.2132C10.8341 13.2111 11.3462 13.2285 11.505 13.2519C12.3589 13.3778 12.7759 14.0167 12.5408 14.8388L12.478 15.0584H11.1505C9.68974 15.0584 9.41563 15.0226 9.11058 14.7918C8.88033 14.6176 8.7989 14.5109 8.71696 14.2759C8.56865 13.8504 8.6752 13.761 9.60203 11.0215L10.0315 9.79708L10.3997 8.51142C10.3997 8.51142 10.461 8.37773 10.5224 7.98541C10.5837 7.59309 10.3246 6.99558 9.97017 6.61354C9.54159 6.15144 8.99644 6.0022 8.19083 6.00132C8.19083 6.00132 7.8647 5.98833 7.67976 6.0438C7.20912 6.18499 6.65691 8.38898 6.65691 8.38898Z" fill="url(#paint7_linear_129_25)"/>
 <defs>
 <linearGradient id="paint0_linear_129_25" x1="-10.4853" y1="52.4453" x2="107.015" y2="-11.5547" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#283445'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#283445"}"/>
 <stop offset="1" stop-color="${
-    isSelected ? '#F8A65E' : '#283445'
+    isSelected ? "#F8A65E" : "#283445"
   }" stop-opacity="0.5"/>
 </linearGradient>
 <linearGradient id="paint1_linear_129_25" x1="47.425" y1="32.306" x2="49.1197" y2="32.306" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#293546'}"/>
-<stop offset="1" stop-color="${isSelected ? '#F8A65E' : '#949AA2'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#293546"}"/>
+<stop offset="1" stop-color="${isSelected ? "#F8A65E" : "#949AA2"}"/>
 </linearGradient>
 <linearGradient id="paint2_linear_129_25" x1="48.8487" y1="32.6528" x2="51.1991" y2="32.6528" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#293546'}"/>
-<stop offset="1" stop-color="${isSelected ? '#F8A65E' : '#949AA2'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#293546"}"/>
+<stop offset="1" stop-color="${isSelected ? "#F8A65E" : "#949AA2"}"/>
 </linearGradient>
 <linearGradient id="paint3_linear_129_25" x1="43.8897" y1="33" x2="53.4097" y2="33" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#293546'}"/>
-<stop offset="1" stop-color="${isSelected ? '#F8A65E' : '#949AA2'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#293546"}"/>
+<stop offset="1" stop-color="${isSelected ? "#F8A65E" : "#949AA2"}"/>
 </linearGradient>
 <linearGradient id="paint4_linear_129_25" x1="42.2354" y1="32.6528" x2="44.5859" y2="32.6528" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#293546'}"/>
-<stop offset="1" stop-color="${isSelected ? '#F8A65E' : '#949AA2'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#293546"}"/>
+<stop offset="1" stop-color="${isSelected ? "#F8A65E" : "#949AA2"}"/>
 </linearGradient>
 <linearGradient id="paint5_linear_129_25" x1="40.1316" y1="33" x2="43.1383" y2="33" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#293546'}"/>
-<stop offset="1" stop-color="${isSelected ? '#F8A65E' : '#949AA2'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#293546"}"/>
+<stop offset="1" stop-color="${isSelected ? "#F8A65E" : "#949AA2"}"/>
 </linearGradient>
 <linearGradient id="paint6_linear_129_25" x1="46.1802" y1="32.0022" x2="47.3002" y2="32.0022" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#293546'}"/>
-<stop offset="1" stop-color="${isSelected ? '#F8A65E' : '#949AA2'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#293546"}"/>
+<stop offset="1" stop-color="${isSelected ? "#F8A65E" : "#949AA2"}"/>
 </linearGradient>
 <linearGradient id="paint7_linear_129_25" x1="6" y1="6" x2="12.9804" y2="16.0136" gradientUnits="userSpaceOnUse">
-<stop stop-color="${isSelected ? '#F8A65E' : '#293546'}"/>
-<stop offset="1" stop-color="${isSelected ? '#F8A65E' : '#949AA2'}"/>
+<stop stop-color="${isSelected ? "#F8A65E" : "#293546"}"/>
+<stop offset="1" stop-color="${isSelected ? "#F8A65E" : "#949AA2"}"/>
 </linearGradient>
 </defs>
 </svg>
 `;
 
-  let svg = '';
+  let svg = "";
   switch (text) {
-    case 'Site-web':
+    case "Site-web":
       svg = svgSiteWeb;
       break;
-    case 'Marketing':
+    case "Marketing":
       svg = svgBrand;
       break;
-    case 'référencement':
+    case "référencement":
       svg = svgReferencement;
       break;
-    case 'Optimisation':
+    case "Optimisation":
       svg = svgOpti;
       break;
-    case 'Digital Card':
+    case "Digital Card":
       svg = svgDigitalCard;
       break;
   }
