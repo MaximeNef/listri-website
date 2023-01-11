@@ -11,98 +11,131 @@ import BtnPrimaire from "../../../components/shared/composers/ListriV2/btnPrimai
 import MyImage from "../../../components/shared/composers/myimage";
 
 const Website = () => {
+  const info = [
+    {
+      img: "/assets/logoV2/visibilite.svg",
+      text: "Plus de visibilité",
+    },
+
+    {
+      img: "/assets/logoV2/ciblage.svg",
+      text: "Ciblage précis",
+    },
+    {
+      img: "/assets/logoV2/relation.svg",
+      text: "Meilleure relation client",
+    },
+    {
+      img: "/assets/logoV2/analysePc.svg",
+      text: "Analyse sur-mesure",
+    },
+  ];
   const infoCards = [
     {
       blueBg: true,
-      title: "Responsive",
-      subTitle: "A la pointe du développement",
+      title: "Visibilité",
+      subTitle: "La visibilité est un élément essentiel pour une entreprise.",
       description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+        "La visibilité est un élément essentiel pour une entreprise.",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Avec une bonne visibilité, l’entreprise peut atteindre plus de clients et augmenter sa notoriété.",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "permettant ainsi de générer plus de trafic vers le site Web, ce qui à son tour conduit à une augmentation des conversions et des ventes.",
 
       description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
+        "La visibilité est une partie importante de toute campagne de marketing digital et peut être obtenue à l'aide d'une variété de techniques, notamment le référencement, les médias sociaux, le mail marketing ou encore la publicité en ligne.",
 
       src: "/assets/logoV2/website-creator.svg",
     },
     {
       blueBg: false,
-      title: "Responsive",
+      title: "Engagement",
       subTitle: "A la pointe du développement",
-      description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+      description1: "L'engagement est un élément clé du marketing digital. ",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Il s'agit de la mesure de la quantité et de la qualité de l'interaction entre une marque et ses clients. ",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "L'engagement est un moyen pour les marques de comprendre leurs clients et de leur offrir des produits et des services pertinentes. ",
 
       description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
+        "Pour les entreprises qui utilisent le marketing digital, l'engagement est essentiel car il permet de développer une relation et une connexion plus profonde avec leurs clients.",
 
       src: "/assets/logoV2/website-creator.svg",
     },
     {
       blueBg: true,
-      title: "Responsive",
+      title: "Ciblage",
       subTitle: "A la pointe du développement",
       description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+        "Le ciblage est une partie très importante du marketing digital. ",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Il s'agit d’une stratégie qui permet de cibler les consommateurs les plus susceptibles d'être intéressés par votre produit ou service, en fonction de leurs intérêts et de leur comportement en ligne. ",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "En utilisant des techniques sophistiquées de ciblage, vous pouvez atteindre votre public cible avec une précision et une efficacité accrues. ",
 
       description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
+        "Le ciblage est très important pour le marketing digital car il permet d'atteindre les bonnes personnes au bon moment et d'augmenter la visibilité et le ROI de votre campagne.",
+
+      src: "/assets/logoV2/website-creator.svg",
+    },
+    {
+      blueBg: false,
+      title: "Conversion",
+      subTitle: "A la pointe du développement",
+      description1:
+        "La conversion est un terme clé utilisé pour décrire le processus par lequel un consommateur passe d'un prospect à un client. ",
+
+      description2:
+        "Une conversion se produit lorsqu'un utilisateur réalise l'une des actions souhaitées, telles que s'inscrire à une newsletter, acheter un produit, partager un contenu ou télécharger une application. ",
+
+      description3:
+        "Nous pouvons créer une variété de campagnes axées sur la conversion pour générer des leads et des ventes, en ciblant les bonnes personnes à travers les canaux numériques. ",
+
+      description4:
+        "Les outils et services de marketing digital peuvent être utilisés pour cibler le bon public, créer des campagnes efficaces et améliorer le taux de conversion.",
 
       src: "/assets/logoV2/website-creator.svg",
     },
   ];
   const cardPlus = [
     {
-      categorie: "gfghf",
-      image: "/assets/logoV2/siteWeb.svg",
-      ligne1: "fhgfgh",
-      ligne2: "fhgfhgff",
+      categorie: "+ de visibilité",
+      image: "/assets/logoV2/visibilite-white.svg",
+      ligne1: "Exposez votre marque",
+      ligne2: "à une large audience.",
     },
     {
-      categorie: "fghfhgfhgfghf",
-      image: "/assets/logoV2/siteWeb.svg",
-      ligne1: "hgfhgfg",
-      ligne2: "fghfghf",
+      categorie: "Ciblage précis",
+      image: "/assets/logoV2/ciblage.svg",
+      ligne1: "Ciblez votre audience",
+      ligne2: "avec précision.",
     },
     {
-      categorie: "hgfghfgh",
-      image: "/assets/logoV2/siteWeb.svg",
-      ligne1: "gfhgfgh",
-      ligne2: "ghfghfhg",
+      categorie: "Meilleure relation client",
+      image: "/assets/logoV2/relation-white.svg",
+      ligne1: "Interagissez instantanément",
+      ligne2: "avec votre communauté.",
+    },
+    {
+      categorie: "Analyse sur-mesure",
+      image: "/assets/logoV2/analysePc.svg",
+      ligne1: "Analysez toutes les données",
+      ligne2: "et faites des choix avisés.",
+    },
+    {
+      categorie: "Analyse sur-mesure",
+      image: "/assets/logoV2/analysePc-white.svg",
+      ligne1: "Comprenez le fonctionnement",
+      ligne2: "de votre communauté.",
     },
   ];
-  const info = [
-    {
-      img: "/assets/logoV2/trafic.svg",
-      text: "+ de trafic",
-    },
 
-    {
-      img: "/assets/logoV2/visibilite.svg",
-      text: "+ de visibilité",
-    },
-    {
-      img: "/assets/logoV2/performent.svg",
-      text: "+ de conversion",
-    },
-    {
-      img: "/assets/logoV2/Moinsdepenses.svg",
-      text: "- d’argent dépensé",
-    },
-  ];
   return (
     <NavPage current='Services'>
       <Head>

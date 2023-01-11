@@ -18,7 +18,7 @@ const RealisationLabelSlider = ({
       filtre: "marketing",
     },
     {
-      source: "/assets/logoV2/referencement.svg",
+      source: "",
       text: "référencement",
       filtre: "référencement",
     },
