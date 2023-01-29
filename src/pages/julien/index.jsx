@@ -10,7 +10,7 @@ import CardContact from "../../components/businessCard/CardContact";
 export default function Julien() {
   const contactInfo = {
     img: "/assets/logo/julien.png",
-    nom: "julien Nef",
+    nom: "Julien Nef",
     tel: "0470684551",
     email: "julien@listri.digital",
   };
@@ -37,7 +37,7 @@ export default function Julien() {
       link: "tel:0470684551",
     },
     {
-      text: "VISITER NOTRE SITE",
+      text: "VISITEZ NOTRE SITE",
       link: "/",
     },
     {
