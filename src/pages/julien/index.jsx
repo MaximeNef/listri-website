@@ -41,9 +41,13 @@ export default function Julien() {
       link: "/",
     },
     {
-      text: "NOS SERVICES",
-      link: "/services",
+      text: "PRENEZ RENDEZ-VOUS",
+      link: "https://meetings-eu1.hubspot.com/julien-nef",
     },
+    // {
+    //   text: "NOS SERVICES",
+    //   link: "/services",
+    // },
   ];
 
   return (
