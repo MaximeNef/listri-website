@@ -45,6 +45,10 @@ export default function Julien() {
       link: "/services",
     },
     {
+      text: "VISITES VIRTUELLES",
+      link: "https://www.immersy.be/",
+    },
+    {
       text: "PRENEZ RENDEZ-VOUS",
       link: "https://meetings-eu1.hubspot.com/julien-nef",
     },
