@@ -161,7 +161,7 @@ const RealisationLoop = ({ current }) => {
           <ul className='highway-lane '>
             {realisations.map((real, i) => {
               return (
-                <Link href={"/"} key={i}>
+                <Link href={"/realisations"} key={i}>
                   <li
                     className={`highway-car  relative max-w-[180px] ${
                       i % 2 == 0 ? "" : ""
