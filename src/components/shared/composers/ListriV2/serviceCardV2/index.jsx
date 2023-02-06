@@ -80,7 +80,7 @@ const ServiceCardV2 = ({
       {blueBg ? (
         <div
           className={`mt-[-1px]  ${
-            title == "Marketing" ? "" : "bg-lightGrey  mt-[-1px]"
+            title == "Marketing digital" ? "" : "bg-lightGrey  mt-[-1px]"
           }`}
           dangerouslySetInnerHTML={{
             __html: svgBottom,

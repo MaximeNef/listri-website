@@ -15,7 +15,7 @@ const SliderBlogCard = ({ source, timing, category, title }) => {
         <p className='text-xs font-bold uppercase'>
           {timing} min de lecture • {category}
         </p>
-        <p className='mt-[13px] text-xl text-darkBlue font-bold leading-[25px] tracking-[0.231px] overflow-hidden h-[100px]'>
+        <p className='mt-[13px] text-xl text-darkBlue font-bold leading-[25px] tracking-[0.231px] overflow-hidden h-[75px]'>
           {title}
         </p>
       </div>
