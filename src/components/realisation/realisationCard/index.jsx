@@ -10,9 +10,9 @@ const RealisationCard = ({ realisation }) => {
   return (
     <Link href={`/realisations/${realisation.uid}`}>
       <Container
-        className='my-[13px] md:w-[33%] cursor-pointer'
+        className='my-[13px] md:w-[33%] cursor-pointer shadow-realisationCard rounded-[10px] '
         onMouseEnter={(e) => {
-          setStyle("transform transition duration-500 scale-110  ");
+          setStyle("transform transition duration-500 scale-110   ");
         }}
         onMouseLeave={(e) => {
           setStyle("");
@@ -50,15 +50,15 @@ const RealisationCard = ({ realisation }) => {
         </Container>
 
         <Container className='bg-lightGrey rounded-b-[10px] relative'>
-          <Container className='mx-6 mb-6'>
-            <p className='mt-[30px] mb-[20px] mx-1 font-light'>
+          <Container className='mx-5 mb-6'>
+            <p className='mt-[30px] mb-[20px]  font-light'>
               {realisation.data.slices[0].primary.serviceCategorie}
             </p>
-            <p className=' mb-3 h-[40px] overflow-hidden mx-1 font-medium text-[15px] mr-10'>
+            <p className=' mb-3 h-[40px] overflow-hidden  font-medium text-[15px] mr-20'>
               {realisation.data.slices[0].primary.clientDescription[0]?.text}
             </p>
             <Link href={`/realisations/${realisation.uid}`}>
-              <Container className='absolute bottom-6 right-2'>
+              <Container className='absolute bottom-6 right-5'>
                 <a className='color-[#FF7E00] mx-1'>
                   <Flex>
                     <MyImage
