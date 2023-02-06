@@ -25,7 +25,7 @@ module.exports = {
         blog: "3px 4px 10px 1px rgba(37, 37, 37, 0.05)",
         client: "3px 4px 10px 1px rgba(37, 37, 37, 0.1)",
         clientss: "1px 1px 22px 0px  rgba(0, 0, 0, 0.1)",
-        apple: "2px 4px 16px rgb(0 0 0 / 16%)",
+        apple: "2px 4px 16px rgb(0 0 0 / 12%)",
         business: "0 -4px 25px 0 rgba(37, 37, 37, 0.2);",
         slider: "2px 4px 12px rgba(0, 0, 0, 0.08)",
       },
