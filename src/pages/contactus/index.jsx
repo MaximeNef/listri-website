@@ -7,74 +7,23 @@ import Container from "../../components/shared/composers/container";
 import NavPage from "../../components/all/nav-page";
 import ContactTitle from "../../components/contact/contactTitle";
 import { useRouter } from "next/router";
+import ServiceTitle from "../../components/services/serviceTitle";
+import SliderServices from "../../components/services/SliderServices";
+import SliderContact from "../../components/contact/SliderContact";
 
 export default function Contactus() {
   // router
   const router = useRouter();
-  // btn options  contact
-  const [contenu, setContenu] = useState(false);
-  const [media, setMedia] = useState(false);
-  const [site, setSite] = useState(true);
-  const [referencement, setReferencement] = useState(false);
-  const [optimisation, setOptimisation] = useState(false);
-  const [autres, setAutres] = useState(false);
+  // slider options  contact
+  const [filterRealisation, setFilterRealisation] = useState("all");
+  console.log(filterRealisation);
 
   // formulaire contact
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [mail, setMail] = useState("");
   const [telephone, setTelephone] = useState("");
-
-  const handleClick = (value) => () => {
-    if (value == "contenu") {
-      setContenu((prevState) => !prevState);
-      setMedia(false);
-      setSite(false);
-      setReferencement(false);
-      setOptimisation(false);
-      setAutres(false);
-    }
-    if (value == "media") {
-      setMedia((prevState) => !prevState);
-      setContenu(false);
-      setSite(false);
-      setReferencement(false);
-      setOptimisation(false);
-      setAutres(false);
-    }
-    if (value == "site") {
-      setSite((prevState) => !prevState);
-      setContenu(false);
-      setMedia(false);
-      setReferencement(false);
-      setOptimisation(false);
-      setAutres(false);
-    }
-    if (value == "referencement") {
-      setReferencement((prevState) => !prevState);
-      setContenu(false);
-      setMedia(false);
-      setSite(false);
-      setOptimisation(false);
-      setAutres(false);
-    }
-    if (value == "optimisation") {
-      setOptimisation((prevState) => !prevState);
-      setContenu(false);
-      setMedia(false);
-      setSite(false);
-      setReferencement(false);
-      setAutres(false);
-    }
-    if (value == "autres") {
-      setAutres((prevState) => !prevState);
-      setOptimisation(false);
-      setContenu(false);
-      setMedia(false);
-      setSite(false);
-      setReferencement(false);
-    }
-  };
+  const [messages, setMessages] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -101,12 +50,8 @@ export default function Contactus() {
         prenom: prenom,
         mail: mail,
         telephone: telephone,
-        contenu: contenu,
-        media: media,
-        site: site,
-        referencement: referencement,
-        optimisation: optimisation,
-        autres: autres,
+        services: filterRealisation,
+        messages: messages,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -118,18 +63,7 @@ export default function Contactus() {
       console.log(error, "fuck");
       return;
     }
-    console.log(
-      nom,
-      prenom,
-      mail,
-      telephone,
-      contenu,
-      media,
-      site,
-      referencement,
-      optimisation,
-      autres
-    );
+    console.log(nom, prenom, mail, telephone, filterRealisation, messages);
     router.push("/");
   };
   return (
@@ -156,60 +90,21 @@ export default function Contactus() {
           rel='stylesheet'
         />
       </Head>
-
-      <Container className='md:flex md:flex-col mb-20 md:mb-10 w-full  mx-auto bg-white pt-[90px] '>
-        {" "}
-        <Container className='md:w-[80%] mx-auto'>
-          <ContactTitle />
-          <p className=' mx-auto'> {"Vous souhaitez nous contacter pour"}</p>
-          <div className=' md:flex md:flex-row md:flex-wrap md:flex-shrink'>
-            <Flex justify='between md:min-w-[33%]'>
-              <Optionform
-                state={contenu}
-                handleClick={handleClick("contenu")}
-                name={"Création de contenu"}
-              />
-            </Flex>{" "}
-            <Flex justify='between md:min-w-[33%]'>
-              <Optionform
-                state={media}
-                handleClick={handleClick("media")}
-                name={"Social média"}
-              />
-            </Flex>
-            <Flex justify='between md:min-w-[33%]'>
-              <Optionform
-                state={site}
-                handleClick={handleClick("site")}
-                name={"site web"}
-              />
-            </Flex>{" "}
-            <Flex justify='between md:min-w-[33%]'>
-              <Optionform
-                state={referencement}
-                handleClick={handleClick("referencement")}
-                name={"Référencement web"}
-              />{" "}
-            </Flex>
-            <Flex justify='between md:min-w-[33%]'>
-              <Optionform
-                state={optimisation}
-                handleClick={handleClick("optimisation")}
-                name={"Optimisation Web"}
-              />
-            </Flex>{" "}
-            <Flex justify='between md:min-w-[33%]'>
-              <Optionform
-                state={autres}
-                handleClick={handleClick("autres")}
-                name={"Autres"}
-              />
-            </Flex>{" "}
+      <main className='bg-white  text-default '>
+        <Container className=' pt-28 mx-[25px]'>
+          <ServiceTitle
+            subtitle1={"Demande de contact"}
+            subtitle2={"sélectionnez votre service"}
+          />
+          {/* slider  */}
+          <div className='my-10'>
+            <SliderContact
+              filterRealisation={filterRealisation}
+              setFilterRealisation={setFilterRealisation}
+            />
           </div>
-        </Container>{" "}
-        <Flex className='flex-wrap md:w-[80%] md:mx-auto md:flex-col'>
-          <p className=' mt-[40px]   mx-auto'>{"Complétez vos informations"}</p>
-
+          {/* formulaire */}
+          <ServiceTitle subtitle1={"Contactez-moi ici ..."} />
           <form onSubmit={handleSubmit} method='post' className='space-y-3'>
             <input
               type='text'
@@ -219,7 +114,7 @@ export default function Contactus() {
               onChange={(e) => {
                 setNom(e.target.value);
               }}
-              className='w-[45%] md:w-[48%] h-[60px] border-[#FF7E00] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 focus:outline-none '
+              className='w-[45%] md:w-[48%]   border-b-default border-b-2 rounded-none m-2  py-[15px] text-[19px] font-normal leading-6  placeholder-darkBlue/60 focus:outline-none '
             />
             <input
               type='text'
@@ -229,7 +124,7 @@ export default function Contactus() {
               onChange={(e) => {
                 setPrenom(e.target.value);
               }}
-              className='w-[45%] md:w-[48%]  h-[60px] border-[#FF7E00] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[45%] md:w-[48%]   border-b-default border-b-2 rounded-none m-2  py-[15px] text-[19px] font-normal leading-6  placeholder-darkBlue/60 outline-0	focus:outline-none'
             />
             <input
               type='email'
@@ -239,7 +134,7 @@ export default function Contactus() {
               onChange={(e) => {
                 setMail(e.target.value);
               }}
-              className='w-[95%] md:w-[98%]  h-[60px] border-[#FF7E00] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[95%] md:w-[98%]  border-b-default border-b-2 rounded-none m-2  py-[15px] text-[19px] font-normal leading-6  placeholder-darkBlue/60  outline-0	focus:outline-none'
             />
             <input
               type='number'
@@ -249,12 +144,22 @@ export default function Contactus() {
               onChange={(e) => {
                 setTelephone(e.target.value);
               }}
-              className='w-[95%] md:w-[98%] h-[60px] border-[#FF7E00] border-2 m-2 pl-3 py-[15px] text-[19px] font-semibold leading-6 rounded-[10px] placeholder-[#646464]/30 outline-0	focus:outline-none'
+              className='w-[95%] md:w-[98%] h-[60px]  border-b-default border-b-2 rounded-none m-2  py-[15px] text-[19px] font-normal leading-6  placeholder-darkBlue/60  outline-0	focus:outline-none'
+            />{" "}
+            <textarea
+              type='text'
+              name='messages'
+              placeholder='votre message / question'
+              value={messages}
+              onChange={(e) => {
+                setMessages(e.target.value);
+              }}
+              className='w-[95%] md:w-[98%] h-[120px]  border-b-default border-b-2 rounded-none m-2  py-[15px] text-[19px] font-normal leading-6  placeholder-darkBlue/60  outline-0	focus:outline-none'
             />{" "}
             <Flex justify='center' className='mt-5 relative '>
               <button
                 type='submit'
-                className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] rounded-[10px] w-fit shadow-cardcta absolute  '
+                className='bg-gradient-to-r via-orangeLight from-rougeLight to-saumon rounded-[10px] w-fit shadow-cardcta absolute  '
               >
                 <h3 className='text-white mx-[22px] my-[11px]   text-[20px] md:text-[24px]  font-semibold leading-[26px] text-center flex flex-col  justify-center   '>
                   {"Envoyer "}
@@ -262,17 +167,8 @@ export default function Contactus() {
               </button>{" "}
             </Flex>
           </form>
-        </Flex>
-      </Container>
+        </Container>
+      </main>
     </NavPage>
   );
 }
-
-// export async function getServerSideProps() {
-//   console.log(process.env.LISTRI);
-//   return {
-//     props: {
-//       hello: "word",
-//     },
-//   };
-// }
