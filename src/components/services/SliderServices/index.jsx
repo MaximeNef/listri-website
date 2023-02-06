@@ -9,15 +9,16 @@ const SliderServices = () => {
       text: "Création de site web",
       ancre: "#site-web",
     },
-    {
-      source: "/assets/logoV2/brand.svg",
-      text: "Marketing digital",
-      ancre: "#marketing",
-    },
+
     {
       source: "/assets/logoV2/referencement.svg",
       text: "référencement web",
       ancre: "#referencement",
+    },
+    {
+      source: "/assets/logoV2/brand.svg",
+      text: "Marketing digital",
+      ancre: "#marketing",
     },
     {
       source: "/assets/logoV2/opti.svg",

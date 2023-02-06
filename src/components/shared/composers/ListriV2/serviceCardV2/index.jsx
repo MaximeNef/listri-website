@@ -36,7 +36,7 @@ const ServiceCardV2 = ({
     <div className='ml-[-25px] mr-[-25px] ' id={ancre}>
       {blueBg ? (
         <div
-          className={`mb-[-1px]  ${
+          className={`mb-[-1px] ${
             title == "Création de site web" ? "" : "bg-lightGrey"
           }`}
           dangerouslySetInnerHTML={{
@@ -45,7 +45,7 @@ const ServiceCardV2 = ({
         />
       ) : title == "Marketing digital" ? (
         <div
-          className={`mb-[-1px]  transform rotate-180`}
+          className={`mb-[-1px]   transform rotate-180`}
           dangerouslySetInnerHTML={{
             __html: svgBottom,
           }}
@@ -88,7 +88,7 @@ const ServiceCardV2 = ({
         />
       ) : title == "Digital Card" ? (
         <div
-          className={`mt-[-1px]  transform rotate-180`}
+          className={`pt-[-1px]  transform rotate-180`}
           dangerouslySetInnerHTML={{
             __html: svg,
           }}
