@@ -2,7 +2,7 @@ import Container from "../../../../shared/composers/container";
 
 const BurgerIcone = ({ handelClick }) => {
   return (
-    <Container className=' left-2 z-20 fixed  mt-1'>
+    <Container className=''>
       <a>
         <input
           type='checkbox'
