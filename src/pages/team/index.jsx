@@ -27,6 +27,7 @@ const Team = () => {
     {
       lastName: "Félicien",
       firstName: "De Hertogh",
+      poste: "stagiaire",
       activite: "Developpeur web",
       src: "/assets/logo/felicien.jpg",
     },
@@ -62,7 +63,7 @@ const Team = () => {
               "Des réalisations uniques pour des clients qui le sont tout autant."
             }
           />
-          <Container className='space-y-[25px]  mt-10 md:flex-row md:justify-center md:space-y-0 mb-20'>
+          <Container className='space-y-[25px] md:space-x-10  mt-10 md:flex-row md:justify-center md:space-y-0 mb-20'>
             {Teams.map((team, i) => {
               return <TeamCard team={team} key={i} />;
             })}

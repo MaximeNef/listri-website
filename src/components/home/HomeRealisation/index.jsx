@@ -19,7 +19,7 @@ const HomeRealisation = () => {
           __html: svg,
         }}
       />
-      <div className='px-[25px] bg-darkBlue '>
+      <div className='px-[25px]  bg-darkBlue '>
         <div className='mb-[10px]'>
           <SubtitleV2
             TextWhite={true}

@@ -60,6 +60,21 @@ const Siteweb = () => {
 
       src: "/assets/logoV2/website-creator.svg",
     },
+    {
+      blueBg: false,
+      title: "Visibilité",
+      subTitle: "soyez visible n’importe ou",
+      description1:
+        "Un site web renforce la confiance de vos clients en votre entreprise en présentant votre entreprise et ses produits ou services de manière claire et concise. ",
+
+      description2:
+        "Plus votre site est visible, plus vous aurez de visiteurs sur votre site, ce qui peut potentiellement augmenter les ventes et les conversions.",
+
+      description3:
+        "En résumé, la visibilité de votre site web est essentielle pour développer votre entreprise et atteindre de nouveaux clients. En investissant dans la visibilité de votre site, vous investissez dans la visibilité de votre entreprise.",
+
+      src: "/assets/logoV2/website-creator.svg",
+    },
   ];
 
   const cardPlus = [
@@ -134,13 +149,23 @@ const Siteweb = () => {
         />
       </Head>
       <main className='bg-white pt-28  text-default'>
-        <TitleServiceDetail title='Création de Site Web' />
-        <Container className='mx-auto mt-8'>
+        <div className='flex justify-center items-center'>
+          <TitleServiceDetail title='Création de' title2={"Site Web"} />
+          <Container className='mx-auto mt-8 hidden md:inline-flex md:w-1/3 '>
+            <MyImage
+              source={"/assets/logoV2/Website-creator.svg"}
+              h={500}
+              w={500}
+            />
+          </Container>
+        </div>
+
+        <Container className='mx-auto mt-8 md:hidden '>
           <MyImage
             source={"/assets/logoV2/Website-creator.svg"}
             h={300}
             w={300}
-          />{" "}
+          />
         </Container>
         <Container className=' h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]' />
         <BtnPrimaire text='Devis gratuit' href='/' />
@@ -148,34 +173,44 @@ const Siteweb = () => {
           <PetitPlus info={info} />
         </Container>
         <Container className='mt-[140px]'>
-          <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px] mx-10'>
-            Recevez une expérience, complète
-          </p>
-          {infoCards.map((info, i) => {
-            const {
-              blueBg,
-              title,
-              subTitle,
-              description1,
-              description2,
-              description3,
-              description4,
-              src,
-            } = info;
-            return (
-              <ServiceDetailCard
-                key={i}
-                description1={description1}
-                title={title}
-                subTitle={subTitle}
-                description2={description2}
-                description3={description3}
-                description4={description4}
-                src={src}
-                blueBg={blueBg}
-              />
-            );
-          })}
+          <div className='text-[37px] md:text-[75px] md:leading-[80px]   font-bold leading-[44px] text-darkBlue text-center mb-[40px] mx-10 '>
+            <p> Recevez</p>
+            <p>une expérience,</p>
+            <p>complète</p>
+          </div>
+          <div className='md:flex-wrap md:flex'>
+            {infoCards.map((info, i) => {
+              const {
+                blueBg,
+                title,
+                subTitle,
+                description1,
+                description2,
+                description3,
+                description4,
+                src,
+              } = info;
+              return (
+                <div
+                  key={i}
+                  className={`${i == 0 || i == 3 ? "md:w-1/3" : "md:w-2/3"}`}
+                >
+                  <ServiceDetailCard
+                    key={i}
+                    i={i}
+                    description1={description1}
+                    title={title}
+                    subTitle={subTitle}
+                    description2={description2}
+                    description3={description3}
+                    description4={description4}
+                    src={src}
+                    blueBg={blueBg}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </Container>
         <div className='my-[100px]'>
           <CallToAction />

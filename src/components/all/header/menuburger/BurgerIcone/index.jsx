@@ -3,7 +3,7 @@ import Container from "../../../../shared/composers/container";
 const BurgerIcone = ({ handelClick }) => {
   return (
     <Container className=''>
-      <a>
+      <>
         <input
           type='checkbox'
           id='checkbox'
@@ -100,7 +100,7 @@ const BurgerIcone = ({ handelClick }) => {
             display: none;
           }
         `}</style>
-      </a>
+      </>
     </Container>
   );
 };

@@ -39,7 +39,7 @@ const ServicePageCard = ({
       <Flex
         className={`${
           blueBg ? "bg-darkBlue " : "bg-lightGrey"
-        } flex-col pb-[50px] pt-[40px] px-5 `}
+        } flex-col pb-[50px] md:pb-[0px] pt-[40px] md:pt-[0px] px-5 `}
       >
         <ServiceHeroV2
           title={title}
@@ -49,9 +49,12 @@ const ServicePageCard = ({
           href={href}
           textWhite={blueBg}
         />
-        <div className='mx-auto mt-8'>
+        <div className='inline-flex md:hidden mx-auto mt-8'>
           <MyImage source={imgSrc} h={300} w={300} />
-        </div>
+        </div>{" "}
+        <div className='hidden md:inline-flex mx-auto mt-8'>
+          <MyImage source={imgSrc} h={500} w={500} />
+        </div>{" "}
         {CTA && (
           <div className='mt-[50px] '>
             <BtnPrimaire text={"Tous nos services"} href={"/blservicesogs"} />

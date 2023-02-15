@@ -1,15 +1,10 @@
 import Head from "next/head";
-
 import NavPage from "../../components/all/nav-page";
-
 import ServiceTitle from "../../components/services/serviceTitle";
 import Container from "../../components/shared/composers/container";
-import { motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
-import MotionLeft from "../../components/shared/composers/motion-CardLeft";
 import ServiceCardV2 from "../../components/shared/composers/ListriV2/serviceCardV2";
 import SliderServices from "../../components/services/SliderServices";
-import SubtitleV2 from "../../components/shared/composers/ListriV2/subtitleV2";
 import CallToAction from "../../components/services/servicesDetail/callToAction";
 import ServicePageCard from "../../components/services/servicePageCard";
 const Services = () => {
@@ -31,7 +26,7 @@ const Services = () => {
       subtitle: "Boostez votre visibilité en un click.",
 
       linkText: "Découvrir",
-      href: "services/referencement",
+      href: "/services/referencement",
       imgSrc: "/assets/logoV2/social-dashboard.svg",
       blueBg: true,
       ancre: "referencement",
@@ -63,7 +58,7 @@ const Services = () => {
       subtitle: "Partager votre savoir.",
 
       linkText: "Découvrir",
-      href: "services/digital-business-card",
+      href: "/services/digital-business-card",
       imgSrc: "/assets/logoV2/social-dashboard.svg",
       blueBg: false,
       ancre: "digital-card",
@@ -98,7 +93,9 @@ const Services = () => {
           <div className='mb-[40px] space-y-[36px]'>
             <ServiceTitle
               subtitle1={"Services."}
-              subtitle2={"Créez votre présence numérique avec nos services. "}
+              subtitle2={
+                "Développer votre présence numérique avec nos services. "
+              }
             />
             <SliderServices />{" "}
           </div>

@@ -11,7 +11,7 @@ import HomeRealisation from "../components/home/HomeRealisation";
 import Container from "../components/shared/composers/container";
 import SliderBlog from "../components/home/slider/sliderBlog";
 
-export default function Home({ articles, blogs }) {
+export default function Home({ blogs }) {
   const services = [
     {
       title: "Création de site web",
@@ -36,7 +36,7 @@ export default function Home({ articles, blogs }) {
       subtitle: "Bien plus qu’une notoriété.",
 
       linkText: "Découvrir",
-      href: "services/marketing-digital",
+      href: "/services/marketing-digital",
       imgSrc: "/assets/logoV2/social-dashboard.svg",
       blueBg: true,
       CTA: true,
@@ -85,14 +85,14 @@ export default function Home({ articles, blogs }) {
                 CTA={service.CTA}
               />
             );
-          })}
+          })}{" "}
           <div className=' mt-[60px] space-y-[10px]'>
             <SubtitleV2
               subtitle1={"L’identité de Listri."}
               subtitle2={"Une multitude d’opportunités de collaborer."}
             />
             <SliderIdentity />
-          </div>
+          </div>{" "}
           <div className='mt-[50px] mb-[20px] space-y-[50px]'>
             <SubtitleV2
               subtitle1={"L’expérience Listri."}
@@ -101,14 +101,13 @@ export default function Home({ articles, blogs }) {
             <SliderExperience />
             <BtnPrimaire text={" Lancer mon projet"} href={"/"} />
           </div>
-
-          <HomeRealisation />
+          <HomeRealisation />{" "}
           <div className='mt-[20px] mb-[30px]'>
             <SubtitleV2
               subtitle1={"Notre actualitée"}
               subtitle2={"Suivez les dernières tendances digitales."}
             />{" "}
-          </div>
+          </div>{" "}
           <SliderBlog blogs={blogs} />
           <BtnPrimaire text={"Découvrez nos articles"} href={"/blogs"} />
         </Container>

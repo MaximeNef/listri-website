@@ -10,7 +10,7 @@ const RealisationCard = ({ realisation }) => {
   return (
     <Link href={`/realisations/${realisation.uid}`}>
       <Container
-        className='my-[13px] md:w-[33%] cursor-pointer shadow-realisationCard rounded-[10px] '
+        className='my-[13px] md:w-[50%] cursor-pointer shadow-realisationCard rounded-[10px] '
         onMouseEnter={(e) => {
           setStyle("transform transition duration-500 scale-110   ");
         }}

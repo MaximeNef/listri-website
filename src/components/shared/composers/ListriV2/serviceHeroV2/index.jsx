@@ -16,22 +16,22 @@ const ServiceHeroV2 = ({
       <div
         className={`${textWhite ? "text-[#FBFBFD]" : "text-darkBlue"} ${
           title == "Création de site web" ? "px-[20%]" : ""
-        } text-[32px] tracking-[.004em] text-center font-bold leading-9`}
+        } text-[32px] md:text-6xl tracking-[.004em] text-center font-bold leading-9`}
       >
         {title}
       </div>
-      <p
+      <div
         className={`${
           textWhite ? "text-[#FBFBFD]" : "text-darkBlue"
-        } text-center text-[17px] mt-[5px] mb-[0.7em] `}
+        } text-center text-[17px] md:text-3xl mt-[5px] mb-[0.7em] `}
       >
         {subtitle}
         <p> {subtitle2}</p>
-      </p>
+      </div>
       <div className='text-[#FF7E00] text-center flex justify-center space-x-5'>
         <Link href={href}>
           <a className='flex justify-center items-center'>
-            <div className='mr-1'>{linkText}</div>
+            <div className='mr-1 md:text-xl'>{linkText}</div>
             <div>
               <MyImage
                 source={"/assets/logoV2/arrowRightServices.svg"}
@@ -43,7 +43,7 @@ const ServiceHeroV2 = ({
         </Link>
         <Link href={href}>
           <a className='flex justify-center items-center'>
-            <div className='mr-1'>{"Commencer"}</div>
+            <div className='mr-1 md:text-xl'>{"Commencer"}</div>
             <div>
               <MyImage
                 source={"/assets/logoV2/arrowRightServices.svg"}

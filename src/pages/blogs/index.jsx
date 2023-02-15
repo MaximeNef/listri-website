@@ -77,15 +77,15 @@ const Blogs = ({ blogs, BlogTitle }) => {
               setFilterRealisation={setFilterRealisation}
             />
           </Container>
-          <Flex type='row' justify='center' className=' md:mx-10   md:mt-5 '>
-            <ul className='md:flex md:flex-row md:flex-wrap md:justify-start'>
+          <Flex type='row' justify='center' className='    md:mt-5 '>
+            <ul className='md:flex md:flex-row md:flex-wrap md:justify-between'>
               {newRealisationList.map((blog, i) => (
                 <li
                   key={blog.uid}
                   className={`${
                     i == 0
                       ? "md:flex md:flex-row md:flex-wrap md:w-[100%]"
-                      : "md:flex md:flex-row md:flex-wrap md:w-[33%]"
+                      : "md:flex md:flex-row md:flex-wrap md:w-1/3 "
                   }`}
                 >
                   <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>

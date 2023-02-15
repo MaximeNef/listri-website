@@ -7,7 +7,7 @@ const CardEncorePlus = ({ encore, i }) => {
   // \catégorie, image, ligne1, ligne2
   return (
     <Container
-      className={`  rounded-[15px] p-[25px] mb-[20px]${
+      className={` md:w-[30%] md:mx-[10px]  rounded-[15px] p-[25px] mb-[20px]${
         i % 2 == 0 ? " bg-darkBlue" : " bg-lightGrey"
       }`}
     >

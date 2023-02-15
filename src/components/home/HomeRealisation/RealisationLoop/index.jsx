@@ -96,7 +96,6 @@ const RealisationLoop = ({ current }) => {
             }
           }
           #infinite div.highway-barrier {
-            background: #fff;
           }
           #infinite div.highway-barrier::before,
           #infinite div.highway-barrier::after {
@@ -156,8 +155,8 @@ const RealisationLoop = ({ current }) => {
         `}
       </style>
 
-      <div id='infinite' className='highway-slider mt-10 absolute'>
-        <div className='container highway-barrier'>
+      <div id='infinite' className='highway-slider mt-10 absolute '>
+        <div className='container highway-barrier md:max-w-[2000px]'>
           <ul className='highway-lane '>
             {realisations.map((real, i) => {
               return (
