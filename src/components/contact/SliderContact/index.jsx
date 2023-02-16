@@ -1,5 +1,5 @@
 import React from "react";
-import RealisationLabelCard from "../../realisation/realisationLabelSlider/RealisationLabelCard";
+import RealisationLabelCard from "../../realisation/realisationLabelSlider/realisationLabelCard";
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
 

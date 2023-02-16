@@ -1,6 +1,6 @@
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
-import RealisationLabelCard from "./RealisationLabelCard";
+import RealisationLabelCard from "./realisationLabelCard";
 
 const RealisationLabelSlider = ({
   setFilterRealisation,
