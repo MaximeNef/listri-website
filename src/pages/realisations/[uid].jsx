@@ -1,17 +1,12 @@
 import { createClient, linkResolver } from "../../../prismicio";
-import { PrismicLink, PrismicText } from "@prismicio/react";
 import Container from "../../components/shared/composers/container";
 import { SliceZone } from "@prismicio/react";
-import { BlogsTest, components } from "../../../slices";
+import { components } from "../../../slices";
 import * as prismicH from "@prismicio/helpers";
-import { useState } from "react";
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
-import Flex from "../../components/shared/composers/flex";
-
+import DetailSerivceRealisation from "../../components/services/servicesDetail/DetailSerivceRealisation";
 export default function Realisation({ projet }) {
-  console.log(projet, "realisation");
-
   return (
     <NavPage current='Réalisations'>
       <Container>
@@ -38,6 +33,9 @@ export default function Realisation({ projet }) {
           <Container className='w-full'>
             <SliceZone slices={projet.data.slices} components={components} />
           </Container>
+          <div className='px-[25px] mt-[60px]'>
+            <DetailSerivceRealisation current='Services' />
+          </div>
         </main>
       </Container>
     </NavPage>

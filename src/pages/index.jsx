@@ -1,24 +1,47 @@
 import Head from "next/head";
-import Image from "next/image";
-import MaxWidth from "../components/all/max-width";
 import NavPage from "../components/all/nav-page";
 import Hero from "../components/hero";
-import BlogHero from "../components/hero/blogHero";
-import ClientHero from "../components/hero/clientHero";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import ServiceHero from "../components/hero/serviceHero";
-import Container from "../components/shared/composers/container";
-import Process from "../components/hero/process";
 import { createClient } from "../../prismicio";
-import Processherotry from "../components/hero/processHero";
-import Script from "next/script";
-import Link from "next/link";
-import Cardblog from "../components/blog/CardBlog";
-import ProgressBar from "../components/shared/composers/progressBar";
+import ServiceCardV2 from "../components/shared/composers/ListriV2/serviceCardV2";
+import SubtitleV2 from "../components/shared/composers/ListriV2/subtitleV2";
+import SliderIdentity from "../components/home/slider/sliderIdentity";
+import SliderExperience from "../components/home/slider/sliderExperience";
+import BtnPrimaire from "../components/shared/composers/ListriV2/btnPrimaire";
+import HomeRealisation from "../components/home/HomeRealisation";
+import Container from "../components/shared/composers/container";
+import SliderBlog from "../components/home/slider/sliderBlog";
 
-export default function Home({ articles, blogs }) {
-  console.log(articles, "BLABLA");
+export default function Home({ blogs }) {
+  const services = [
+    {
+      title: "Création de site web",
+      subtitle: "Unique & à la pointe ",
+      subtitle2: "de la technologie",
+      linkText: "Découvrir",
+      href: "/services/creation-site-web",
+      imgSrc: "/assets/logoV2/Website-creator.svg",
+      blueBg: true,
+    },
+    {
+      title: "Référencement",
+      subtitle: "Boostez votre visibilité en un click.",
+
+      linkText: "Découvrir",
+      href: "/services/referencement",
+      imgSrc: "/assets/logoV2/referencement-animate.svg",
+      blueBg: false,
+    },
+    {
+      title: "Marketing digital",
+      subtitle: "Bien plus qu’une notoriété.",
+
+      linkText: "Découvrir",
+      href: "/services/marketing-digital",
+      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      blueBg: true,
+      CTA: true,
+    },
+  ];
   return (
     <NavPage current='Accueil'>
       <Head>
@@ -45,12 +68,49 @@ export default function Home({ articles, blogs }) {
         />
       </Head>
 
-      <main className='bg-white pt-28  text-[#37474F]'>
-        <Hero /> <ServiceHero />
-        {/* <ClientHero /> */}
-        {/* <Process />  */}
-        <Processherotry />
-        <BlogHero blogs={blogs} />
+      <main className='bg-white pt-28  text-default '>
+        <Hero />
+        <Container className='mx-[25px]'>
+          {services.map((service, i) => {
+            return (
+              <ServiceCardV2
+                key={i}
+                title={service.title}
+                subtitle={service.subtitle}
+                subtitle2={service.subtitle2}
+                linkText={service.linkText}
+                href={service.href}
+                imgSrc={service.imgSrc}
+                blueBg={service.blueBg}
+                CTA={service.CTA}
+              />
+            );
+          })}{" "}
+          <div className=' mt-[60px] space-y-[10px]'>
+            <SubtitleV2
+              subtitle1={"L’identité de Listri."}
+              subtitle2={"Une multitude d’opportunités de collaborer."}
+            />
+            <SliderIdentity />
+          </div>{" "}
+          <div className='mt-[50px] mb-[20px] space-y-[50px]'>
+            <SubtitleV2
+              subtitle1={"L’expérience Listri."}
+              subtitle2={"Réalisons votre projet en 4 étapes."}
+            />
+            <SliderExperience />
+            <BtnPrimaire text={"Lancer mon projet"} href={"/contactus"} />
+          </div>
+          <HomeRealisation />{" "}
+          <div className='mt-[20px] mb-[30px]'>
+            <SubtitleV2
+              subtitle1={"Notre actualitée"}
+              subtitle2={"Suivez les dernières tendances digitales."}
+            />{" "}
+          </div>{" "}
+          <SliderBlog blogs={blogs} />
+          <BtnPrimaire text={"Découvrez nos articles"} href={"/blogs"} />
+        </Container>
       </main>
     </NavPage>
   );

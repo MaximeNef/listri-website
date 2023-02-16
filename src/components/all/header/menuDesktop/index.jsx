@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Container from "../../../shared/composers/container";
 import Flex from "../../../shared/composers/flex";
@@ -6,26 +5,15 @@ import { motion } from "framer-motion";
 import MyImage from "../../../shared/composers/myimage";
 
 const MenuDesktop = ({ link, current }) => {
-  console.log(link, "link");
-  console.log(current, "current");
   return (
     <Container className=' w-full '>
       <Flex align='center' className='fixed z-20 bg-white w-full   py-2  px-24'>
         {" "}
-        <Flex className=' m-auto   max-h-12  '>
+        <Flex className=' m-auto    max-h-12  '>
           <Link href='/' passHref>
-            <a>
-              <Container className='max-h-12'>
-                <MyImage source='/assets/logo/listri.svg' w={100} h={90} />
-                {/* <Image
-                  src='/public/assets/logo/listri.svg'
-                  alt='Picture of the author'
-                  width={400}
-                  height={1000}
-                  className='m-auto'
-                /> */}
-              </Container>
-            </a>
+            <div className='max-h-12 cursor-pointer'>
+              <MyImage source='/assets/logo/listri.svg' w={100} h={48} />
+            </div>
           </Link>{" "}
         </Flex>
         <Flex type='row' justify='between' align='start' className='md:  '>
@@ -63,11 +51,11 @@ const MenuDesktop = ({ link, current }) => {
           })}
 
           <Link href='/contactus' passHref>
-            <a>
-              <Container className=' text-center rounded-[50px]  bg-gradient-to-r from-[#FF7E00] to-[#FDBB7E] text-white font-normal m-auto p-2 px-6 mt-[6px]'>
+            <div>
+              <Container className=' cursor-pointer text-center rounded-[50px]  bg-gradient-to-r from-[#FF7E00] to-[#FDBB7E] text-white font-normal m-auto p-2 px-6 mt-[6px]'>
                 Contact
               </Container>
-            </a>
+            </div>
           </Link>
         </Flex>
       </Flex>{" "}

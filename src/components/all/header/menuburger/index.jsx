@@ -48,15 +48,16 @@ const Menuburger = ({ current }) => {
       selected: false,
       src: "/assets/logo/GoodNotes.svg",
     },
+
     {
-      page: "Contact",
-      href: "/contactus",
+      page: "Team",
+      href: "/team",
       selected: false,
       src: "/assets/logo/Contacts.svg",
     },
     {
-      page: "Team",
-      href: "/team",
+      page: "Contact",
+      href: "/contactus",
       selected: false,
       src: "/assets/logo/Contacts.svg",
     },
@@ -73,10 +74,10 @@ const Menuburger = ({ current }) => {
 
   const menuVariants = {
     opened: {
-      left: 0,
+      top: 0,
     },
     closed: {
-      left: "-100vh",
+      top: "-100vh",
     },
   };
   //function qui permet de changer la valeur de la fonction
@@ -95,21 +96,13 @@ const Menuburger = ({ current }) => {
             </a>
           </Link>{" "}
         </Container>
-
-        <BurgerIcone handelClick={handelClick} />
-
-        <Container className=' right-3 z-20 fixed  mt-[6px] rounded-[10px]  bg-gradient-to-r from-[#FF7E00]/80 to-[#ffb873]/50  py-[5px] px-[10px] text-white text-sm  shadow-client '>
+        <a className=' left-2 z-20 fixed  mt-1'>
+          <BurgerIcone handelClick={handelClick} />
+        </a>
+        <Container className=' right-3 z-20 fixed  mt-[5px] py-[5px] px-[10px] text-white text-sm  '>
           <a className='my-auto items-center' href='tel: +32470684551'>
             <Container className='m-auto'>
-              <MyImage source='/assets/logo/phone.svg' h={20} w={20} />
-              {/* <Image
-                loader={myLoader}
-                src='/assets/logo/phone.svg'
-                alt='Picture of the author'
-                width={20}
-                height={20}
-                className='m-auto'
-              /> */}
+              <MyImage source='/assets/logoV2/phone.svg' h={25} w={25} />
             </Container>
           </a>
         </Container>
@@ -122,7 +115,7 @@ const Menuburger = ({ current }) => {
         className='bg-white h-full w-full fixed z-[80] flex '
         transition={{
           duration: 0.4,
-          times: [0, 0.1, 0.3, 0],
+          times: [0.3, 0.1, 0.3, 0],
           // ease: [0.57, 0.97, 0.73, 0.57],
         }}
       >

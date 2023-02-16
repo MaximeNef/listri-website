@@ -14,7 +14,6 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
     }, 1500);
     setPause((prevPause) => !prevPause);
   }
-  console.log(isOpen, " reg");
   return (
     <Container className=' pt-36 text-2xl font-light	 tracking-wide  mx-6 space-y-7 w-full '>
       {link.map((link) => {
@@ -23,7 +22,7 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
             {link.page == current ? (
               <a
                 onClick={handelClick2}
-                className='text-xl font-light   tracking-wide rounded-full pl-6 py-4 bg-[#FF7E00]/10 w-full'
+                className='text-xl font-medium   tracking-wide rounded-full pl-6 py-4 bg-[#FF7E00]/10 w-full'
               >
                 <Flex justify='start'>
                   <MyImage source={link.src} w={20} h={20} />
@@ -43,7 +42,7 @@ const Popup = ({ link, isOpen, setIsOpen, Pause, setPause, current, src }) => {
             ) : (
               <a
                 onClick={handelClick2}
-                className='text-xl font-light	  tracking-wide pl-6  py-2'
+                className='text-xl font-[450] 	  tracking-wide pl-6  py-2'
               >
                 <Flex>
                   <MyImage source={link.src} w={20} h={20} />

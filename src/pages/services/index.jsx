@@ -1,58 +1,65 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import NavPage from "../../components/all/nav-page";
-import ServiceCard from "../../components/services/serviceCard";
-import ServiceImage from "../../components/services/serviceImage";
 import ServiceTitle from "../../components/services/serviceTitle";
 import Container from "../../components/shared/composers/container";
-import { motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
-import MotionLeft from "../../components/shared/composers/motion-CardLeft";
+import ServiceCardV2 from "../../components/shared/composers/ListriV2/serviceCardV2";
+import SliderServices from "../../components/services/SliderServices";
+import CallToAction from "../../components/services/servicesDetail/callToAction";
+import ServicePageCard from "../../components/services/servicePageCard";
 const Services = () => {
   const [data, setData] = useState({ name: "" });
-  const [services, setServices] = useState([
+  const services1 = [
     {
-      id: "creation-de-contenu",
-      title: "Création de contenu",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Blog.svg",
+      title: "Création de site web",
+      subtitle: "Unique & à la pointe",
+      subtitle2: "de la technologie",
+
+      linkText: "Découvrir",
+      href: "/services/creation-site-web",
+      imgSrc: "/assets/logoV2/Website-creator.svg",
+      blueBg: false,
+      ancre: "site-web",
     },
     {
-      id: "social-media",
-      title: "Social média",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Blog.svg",
+      title: "Référencement",
+      subtitle: "Boostez votre visibilité en un click.",
+      linkText: "Découvrir",
+      href: "/services/referencement",
+      imgSrc: "/assets/logoV2/referencement-animate.svg",
+      blueBg: true,
+      ancre: "referencement",
     },
-  ]);
-  const [services2, setServices2] = useState([
+  ];
+  const services2 = [
     {
-      id: "website",
-      title: "Web Site",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Computer.svg",
-    },
-    {
-      id: "Optimisation-Web",
-      title: "Optimisation Web",
-      subtitle: "Optimisation Web",
-      src: "/assets/logo/Blog.svg",
-    },
-  ]);
-  const [services3, setServices3] = useState([
-    {
-      id: "referencement",
-      title: "Référencement web",
-      subtitle: "UX/UI Design & Mobile Application Development",
-      src: "/assets/logo/Computer.svg",
+      title: "Optimisation Digital",
+      subtitle: "Analysez, Optimisez, Convertissez.",
+      linkText: "Découvrir",
+      href: "/services/Optimisation-web",
+      imgSrc: "/assets/logoV2/optimisation-animate.svg",
+      blueBg: false,
+      ancre: "optimisation",
     },
     {
-      id: "Digital-business-card",
-      title: "Digital business card",
-      subtitle: "Digital-business-card",
-      src: "/assets/logo/Blog.svg",
+      title: "Marketing digital",
+      subtitle: "Bien plus qu’une notoriété.",
+      linkText: "Découvrir",
+      href: "/services/marketing-digital",
+      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      blueBg: true,
+      ancre: "marketing",
     },
-  ]);
+    {
+      title: "Digital Card",
+      subtitle: "Partager votre savoir.",
+      linkText: "Découvrir",
+      href: "/services/Digital-business-card",
+      imgSrc: "/assets/logoV2/digital-card-animate.svg",
+      blueBg: false,
+      ancre: "digital-card",
+    },
+  ];
   return (
     <NavPage current='Services'>
       {" "}
@@ -77,91 +84,52 @@ const Services = () => {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-white  py-28 '>
-        <div className='absolute inset-0 flex items-center justify-center'></div>
-        <ServiceTitle />{" "}
-        <Container className='md:flex md:flex-row md:justify-center md:items-start md:w-full'>
-          <Container className='mx-5 relative text-center space-y-8 mt-6 md:mt-0'>
-            {services.map((service, i) => (
-              <MotionLeft
-                initial='hidden'
-                animate='visible'
-                transition={{ duration: 0.8 }}
+      <main className='bg-white pt-28  text-default '>
+        <Container className='mx-[25px]'>
+          <div className='mb-[40px] space-y-[36px]'>
+            <ServiceTitle
+              subtitle1={"Services."}
+              subtitle2={
+                "Développer votre présence numérique avec nos services. "
+              }
+            />
+            <SliderServices />{" "}
+          </div>
+          {services1.map((service, i) => {
+            return (
+              <ServicePageCard
                 key={i}
-              >
-                <Link
-                  href={`/services/${service.id}`}
-                  as={`/services/${service.id}`}
-                  passHref
-                >
-                  <a>
-                    <ServiceCard
-                      key={service.id}
-                      serviceName={service.title}
-                      service={service}
-                      src={service.src}
-                    />
-                  </a>
-                </Link>
-              </MotionLeft>
-            ))}
-          </Container>
-          <Container className='inline-flex md:hidden'>
-            <ServiceImage />
-          </Container>
-          <Container className='mx-5 relative text-center space-y-8 md:flex '>
-            {services2.map((service, i) => (
-              <MotionLeft
-                initial='hidden'
-                animate='visible'
-                transition={{ duration: 1 }}
+                title={service.title}
+                subtitle={service.subtitle}
+                subtitle2={service.subtitle2}
+                linkText={service.linkText}
+                href={service.href}
+                imgSrc={service.imgSrc}
+                blueBg={service.blueBg}
+                CTA={service.CTA}
+                ancre={service.ancre}
+              />
+            );
+          })}
+          <div className='my-[40px]'>
+            <CallToAction />
+          </div>
+
+          {services2.map((service, i) => {
+            return (
+              <ServiceCardV2
                 key={i}
-              >
-                <Link
-                  href={`/services/${service.id}`}
-                  as={`/services/${service.id}`}
-                  passHref
-                >
-                  <a>
-                    <ServiceCard
-                      key={service.id}
-                      serviceName={service.title}
-                      service={service}
-                      src={service.src}
-                    />
-                  </a>
-                </Link>{" "}
-              </MotionLeft>
-            ))}
-          </Container>{" "}
-          <Container className='mt-8 md:mt-0 mx-5 relative text-center space-y-8 md:flex '>
-            {services3.map((service, i) => (
-              <MotionLeft
-                initial='hidden'
-                animate='visible'
-                transition={{ duration: 1 }}
-                key={i}
-              >
-                <Link
-                  href={`/services/${service.id}`}
-                  as={`/services/${service.id}`}
-                  passHref
-                >
-                  <a>
-                    <ServiceCard
-                      key={service.id}
-                      serviceName={service.title}
-                      service={service}
-                      src={service.src}
-                    />
-                  </a>
-                </Link>{" "}
-              </MotionLeft>
-            ))}
-          </Container>{" "}
-          <Container className='hidden md:inline-flex'>
-            <ServiceImage />
-          </Container>
+                title={service.title}
+                subtitle={service.subtitle}
+                linkText={service.linkText}
+                href={service.href}
+                imgSrc={service.imgSrc}
+                blueBg={service.blueBg}
+                CTA={service.CTA}
+                ancre={service.ancre}
+              />
+            );
+          })}
         </Container>
       </main>
     </NavPage>

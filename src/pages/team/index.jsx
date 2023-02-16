@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import { useState } from "react";
 import NavPage from "../../components/all/nav-page";
+import ServiceTitle from "../../components/services/serviceTitle";
 import Container from "../../components/shared/composers/container";
 import TeamCard from "../../components/team/teamCard";
 import TeamTitle from "../../components/team/teamTitle";
@@ -11,22 +12,22 @@ const Team = () => {
     {
       lastName: "Julien",
       firstName: "Nef",
+      poste: "Co-founder",
       activite: "Marketing digital & référencement",
-      mail: "julien@listri.digital",
-      phone: "+32470/68.45.51",
+
       src: "/assets/logo/avatar.png",
     },
     {
       lastName: "Maxime",
       firstName: "Nef",
+      poste: "Co-founder",
       activite: "Developpeur web",
-      mail: "maxime@listri.digital",
-      phone: "+32472/86.06.28",
       src: "/assets/logo/maxime.png",
     },
     {
       lastName: "Félicien",
       firstName: "De Hertogh",
+      poste: "stagiaire",
       activite: "Developpeur web",
       src: "/assets/logo/felicien.jpg",
     },
@@ -54,13 +55,17 @@ const Team = () => {
           rel='stylesheet'
         />{" "}
       </Head>
-
-      <main className='bg-white pt-28  text-[#37474F]'>
-        <TeamTitle />
-        <Container className='space-y-12  mt-28 md:flex-row md:justify-center md:space-y-0 mb-20'>
-          {Teams.map((team, i) => {
-            return <TeamCard team={team} key={i} />;
-          })}
+      <main className='bg-white  text-default '>
+        <Container className=' py-28 mx-[25px]'>
+          <ServiceTitle
+            subtitle1={"Notre équipe."}
+            subtitle2={"d'expert qui gère tout vos service."}
+          />
+          <Container className='space-y-[25px] md:space-x-10  mt-10 md:flex-row md:justify-center md:space-y-0 mb-20'>
+            {Teams.map((team, i) => {
+              return <TeamCard team={team} key={i} />;
+            })}
+          </Container>
         </Container>
       </main>
     </NavPage>

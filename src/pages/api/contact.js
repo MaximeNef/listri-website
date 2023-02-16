@@ -6,13 +6,7 @@ async function sendEmail(req, res) {
     await sgMail.send({
       to: "contact@listri.digital", // Your email where you'll receive emails
       from: "immersy.info@gmail.com", // your website email address here
-      subject: `${req.body.contenu ? "contenu" : ""}${
-        req.body.media ? " media" : ""
-      }${req.body.site ? "site" : ""}${
-        req.body.referencement ? "referencement" : ""
-      }${req.body.optimisation ? "optimisation" : ""}${
-        req.body.autres ? "autres" : ""
-      }`,
+      subject: `${req.body.services}`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -37,6 +31,7 @@ async function sendEmail(req, res) {
               <div style="font-size: 16px;">
               <p>Voici mon Numero de téléphone:</p>
               <h2 style="color:blue;">${req.body.telephone}</h2>
+              <h3  style="color:blue;">${req.body.messages}</h3>
               <br>
               </div>
            

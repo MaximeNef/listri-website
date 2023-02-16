@@ -8,16 +8,26 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
       {i === 0 ? (
         <Flex
           className={
-            "m-5 rounded-[10px] border-[1px] md:border-0 flex-col md:flex-row"
+            "my-5 rounded-[10px] shadow-realisationCard  md:border-0 flex-col md:flex-row md:w-full "
           }
         >
-          <Container className='w-full'>
+          <Container className='md:hidden inline-flex '>
             {" "}
             <MyImage
               source={`${src}`}
               alt='Picture of the author'
-              w={500}
               h={300}
+              w={500}
+              objectFit={"cover"}
+              className={` rounded-t-[9px] md:rounded-[10px] `}
+            />
+          </Container>
+          <Container className='hidden md:inline-flex '>
+            <MyImage
+              source={`${src}`}
+              alt='Picture of the author'
+              h={400}
+              w={1000}
               objectFit={"cover"}
               className={` rounded-t-[9px] md:rounded-[10px] `}
             />
@@ -35,16 +45,13 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
                 >
                   {title}
                 </h2>{" "}
-                <h3 className=' font-[285] text-[14px] w-fit  overflow-hidden  max-h-[40px] mt-2 md:w-[80%]'>
-                  {subtitle}
-                </h3>
               </Container>
-              <Container className='flex justify-end mb-1 p-2 rounded-full bg-[#FEA249] h-fit w-fit absolute bottom-2 right-3 md:left-0 '>
+              <Container className=' absolute bottom-2 right-2 '>
                 <MyImage
-                  source='/assets/logo/arrow_right.svg'
+                  source={"/assets/logoV2/orange-circle-arrow.svg"}
                   alt='Picture of the author'
-                  w={25}
-                  h={25}
+                  w={50}
+                  h={50}
                   objectFit={"contain"}
                   className=''
                 />
@@ -53,41 +60,42 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
           </Container>
         </Flex>
       ) : (
-        <Container className={"m-5 rounded-[10px] border-[1px] md:border-0"}>
+        <Container
+          className={
+            "my-5 rounded-[10px] shadow-realisationCard  md:border-0 md:mx-4  "
+          }
+        >
           <Container>
             {" "}
             <MyImage
               source={`${src}`}
               alt='Picture of the author'
-              w={500}
-              h={300}
+              w={600}
+              h={400}
               objectFit={"cover"}
               className=' rounded-t-[9px] md:rounded-[10px] transform transition duration-500 hover:scale-110 '
             />
           </Container>
-          <Container className=' bg-slate-100/30 md:bg-transparent relative'>
-            <Flex className='justify-between m-[10px] md:ml-1'>
+          <Container className=' bg-slate-100/30 md:bg-transparent relative '>
+            <Flex className='justify-between m-[10px] '>
               <Container className='w-[80%] md:w-full'>
                 <p className=' font-light text-[14px] md:text-[18px]'>
                   {timing} min de lecture • {category}
                 </p>
                 <h2
-                  className={`  font-semibold text-[21px] mt-3 md:w-full  ${
+                  className={`  font-semibold text-[21px] mt-3  overflow-hidden md:overflow-visible h-[99px]   ${
                     i == 0 ? "md:max-h-fit" : " md:h-[90px] "
                   }`}
                 >
                   {title}
                 </h2>{" "}
-                <h3 className=' font-[285] text-[14px] w-fit  overflow-hidden  max-h-[40px] mt-2 md:w-[80%]'>
-                  {subtitle}
-                </h3>
               </Container>
-              <Container className='flex justify-end mb-1 p-2 rounded-full bg-[#FEA249] h-fit w-fit absolute bottom-2 right-3 '>
+              <Container className=' absolute bottom-2 right-2 '>
                 <MyImage
-                  source='/assets/logo/arrow_right.svg'
+                  source={"/assets/logoV2/orange-circle-arrow.svg"}
                   alt='Picture of the author'
-                  w={25}
-                  h={25}
+                  w={50}
+                  h={50}
                   objectFit={"contain"}
                   className=''
                 />

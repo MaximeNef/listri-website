@@ -1,14 +1,12 @@
 import Head from "next/head";
 import NavPage from "../../components/all/nav-page";
 import Container from "../../components/shared/composers/container";
-import { motion } from "framer-motion";
-import MyImage from "../../components/shared/composers/myimage";
-import TitlePage from "../../components/all/titlePage";
-import ClientList from "../../components/client/clientList";
 import { createClient } from "../../../prismicio";
 import { useState } from "react";
-import FilterClient from "../../components/client/filterClient";
-
+import ServiceTitle from "../../components/services/serviceTitle";
+import RealisationLabelSlider from "../../components/realisation/realisationLabelSlider";
+import RealisationList from "../../components/realisation/realisationList";
+import DetailSerivceRealisation from "../../components/services/servicesDetail/DetailSerivceRealisation";
 const Realisation = ({ realisations }) => {
   const titlepageprops = {
     title: "Réalisation",
@@ -16,18 +14,18 @@ const Realisation = ({ realisations }) => {
     description:
       "Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0 Restez à jour avec listri",
   };
-  const [filterValue, setFilterValue] = useState("all");
-  const [newProductList, setNewProductList] = useState(realisations);
 
-  function onFilterValueSelected(filterValue) {
-    console.log(filterValue);
-    setFilterValue(filterValue);
-  }
-  const filteredProductList = newProductList.filter((realisation) => {
-    if (filterValue === "all") {
+  const [allRealisations, setAllRealisations] = useState(realisations);
+  const [filterRealisation, setFilterRealisation] = useState("all");
+
+  const newRealisationList = allRealisations.filter((realisation) => {
+    if (filterRealisation == "all") {
       return realisation;
     }
-    if (filterValue === realisation?.data.slices[0].primary.serviceCategorie) {
+
+    if (
+      realisation?.data.slices[0].primary.serviceCategorie == filterRealisation
+    ) {
       return realisation;
     }
   });
@@ -54,18 +52,28 @@ const Realisation = ({ realisations }) => {
           rel='stylesheet'
         />
       </Head>
-      <main className='bg-white  py-28 '>
-        <Container className='mb-10 mx-auto md:max-w-[1600px] '>
-          <TitlePage
-            title={titlepageprops.title}
-            subtitle={titlepageprops.subtitle}
-            description={titlepageprops.description}
+      <main className='bg-white  text-default '>
+        <Container className=' pt-28 pb-14 mx-[25px]'>
+          <ServiceTitle
+            subtitle1={"Nos réalisation."}
+            subtitle2={
+              "Des réalisations uniques pour des clients qui le sont tout autant."
+            }
           />
+          <Container className='mt-[30px] mb-[50px]'>
+            <RealisationLabelSlider
+              filterRealisation={filterRealisation}
+              setFilterRealisation={setFilterRealisation}
+            />
+          </Container>
 
-          <FilterClient filterValueSelected={onFilterValueSelected} />
-
-          <ClientList realisations={filteredProductList} />
-        </Container>
+          <Container className=' '>
+            <RealisationList realisations={newRealisationList} />
+          </Container>
+        </Container>{" "}
+        <div className='px-[25px] mt-[60px]'>
+          <DetailSerivceRealisation current='Services' />
+        </div>
       </main>
     </NavPage>
   );

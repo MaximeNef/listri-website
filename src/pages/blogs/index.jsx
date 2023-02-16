@@ -16,27 +16,26 @@ import TitlePage from "../../components/all/titlePage";
 import Cardblog from "../../components/blog/CardBlog";
 import FilterBlog from "../../components/blog/filterBlog";
 import { useState } from "react";
+import ServiceTitle from "../../components/services/serviceTitle";
+import RealisationLabelSlider from "../../components/realisation/realisationLabelSlider";
 
 const Blogs = ({ blogs, BlogTitle }) => {
   const [filterValue, setFilterValue] = useState("all");
   const [newProductList, setNewProductList] = useState(blogs);
-  console.log(blogs, "blogs");
+  console.log(blogs[2].data.slices[0].items[0].category, "blogs");
 
-  const titlepageprops = {
-    title: " L’actualité & les ressources ",
-    subtitle: "",
-    description:
-      "Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0 Restez à jour avec listri",
-  };
+  const [allRealisations, setAllRealisations] = useState(blogs);
+  const [filterRealisation, setFilterRealisation] = useState("all");
+
   function onFilterValueSelected(filterValue) {
-    console.log(filterValue);
     setFilterValue(filterValue);
   }
-  const filteredProductList = newProductList.filter((blog) => {
-    if (filterValue === "all") {
+  const newRealisationList = allRealisations.filter((blog) => {
+    if (filterRealisation == "all") {
       return blog;
     }
-    if (filterValue === blog?.data.slices[0].items[0].category) {
+
+    if (blog?.data.slices[0].items[0].category == filterRealisation) {
       return blog;
     }
   });
@@ -65,25 +64,28 @@ const Blogs = ({ blogs, BlogTitle }) => {
         />
       </Head>
 
-      <main className='bg-white  pt-28 '>
-        <Container className='mb-10 mx-auto md:max-w-[1600px] '>
-          <TitlePage
-            title={titlepageprops.title}
-            subtitle={titlepageprops.subtitle}
-            description={titlepageprops.description}
+      <main className='bg-white  text-default'>
+        <Container className='  py-28 mx-[25px]'>
+          <ServiceTitle
+            subtitle1={"Actualité."}
+            subtitle2={"Suivez les dernières tendances digitales."}
           />
 
-          <FilterBlog filterValueSelected={onFilterValueSelected} />
-
-          <Flex type='row' justify='center' className=' md:mx-10   md:mt-5 '>
-            <ul className='md:flex md:flex-row md:flex-wrap md:justify-start'>
-              {filteredProductList.map((blog, i) => (
+          <Container className='mt-[30px] mb-[50px]'>
+            <RealisationLabelSlider
+              filterRealisation={filterRealisation}
+              setFilterRealisation={setFilterRealisation}
+            />
+          </Container>
+          <Flex type='row' justify='center' className='    md:mt-5 '>
+            <ul className='md:flex md:flex-row md:flex-wrap md:justify-between'>
+              {newRealisationList.map((blog, i) => (
                 <li
                   key={blog.uid}
                   className={`${
                     i == 0
                       ? "md:flex md:flex-row md:flex-wrap md:w-[100%]"
-                      : "md:flex md:flex-row md:flex-wrap md:w-[33%]"
+                      : "md:flex md:flex-row md:flex-wrap md:w-1/3 "
                   }`}
                 >
                   <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>

@@ -15,7 +15,6 @@ export const repositoryName = new URL(sm.apiEndpoint).hostname.split('.')[0];
  * @type {prismicH.LinkResolverFunction}
  */
 export const linkResolver = (doc) => {
-  console.log(doc, 'DOCDOCDOC');
   if (doc.type === 'BlogPost') {
     return `/blogs/${doc.uid}`;
   }
