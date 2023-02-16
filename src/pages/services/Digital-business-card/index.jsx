@@ -14,7 +14,7 @@ import MyImage from "../../../components/shared/composers/myimage";
 const BusinessCard = () => {
   const info = [
     {
-      img: "/assets/logoV2/visibilite.svg",
+      img: "/assets/logoV2/accessible.svg",
       text: "Accessible 24/7",
     },
 
@@ -35,76 +35,65 @@ const BusinessCard = () => {
     {
       blueBg: true,
       title: "Personnalisable",
-      subTitle: "A la pointe du développement",
+      subTitle: "Identité visuelle unique & design original",
       description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+        "Notre service de digital business card vous offre la possibilité de créer et de personnaliser votre carte de visite numérique. ",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Vous pouvez ajouter des informations supplémentaires, telles que des liens vers vos réseaux sociaux ou vos profils professionnels. ",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "Enfin, le service peut être intégré à des outils de partage de contacts afin que les utilisateurs puissent facilement partager leur carte de visite numérique avec d'autres.",
 
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/personnalisable-animate.svg",
     },
     {
       blueBg: false,
       title: "Économique",
       subTitle: "A la pointe du développement",
       description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+        "Le service de digital business card offre à votre entreprise une solution économique pour réduire vos coûts d'impression et de distribution de cartes de visite. ",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Il vous permet de créer une carte de visite virtuelle et de la partager facilement par e-mail, SMS ou réseaux sociaux. ",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "En tant qu’entreprise vous pouvez ainsi économiser des coûts liés à l'impression et à la distribution de cartes de visite, tout en bénéficiant d'un service intuitif et personnalisable.",
 
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/economique.svg",
     },
     {
       blueBg: true,
       title: "Pratique",
       subTitle: "A la pointe du développement",
       description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+        "Le service de digital business card est un outil pratique pour les professionnels qui souhaitent optimiser leur image de marque et communiquer de manière professionnelle et efficace.",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Ces cartes de visite numériques sont faciles à partager et à gérer, ce qui en fait un outil pratique pour les entreprises et les particuliers.",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
-
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/pratique-animate.svg",
     },
     {
       blueBg: true,
       title: "Écologique",
       subTitle: "A la pointe du développement",
       description1:
-        "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
+        "Le service de carte de visite digitale offre une alternative écologique à l'impression et à l'envoi de cartes de visite en papier. ",
 
       description2:
-        "Un affichage adapté à toutes les tailles d'écrans, afin d'avoir un rendu optimal",
+        "Les cartes de visite numériques sont écologiques car elles ne nécessitent pas de papier ni d'encre et peuvent être partagées facilement, ce qui réduit la consommation de ressources et les déchets. ",
 
-      description3: "Simple & efficace, un site avec tout ce qu'il vous faut !",
+      description3:
+        "En outre, les cartes de visite digitales sont plus faciles à mettre à jour et à modifier qu'elles ne le sont en papier, ce qui signifie que les informations peuvent être mises à jour rapidement et sans gaspiller de papier.",
 
-      description4:
-        "Accompagné d'une optimisation pour un référencement naturel",
-
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/ecologique-animate.svg",
     },
   ];
   const cardPlus = [
     {
       categorie: "Accessible 24/7",
-      image: "/assets/logoV2/accessible.svg",
+      image: "/assets/logoV2/accessible-white.svg",
       ligne1: "Peu importe où et",
       ligne2: "peu importe l’appareil.",
     },
@@ -155,7 +144,7 @@ const BusinessCard = () => {
         <TitleServiceDetail title='Digital business card' />
         <Container className='mx-auto mt-8'>
           <MyImage
-            source={"/assets/logoV2/Website-creator.svg"}
+            source={"/assets/logoV2/digital-card-animate.svg"}
             h={300}
             w={300}
           />{" "}
@@ -167,7 +156,9 @@ const BusinessCard = () => {
         </Container>
         <Container className='mt-[140px]'>
           <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px] mx-10'>
-            Recevez une expérience, complète
+            <p> Recevez</p>
+            <p>une expérience,</p>
+            <p>complète</p>
           </p>
           {infoCards.map((info, i) => {
             const {
@@ -183,6 +174,7 @@ const BusinessCard = () => {
             return (
               <ServiceDetailCard
                 key={i}
+                i={i}
                 description1={description1}
                 title={title}
                 subTitle={subTitle}

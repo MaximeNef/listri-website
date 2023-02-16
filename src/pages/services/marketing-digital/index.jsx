@@ -34,7 +34,7 @@ const Website = () => {
     {
       blueBg: true,
       title: "Visibilité",
-      subTitle: "La visibilité est un élément essentiel pour une entreprise.",
+      subTitle: "Présence en ligne améliorée",
       description1:
         "La visibilité est un élément essentiel pour une entreprise.",
 
@@ -47,12 +47,12 @@ const Website = () => {
       description4:
         "La visibilité est une partie importante de toute campagne de marketing digital et peut être obtenue à l'aide d'une variété de techniques, notamment le référencement, les médias sociaux, le mail marketing ou encore la publicité en ligne.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/visibility-animate.svg",
     },
     {
       blueBg: false,
       title: "Engagement",
-      subTitle: "A la pointe du développement",
+      subTitle: "Interaction & fidélisation de la communauté ",
       description1: "L'engagement est un élément clé du marketing digital. ",
 
       description2:
@@ -64,12 +64,12 @@ const Website = () => {
       description4:
         "Pour les entreprises qui utilisent le marketing digital, l'engagement est essentiel car il permet de développer une relation et une connexion plus profonde avec leurs clients.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/engagement-animate.svg",
     },
     {
       blueBg: true,
       title: "Ciblage",
-      subTitle: "A la pointe du développement",
+      subTitle: "audience adaptée, résultat précis",
       description1:
         "Le ciblage est une partie très importante du marketing digital. ",
 
@@ -82,12 +82,12 @@ const Website = () => {
       description4:
         "Le ciblage est très important pour le marketing digital car il permet d'atteindre les bonnes personnes au bon moment et d'augmenter la visibilité et le ROI de votre campagne.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/ciblage-animate.svg",
     },
     {
       blueBg: false,
       title: "Conversion",
-      subTitle: "A la pointe du développement",
+      subTitle: "Amélioration des résultats commerciaux",
       description1:
         "La conversion est un terme clé utilisé pour décrire le processus par lequel un consommateur passe d'un prospect à un client. ",
 
@@ -100,7 +100,7 @@ const Website = () => {
       description4:
         "Les outils et services de marketing digital peuvent être utilisés pour cibler le bon public, créer des campagnes efficaces et améliorer le taux de conversion.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/conversion-animate.svg",
     },
   ];
   const cardPlus = [
@@ -161,7 +161,7 @@ const Website = () => {
         <TitleServiceDetail title='Marketing' title2='digital' />
         <Container className='mx-auto mt-8'>
           <MyImage
-            source={"/assets/logoV2/Website-creator.svg"}
+            source={"/assets/logoV2/social-dashboard.svg"}
             h={300}
             w={300}
           />{" "}
@@ -173,7 +173,9 @@ const Website = () => {
         </Container>
         <Container className='mt-[140px]'>
           <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]  mx-10'>
-            Recevez une expérience, complète
+            <p> Recevez</p>
+            <p>une expérience,</p>
+            <p>complète</p>
           </p>
           {infoCards.map((info, i) => {
             const {
@@ -189,6 +191,7 @@ const Website = () => {
             return (
               <ServiceDetailCard
                 key={i}
+                i={i}
                 description1={description1}
                 title={title}
                 subTitle={subTitle}

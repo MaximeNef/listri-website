@@ -25,7 +25,7 @@ const Siteweb = () => {
       description3:
         "De plus, le responsive design est devenu un critère important pour le référencement dans les moteurs de recherche, il est donc essentiel de l'intégrer à votre site si vous souhaitez être bien classé dans les résultats de recherche.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/responsive.svg",
     },
     {
       blueBg: false,
@@ -43,7 +43,7 @@ const Siteweb = () => {
       description4:
         "Le référencement est un aspect crucial de l'optimisation d'un site web. Vous pouvez vous assurer qu'il apparaît dans les résultats de recherche pour les mots-clés pertinents et atteindre ainsi de nouveaux clients potentiels.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/optimiser-animate.svg",
     },
     {
       blueBg: true,
@@ -58,22 +58,7 @@ const Siteweb = () => {
       description3:
         "En résumé, la visibilité de votre site web est essentielle pour développer votre entreprise et atteindre de nouveaux clients. En investissant dans la visibilité de votre site, vous investissez dans la visibilité de votre entreprise.",
 
-      src: "/assets/logoV2/website-creator.svg",
-    },
-    {
-      blueBg: false,
-      title: "Visibilité",
-      subTitle: "soyez visible n’importe ou",
-      description1:
-        "Un site web renforce la confiance de vos clients en votre entreprise en présentant votre entreprise et ses produits ou services de manière claire et concise. ",
-
-      description2:
-        "Plus votre site est visible, plus vous aurez de visiteurs sur votre site, ce qui peut potentiellement augmenter les ventes et les conversions.",
-
-      description3:
-        "En résumé, la visibilité de votre site web est essentielle pour développer votre entreprise et atteindre de nouveaux clients. En investissant dans la visibilité de votre site, vous investissez dans la visibilité de votre entreprise.",
-
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/visibility-animate.svg",
     },
   ];
 

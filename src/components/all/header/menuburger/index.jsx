@@ -48,15 +48,16 @@ const Menuburger = ({ current }) => {
       selected: false,
       src: "/assets/logo/GoodNotes.svg",
     },
+
     {
-      page: "Contact",
-      href: "/contactus",
+      page: "Team",
+      href: "/team",
       selected: false,
       src: "/assets/logo/Contacts.svg",
     },
     {
-      page: "Team",
-      href: "/team",
+      page: "Contact",
+      href: "/contactus",
       selected: false,
       src: "/assets/logo/Contacts.svg",
     },

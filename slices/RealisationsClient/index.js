@@ -1,11 +1,11 @@
-import { PrismicRichText } from "@prismicio/react";
 import MyImage from "../../src/components/shared/composers/myimage";
 import Container from "../../src/components/shared/composers/container";
 import Link from "next/link";
 import Flex from "../../src/components/shared/composers/flex";
 import DevisGratis from "../../src/components/client/DevisGratis";
-import VideoPlayer from "../../src/components/shared/composers/videoPlayer";
 import React, { useEffect, useRef } from "react";
+import ServiceTitle from "../../src/components/services/serviceTitle";
+import BtnPrimaire from "../../src/components/shared/composers/ListriV2/btnPrimaire";
 
 const servicesClient = [
   {
@@ -31,9 +31,12 @@ const servicesClient = [
 const RealisationsClient = ({ slices }) => {
   return (
     <section className='mx-5 md:mx-20 mb-10'>
-      <h1 className='font-light text-[36px] mb-[30px] md:mb-0  tracking-wider md:text-center'>
-        {slices[0].primary.client[0]?.text}
-      </h1>
+      <ServiceTitle
+        subtitle1={slices[0].primary.client[0]?.text}
+        subtitle2={
+          "Une réalisations uniques pour un clients qui l'est tout autant."
+        }
+      />
       <Container className='h-[250px] md:h-[100vh] relative my-[30px] md:mt-0'>
         <MyImage
           source={
@@ -44,22 +47,13 @@ const RealisationsClient = ({ slices }) => {
           layout={"fill"}
         />
       </Container>
-      <Container
-        className='mx-auto text-center w-[90%] border  border-[#FF7E00]
- rounded-[10px] my-2 py-2 text-white font-bold mb-[60px]  '
-      >
-        <a
-          rel='noreferrer'
-          className='text-[#FF7E00] text-[20px] '
-          href={slices[0].primary.lienProjet?.url}
-          target='_blank'
-        >
-          visiter le site{" "}
-        </a>
-      </Container>
-      <Container className='md:flex md:flex-row md:mx-auto  md:w-[90%]'>
+      <BtnPrimaire
+        text={"visiter le site"}
+        href={slices[0].primary.lienProjet?.url}
+      />
+      <Container className='md:flex md:flex-row md:mx-auto  md:w-[90%] mt-10'>
         <div className='md:max-w-[50%]  md:flex md:flex-col  md:my-auto md:ml-10 '>
-          <p className='text-[#FF7E00] font-semibold text-[16px] md:text-[35px] mb-[10px]'>
+          <p className='text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon md:w-fit font-semibold text-[21px] md:text-[35px] mb-[10px]'>
             Description du projet
           </p>
           <p className='md:mr-40'>
@@ -92,7 +86,7 @@ const RealisationsClient = ({ slices }) => {
           />
         </div>
         <div className='md:max-w-[50%]  md:flex md:flex-col  md:my-auto md:w-[50%]'>
-          <p className='text-[#FF7E00] font-semibold text-[16px] md:text-[35px] mb-[10px] md:mr-40'>
+          <p className='text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon md:w-fit font-semibold text-[21px] md:text-[35px] mb-[10px] md:mr-40'>
             Ce que nous avons réalisé
           </p>
           <p className='md:mr-40'>
@@ -166,7 +160,7 @@ const RealisationsClient = ({ slices }) => {
               {slices[0].primary.statutClient[0]?.text}
             </p>
           </Container>
-          <Container className='mx-auto text-center w-full  bg-[#FF7E00] rounded-[10px] my-5 py-2 text-white font-bold '>
+          <Container className='mx-auto text-center w-full  bg-gradient-to-r from-orangeLight to-saumon rounded-[10px] my-5 py-2 text-white font-bold '>
             <Link href='/realisations'>
               <a>Nos réalisations</a>
             </Link>
@@ -192,7 +186,7 @@ const RealisationsClient = ({ slices }) => {
         Demandez une offre, et nous vous répondrons aujourd'hui !
       </p>
       <Flex className='space-x-2 mt-[20px]'>
-        <Container className='mx-auto text-center w-full  bg-[#FF7E00]  rounded-[10px] my-2 py-2 text-white font-bold  '>
+        <Container className='mx-auto text-center w-full  bg-gradient-to-r from-orangeLight to-saumon rounded-[10px] my-2 py-2 text-white font-bold  '>
           <Link href='/contactus'>
             <a>demander une offre</a>
           </Link>

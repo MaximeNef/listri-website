@@ -43,7 +43,7 @@ const ServiceCardV2 = ({
             __html: svg,
           }}
         />
-      ) : title == "Marketing digital" ? (
+      ) : title == "Marketing digital" || title == "Optimisation Digital" ? (
         <div
           className={`mb-[-1px]   transform rotate-180`}
           dangerouslySetInnerHTML={{
@@ -73,17 +73,18 @@ const ServiceCardV2 = ({
         </div>{" "}
         {CTA && (
           <div className='mt-[50px] md:mb-[-100px] md:z-40 '>
-            <BtnPrimaire
-              text={"Découvrez nos services"}
-              href={"/blservicesogs"}
-            />
+            <BtnPrimaire text={"Découvrez nos services"} href={"/services"} />
           </div>
         )}
       </Flex>
       {blueBg ? (
         <div
           className={`mt-[-1px]  ${
-            title == "Marketing digital" ? "" : "bg-lightGrey  mt-[-1px]"
+            title == "Marketing digital"
+              ? ancre === "marketing"
+                ? "bg-lightGrey"
+                : ""
+              : "bg-lightGrey  mt-[-1px]"
           }`}
           dangerouslySetInnerHTML={{
             __html: svgBottom,

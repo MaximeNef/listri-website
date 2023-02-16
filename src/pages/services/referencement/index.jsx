@@ -1,10 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
 import NavPage from "../../../components/all/nav-page";
-import OneServiceBtn from "../../../components/services/oneService/OneServiceBtn";
-import OneServiceContent from "../../../components/services/oneService/oneServiceContent";
-import OneServiceImg from "../../../components/services/oneService/OneServiceImg";
-import OneServiceTitle from "../../../components/services/oneService/oneServiceTitle";
 import ServiceDetailCard from "../../../components/services/serviceDetail/serviceDetailCard";
 import CallToAction from "../../../components/services/servicesDetail/callToAction";
 import DetailSerivceRealisation from "../../../components/services/servicesDetail/DetailSerivceRealisation";
@@ -61,7 +56,7 @@ const Referencement = () => {
       description5:
         "En somme, la visibilité, la notoriété et la popularité sont des éléments essentiels pour tout site web qui souhaite se démarquer et performer sur internet.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/visibility-animate.svg",
     },
     {
       blueBg: false,
@@ -73,7 +68,7 @@ const Referencement = () => {
       description3:
         "Pour cela, il est nécessaire d'utiliser des techniques de référencement, telles que l'optimisation des mots clés, l'optimisation des contenus, l'acquisition de liens, le développement de contenus pertinents et la création de liens entrants.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/trafic-animate.svg",
     },
     {
       blueBg: true,
@@ -88,7 +83,7 @@ const Referencement = () => {
       description3:
         "Par conséquent, pour obtenir un bon classement, le service de référencement doit vous aider à construire une bonne réputation et à développer votre crédibilité sur le web.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/security-animate.svg",
     },
   ];
   const info = [
@@ -139,7 +134,7 @@ const Referencement = () => {
         <TitleServiceDetail title='Référencement' />
         <Container className='mx-auto mt-8'>
           <MyImage
-            source={"/assets/logoV2/Website-creator.svg"}
+            source={"/assets/logoV2/referencement-animate.svg"}
             h={300}
             w={300}
           />{" "}
@@ -151,7 +146,9 @@ const Referencement = () => {
         </Container>
         <Container className='mt-[140px]'>
           <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px]  mx-10'>
-            Recevez une expérience, complète
+            <p> Recevez</p>
+            <p>une expérience,</p>
+            <p>complète</p>
           </p>
           {infoCards.map((info, i) => {
             const {
@@ -168,6 +165,7 @@ const Referencement = () => {
             return (
               <ServiceDetailCard
                 key={i}
+                i={i}
                 description1={description1}
                 title={title}
                 subTitle={subTitle}

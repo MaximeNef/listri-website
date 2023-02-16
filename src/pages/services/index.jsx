@@ -24,42 +24,38 @@ const Services = () => {
     {
       title: "Référencement",
       subtitle: "Boostez votre visibilité en un click.",
-
       linkText: "Découvrir",
       href: "/services/referencement",
-      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      imgSrc: "/assets/logoV2/referencement-animate.svg",
       blueBg: true,
       ancre: "referencement",
     },
   ];
   const services2 = [
     {
-      title: "Marketing digital",
-      subtitle: "Bien plus qu’une notoriété.",
-
-      linkText: "Découvrir",
-      href: "/services/marketing-digital",
-      imgSrc: "/assets/logoV2/Website-creator.svg",
-      blueBg: false,
-      ancre: "marketing",
-    },
-    {
       title: "Optimisation Digital",
       subtitle: "Analysez, Optimisez, Convertissez.",
-
       linkText: "Découvrir",
-      href: "/services/optimisation-web",
-      imgSrc: "/assets/logoV2/digital-card.svg",
-      blueBg: true,
+      href: "/services/Optimisation-web",
+      imgSrc: "/assets/logoV2/optimisation-animate.svg",
+      blueBg: false,
       ancre: "optimisation",
+    },
+    {
+      title: "Marketing digital",
+      subtitle: "Bien plus qu’une notoriété.",
+      linkText: "Découvrir",
+      href: "/services/marketing-digital",
+      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      blueBg: true,
+      ancre: "marketing",
     },
     {
       title: "Digital Card",
       subtitle: "Partager votre savoir.",
-
       linkText: "Découvrir",
-      href: "/services/digital-business-card",
-      imgSrc: "/assets/logoV2/social-dashboard.svg",
+      href: "/services/Digital-business-card",
+      imgSrc: "/assets/logoV2/digital-card-animate.svg",
       blueBg: false,
       ancre: "digital-card",
     },

@@ -110,7 +110,7 @@ const DevisGratis = () => {
             relatives à la protection de la Vie Privée.
           </label>
         </Flex>
-        <Container className='mx-auto text-center w-full  bg-[#FF7E00] rounded-[10px] my-2 py-2 text-white font-bold mt-[30px]  '>
+        <Container className='mx-auto text-center w-full  bg-gradient-to-r from-orangeLight to-saumon rounded-[10px] my-2 py-2 text-white font-bold mt-[30px]  '>
           <button type='submit'>
             <a>Recevoir mon devis</a>
           </button>

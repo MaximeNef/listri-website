@@ -39,7 +39,7 @@ const OptimisationWeb = () => {
     {
       blueBg: true,
       title: "Expérience utilisateur ",
-      subTitle: "A la pointe du développement",
+      subTitle: "Optimisé pour de meilleurs résultats",
       description1:
         "la réussite d'un service d'optimisation web passe par l'expérience utilisateur.",
 
@@ -54,12 +54,12 @@ const OptimisationWeb = () => {
       description5:
         "Notre service d'optimisation web améliore également  la sécurité et la stabilité du site web, se qui  encourage les utilisateurs à revenir régulièrement.",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/exp-utilisateur-animate.svg",
     },
     {
       blueBg: false,
-      title: "Responsive",
-      subTitle: "A la pointe du développement",
+      title: "Analyse",
+      subTitle: "Compréhension simplifiée des données",
       description1:
         "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
 
@@ -71,12 +71,12 @@ const OptimisationWeb = () => {
       description4:
         "Accompagné d'une optimisation pour un référencement naturel",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/analyse-animate.svg",
     },
     {
       blueBg: true,
-      title: "Responsive",
-      subTitle: "A la pointe du développement",
+      title: "Conversion",
+      subTitle: "Amélioration des résultats commerciaux",
       description1:
         "Un site qui vous ressemble & vous appartient ! un design 100% modulable & en harmonie avec votre charte graphique.",
 
@@ -88,7 +88,7 @@ const OptimisationWeb = () => {
       description4:
         "Accompagné d'une optimisation pour un référencement naturel",
 
-      src: "/assets/logoV2/website-creator.svg",
+      src: "/assets/logoV2/conversion-animate.svg",
     },
   ];
   const cardPlus = [
@@ -140,10 +140,10 @@ const OptimisationWeb = () => {
         />
       </Head>
       <main className='bg-white pt-28  text-default'>
-        <TitleServiceDetail title='Création de Site Web' />
+        <TitleServiceDetail title='Optimisation web' />
         <Container className='mx-auto mt-8'>
           <MyImage
-            source={"/assets/logoV2/Website-creator.svg"}
+            source={"/assets/logoV2/optimisation-animate.svg"}
             h={300}
             w={300}
           />{" "}
@@ -155,7 +155,9 @@ const OptimisationWeb = () => {
         </Container>
         <Container className='mt-[140px]'>
           <p className='text-[37px] font-bold leading-[44px] text-darkBlue text-center mb-[40px] mx-10'>
-            Recevez une expérience, complète
+            <p> Recevez</p>
+            <p>une expérience,</p>
+            <p>complète</p>
           </p>
           {infoCards.map((info, i) => {
             const {
@@ -172,6 +174,7 @@ const OptimisationWeb = () => {
             return (
               <ServiceDetailCard
                 key={i}
+                i={i}
                 description1={description1}
                 title={title}
                 subTitle={subTitle}

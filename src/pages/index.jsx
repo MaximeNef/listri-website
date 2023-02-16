@@ -28,7 +28,7 @@ export default function Home({ blogs }) {
 
       linkText: "Découvrir",
       href: "/services/referencement",
-      imgSrc: "/assets/logoV2/digital-card.svg",
+      imgSrc: "/assets/logoV2/referencement-animate.svg",
       blueBg: false,
     },
     {
@@ -99,7 +99,7 @@ export default function Home({ blogs }) {
               subtitle2={"Réalisons votre projet en 4 étapes."}
             />
             <SliderExperience />
-            <BtnPrimaire text={" Lancer mon projet"} href={"/"} />
+            <BtnPrimaire text={"Lancer mon projet"} href={"/contactus"} />
           </div>
           <HomeRealisation />{" "}
           <div className='mt-[20px] mb-[30px]'>

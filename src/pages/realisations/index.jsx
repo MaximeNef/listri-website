@@ -6,7 +6,7 @@ import { useState } from "react";
 import ServiceTitle from "../../components/services/serviceTitle";
 import RealisationLabelSlider from "../../components/realisation/realisationLabelSlider";
 import RealisationList from "../../components/realisation/realisationList";
-
+import DetailSerivceRealisation from "../../components/services/servicesDetail/DetailSerivceRealisation";
 const Realisation = ({ realisations }) => {
   const titlepageprops = {
     title: "Réalisation",
@@ -53,7 +53,7 @@ const Realisation = ({ realisations }) => {
         />
       </Head>
       <main className='bg-white  text-default '>
-        <Container className=' py-28 mx-[25px]'>
+        <Container className=' pt-28 pb-14 mx-[25px]'>
           <ServiceTitle
             subtitle1={"Nos réalisation."}
             subtitle2={
@@ -67,10 +67,13 @@ const Realisation = ({ realisations }) => {
             />
           </Container>
 
-          <Container className='mb-10 '>
+          <Container className=' '>
             <RealisationList realisations={newRealisationList} />
           </Container>
-        </Container>
+        </Container>{" "}
+        <div className='px-[25px] mt-[60px]'>
+          <DetailSerivceRealisation current='Services' />
+        </div>
       </main>
     </NavPage>
   );

@@ -58,10 +58,8 @@ const Team = () => {
       <main className='bg-white  text-default '>
         <Container className=' py-28 mx-[25px]'>
           <ServiceTitle
-            subtitle1={"Nos réalisation."}
-            subtitle2={
-              "Des réalisations uniques pour des clients qui le sont tout autant."
-            }
+            subtitle1={"Notre équipe."}
+            subtitle2={"d'expert qui gère tout vos service."}
           />
           <Container className='space-y-[25px] md:space-x-10  mt-10 md:flex-row md:justify-center md:space-y-0 mb-20'>
             {Teams.map((team, i) => {

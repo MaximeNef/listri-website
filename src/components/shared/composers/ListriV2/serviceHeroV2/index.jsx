@@ -41,7 +41,7 @@ const ServiceHeroV2 = ({
             </div>
           </a>
         </Link>
-        <Link href={href}>
+        <Link href={"/contactus"}>
           <a className='flex justify-center items-center'>
             <div className='mr-1 md:text-xl'>{"Commencer"}</div>
             <div>
