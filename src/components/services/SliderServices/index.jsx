@@ -16,7 +16,7 @@ const SliderServices = () => {
       ancre: "#referencement",
     },
     {
-      source: "/assets/logoV2/brand.svg",
+      source: "/assets/logoV2/marketingDigitalIcones.svg",
       text: "Marketing digital",
       ancre: "#marketing",
     },
