@@ -1,10 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
 import NavPage from "../../../components/all/nav-page";
-import OneServiceBtn from "../../../components/services/oneService/OneServiceBtn";
-import OneServiceContent from "../../../components/services/oneService/oneServiceContent";
-import OneServiceImg from "../../../components/services/oneService/OneServiceImg";
-import OneServiceTitle from "../../../components/services/oneService/oneServiceTitle";
 import Container from "../../../components/shared/composers/container";
 import ServiceDetailCard from "../../../components/services/serviceDetail/serviceDetailCard";
 import CallToAction from "../../../components/services/servicesDetail/callToAction";
@@ -15,7 +10,7 @@ import TitleServiceDetail from "../../../components/services/servicesDetail/Titl
 import BtnPrimaire from "../../../components/shared/composers/ListriV2/btnPrimaire";
 import MyImage from "../../../components/shared/composers/myimage";
 
-const OptimisationWeb = () => {
+const Optimisation = () => {
   const info = [
     {
       img: "/assets/logoV2/analysePc.svg",
@@ -201,4 +196,4 @@ const OptimisationWeb = () => {
     </NavPage>
   );
 };
-export default OptimisationWeb;
+export default Optimisation;
