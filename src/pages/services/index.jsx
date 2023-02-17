@@ -17,7 +17,7 @@ const Services = () => {
 
       linkText: "Découvrir",
       href: "/services/creation-site-web",
-      imgSrc: "/assets/logoV2/Website-creator.svg",
+      imgSrc: "/assets/logoV2/website-creator.svg",
       blueBg: false,
       ancre: "site-web",
     },
@@ -36,7 +36,7 @@ const Services = () => {
       title: "Optimisation Digital",
       subtitle: "Analysez, Optimisez, Convertissez.",
       linkText: "Découvrir",
-      href: "/services/Optimisation-web",
+      href: "/services/optimisation-web",
       imgSrc: "/assets/logoV2/optimisation-animate.svg",
       blueBg: false,
       ancre: "optimisation",

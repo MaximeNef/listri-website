@@ -147,7 +147,7 @@ const Siteweb = () => {
 
         <Container className='mx-auto mt-8 md:hidden '>
           <MyImage
-            source={"/assets/logoV2/Website-creator.svg"}
+            source={"/assets/logoV2/website-creator.svg"}
             h={300}
             w={300}
           />

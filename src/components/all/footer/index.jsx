@@ -8,27 +8,6 @@ const Footer = () => {
   return (
     <Container className='mt-[140px]'>
       <Container className=' bg-darkBlue pt-10 m-auto w-full text-center pb-5'>
-        {/* btn contact us  */}
-        {/* <Flex justify='center' className='  mt-[-28px] mb-5'>
-          <Link href='/contactus' passHref>
-            <a className=''>
-              <Container className='border-[#FFFFFF] border-2 rounded-[27px] '>
-                <Container className='bg-gradient-to-r from-[#FF7E00] to-[#FFB873] p-[1px] rounded-[25px] shadow-realisationCard'>
-                  <Flex
-                    justify='center'
-                    className='rounded-[25px] bg-darkBlue py-[10px] px-4 t   max-w-[180px]  justify-center items-center'
-                  >
-                    <Container className=''>
-                      <p className=' font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] text-[17px]'>
-                        {"Contactez-nous "}
-                      </p>
-                    </Container>
-                  </Flex>
-                </Container>
-              </Container>
-            </a>
-          </Link>
-        </Flex> */}
         {/* reséaux sociaux  */}
         <Flex
           justify='between'
@@ -38,7 +17,7 @@ const Footer = () => {
           <Container className='space-y-4 '>
             <Container className='mt-[-10px] mr-auto md:hidden'>
               <MyImage
-                source='/assets/logov2/Listri-Icone-white.svg'
+                source='/assets/logov2/listriiconewhite.svg'
                 w={40}
                 h={50}
               />
