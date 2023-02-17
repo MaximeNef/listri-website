@@ -36,7 +36,7 @@ const Services = () => {
       title: "Optimisation Digital",
       subtitle: "Analysez, Optimisez, Convertissez.",
       linkText: "Découvrir",
-      href: "/services/marketing-digital",
+      href: "/services/optimisation-digital",
       imgSrc: "/assets/logoV2/optimisation-animate.svg",
       blueBg: false,
       ancre: "optimisation",
