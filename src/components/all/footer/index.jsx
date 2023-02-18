@@ -1,7 +1,5 @@
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
-import Image from "next/image";
-import Link from "next/link";
 import MyImage from "../../shared/composers/myimage";
 
 const Footer = () => {
