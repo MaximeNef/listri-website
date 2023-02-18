@@ -14,7 +14,7 @@ const Footer = () => {
         >
           <Container className='space-y-4 '>
             <Container className='mt-[-10px] mr-auto md:hidden'>
-              <MyImage source='/assets/logov2/listriWhite.svg' w={40} h={50} />
+              <MyImage source='/assets/logoV2/listriWhite.svg' w={40} h={50} />
             </Container>
             <Container className='hidden md:inline-flex md:mr-auto'>
               <p className=' font-medium  text-[17px]'>{"Contactez-nous : "}</p>
