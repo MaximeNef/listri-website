@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Flex from "../../flex";
 import MyImage from "../../myimage";
+import BtnPrimaire from "../btnPrimaire";
 
 const ServiceHeroV2 = ({
   title,

@@ -169,9 +169,7 @@ const RealisationLoop = ({ current }) => {
                   >
                     <MyImage
                       source={real.img}
-                      // layout={"fill"}
-                      h={350}
-                      w={180}
+                      layout={"fill"}
                       objectFit={"contain"}
                       className='rounded-[18px]'
                     />
