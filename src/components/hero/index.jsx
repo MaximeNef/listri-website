@@ -28,15 +28,7 @@ const Hero = () => {
     <Container className='lg:min-h-full'>
       <Flex type='col' className='lg:hidden'>
         <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
-          <MyImage source='assets/logo/hero.svg' h={500} w={500} />
-          {/* <Image
-            loader={myLoader}
-            src='public/assets/logo/hero.svg'
-            alt='Picture of the author'
-            width={500}
-            height={500}
-            className=''
-          /> */}
+          <MyImage source='assets/logo/hero.svg' h={390} w={390} />
         </motion.div>
 
         <Flex className='mx-auto my-16'>
@@ -53,7 +45,7 @@ const Hero = () => {
               typeSpeed={40}
               backSpeed={100}
               loop
-              className=' text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] '
+              className=' text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon md:w-fit '
             />
           </Container>
         </Flex>
@@ -74,14 +66,6 @@ const Hero = () => {
             {" "}
             <Flex className=''>
               <MyImage source='assets/logo/listri.svg' h={250} w={500} />
-              {/* <Image
-                loader={myLoader}
-                src='/public/assets/logo/listri.svg'
-                alt='Picture of the author'
-                width={500}
-                height={250}
-                className=''
-              /> */}
             </Flex>
             <Flex className='mt-5'>
               <Container
@@ -103,14 +87,6 @@ const Hero = () => {
           </Flex>
           <Container className=' mt-12 '>
             <MyImage source='/assets/logo/heroDesktop.svg' h={500} w={500} />
-            {/* <Image
-              loader={myLoader}
-              src='/assets/logo/heroDesktop.svg'
-              alt='Picture of the author'
-              width={500}
-              height={500}
-              className=''
-            /> */}
           </Container>
         </Flex>{" "}
       </Container>

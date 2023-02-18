@@ -121,7 +121,6 @@ export async function getStaticProps({ previewData }) {
 
   const blogs = await client.getAllByType("BlogPost", {
     orderings: [
-      { field: "my.article.publishDate", direction: "desc" },
       { field: "document.first_publication_date", direction: "desc" },
     ],
   });
