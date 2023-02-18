@@ -1,7 +1,6 @@
 import Page from "../../shared/composers/page";
 import Header from "../header";
 import Footer from "../footer";
-import Image from "next/image";
 import Container from "../../shared/composers/container";
 const NavPage = ({ children, current }) => {
   return (

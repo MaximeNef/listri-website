@@ -1,16 +1,16 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-const myLoader = ({ src, width, quality }) => {
-  return `${src}`;
-};
+// const myLoader = ({ src, width, quality }) => {
+//   return `${src}`;
+// };
 
-const MyImage = ({ source, h, w, className, objectFit, layout, id, style }) => {
+const MyImage = ({ source, h, w, className, objectFit, layout, id }) => {
   return (
     <Image
       id={id}
-      loader={myLoader}
+      //loader={myLoader}
       src={source}
-      alt="Picture of the author"
+      alt='Picture of the author'
       width={w}
       height={h}
       unoptimized={true}
