@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const optimizedImages = require("next-optimized-images");
 const withPlugins = require("next-compose-plugins");
-module.exports = {
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+module.exports = withBundleAnalyzer({
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
@@ -37,4 +40,4 @@ module.exports = {
     path: "",
     domains: ["images.prismic.io"],
   },
-};
+});
