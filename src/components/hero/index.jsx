@@ -80,7 +80,7 @@ const Hero = () => {
                   typeSpeed={40}
                   backSpeed={100}
                   loop
-                  className=' text-4xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] '
+                  className=' text-4xl font-medium text-transparent bg-clip-text  bg-gradient-to-r via-orangeLight from-rougeLight to-saumon md:w-fit  '
                 />
               </Container>
             </Flex>

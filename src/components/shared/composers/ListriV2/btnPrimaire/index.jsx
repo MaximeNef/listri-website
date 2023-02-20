@@ -5,7 +5,7 @@ const BtnPrimaire = ({ text, href }) => {
   return (
     <Container>
       <Link href={href}>
-        <a className=' text-center bg-black w-fit mx-auto bg-gradient-to-r from-orangeLight to-saumon text-white py-[15px] px-[30px] rounded-[50px] font-semibold text-[22px]'>
+        <a className=' text-center bg-black w-fit mx-auto bg-gradient-to-r from-rougeLight to-[#FF7E00]  text-white py-[15px] px-[30px] rounded-[50px] font-semibold text-[22px]'>
           {text}
         </a>
       </Link>
