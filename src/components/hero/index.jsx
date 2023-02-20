@@ -51,7 +51,7 @@ const Hero = () => {
         </Flex>
       </Flex>
       {/*  responsive desktop  */}
-      <Container className='lg:min-h-screen'>
+      <Container className=']'>
         <Flex
           type='row'
           className='hidden lg:inline-flex lg:max-w-[1180px] lg:m-auto lg:w-full z-20'

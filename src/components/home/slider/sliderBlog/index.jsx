@@ -1,12 +1,12 @@
-import Link from 'next/link';
-import Container from '../../../shared/composers/container';
-import Flex from '../../../shared/composers/flex';
-import SliderBlogCard from './sliderBlogCard';
+import Link from "next/link";
+import Container from "../../../shared/composers/container";
+import Flex from "../../../shared/composers/flex";
+import SliderBlogCard from "./sliderBlogCard";
 
 const SliderBlog = ({ blogs }) => {
   return (
-    <Flex className="snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2">
-      <Container className={'min-w-[25px]'} />
+    <Flex className='snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2 mb-5'>
+      <Container className={"min-w-[25px]"} />
       {blogs.map((blog) => {
         return (
           <Link href={`/blogs/${blog.uid}`} key={blog.uid}>
@@ -21,7 +21,7 @@ const SliderBlog = ({ blogs }) => {
           </Link>
         );
       })}
-      <Container className={'min-w-[20px]'} />
+      <Container className={"min-w-[20px]"} />
     </Flex>
   );
 };

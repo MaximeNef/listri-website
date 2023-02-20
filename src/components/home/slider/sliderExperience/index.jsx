@@ -40,13 +40,13 @@ const SliderExperience = () => {
 
   return (
     <Container className='mr-[-25px] ml-[-25px]'>
-      <Flex className=' container-snap snap-x  w-full   snap-mandatory overflow-scroll'>
-        <Container className='min-w-[25px]' />
+      <Flex className=' container-snap snap-x  w-full   snap-mandatory overflow-scroll '>
+        <Container className='min-w-[25px] ' />
         {etapes.map((etape, i) => {
           return <SliderExpCard key={i} etape={etape} />;
         })}
         <SliderLotties />
-        <Container className='min-w-[2px]' />
+        <Container className='min-w-[2px] ' />
       </Flex>
     </Container>
   );

@@ -8,7 +8,13 @@ const SliderIdentityCard = ({
   blackText3,
 }) => {
   return (
-    <div className='h-[215px] max-w-[270px] rounded-[18px] shadow-slider snap-center flex-shrink-0 mr-5 my-10 md:min-w-[25%] '>
+    <div
+      data-aos='fade-in'
+      data-aos-offset='100'
+      data-aos-duration='700'
+      data-aos-easing='ease-in-out'
+      className='h-[215px] max-w-[270px] rounded-[18px] shadow-slider snap-center flex-shrink-0 mr-5 my-10 md:min-w-[25%] '
+    >
       <div className='py-4 px-7'>
         <MyImage source={logo} h={"50"} w={"50"} />
         <div className='mt-3'>

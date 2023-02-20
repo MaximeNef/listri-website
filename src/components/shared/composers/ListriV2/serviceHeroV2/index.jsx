@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Flex from "../../flex";
 import MyImage from "../../myimage";
-import BtnPrimaire from "../btnPrimaire";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const ServiceHeroV2 = ({
   title,
   subtitle,
@@ -11,22 +12,49 @@ const ServiceHeroV2 = ({
   textWhite,
   subtitle2,
 }) => {
+  useEffect(() => {
+    AOS.init({ once: true });
+  }, []);
   return (
     <Flex className={"flex-col justify-center"}>
       <div
         className={`${textWhite ? "text-[#FBFBFD]" : "text-darkBlue"} ${
           title == "Création de site web" ? "px-[20%]" : ""
-        } text-[32px] md:text-6xl tracking-[.004em] text-center font-bold leading-9`}
+        } text-[32px] md:text-6xl tracking-[.004em] text-center font-bold leading-9 overflow-hidden `}
       >
-        {title}
+        <h3
+          data-aos='fade-up'
+          data-aos-offset='50'
+          data-aos-duration='700'
+          data-aos-easing='ease-in-out'
+        >
+          {title}
+        </h3>
       </div>
       <div
         className={`${
           textWhite ? "text-[#FBFBFD]" : "text-darkBlue"
-        } text-center text-[17px] md:text-3xl mt-[5px] mb-[0.7em] `}
+        } text-center text-[17px] md:text-3xl mt-[5px] mb-[0.7em] overflow-hidden `}
       >
-        {subtitle}
-        <p> {subtitle2}</p>
+        <p
+          data-aos='fade-up'
+          data-aos-offset='50'
+          data-aos-delay='50'
+          data-aos-duration='700'
+          data-aos-easing='ease-in-out'
+        >
+          {subtitle}
+        </p>
+        <p
+          data-aos='fade-up'
+          data-aos-offset='50'
+          data-aos-delay='50'
+          data-aos-duration='1000'
+          data-aos-easing='ease-in-out'
+        >
+          {" "}
+          {subtitle2}
+        </p>
       </div>
       <div className='text-[#FF7E00] text-center flex justify-center space-x-5'>
         <Link href={href}>

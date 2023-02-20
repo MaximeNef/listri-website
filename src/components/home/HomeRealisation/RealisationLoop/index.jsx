@@ -162,6 +162,10 @@ const RealisationLoop = ({ current }) => {
               return (
                 <Link href={"/realisations"} key={i}>
                   <li
+                    data-aos='fade-in'
+                    data-aos-offset='100'
+                    data-aos-duration='700'
+                    data-aos-easing='ease-in-out'
                     className={`highway-car  relative max-w-[180px] ${
                       i % 2 == 0 ? "" : ""
                     }`}
