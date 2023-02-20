@@ -9,15 +9,7 @@ const RealisationCard = ({ realisation }) => {
 
   return (
     <Link href={`/realisations/${realisation.uid}`}>
-      <Container
-        className='my-[13px] md:w-[50%] cursor-pointer shadow-realisationCard rounded-[10px] '
-        onMouseEnter={(e) => {
-          setStyle("transform transition duration-500 scale-110   ");
-        }}
-        onMouseLeave={(e) => {
-          setStyle("");
-        }}
-      >
+      <div className='my-[13px] md:w-[50%] cursor-pointer rounded-[10px] z-50 transform transition duration-300 hover:scale-[105%] '>
         <Container className='relative'>
           <Container className='z-40 absolute w-44 h-44   top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>
             <MyImage
@@ -39,19 +31,19 @@ const RealisationCard = ({ realisation }) => {
             }
             w={375}
             h={250}
-            className={`rounded-t-[10px] ${
+            className={`rounded-[10px] ${
               realisation.data.slices[0].primary.clientImage?.url
                 ? `object-cover `
                 : `object-contain `
             }`}
           />
 
-          <Container className=' bg-black/[35%] z-30 h-full w-full absolute rounded-t-[10px] '></Container>
+          <Container className=' bg-black/[35%] z-30 h-full w-full absolute rounded-[10px] '></Container>
         </Container>
 
-        <Container className='bg-lightGrey rounded-b-[10px] relative'>
+        <Container className='rounded-b-[10px] relative'>
           <Container className='mx-5 mb-6'>
-            <p className='mt-[30px] mb-[20px]  font-light'>
+            <p className='mt-[10px] mb-[10px]  font-light'>
               {realisation.data.slices[0].primary.serviceCategorie}
             </p>
             <p className=' mb-3 h-[40px] overflow-hidden  font-medium text-[15px] mr-20'>
@@ -72,7 +64,7 @@ const RealisationCard = ({ realisation }) => {
             </Link>
           </Container>
         </Container>
-      </Container>
+      </div>
     </Link>
   );
 };

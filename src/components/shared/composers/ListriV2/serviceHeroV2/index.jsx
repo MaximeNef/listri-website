@@ -56,9 +56,9 @@ const ServiceHeroV2 = ({
           {subtitle2}
         </p>
       </div>
-      <div className='text-[#FF7E00] text-center flex justify-center space-x-5'>
+      <div className='text-[#FF7E00] text-center flex justify-center space-x-5 '>
         <Link href={href}>
-          <a className='flex justify-center items-center'>
+          <a className='flex justify-center items-center transform transition duration-500 hover:scale-110 hover:underline'>
             <div className='mr-1 md:text-xl'>{linkText}</div>
             <div>
               <MyImage
@@ -70,7 +70,7 @@ const ServiceHeroV2 = ({
           </a>
         </Link>
         <Link href={"/contactus"}>
-          <a className='flex justify-center items-center'>
+          <a className='flex justify-center items-center transform transition duration-500 hover:scale-110 hover:underline'>
             <div className='mr-1 md:text-xl'>{"Commencer"}</div>
             <div>
               <MyImage

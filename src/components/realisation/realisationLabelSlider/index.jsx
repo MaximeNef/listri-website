@@ -40,7 +40,14 @@ const RealisationLabelSlider = ({
         <Container className={"min-w-[25px] "} />
         {realisations.map((realisation, i) => {
           return (
-            <a key={i} onClick={() => setFilterRealisation(realisation.filtre)}>
+            <a
+              key={i}
+              onClick={() => {
+                filterRealisation == "all"
+                  ? setFilterRealisation(realisation.filtre)
+                  : setFilterRealisation("all");
+              }}
+            >
               <RealisationLabelCard
                 filtre={realisation.filtre}
                 filterRealisation={filterRealisation}

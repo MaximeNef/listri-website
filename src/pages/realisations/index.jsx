@@ -8,13 +8,6 @@ import RealisationLabelSlider from "../../components/realisation/realisationLabe
 import RealisationList from "../../components/realisation/realisationList";
 import DetailSerivceRealisation from "../../components/services/servicesDetail/DetailSerivceRealisation";
 const Realisation = ({ realisations }) => {
-  const titlepageprops = {
-    title: "Réalisation",
-    subtitle: "",
-    description:
-      "Tout ce qu’il vous faut pour découvrir et comprendre le monde du digital 3.0 Restez à jour avec listri",
-  };
-
   const [allRealisations, setAllRealisations] = useState(realisations);
   const [filterRealisation, setFilterRealisation] = useState("all");
 
