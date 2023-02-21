@@ -1,13 +1,13 @@
-import * as prismic from '@prismicio/client';
-import * as prismicH from '@prismicio/helpers';
-import * as prismicNext from '@prismicio/next';
+import * as prismic from "@prismicio/client";
+import * as prismicH from "@prismicio/helpers";
+import * as prismicNext from "@prismicio/next";
 
-import sm from './sm.json';
+import sm from "./sm.json";
 
 /**
  * The project's Prismic repository name.
  */
-export const repositoryName = new URL(sm.apiEndpoint).hostname.split('.')[0];
+export const repositoryName = new URL(sm.apiEndpoint).hostname.split(".")[0];
 
 /**
  * The project's Prismic Link Resolver. This function determines the URL for a given Prismic document.
@@ -15,11 +15,11 @@ export const repositoryName = new URL(sm.apiEndpoint).hostname.split('.')[0];
  * @type {prismicH.LinkResolverFunction}
  */
 export const linkResolver = (doc) => {
-  if (doc.type === 'BlogPost') {
+  if (doc.type === "BlogPost") {
     return `/blogs/${doc.uid}`;
   }
 
-  if (doc.type === 'realisation-client') {
+  if (doc.type === "realisation-client") {
     return `/realisations/${doc.uid}`;
   }
 

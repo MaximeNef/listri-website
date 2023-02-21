@@ -14,7 +14,7 @@ export default function Realisation({ projet }) {
           <title>{projet.data.slices[0].primary.metatitle[0]?.text}</title>
           <meta
             name='description'
-            content={`cette articles va vous aider dans: ${projet.data.slices[0].primary.metadescription[0]?.text}`}
+            content={`découvrez notre réalisation sur ${projet.data.slices[0].primary.metadescription[0]?.text}`}
           />
           <meta
             name='keywords'
