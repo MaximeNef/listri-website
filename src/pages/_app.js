@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
     `}
       </Script>
       <Script src='https://www.googleoptimize.com/optimize.js?id=OPT-M2K9QMP'></Script>
-      {/* UXWIZZ script  */}
+      {/* UXWIZZ script update script */}
       <Script id='uxwizz'>
         UST_CT = []; UST = "
         {"s: Date.now(), addTag: function(tag) {UST_CT.push(tag)} "}

@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Link from "next/link";
 import MyImage from "../myimage";
-import { SliceSimulator } from "@prismicio/slice-simulator-react";
-
 const ProgressBar = ({ timing, url }) => {
   const [percentage, setPercentage] = useState(0);
   const text = "dguyd";
@@ -47,7 +44,7 @@ const ProgressBar = ({ timing, url }) => {
           href={`https://www.facebook.com/sharer.php?u=https://listri.digital/blogs/${url}`}
         >
           <a target='_blank'>
-            <MyImage source='/assets/logo/Facebook.svg' w={30} h={30} />
+            <MyImage source='/assets/logoV2/Facebook.svg' w={30} h={30} />
           </a>
         </Link>
 
@@ -56,7 +53,7 @@ const ProgressBar = ({ timing, url }) => {
           target='_blank'
         >
           <a>
-            <MyImage source='/assets/logo/Linkedin.svg' w={30} h={30} />
+            <MyImage source='/assets/logoV2/Linkedin.svg' w={30} h={30} />
           </a>
         </Link>
       </div>
