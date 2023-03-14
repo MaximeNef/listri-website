@@ -13,7 +13,7 @@ import MyImage from "../../../components/shared/composers/myimage";
 const Website = () => {
   const info = [
     {
-      img: "/assets/logoV2/visibilite.svg",
+      img: "/assets/logoV2/visibiliteBlack.svg",
       text: "Plus de visibilité",
     },
 
