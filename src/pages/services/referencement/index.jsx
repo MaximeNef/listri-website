@@ -88,7 +88,7 @@ const Referencement = () => {
   ];
   const info = [
     {
-      img: "/assets/logoV2/trafic.svg",
+      img: "/assets/logoV2/traficR.svg",
       text: "+ de trafic",
     },
 
