@@ -14,7 +14,7 @@ const Referencement = () => {
   const cardPlus = [
     {
       categorie: "+ de trafic",
-      image: "/assets/logoV2/trafic-white.svg",
+      image: "/assets/logoV2/traficWhite.svg",
       ligne1: "Un référencement optimisé",
       ligne2: "attire du trafic de qualité.",
     },
