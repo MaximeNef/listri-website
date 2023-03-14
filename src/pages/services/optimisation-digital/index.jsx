@@ -135,14 +135,25 @@ const Optimisation = () => {
         />
       </Head>
       <main className='bg-white pt-28  text-default'>
-        <TitleServiceDetail title='Optimisation web' />
-        <Container className='mx-auto mt-8'>
+        <div className='flex justify-center items-center'>
+          <TitleServiceDetail title='Optimisation web' />
+          <Container className='mx-auto mt-8 hidden md:inline-flex md:w-1/3 '>
+            <MyImage
+              source={"/assets/logoV2/optimisation-animate.svg"}
+              h={500}
+              w={500}
+            />
+          </Container>
+        </div>
+
+        <Container className='mx-auto mt-8 md:hidden '>
           <MyImage
             source={"/assets/logoV2/optimisation-animate.svg"}
             h={300}
             w={300}
-          />{" "}
+          />
         </Container>
+
         <Container className=' h-[1px] bg-gradient-to-r from-rougeLight via-orangeLight    to-saumon mb-[27px] mx-[25px]' />
         <BtnPrimaire text='Devis gratuit' href='/' />
         <Container className='mt-[87px]'>
