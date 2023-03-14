@@ -136,7 +136,7 @@ const Optimisation = () => {
       </Head>
       <main className='bg-white pt-28  text-default'>
         <div className='flex justify-center items-center'>
-          <TitleServiceDetail title='Optimisation web' />
+          <TitleServiceDetail title='Optimisation' title2={"web"} />
           <Container className='mx-auto mt-8 hidden md:inline-flex md:w-1/3 '>
             <MyImage
               source={"/assets/logoV2/optimisation-animate.svg"}
@@ -165,34 +165,39 @@ const Optimisation = () => {
             <p>une expérience,</p>
             <p>complète</p>
           </p>
-          {infoCards.map((info, i) => {
-            const {
-              blueBg,
-              title,
-              subTitle,
-              description1,
-              description2,
-              description3,
-              description4,
-              description5,
-              src,
-            } = info;
-            return (
-              <ServiceDetailCard
-                key={i}
-                i={i}
-                description1={description1}
-                title={title}
-                subTitle={subTitle}
-                description2={description2}
-                description3={description3}
-                description4={description4}
-                description5={description5}
-                src={src}
-                blueBg={blueBg}
-              />
-            );
-          })}
+          <div className='md:flex-wrap md:flex'>
+            {infoCards.map((info, i) => {
+              const {
+                blueBg,
+                title,
+                subTitle,
+                description1,
+                description2,
+                description3,
+                description4,
+                src,
+              } = info;
+              return (
+                <div
+                  key={i}
+                  className={`${i == 0 || i == 3 ? "md:w-1/3" : "md:w-2/3"}`}
+                >
+                  <ServiceDetailCard
+                    key={i}
+                    i={i}
+                    description1={description1}
+                    title={title}
+                    subTitle={subTitle}
+                    description2={description2}
+                    description3={description3}
+                    description4={description4}
+                    src={src}
+                    blueBg={blueBg}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </Container>
         <div className='my-[100px]'>
           <CallToAction />
