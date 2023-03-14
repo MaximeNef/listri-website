@@ -93,7 +93,7 @@ const Referencement = () => {
     },
 
     {
-      img: "/assets/logoV2/visibilite.svg",
+      img: "/assets/logoV2/visibilite-black.svg",
       text: "+ de visibilité",
     },
     {
