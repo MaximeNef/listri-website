@@ -106,7 +106,7 @@ const Website = () => {
   const cardPlus = [
     {
       categorie: "+ de visibilité",
-      image: "/assets/logoV2/visibiliteWhite.svg",
+      image: "/assets/logoV2/visibilite-white.svg",
       ligne1: "Exposez votre marque",
       ligne2: "à une large audience.",
     },
