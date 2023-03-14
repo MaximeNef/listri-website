@@ -138,7 +138,7 @@ const Siteweb = () => {
           <TitleServiceDetail title='Création de' title2={"Site Web"} />
           <Container className='mx-auto mt-8 hidden md:inline-flex md:w-1/3 '>
             <MyImage
-              source={"/assets/logoV2/Website-creator.svg"}
+              source={"/assets/logoV2/website-creator.svg"}
               h={500}
               w={500}
             />

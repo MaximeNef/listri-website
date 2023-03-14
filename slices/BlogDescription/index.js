@@ -8,48 +8,51 @@ const BlogDescription = ({ slice }) => (
     key={slice.uid}
     className='  rounded-[10px] p-5 md:mx-[20%]  mt-8 '
   >
-    <section className=''>
-      <Container className='font-semibold text-[#37474F]  text-[21px] text-left'>
-        <div>
+    <section className='md:flex md:justify-between '>
+      <div className='md:w-[50%]'>
+        <Container className='font-semibold text-[#37474F]  text-[21px] text-left'>
+          <div>
+            {slice?.items?.map((item, i) => (
+              <PrismicRichText field={item.subtitle} key={i} />
+            ))}
+          </div>
+        </Container>
+        <Container className='text-left font-light text-[#37474F]  leading-7 text-lg  my-5  '>
           {slice?.items?.map((item, i) => (
-            <PrismicRichText field={item.subtitle} key={i} />
+            <PrismicRichText field={item.description} key={i} />
           ))}
-        </div>
-      </Container>
-      <Container className='text-left font-light text-[#37474F]  leading-7 text-lg  my-5  '>
+        </Container>
+      </div>
+      <div className='my-auto'>
         {slice?.items?.map((item, i) => (
-          <PrismicRichText field={item.description} key={i} />
+          <>
+            {item.image.url ? (
+              <>
+                <Container className='mx-[-20px] md:hidden'>
+                  <MyImage
+                    source={item.image.url}
+                    key={i}
+                    w={300}
+                    h={300}
+                    objectFit={"contain"}
+                    className=' max-w-full h-auto  '
+                  />
+                </Container>
+                <Container className='mx-[-20px] hidden md:inline-flex'>
+                  <MyImage
+                    source={item.image.url}
+                    key={i}
+                    w={200}
+                    h={200}
+                    objectFit={"contain"}
+                    className=' max-w-full h-auto  '
+                  />
+                </Container>
+              </>
+            ) : null}
+          </>
         ))}
-      </Container>
-
-      {slice?.items?.map((item, i) => (
-        <>
-          {item.image.url ? (
-            <>
-              <Container className='mx-[-20px] md:hidden'>
-                <MyImage
-                  source={item.image.url}
-                  key={i}
-                  w={1000}
-                  h={600}
-                  objectFit={"contain"}
-                  className=' max-w-full h-auto  '
-                />
-              </Container>
-              <Container className='mx-[-20px] hidden md:inline-flex'>
-                <MyImage
-                  source={item.image.url}
-                  key={i}
-                  w={1000}
-                  h={200}
-                  objectFit={"contain"}
-                  className=' max-w-full h-auto  '
-                />
-              </Container>
-            </>
-          ) : null}
-        </>
-      ))}
+      </div>
     </section>
     <style>{`
     

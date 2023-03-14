@@ -14,18 +14,18 @@ const BlogTitle = ({ slice }) => {
           <Container key={i} className='mx-5 mb-5'>
             <div className='flex flex-row space-x-5 mb-5'>
               <div>
-                <Flex className='bg-[#FEA249] w-fit rounded-[20px] text-white space-x-1 py-2 px-4 font-[350]'>
+                <Flex className='bg-gradient-to-br from-rougeLight to-[#FF7E00]  w-fit rounded-[20px] text-white space-x-1 py-2 px-4 font-[350]'>
                   <PrismicRichText field={item.timing} />
                   <p>min de lecture</p>
                 </Flex>
               </div>
               <div>
-                <Flex className='bg-[#FEA249] w-fit rounded-[20px] text-white space-x-1 py-2 px-4 font-[350]'>
+                <Flex className='bg-gradient-to-br from-rougeLight to-[#FF7E00] w-fit rounded-[20px] text-white space-x-1 py-2 px-4 font-[350]'>
                   {item.category}
                 </Flex>
               </div>
             </div>
-            <h1 className='pb-5 font-semibold text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FF7E00]/50  overflow-hidden '>
+            <h1 className='pb-5 font-semibold text-4xl text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon w-fit  overflow-hidden '>
               <PrismicRichText field={item.title} />
             </h1>
             <Container className='font-light leading-7 text-lg mb-7'>
