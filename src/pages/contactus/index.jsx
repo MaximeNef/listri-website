@@ -64,7 +64,7 @@ export default function Contactus() {
       return;
     }
     console.log(nom, prenom, mail, telephone, filterRealisation, messages);
-    router.push("/");
+    router.push("/submit-contact");
   };
   return (
     <NavPage current='contactTest'>
