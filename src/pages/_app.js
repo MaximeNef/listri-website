@@ -49,6 +49,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   `}
       </script> */}
       {/* <!-- End Google Tag Manager --> */}
+      {/* <!-- Google tag (gtag.js) --> */}
+      <Script
+        id='googl-ads'
+        async
+        src='[https://www.googletagmanager.com/gtag/js?id=G-WV43FWFPDF](https://www.googletagmanager.com/gtag/js?id=G-WV43FWFPDF)'
+      ></Script>
+      <Script id='script-ads'>
+        {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-WV43FWFPDF');`}
+      </Script>
+      {/* <!-- Google tag (gtag.js) END -->
       {/* UXWIZZ script update script */}
       <Script id='uxwizz'>
         UST_CT = []; UST = "
