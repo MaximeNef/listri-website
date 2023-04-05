@@ -3,7 +3,7 @@ import Container from "../../shared/composers/container";
 const ServiceTitle = ({ subtitle1, subtitle2, TextWhite }) => {
   return (
     <Container className='font-bold text-[24px] md:text-4xl leading-[36px] tracking-[0.16px] overflow-hidden '>
-      <h2
+      <h1
         data-aos='fade-up'
         data-aos-offset='50'
         data-aos-duration='700'
@@ -11,8 +11,8 @@ const ServiceTitle = ({ subtitle1, subtitle2, TextWhite }) => {
         className='w-fit mb-1 text-transparent bg-clip-text bg-gradient-to-r via-orangeLight from-rougeLight to-saumon md:w-fit'
       >
         {subtitle1}
-      </h2>
-      <h2
+      </h1>
+      <h1
         data-aos='fade-up'
         data-aos-offset='50'
         data-aos-duration='700'
@@ -22,7 +22,7 @@ const ServiceTitle = ({ subtitle1, subtitle2, TextWhite }) => {
       >
         {" "}
         {subtitle2}
-      </h2>
+      </h1>
     </Container>
   );
 };
