@@ -170,6 +170,12 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "realisationDescription": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         },
         "items": {}
