@@ -82,19 +82,12 @@ const ServiceCardV2 = ({
           className={`mt-[-1px]  ${
             title == "Marketing digital"
               ? ancre === "marketing"
-                ? "bg-lightGrey"
+                ? ""
                 : ""
               : "bg-lightGrey  mt-[-1px]"
           }`}
           dangerouslySetInnerHTML={{
             __html: svgBottom,
-          }}
-        />
-      ) : title == "Digital Card" ? (
-        <div
-          className={`pt-[-1px]  transform rotate-180`}
-          dangerouslySetInnerHTML={{
-            __html: svg,
           }}
         />
       ) : null}

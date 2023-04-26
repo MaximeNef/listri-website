@@ -25,11 +25,7 @@ const SliderServices = () => {
       text: "Optimisation web",
       ancre: "#optimisation",
     },
-    {
-      source: "/assets/logoV2/digitalCard.svg",
-      text: "Business digital Card",
-      ancre: "#digital-card",
-    },
+
   ];
   return (
     <Container>

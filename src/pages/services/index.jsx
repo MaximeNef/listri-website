@@ -50,15 +50,7 @@ const Services = () => {
       blueBg: true,
       ancre: "marketing",
     },
-    {
-      title: "Digital Card",
-      subtitle: "Partager votre savoir.",
-      linkText: "Découvrir",
-      href: "/services/Digital-business-card",
-      imgSrc: "/assets/logoV2/digital-card-animate.svg",
-      blueBg: false,
-      ancre: "digital-card",
-    },
+
   ];
   return (
     <NavPage current='Services'>
