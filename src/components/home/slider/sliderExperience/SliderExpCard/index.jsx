@@ -45,7 +45,7 @@ const SliderExpCard = ({ etape }) => {
       data-aos-offset='100'
       data-aos-duration='700'
       data-aos-easing='ease-in-out'
-      className='z-50 cursor-pointer '
+      className='z-20 cursor-pointer '
     >
       <Container
         className=' snap-center flex-shrink-0  relative h-[450px] w-[309px]   mr-5  '
