@@ -1,9 +1,8 @@
 import { useState } from "react";
 import Container from "../../../shared/composers/container";
-import MyImage from "../../../shared/composers/myimage";
 import SvgSliderItems from "../labelSliderSvg";
 
-const RealisationLabelCard = ({ text, filterRealisation, filtre }) => {
+const RealisationLabelCard = ({ text, filterRealisation, filtre, selected }) => {
   const [isSelected, setIsSelected] = useState(false);
   return (
     <Container className=' flex flex-col items-center   mr-7 w-[80px]  md:mr-32 cursor-pointer'>
@@ -14,6 +13,7 @@ const RealisationLabelCard = ({ text, filterRealisation, filtre }) => {
         onClick={() => {
           console.log(text, "text");
           setIsSelected(!isSelected);
+
         }}
       >
         <SvgSliderItems

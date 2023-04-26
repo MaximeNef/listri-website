@@ -11,32 +11,33 @@ const RealisationLabelSlider = ({
       source: "",
       text: "Site-web",
       filtre: "dev",
+      selected : false,
     },
     {
       source: "/assets/logoV2/brand.svg",
       text: "Marketing",
       filtre: "marketing",
+      selected : false,
     },
     {
       source: "",
       text: "référencement",
       filtre: "référencement",
+      selected : false,
+
     },
     {
       source: "/assets/logoV2/opti.svg",
       text: "Optimisation",
       filtre: "Optimisation",
+      selected : false,
     },
-    {
-      source: "/assets/logoV2/digitalCard.svg",
-      text: "Digital Card",
-      filtre: "Digital Card",
-    },
+
   ];
 
   return (
     <Container>
-      <Flex className='snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2'>
+      <Flex className='snap-mandatory snap-x overflow-scroll md:overflow-hidden mx-[-25px] pl-2'>
         <Container className={"min-w-[25px] "} />
         {realisations.map((realisation, i) => {
           return (
@@ -49,6 +50,7 @@ const RealisationLabelSlider = ({
               }}
             >
               <RealisationLabelCard
+                selected={realisation.selected}
                 filtre={realisation.filtre}
                 filterRealisation={filterRealisation}
                 source={realisation.source}
