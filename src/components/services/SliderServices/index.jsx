@@ -7,33 +7,33 @@ const SliderServices = () => {
     {
       source: "/assets/logoV2/siteWeb.svg",
       text: "Création de site web",
-      ancre: "#site-web",
+      href: "/services/creation-site-web",
     },
 
     {
       source: "/assets/logoV2/referencement.svg",
       text: "référencement web",
-      ancre: "#referencement",
+      href: "/services/referencement",
     },
     {
       source: "/assets/logoV2/marketingDigitalIcones.svg",
       text: "Marketing digital",
-      ancre: "#marketing",
+      href: "/services/marketing-digital",
     },
     {
       source: "/assets/logoV2/opti.svg",
       text: "Optimisation web",
-      ancre: "#optimisation",
+      href: "/services/optimisation-digital",
     },
 
   ];
   return (
     <Container>
-      <Flex className='snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2'>
+      <Flex className='snap-mandatory snap-x overflow-scroll md:overflow-hidden mx-[-25px] pl-2'>
         <Container className={"min-w-[25px] "} />
         {services.map((service, i) => {
           return (
-            <a key={i} href={service.ancre}>
+            <a key={i} href={service.href}>
               <SliderServicesCard source={service.source} text={service.text} />
             </a>
           );
