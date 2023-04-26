@@ -7,7 +7,7 @@ import MyImage from "../../../shared/composers/myimage";
 const MenuDesktop = ({ link, current }) => {
   return (
     <Container className=' w-full '>
-      <Flex align='center' className='fixed z-20 bg-white w-full   py-2  px-24'>
+      <Flex align='center' className='fixed z-90 bg-white w-full   py-2  px-24'>
         {" "}
         <Flex className=' m-auto    max-h-12  '>
           <Link href='/' passHref>
@@ -33,7 +33,7 @@ const MenuDesktop = ({ link, current }) => {
                       justify='start'
                       className=' hover:transform hover:-translate-y-1.5 hover:duration-700 duration-500 '
                     >
-                      <a className='mb-2  text-[14px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] min-w-[38px] font-semibold cursor-pointer'>
+                      <a className='mb-2  text-[17px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FF7E00] to-[#FFB873] min-w-[38px] font-semibold cursor-pointer'>
                         {p.page}
                       </a>
                     </Flex>
@@ -42,7 +42,7 @@ const MenuDesktop = ({ link, current }) => {
                     </motion.div>
                   </Container>
                 ) : (
-                  <a className=' pt-4  font-normal text-[14px] text-center text-[#37474F] min-w-[38px] hover:transform hover:-translate-y-1 hover:duration-700 duration-500	 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
+                  <a className=' pt-4  font-normal text-[17px] text-center text-[#37474F] min-w-[38px] hover:transform hover:-translate-y-1 hover:duration-700 duration-500	 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-[#FF7E00] to-[#FFB873]'>
                     {p.page}
                   </a>
                 )}
@@ -52,7 +52,7 @@ const MenuDesktop = ({ link, current }) => {
 
           <Link href='/contactus' passHref>
             <div>
-              <Container className=' cursor-pointer text-center rounded-[50px]  bg-gradient-to-r from-[#FF7E00] to-[#FDBB7E] text-white font-normal m-auto p-2 px-6 mt-[6px]'>
+              <Container className=' cursor-pointer text-center rounded-[50px]  bg-gradient-to-r from-[#FF7E00] to-[#FDBB7E] text-white text-[17px] font-normal m-auto p-2 px-6 mt-[6px]'>
                 Contact
               </Container>
             </div>
