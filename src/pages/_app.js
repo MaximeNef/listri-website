@@ -16,11 +16,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       {/* <!-- Start cookieyes banner --> */}
-      <Script
+      {/* <Script
         id='cookieyes'
         type='text/javascript'
         src='https://cdn-cookieyes.com/client_data/17dc236a34b2a9bb808870a7/script.js'
-      ></Script>
+      ></Script> */}
       {/* <!-- End cookieyes banner -->  */}
       {/* GOOGLE ANALYTICS script  */}
       <Script
