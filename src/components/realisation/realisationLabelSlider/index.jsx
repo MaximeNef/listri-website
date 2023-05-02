@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Container from "../../shared/composers/container";
 import Flex from "../../shared/composers/flex";
 import RealisationLabelCard from "./realisationLabelCard";
@@ -34,6 +35,22 @@ const RealisationLabelSlider = ({
     },
 
   ];
+  
+  useEffect(() => {
+    if (typeof setFilterRealisation !== "function") {
+      console.error("setFilterRealisation is not a function");
+    }
+  }, [setFilterRealisation]);
+
+  const handleRealisationClick = (filtre) => {
+    setFilterRealisation(prevState => {
+      if (prevState === filtre) {
+        return "all";
+      } else {
+        return filtre;
+      }
+    });
+  };
 
   return (
     <Container>
@@ -41,16 +58,9 @@ const RealisationLabelSlider = ({
         <Container className={"min-w-[25px] "} />
         {realisations.map((realisation, i) => {
           return (
-            <a
-              key={i}
-              onClick={() => {
-                filterRealisation == "all"
-                  ? setFilterRealisation(realisation.filtre)
-                  : setFilterRealisation("all");
-              }}
-            >
+            <a key={i} onClick={() => handleRealisationClick(realisation.filtre)}>
               <RealisationLabelCard
-                selected={realisation.selected}
+                selected={realisation.filtre === filterRealisation}
                 filtre={realisation.filtre}
                 filterRealisation={filterRealisation}
                 source={realisation.source}
@@ -64,4 +74,5 @@ const RealisationLabelSlider = ({
     </Container>
   );
 };
+
 export default RealisationLabelSlider;

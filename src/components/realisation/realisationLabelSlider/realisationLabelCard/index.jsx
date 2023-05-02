@@ -1,36 +1,42 @@
-import { useState } from "react";
 import Container from "../../../shared/composers/container";
 import SvgSliderItems from "../labelSliderSvg";
 
-const RealisationLabelCard = ({ text, filterRealisation, filtre, selected }) => {
-  const [isSelected, setIsSelected] = useState(false);
+const RealisationLabelCard = ({ text, filterRealisation, filtre, onClick }) => {
+  
+  const handleClick = () => {
+    if (typeof onClick === 'function') {
+      if (filterRealisation === filtre) {
+        onClick('all');
+      } else {
+        onClick(filtre);
+      }
+    }
+  };
+  
   return (
-    <Container className=' flex flex-col items-center   mr-7 w-[80px]  md:mr-32 cursor-pointer'>
+    <Container className=' flex flex-col items-center mr-7 w-[80px] md:mr-32 cursor-pointer'>
       <div
-        className={`relative  ${
+        className={`relative ${
           text == "Optimisation" ? "h-[65px] w-[50px]" : "h-[65px] w-[65px]"
         }`}
-        onClick={() => {
-          console.log(text, "text");
-          setIsSelected(!isSelected);
-
-        }}
+        onClick={handleClick}
       >
         <SvgSliderItems
           text={text}
-          isSelected={isSelected}
+          isSelected={filterRealisation === filtre}
           filterRealisation={filterRealisation}
           filtre={filtre}
         />
       </div>
       <p
         className={`text-[14px] font-bold tracking-[-0.22px] leading-[20px] text-center ${
-          filterRealisation == filtre ? " text-orangeLight" : "text-darkBlue"
-        }  mt-[18px]`}
+          filterRealisation == filtre ? "text-orangeLight" : "text-darkBlue"
+        } mt-[18px]`}
       >
         {text}
       </p>
     </Container>
   );
 };
+
 export default RealisationLabelCard;
