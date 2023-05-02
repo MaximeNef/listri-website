@@ -31,6 +31,13 @@ const Team = () => {
       activite: "Developpeur web",
       src: "/assets/logo/felicien.jpg",
     },
+    {
+      lastName: "Nolwenn",
+      firstName: "Heurtin",
+      poste: "stagiaire",
+      activite: "Developpeuse web",
+      src: "/assets/logo/nh.jpg",
+    }
   ]);
   return (
     <NavPage current='Team'>
@@ -58,10 +65,10 @@ const Team = () => {
       <main className='bg-white  text-default '>
         <Container className=' py-28 mx-[25px]'>
           <ServiceTitle
-            subtitle1={"Notre équipe."}
-            subtitle2={"d'expert qui gère tout vos service."}
+            subtitle1={"Notre équipe"}
+            subtitle2={"d'experts qui gère tous vos services."}
           />
-          <Container className='space-y-[25px] md:space-x-10  mt-10 md:flex-row md:justify-center md:space-y-0 mb-20'>
+          <Container className='space-y-[25px] md:space-x-4  mt-10 md:flex-row md:justify-center md:space-y-0 mb-20'>
             {Teams.map((team, i) => {
               return <TeamCard team={team} key={i} />;
             })}
