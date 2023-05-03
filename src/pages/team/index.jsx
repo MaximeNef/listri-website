@@ -64,7 +64,7 @@ const Team = () => {
       </Head>
       <main className='bg-white  text-default '>
         <Container className=' py-28 mx-[25px]'>
-          <ServiceTitle
+          <ServiceTitle  
             subtitle1={"Notre équipe"}
             subtitle2={"d'experts qui gère tous vos services."}
           />

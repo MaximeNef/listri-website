@@ -9,7 +9,7 @@ import MyImage from "../../../shared/composers/myimage";
 const DetailSerivceRealisation = ({ current }) => {
   return (
     <Container>
-      <SubtitleV2
+      <SubtitleV2 
         subtitle1={"Nos réalisations."}
         subtitle2={"Innovantes & uniques tout comme vous."}
         TextWhite={""}

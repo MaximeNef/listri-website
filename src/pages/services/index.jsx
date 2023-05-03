@@ -78,7 +78,7 @@ const Services = () => {
       </Head>
       <main className='bg-white pt-28  text-default '>
         <Container className='mx-[25px]'>
-          <div className='mb-[40px] space-y-[36px]'>
+          <div className='md:ml-[72px] mb-[40px] space-y-[36px]'>
             <ServiceTitle
               subtitle1={"Services."}
               subtitle2={

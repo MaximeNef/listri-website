@@ -86,14 +86,14 @@ export default function Home({ blogs }) {
               />
             );
           })}{" "}
-          <div className=' mt-[60px] space-y-[10px]'>
+          <div className='md:ml-[72px] mt-[60px] space-y-[10px]'>
             <SubtitleV2
               subtitle1={"L’identité de Listri."}
               subtitle2={"Une multitude d’opportunités de collaborer."}
             />
             <SliderIdentity />
           </div>{" "}
-          <div className='mt-[50px] mb-[20px] space-y-[50px]'>
+          <div className='md:ml-[72px] mt-[50px] mb-[20px] space-y-[50px]'>
             <SubtitleV2
               subtitle1={"L’expérience Listri."}
               subtitle2={"Réalisons votre projet en 4 étapes."}
@@ -102,7 +102,7 @@ export default function Home({ blogs }) {
             <BtnPrimaire text={"Lancer mon projet"} href={"/contactus"} />
           </div>
           <HomeRealisation />{" "}
-          <div className='mt-[20px] mb-[30px]'>
+          <div className='md:ml-[72px] mt-[20px] mb-[30px]'>
             <SubtitleV2
               subtitle1={"Notre actualitée"}
               subtitle2={"Suivez les dernières tendances digitales."}

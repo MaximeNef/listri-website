@@ -2,7 +2,7 @@ import Container from "../../shared/composers/container";
 
 const ServiceTitle = ({ subtitle1, subtitle2, TextWhite }) => {
   return (
-    <Container className='font-bold text-[24px] md:text-4xl leading-[36px] tracking-[0.16px] overflow-hidden '>
+    <Container className=' font-bold text-[24px] md:text-4xl leading-[36px] tracking-[0.16px] overflow-hidden '>
       <h1
         data-aos='fade-up'
         data-aos-offset='50'

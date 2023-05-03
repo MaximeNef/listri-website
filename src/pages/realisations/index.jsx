@@ -46,7 +46,7 @@ const Realisation = ({ realisations }) => {
         />
       </Head>
       <main className='bg-white  text-default '>
-        <Container className=' pt-28 pb-14 mx-[25px]'>
+        <Container className='md:ml-[95px] pt-28 pb-14 mx-[25px]'>
           <ServiceTitle
             subtitle1={"Nos réalisation."}
             subtitle2={

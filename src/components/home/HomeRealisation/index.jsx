@@ -20,7 +20,7 @@ const HomeRealisation = () => {
         }}
       />
       <div className='px-[25px]  bg-darkBlue '>
-        <div className='mb-[10px]'>
+        <div className='md:ml-[72px] mb-[10px]'>
           <SubtitleV2
             TextWhite={true}
             subtitle1={"Nos réalisations."}
