@@ -9,9 +9,9 @@ const RealisationCard = ({ realisation }) => {
 
   return (
     <Link href={`/realisations/${realisation.uid}`}>
-      <div className='my-[13px] md:w-[50%] cursor-pointer rounded-[10px] z-50 transform transition duration-300 hover:scale-[105%] '>
+      <div className='my-[13px] md:w-[85%] lg:w-[100%] md:min-w-[200px] cursor-pointer rounded-[10px] z-50 transform transition duration-300 hover:scale-[105%] '>
         <Container className='relative'>
-          <Container className='z-40 absolute w-44 h-44   top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>
+          <Container className=' z-40 absolute w-44 h-44   top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '>
             <MyImage
               source={
                 realisation.data.slices[0].primary.clientLogo?.url
