@@ -14,10 +14,10 @@ const Header = ({ current }) => {
 
   return (
     <Container>
-      <Container className='z-50 hidden lg:inline-flex'>
+      <Container className='z-50  hidden lg:inline-flex'>
         <MenuDesktop current={current} link={link} />
       </Container>
-      <Container className='  md:hidden'>
+      <Container className='lg:hidden'>
         <Menuburger current={current} link={link} />
       </Container>
     </Container>
