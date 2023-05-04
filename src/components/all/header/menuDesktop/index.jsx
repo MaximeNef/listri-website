@@ -37,7 +37,7 @@ const MenuDesktop = ({ link, current }) => {
                         {p.page}
                       </a>
                     </Flex>
-                    <motion.div layoutId='barrette'>
+                    <motion.div layoutId='barrette' className="mr-[15px]">
                       <Container className='justify-center border-b-4 border-[#FF7E00] mx-3 rounded-[4px] min-w-[24px] mt-[2px]'></Container>
                     </motion.div>
                   </Container>

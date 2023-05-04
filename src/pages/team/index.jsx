@@ -40,7 +40,7 @@ const Team = () => {
     }
   ]);
   return (
-    <NavPage current='Team'>
+    <NavPage current='Equipe'>
       <Head>
         <title>
           Vos spécialistes dans la création de site web & marketing digital
