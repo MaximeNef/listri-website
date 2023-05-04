@@ -85,7 +85,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
                   className={`${
                     i == 0
                       ? "md:flex md:flex-row md:flex-wrap md:w-[100%]"
-                      : "md:flex md:flex-row md:flex-wrap md:w-1/3 "
+                      : "md:flex md:flex-row md:flex-wrap md:w-1/2 lg:w-1/3 "
                   }`}
                 >
                   <Link href={`/blogs/${blog.uid}`} key={blog.uid} passHref>

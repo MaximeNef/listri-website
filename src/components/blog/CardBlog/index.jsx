@@ -76,8 +76,8 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
               className=' rounded-t-[9px] md:rounded-[10px] transform transition duration-500 hover:scale-110 '
             />
           </Container>
-          <Container className=' bg-slate-100/30 md:min-h-[250px] lg:min-h-[250px] md:bg-transparent relative '>
-            <Flex className='justify-between m-[10px] '>
+          <Container className=' bg-slate-100/30  md:bg-transparent relative '>
+            <Flex className='flex flex-col m-[10px] '>
               <Container className='w-[80%] md:w-full'>
                 <p className=' font-light text-[14px] md:text-[12px] lg:text-[14px]'>
                   {timing} min de lecture • {category}
@@ -90,7 +90,7 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
                   {title}
                 </h2>{" "}
               </Container>
-              <Container className=' absolute bottom-2 right-2 '>
+              <Container className='items-end '>
                 <MyImage
                   source={"/assets/logoV2/orange-circle-arrow.svg"}
                   alt='Picture of the author'
