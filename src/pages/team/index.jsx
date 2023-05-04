@@ -68,7 +68,7 @@ const Team = () => {
             subtitle1={"Notre équipe"}
             subtitle2={"d'experts qui gère tous vos services."}
           />
-          <Container className='space-y-[25px] md:gap-4 mt-10 md:flex-row flex-wrap  md:justify-between  md:space-y-0 mb-20'>
+          <Container className='space-y-[25px]  md:justify-center mt-10 md:flex-row flex-wrap  md:space-y-0 '>
             {Teams.map((team, i) => {
               return <TeamCard team={team} key={i} />;
             })}
