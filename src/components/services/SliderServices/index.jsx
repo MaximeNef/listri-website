@@ -29,7 +29,7 @@ const SliderServices = () => {
   ];
   return (
     <Container>
-      <Flex className='snap-mandatory snap-x overflow-scroll md:overflow-hidden mx-[-25px] pl-2'>
+      <Flex className='snap-mandatory snap-x overflow-scroll md:overflow-hidden  mx-[-25px] pl-2'>
         <Container className={"min-w-[25px] "} />
         {services.map((service, i) => {
           return (

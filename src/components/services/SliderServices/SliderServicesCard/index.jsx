@@ -3,7 +3,7 @@ import MyImage from "../../../shared/composers/myimage";
 
 const SliderServicesCard = ({ source, text }) => {
   return (
-    <Container className=' flex flex-col items-center   mr-7 w-[80px] md:mr-32'>
+    <Container className=' flex flex-col items-center   mr-7 w-[80px] md:mr-[100px] lg:mr-32 '>
       <div
         className={`relative  ${
           text == "Optimisation" ? "h-[65px] w-[50px]" : "h-[65px] w-[65px]"

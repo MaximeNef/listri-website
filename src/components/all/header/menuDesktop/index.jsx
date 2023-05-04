@@ -38,7 +38,7 @@ const MenuDesktop = ({ link, current }) => {
                       </a>
                     </Flex>
                     <motion.div layoutId='barrette'>
-                      <Container className='border-b-4 border-[#FF7E00] mx-3 rounded-[4px] min-w-[24px] mt-[2px] '></Container>
+                      <Container className='justify-center border-b-4 border-[#FF7E00] mx-3 rounded-[4px] min-w-[24px] mt-[2px]'></Container>
                     </motion.div>
                   </Container>
                 ) : (
