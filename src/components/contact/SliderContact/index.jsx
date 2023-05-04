@@ -24,17 +24,12 @@ const SliderContact = ({ filterRealisation, setFilterRealisation }) => {
       source: "/assets/logoV2/opti.svg",
       text: "Optimisation",
       filtre: "Optimisation",
-    },
-    {
-      source: "/assets/logoV2/digitalCard.svg",
-      text: "Digital Card",
-      filtre: "Digital Card",
-    },
+    }
   ];
 
   return (
     <Container>
-      <Flex className='snap-mandatory snap-x overflow-scroll mx-[-25px] pl-2'>
+      <Flex className='snap-mandatory snap-x overflow-scroll md:overflow-hidden mx-[-25px] pl-2'>
         <Container className={"min-w-[25px] "} />
         {realisations.map((realisation, i) => {
           return (

@@ -8,7 +8,7 @@ import MyImage from "../../../shared/composers/myimage";
 
 const DetailSerivceRealisation = ({ current }) => {
   return (
-    <Container>
+    <Container className="md:mx-[72px]">
       <SubtitleV2 
         subtitle1={"Nos réalisations."}
         subtitle2={"Innovantes & uniques tout comme vous."}

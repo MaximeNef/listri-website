@@ -65,7 +65,7 @@ const Blogs = ({ blogs, BlogTitle }) => {
       </Head>
 
       <main className='bg-white  text-default'>
-        <Container className='md:ml-[95px]  py-28 mx-[25px]'>
+        <Container className='md:mx-[95px]  py-28 mx-[25px]'>
           <ServiceTitle
             subtitle1={"Actualité."}
             subtitle2={"Suivez les dernières tendances digitales."}

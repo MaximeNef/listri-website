@@ -25,10 +25,10 @@ const Hero = () => {
   };
 
   return (
-    <Container className='lg:min-h-full'>
+    <Container className='md:w-[90%] md:mx-auto  lg:min-h-full'>
       <Flex type='col' className='lg:hidden'>
-        <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }}>
-          <MyImage source='assets/logo/hero.svg' h={390} w={390} />
+        <motion.div animate={{ scale: [0.5, 1] }} transition={{ duration: 1 }} className="flex flex-col">
+          <MyImage source='assets/logo/hero.svg' h={390} w={390}  />
         </motion.div>
 
         <Flex className='mx-auto my-16'>

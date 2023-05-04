@@ -3,7 +3,7 @@ import MyImage from "../../shared/composers/myimage";
 const TeamCard = ({ team }) => {
   const { lastName, firstName, activite, mail, phone, src } = team;
   return (
-    <div className=' rounded-[20px] md:w-1/3 '>
+    <div className=' rounded-[20px] md:max-w-[350px]  md:min-w-[280px] md:w-1/3 '>
       <div className='   rounded-[15px] w-full  mx-auto bg-gradient-to-r from-[#ffb873]  to-[#010D2B] '>
         <div className='relative h-[400px] md:h-[500px]'>
           <MyImage

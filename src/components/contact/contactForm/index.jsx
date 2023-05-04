@@ -15,7 +15,7 @@ const ContactForm = ({
   return (
     <Container>
       <form onSubmit={handleSubmit()}>
-        <Container className='mx-6 '>
+        <Container className='mx-6'>
           <h1 className='text-[28px] font-medium mx-auto'>
             Finalisez votre demande
           </h1>

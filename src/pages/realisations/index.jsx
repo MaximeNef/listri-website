@@ -46,7 +46,7 @@ const Realisation = ({ realisations }) => {
         />
       </Head>
       <main className='bg-white  text-default '>
-        <Container className='md:ml-[95px] pt-28 pb-14 mx-[25px]'>
+        <Container className='md:mx-[95px] pt-28 pb-14 mx-[25px]'>
           <ServiceTitle
             subtitle1={"Nos réalisation."}
             subtitle2={
@@ -60,7 +60,7 @@ const Realisation = ({ realisations }) => {
             />
           </Container>
 
-          <Container className=' '>
+          <Container >
             <RealisationList realisations={newRealisationList} />
           </Container>
         </Container>{" "}

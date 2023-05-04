@@ -2,7 +2,7 @@ import Container from "../../container";
 
 const SubtitleV2 = ({ subtitle1, subtitle2, TextWhite }) => {
   return (
-    <Container className='md:ml-[72px] font-bold text-[24px] md:text-4xl leading-7 tracking-[0.22px] overflow-hidden'>
+    <Container className='font-bold text-[24px] md:text-4xl leading-7 tracking-[0.22px] overflow-hidden'>
       <h2
         data-aos='fade-up'
         data-aos-offset='50'

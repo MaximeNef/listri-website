@@ -63,12 +63,12 @@ const Team = () => {
         />{" "}
       </Head>
       <main className='bg-white  text-default '>
-        <Container className=' py-28 mx-[25px]'>
+        <Container className='md:mx-[95px] py-28 mx-[25px]'>
           <ServiceTitle  
             subtitle1={"Notre équipe"}
             subtitle2={"d'experts qui gère tous vos services."}
           />
-          <Container className='space-y-[25px] md:space-x-4  mt-10 md:flex-row md:justify-center md:space-y-0 mb-20'>
+          <Container className='space-y-[25px] md:gap-4 mt-10 md:flex-row flex-wrap  md:justify-between  md:space-y-0 mb-20'>
             {Teams.map((team, i) => {
               return <TeamCard team={team} key={i} />;
             })}

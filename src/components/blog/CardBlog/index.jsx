@@ -32,7 +32,7 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
               className={` rounded-t-[9px] md:rounded-[10px] `}
             />
           </Container>
-          <Container className=' bg-slate-100/30 md:bg-transparent relative md:ml-10'>
+          <Container className=' bg-slate-100/30 md:bg-transparent relative md:ml-10 min-h-[250px]'>
             <Flex className='justify-between m-[10px]'>
               <Container className='w-[80%] md:w-full'>
                 <p className=' font-light text-[14px] md:text-[18px]'>
@@ -76,14 +76,14 @@ const Cardblog = ({ src, timing, category, title, subtitle, i }) => {
               className=' rounded-t-[9px] md:rounded-[10px] transform transition duration-500 hover:scale-110 '
             />
           </Container>
-          <Container className=' bg-slate-100/30 md:bg-transparent relative '>
+          <Container className=' bg-slate-100/30 md:min-h-[250px] lg:min-h-[250px] md:bg-transparent relative '>
             <Flex className='justify-between m-[10px] '>
               <Container className='w-[80%] md:w-full'>
-                <p className=' font-light text-[14px] md:text-[18px]'>
+                <p className=' font-light text-[14px] md:text-[12px] lg:text-[14px]'>
                   {timing} min de lecture • {category}
                 </p>
                 <h2
-                  className={`  font-semibold text-[21px] mt-3  overflow-hidden md:overflow-visible h-[99px]   ${
+                  className={`  font-semibold lg:text-[21px] md:text-[16px] mt-3  overflow-hidden md:overflow-visible h-[99px]   ${
                     i == 0 ? "md:max-h-fit" : " md:h-[90px] "
                   }`}
                 >

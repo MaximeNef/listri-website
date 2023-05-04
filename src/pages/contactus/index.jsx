@@ -91,7 +91,7 @@ export default function Contactus() {
         />
       </Head>
       <main className='bg-white  text-default '>
-        <Container className=' pt-28 mx-[25px]'>
+        <Container className='md:mx-[95px] pt-28 mx-[25px]'>
           <ServiceTitle
             subtitle1={"Demande de contact"}
             subtitle2={"sélectionnez votre service"}
