@@ -6,46 +6,48 @@ import MyImage from "../../src/components/shared/composers/myimage";
 const BlogDescription = ({ slice }) => (
   <Container
     key={slice.uid}
-    className='  rounded-[10px] p-5 md:mx-[20%]  mt-8 '
+    className='  rounded-[10px] p-5 md:mx-[12%]  mt-8 md:mb-8 '
   >
-    <section className='md:flex md:justify-between '>
-      <div className='md:w-[50%]'>
-        <Container className='font-semibold text-[#37474F]  text-[21px] text-left'>
-          <div>
+    <section className=' md:justify-between  '>
+      <div className=''>
+        <Container className='font-semibold text-[#37474F]  text-[21px] md:text-[31px] text-left'>
+          <h2>
             {slice?.items?.map((item, i) => (
               <PrismicRichText field={item.subtitle} key={i} />
             ))}
-          </div>
+          </h2>
         </Container>
-        <Container className='text-left font-light text-[#37474F]  leading-7 text-lg  my-5  '>
+        <h3 className='text-left font-light text-[#37474F]  leading-7 text-lg  my-5  '>
           {slice?.items?.map((item, i) => (
             <PrismicRichText field={item.description} key={i} />
           ))}
-        </Container>
+        </h3>
       </div>
-      <div className='my-auto'>
+      <div className='my-auto relative '>
         {slice?.items?.map((item, i) => (
           <>
             {item.image.url ? (
               <>
-                <Container className='mx-[-20px] md:hidden'>
+                <Container className='mx-[-20px] md:hidden h-[30vh]'>
                   <MyImage
                     source={item.image.url}
                     key={i}
                     w={300}
                     h={300}
-                    objectFit={"contain"}
-                    className=' max-w-full h-auto  '
+                    objectFit={"cover"}
+                    layout={"fill"}
+                    className=' max-w-full h-auto rounded-xl  '
                   />
                 </Container>
-                <Container className='mx-[-20px] hidden md:inline-flex'>
+                <Container className=' hidden md:inline-flex h-[50vh]'>
                   <MyImage
                     source={item.image.url}
                     key={i}
-                    w={200}
-                    h={200}
-                    objectFit={"contain"}
-                    className=' max-w-full h-auto  '
+                    h='50'
+                    w={"100"}
+                    objectFit={"cover"}
+                    layout={"fill"}
+                    className=' max-w-full h-auto rounded-xl  '
                   />
                 </Container>
               </>

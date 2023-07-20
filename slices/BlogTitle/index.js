@@ -7,7 +7,7 @@ import ProgressBar from "../../src/components/shared/composers/progressBar";
 
 const BlogTitle = ({ slice }) => {
   return (
-    <Container className='md:mx-[20%] '>
+    <Container className='md:mx-[12%] '>
       {" "}
       {slice?.items?.map(
         (item, i /* import { PrismicRichText } from '@prismicio/react' */) => (

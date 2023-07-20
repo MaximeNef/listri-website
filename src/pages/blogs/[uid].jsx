@@ -18,11 +18,11 @@ export default function Blog({ doc }) {
           <title>{doc.data.slices[0].items[0].metatitle[0].text}</title>
           <meta
             name='description'
-            content={`Cet article va vous aider dans: ${doc.data.slices[0].items[0].metadescription[0].text}`}
+            content={` ${doc.data.slices[0].items[0].metadescription[0].text}`}
           />
           <meta
             name='keywords'
-            content='blogs, articles, contenu, écriture, rédaction, actualités, conseils, astuces, listri digital'
+            content={` ${doc.data.slices[0].items[0].metakeywords[0].text}`}
           />
           <meta charset='UTF-8' />
           <link rel='icon' href='/favicon.svg' />
