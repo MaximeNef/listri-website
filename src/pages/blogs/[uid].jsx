@@ -22,7 +22,7 @@ export default function Blog({ doc }) {
           />
           <meta
             name='keywords'
-            content={` ${doc.data.slices[0].items[0].metakeywords[0].text}`}
+            content={` ${doc.data.slices[0].items[0]?.metakeywords[0].text}`}
           />
           <meta charset='UTF-8' />
           <link rel='icon' href='/favicon.svg' />
