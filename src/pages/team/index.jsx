@@ -25,19 +25,12 @@ const Team = () => {
       src: "/assets/logo/maxime.png",
     },
     {
-      lastName: "Félicien",
-      firstName: "De Hertogh",
-      poste: "stagiaire",
-      activite: "Developpeur web",
-      src: "/assets/logo/felicien.jpg",
-    },
-    {
       lastName: "Nolwenn",
       firstName: "Heurtin",
       poste: "stagiaire",
       activite: "Developpeuse web",
       src: "/assets/logo/nh.jpg",
-    }
+    },
   ]);
   return (
     <NavPage current='Equipe'>
@@ -64,7 +57,7 @@ const Team = () => {
       </Head>
       <main className='bg-white  text-default '>
         <Container className='md:mx-[95px] py-28 mx-[25px]'>
-          <ServiceTitle  
+          <ServiceTitle
             subtitle1={"Notre équipe"}
             subtitle2={"d'experts qui gère tous vos services."}
           />
