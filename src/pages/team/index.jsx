@@ -36,7 +36,7 @@ const Team = () => {
     <NavPage current='Equipe'>
       <Head>
         <title>
-          Vos spécialistes dans la création de site web & marketing digital
+          Vos spécialistes dans la création de site web & marketing digital.
         </title>
         <meta
           name='description'
