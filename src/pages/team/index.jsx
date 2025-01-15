@@ -24,13 +24,6 @@ const Team = () => {
       activite: "Developpeur web",
       src: "/assets/logo/maxime.png",
     },
-    {
-      lastName: "Félicien",
-      firstName: "De Hertogh",
-      poste: "stagiaire",
-      activite: "Developpeur web",
-      src: "/assets/logo/felicien.jpg",
-    },
   ]);
   return (
     <NavPage current='Team'>
